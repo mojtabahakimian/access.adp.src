@@ -1,0 +1,8 @@
+﻿CREATE VIEW [dbo].[FREE_SANAD]
+AS
+SELECT     COUNT(dbo.DEED_DTL.N_S) AS articl, dbo.DEED_HED.N_S, dbo.DEED_HED.SHARH_S, dbo.DEED_HED.NO_S, dbo.DEED_HED.USER_NAME, 
+                      dbo.DEED_HED.DATE_S
+FROM         dbo.DEED_HED LEFT OUTER JOIN
+                      dbo.DEED_DTL ON dbo.DEED_HED.N_S = dbo.DEED_DTL.N_S
+GROUP BY dbo.DEED_HED.N_S, dbo.DEED_HED.SHARH_S, dbo.DEED_HED.NO_S, dbo.DEED_HED.USER_NAME, dbo.DEED_HED.DATE_S
+HAVING      (COUNT(dbo.DEED_DTL.N_S) = 0)

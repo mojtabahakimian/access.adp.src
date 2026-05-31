@@ -1,0 +1,167 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+BUGET_MAIN	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+BGID	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+BGCDATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+BGMAH	int	no	4	10   	0    	no	(n/a)	(n/a)	
+BGSAL	int	no	4	10   	0    	no	(n/a)	(n/a)	
+BGFOCXDAY	float	no	8	53   		no	(n/a)	(n/a)	
+BGFOCN1MON	float	no	8	53   		no	(n/a)	(n/a)	
+BGFOCN2MON	float	no	8	53   		no	(n/a)	(n/a)	
+BGFOCN3MON	float	no	8	53   		no	(n/a)	(n/a)	
+BGFOCN4MON	float	no	8	53   		no	(n/a)	(n/a)	
+BGFOCN5MON	float	no	8	53   		no	(n/a)	(n/a)	
+BGFOCN6MON	float	no	8	53   		no	(n/a)	(n/a)	
+BGFOCN7MON	float	no	8	53   		no	(n/a)	(n/a)	
+BGFOCN8MON	float	no	8	53   		no	(n/a)	(n/a)	
+BGFOCN9MON	float	no	8	53   		no	(n/a)	(n/a)	
+BGFOCN10MON	float	no	8	53   		no	(n/a)	(n/a)	
+BGFOCN11MON	float	no	8	53   		no	(n/a)	(n/a)	
+BGFOCNDMON	float	no	8	53   		no	(n/a)	(n/a)	
+BGBUGETMON	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEKMON	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBDARAM	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCASH	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEK0	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEK1	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEK2	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEK3	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEK4	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEK5	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEK6	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEK7	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEK8	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEK9	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEK10	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEK11	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEK12	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCASH	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH0	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH1	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH2	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH3	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH4	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH5	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH6	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH7	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH8	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH9	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH10	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH11	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH12	float	no	8	53   		no	(n/a)	(n/a)	
+NTDZBMCHDABD	nvarchar	no	500	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+BGMBCHEKJM12	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEKJM11	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEKJM10	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEKJM9	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEKJM8	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEKJM7	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEKJM6	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEKJM5	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEKJM4	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEKJM3	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEKJM2	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEKJM1	float	no	8	53   		no	(n/a)	(n/a)	
+BGMBCHEKJM0	float	no	8	53   		no	(n/a)	(n/a)	
+HESNAGHD	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+USERID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_BUGET_MAIN	clustered, unique, primary key located on PRIMARY	BGID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column BGBUGETMON	DF__BUGET_MAI__BGBUG__07420643	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGCDATE	DF__BUGET_MAI__BGCDA__77FFC2B3	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGFOCN6MON	DF__BUGET_MAI__BGFOC__009508B4	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGFOCN7MON	DF__BUGET_MAI__BGFOC__01892CED	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGFOCN8MON	DF__BUGET_MAI__BGFOC__027D5126	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGFOCN9MON	DF__BUGET_MAI__BGFOC__0371755F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGFOCN10MON	DF__BUGET_MAI__BGFOC__04659998	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGFOCN11MON	DF__BUGET_MAI__BGFOC__0559BDD1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGFOCNDMON	DF__BUGET_MAI__BGFOC__064DE20A	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGFOCXDAY	DF__BUGET_MAI__BGFOC__7ADC2F5E	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGFOCN1MON	DF__BUGET_MAI__BGFOC__7BD05397	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGFOCN2MON	DF__BUGET_MAI__BGFOC__7CC477D0	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGFOCN3MON	DF__BUGET_MAI__BGFOC__7DB89C09	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGFOCN4MON	DF__BUGET_MAI__BGFOC__7EACC042	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGFOCN5MON	DF__BUGET_MAI__BGFOC__7FA0E47B	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMAH	DF__BUGET_MAI__BGMAH__78F3E6EC	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEKMON	DF__BUGET_MAI__BGMBC__08362A7C	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCASH	DF__BUGET_MAI__BGMBC__0A1E72EE	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEK0	DF__BUGET_MAI__BGMBC__0B129727	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEK1	DF__BUGET_MAI__BGMBC__0C06BB60	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEK2	DF__BUGET_MAI__BGMBC__0CFADF99	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEK3	DF__BUGET_MAI__BGMBC__0DEF03D2	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEK4	DF__BUGET_MAI__BGMBC__0EE3280B	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEK5	DF__BUGET_MAI__BGMBC__0FD74C44	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEK6	DF__BUGET_MAI__BGMBC__10CB707D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEK7	DF__BUGET_MAI__BGMBC__11BF94B6	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEK8	DF__BUGET_MAI__BGMBC__12B3B8EF	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEK9	DF__BUGET_MAI__BGMBC__13A7DD28	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEK10	DF__BUGET_MAI__BGMBC__149C0161	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEK11	DF__BUGET_MAI__BGMBC__1590259A	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEK12	DF__BUGET_MAI__BGMBC__168449D3	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEKJM12	DF__BUGET_MAI__BGMBC__24D2692A	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEKJM11	DF__BUGET_MAI__BGMBC__25C68D63	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEKJM10	DF__BUGET_MAI__BGMBC__26BAB19C	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEKJM9	DF__BUGET_MAI__BGMBC__27AED5D5	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEKJM8	DF__BUGET_MAI__BGMBC__28A2FA0E	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEKJM7	DF__BUGET_MAI__BGMBC__29971E47	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEKJM6	DF__BUGET_MAI__BGMBC__2A8B4280	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEKJM5	DF__BUGET_MAI__BGMBC__2B7F66B9	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEKJM4	DF__BUGET_MAI__BGMBC__2C738AF2	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEKJM3	DF__BUGET_MAI__BGMBC__2D67AF2B	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEKJM2	DF__BUGET_MAI__BGMBC__2E5BD364	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEKJM1	DF__BUGET_MAI__BGMBC__2F4FF79D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBCHEKJM0	DF__BUGET_MAI__BGMBC__30441BD6	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGMBDARAM	DF__BUGET_MAI__BGMBD__092A4EB5	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCASH	DF__BUGET_MAI__BGPCA__17786E0C	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH0	DF__BUGET_MAI__BGPCH__186C9245	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH1	DF__BUGET_MAI__BGPCH__1960B67E	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH2	DF__BUGET_MAI__BGPCH__1A54DAB7	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH3	DF__BUGET_MAI__BGPCH__1B48FEF0	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH4	DF__BUGET_MAI__BGPCH__1C3D2329	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH5	DF__BUGET_MAI__BGPCH__1D314762	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH6	DF__BUGET_MAI__BGPCH__1E256B9B	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH7	DF__BUGET_MAI__BGPCH__1F198FD4	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH8	DF__BUGET_MAI__BGPCH__200DB40D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH9	DF__BUGET_MAI__BGPCH__2101D846	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH10	DF__BUGET_MAI__BGPCH__21F5FC7F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH11	DF__BUGET_MAI__BGPCH__22EA20B8	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH12	DF__BUGET_MAI__BGPCH__23DE44F1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGSAL	DF__BUGET_MAI__BGSAL__79E80B25	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGID	DF__BUGET_MAIN__BGID__770B9E7A	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CRT	DF__BUGET_MAIN__CRT__743A1EC7	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_BUGET_MAIN	(n/a)	(n/a)	(n/a)	(n/a)	BGID

@@ -1,0 +1,132 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+TAXDTL	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+Taxid	nvarchar	no	44	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Indatim	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+Indati2m	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+Inty	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+Inno	nvarchar	no	20	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Irtaxid	nvarchar	no	44	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Inp	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+Ins	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+Tins	nvarchar	no	28	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Tob	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+Bid	nvarchar	no	24	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Tinb	nvarchar	no	28	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+Sbc	nvarchar	no	20	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Bpc	nvarchar	no	20	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Ft	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+Bpn	nvarchar	no	18	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Scln	nvarchar	no	28	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Scc	nvarchar	no	10	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Crn	nvarchar	no	24	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Billid	nvarchar	no	38	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Tprdis	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Tdis	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Tadis	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Tvam	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Todam	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Tbill	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Setm	decimal	no	9	16   	3    	yes	(n/a)	(n/a)	
+Cap	numeric	no	9	18   	0    	yes	(n/a)	(n/a)	
+Insp	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Tvop	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Tax17	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Sstid	nvarchar	no	26	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Sstt	nvarchar	no	800	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Mu	decimal	no	9	13   	8    	yes	(n/a)	(n/a)	
+Am	decimal	no	9	13   	8    	yes	(n/a)	(n/a)	
+Fee	decimal	no	9	18   	8    	yes	(n/a)	(n/a)	
+Cfee	decimal	no	9	15   	4    	yes	(n/a)	(n/a)	
+Cut	nvarchar	no	6	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Exr	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Prdis	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Dis	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Adis	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Vra	decimal	no	5	4    	2    	yes	(n/a)	(n/a)	
+Vam	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Odt	nvarchar	no	510	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Odr	decimal	no	5	3    	2    	yes	(n/a)	(n/a)	
+Odam	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Olt	nvarchar	no	510	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Olr	decimal	no	5	3    	2    	yes	(n/a)	(n/a)	
+Olam	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Consfee	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Spro	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Bros	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Tcpbs	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Cop	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Vop	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Bsrn	nvarchar	no	24	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Tsstam	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Iinn	nvarchar	no	18	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Acn	nvarchar	no	28	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Trmn	nvarchar	no	16	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Trn	nvarchar	no	28	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Pcn	nvarchar	no	32	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Pid	nvarchar	no	24	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Pdt	numeric	no	9	18   	0    	yes	(n/a)	(n/a)	
+Cdcn	nvarchar	no	28	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Cdcd	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+Tonw	decimal	no	9	16   	3    	yes	(n/a)	(n/a)	
+Torv	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Tocv	decimal	no	9	15   	4    	yes	(n/a)	(n/a)	
+Nw	decimal	no	9	16   	3    	yes	(n/a)	(n/a)	
+Ssrv	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+Sscv	decimal	no	9	15   	4    	yes	(n/a)	(n/a)	
+Pmt	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+PV	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+IDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+RefrenceNumber	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TheConfirmationReferenceId	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TheError	nvarchar	no	8000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TheStatus	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TheSuccess	bit	no	1	     	     	yes	(n/a)	(n/a)	
+TheWarning	nvarchar	no	8000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SentTaxMemory	nvarchar	no	24	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ApiTypeSent	bit	no	1	     	     	yes	(n/a)	(n/a)	
+Indatim_Sec	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+Indati2m_Sec	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+NUMBER	float	no	8	53   		yes	(n/a)	(n/a)	
+TAG	float	no	8	53   		yes	(n/a)	(n/a)	
+DATE_N	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+REMARKS	nvarchar	no	8000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+TAXDTLI	clustered, unique, primary key located on PRIMARY	IDD
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__TAXDTL__CRT__5847EB8F	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	TAXDTLI	(n/a)	(n/a)	(n/a)	(n/a)	IDD

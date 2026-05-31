@@ -1,0 +1,14 @@
+﻿CREATE VIEW [dbo].[AMAR_KOL_FROOSH]
+AS
+SELECT     TOP 100 PERCENT SUM(dbo.INVO_LST.MEGHk) AS MEGHT, dbo.TCOD_STUFGROUP.NAMES, dbo.TCOD_VAHEDS.NAMES AS vahed, 
+                      dbo.Umonth(dbo.HEAD_LST.DATE_N) AS MON, dbo.MON.MON AS MN, dbo.TCOD_STUFGROUP.CODE AS GRP, dbo.TCOD_VAHEDS.CODE AS VH
+FROM         dbo.HEAD_LST INNER JOIN
+                      dbo.INVO_LST ON dbo.HEAD_LST.NUMBER = dbo.INVO_LST.NUMBER AND dbo.HEAD_LST.TAG = dbo.INVO_LST.TAG INNER JOIN
+                      dbo.STUF_DEF ON dbo.INVO_LST.CODE = dbo.STUF_DEF.CODE INNER JOIN
+                      dbo.TCOD_STUFGROUP ON dbo.STUF_DEF.RADAH = dbo.TCOD_STUFGROUP.CODE INNER JOIN
+                      dbo.TCOD_VAHEDS ON dbo.STUF_DEF.VAHED = dbo.TCOD_VAHEDS.CODE RIGHT OUTER JOIN
+                      dbo.MON ON dbo.Umonth(dbo.HEAD_LST.DATE_N) = dbo.MON.MON_ID
+WHERE     (dbo.HEAD_LST.TAG = 2)
+GROUP BY dbo.TCOD_STUFGROUP.NAMES, dbo.TCOD_VAHEDS.NAMES, dbo.Umonth(dbo.HEAD_LST.DATE_N), dbo.MON.MON, dbo.TCOD_STUFGROUP.CODE, 
+                      dbo.TCOD_VAHEDS.CODE
+ORDER BY dbo.Umonth(dbo.HEAD_LST.DATE_N)

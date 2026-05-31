@@ -1,0 +1,73 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+TR_PGET_LST	dbo	user table	25/05/2026 09:51:31 ب.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+ID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+DATE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+RADIF	float	no	8	53   		yes	(n/a)	(n/a)	
+NO_AM	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+NAHVA	float	no	8	53   		yes	(n/a)	(n/a)	
+FHES_K	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+FHES_M	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+FHES_T	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+THES_K	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+THES_M	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+THES_T	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SHARH	nvarchar	no	1020	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MABL	float	no	8	53   		yes	(n/a)	(n/a)	
+N_SERI	float	no	8	53   		yes	(n/a)	(n/a)	
+BANK	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+IDH	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+FHES	nvarchar	no	160	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+THES	nvarchar	no	160	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ARZD	float	no	8	53   		yes	(n/a)	(n/a)	
+FHES_T2	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+THES_T2	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+FHES_T3	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+THES_T3	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+FHES_T4	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+THES_T4	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+MHAZ_NO	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+UP_DATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+UP_TIME	float	no	8	53   		no	(n/a)	(n/a)	
+UP_USER_NAME	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PC_NAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IPADD	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TRIDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+TRIDD	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__TR_PGET___9FFE4EA40C42C457	clustered, unique, primary key located on PRIMARY	TRIDD
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (clustered)	PK__TR_PGET___9FFE4EA40C42C457	(n/a)	(n/a)	(n/a)	(n/a)	TRIDD

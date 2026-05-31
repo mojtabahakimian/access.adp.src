@@ -1,0 +1,30 @@
+﻿CREATE FUNCTION [dbo].[QSL_LIST_INVOICE_FROOSH2]
+ (@Forms___F_MENU_KHFR___DT1 nvarchar(20),
+ @Forms___F_MENU_KHFR___DT2 nvarchar(20),
+ @Forms___F_MENU_KHFR___MMOIN nvarchar(20))
+ RETURNS TABLE
+ AS
+ RETURN ( SELECT     dbo.HEAD_CHEK_FROOSHG.NUMBER, dbo.HEAD_CHEK_FROOSHG.TAG, dbo.HEAD_CHEK_FROOSHG.DATE_N, 
+                       dbo.HEAD_CHEK_FROOSHG.CUST_NO, dbo.HEAD_CHEK_FROOSHG.ANBAR, dbo.HEAD_CHEK_FROOSHG.NUMBER1, 
+                       dbo.HEAD_CHEK_FROOSHG.TAH, dbo.HEAD_CHEK_FROOSHG.MAS, dbo.HEAD_CHEK_FROOSHG.VAS, dbo.HEAD_CHEK_FROOSHG.N_S, 
+                       dbo.HEAD_CHEK_FROOSHG.MOLAH, dbo.HEAD_CHEK_FROOSHG.M_NAGHD, dbo.HEAD_CHEK_FROOSHG.MABL_VAR, 
+                       dbo.HEAD_CHEK_FROOSHG.MOIN_VAR, dbo.HEAD_CHEK_FROOSHG.MABL_HAV, dbo.HEAD_CHEK_FROOSHG.MOIN_HAV, 
+                       dbo.HEAD_CHEK_FROOSHG.MABL_HAZ, dbo.HEAD_CHEK_FROOSHG.MOIN_HAZ, dbo.HEAD_CHEK_FROOSHG.TAKHFIF, 
+                       dbo.HEAD_CHEK_FROOSHG.MOIN_KHF, dbo.HEAD_CHEK_FROOSHG.ANBARF, dbo.HEAD_CHEK_FROOSHG.FNUMCO, 
+                       dbo.INVO_LST.NUMBER AS INUMBER, dbo.INVO_LST.TAG AS ITAG, dbo.INVO_LST.ANBAR AS IANBAR, dbo.INVO_LST.RADIF, 
+                       dbo.TCOD_VAHEDS.CODE, dbo.INVO_LST.MEGH, dbo.INVO_LST.MEGHk, dbo.INVO_LST.MEGH_MAR, dbo.INVO_LST.MANDAH, dbo.INVO_LST.MABL, 
+                       dbo.INVO_LST.MABL_K, dbo.INVO_LST.FROM_A, dbo.INVO_LST.N_RASID, dbo.INVO_LST.MEGH_R, dbo.INVO_LST.RADAH, dbo.INVO_LST.SANAD_NO, 
+                       dbo.INVO_LST.CUST_NO AS ICUST_NO, dbo.INVO_LST.ANBARF AS IANBARF, dbo.INVO_LST.VAHED_K, dbo.CUST_HESAB.hes AS BEDN, 
+                       dbo.CUST_HESAB.NAME, dbo.CUST_HESAB.ADDRESS, dbo.CUST_HESAB.TEL, dbo.TCOD_ANBAR.NAMES, dbo.STUF_DEF.NAME AS SNAME, 
+                       dbo.TCOD_VAHEDS.NAMES AS TNAMES, dbo.HEAD_CHEK_FROOSHG.mab, dbo.HEAD_CHEK_FROOSHG.CountOfMABL, 
+                       dbo.INVO_LST.MEGH_MAR * dbo.INVO_LST.MABL AS mabl_mar, dbo.INVO_LST.N_KOL, ISNULL(dbo.STUF_DEF.NAME, N' ') 
+                       + N'-' + ISNULL(dbo.STUF_DEF.CODE, N' ') + N' ' + ISNULL(dbo.INVO_LST.MANDAH, N' ') AS KALA
+ FROM         dbo.INVO_LST INNER JOIN
+                       dbo.STUF_DEF ON dbo.INVO_LST.CODE = dbo.STUF_DEF.CODE INNER JOIN
+                       dbo.TCOD_VAHEDS ON dbo.INVO_LST.VAHED_K = dbo.TCOD_VAHEDS.CODE INNER JOIN
+                       dbo.TCOD_ANBAR ON dbo.INVO_LST.ANBAR = dbo.TCOD_ANBAR.CODE INNER JOIN
+                       dbo.HEAD_CHEK_FROOSHG ON dbo.INVO_LST.NUMBER = dbo.HEAD_CHEK_FROOSHG.NUMBER AND 
+                       dbo.INVO_LST.TAG = dbo.HEAD_CHEK_FROOSHG.TAG - 11 INNER JOIN
+                       dbo.CUST_HESAB ON dbo.HEAD_CHEK_FROOSHG.CUST_NO = dbo.CUST_HESAB.hes
+ WHERE     (dbo.CUST_HESAB.hes LIKE @Forms___F_MENU_KHFR___MMOIN) AND (dbo.HEAD_CHEK_FROOSHG.DATE_N BETWEEN 
+                       @Forms___F_MENU_KHFR___DT1 AND @Forms___F_MENU_KHFR___DT2) )

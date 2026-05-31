@@ -1,0 +1,55 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+CHKREC_H	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+DATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+MOLAH	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+N_S	float	no	8	53   		yes	(n/a)	(n/a)	
+IDH	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDH	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{9A1BD9E1-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	N_S
+aaaaaCHKREC_H_PK	nonclustered, unique, primary key located on PRIMARY	DATE
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaCHKREC_H_PK	(n/a)	(n/a)	(n/a)	(n/a)	DATE
+FOREIGN KEY	CHKREC_H_FK00	No Action	Cascade	Enabled	Is_For_Replication	N_S
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.DEED_HED (N_S)
+DEFAULT on column CRT	DF__CHKREC_H__CRT__53CD4F35	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.CHRE_LST: CHRE_LST_FK02

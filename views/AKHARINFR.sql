@@ -1,0 +1,6 @@
+﻿CREATE VIEW [dbo].[AKHARINFR]
+ AS
+ SELECT     MAX(NUMBER) AS Expr1, MAX(MABL) AS FR, CODE
+ FROM         dbo.INVO_LST
+ WHERE     (TAG = 2)
+ GROUP BY CODE

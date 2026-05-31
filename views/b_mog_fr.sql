@@ -1,0 +1,6 @@
+﻿CREATE VIEW [dbo].[b_mog_fr]
+AS
+
+SELECT     ANBAR, CODE, SUM(MEG) AS MEG
+FROM         dbo.B_MOG_FR_sub
+GROUP BY ANBAR, CODE

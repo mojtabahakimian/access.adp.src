@@ -1,0 +1,52 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+TCOD_HESGROUP	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+CODE	float	no	8	53   		no	(n/a)	(n/a)	
+NAMES	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+aaaaaTCOD_HESGROUP_PK	nonclustered, unique, primary key located on PRIMARY	CODE
+BAR_COD	nonclustered located on PRIMARY	CODE
+NAMES	nonclustered, unique located on PRIMARY	NAMES
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaTCOD_HESGROUP_PK	(n/a)	(n/a)	(n/a)	(n/a)	CODE
+DEFAULT on column CRT	DF__TCOD_HESGRO__CRT__02883E1E	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.TOTA_HES: TOTA_HES_FK02

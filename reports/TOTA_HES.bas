@@ -1,0 +1,536 @@
+﻿Version =20
+VersionRequired =20
+Begin Report
+    LayoutForPrint = NotDefault
+    DefaultView =0
+    AllowUpdating =4
+    TabularCharSet =178
+    TabularFamily =42
+    DateGrouping =1
+    Orientation =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9070
+    DatasheetFontHeight =10
+    ItemSuffix =39
+    Left =1005
+    Top =1515
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x6ecb819b723be440
+    End
+    RecordSource ="SELECT TOTA_HES.NUMBER AS kol, TOTA_HES.NAME, DETA_HES.N_KOL, DETA_HES.NUMBER, D"
+        "ETA_HES.NAME AS detahes_name, TDETA_HES.N_KOL AS tdetahes_nkol, TDETA_HES.NUMBER"
+        " AS tdetahes_number, TDETA_HES.TNUMBER, TDETA_HES.NAME AS tdetahes_name FROM TOT"
+        "A_HES INNER JOIN DETA_HES ON TOTA_HES.NUMBER = DETA_HES.N_KOL INNER JOIN TDETA_H"
+        "ES ON DETA_HES.N_KOL = TDETA_HES.N_KOL AND DETA_HES.NUMBER = TDETA_HES.NUMBER"
+    Caption ="چاپ حساب"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Arial (Arabic)"
+    OnError ="[Event Procedure]"
+    Begin
+        Begin Label
+            FontItalic = NotDefault
+            BackStyle =0
+            TextFontCharSet =178
+            TextAlign =1
+            TextFontFamily =42
+            FontSize =11
+            FontWeight =700
+            ForeColor =8388608
+            FontName ="Arial (Arabic)"
+        End
+        Begin Rectangle
+            BackStyle =0
+            BorderWidth =1
+            Width =850
+            Height =850
+            BorderColor =8388608
+        End
+        Begin Line
+            Width =1701
+            BorderColor =8388608
+        End
+        Begin Image
+            OldBorderStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            TextFontCharSet =178
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin OptionButton
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            BackStyle =1
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            OldBorderStyle =0
+            TextFontCharSet =178
+            TextFontFamily =42
+            BackStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Arial (Arabic)"
+        End
+        Begin ListBox
+            TextFontCharSet =178
+            TextFontFamily =42
+            OldBorderStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontName ="Arial (Arabic)"
+        End
+        Begin ComboBox
+            OldBorderStyle =0
+            TextFontCharSet =178
+            TextFontFamily =42
+            BackStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Arial (Arabic)"
+        End
+        Begin Subform
+            OldBorderStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            Width =4536
+            Height =2835
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            GroupFooter = NotDefault
+            ControlSource ="kol"
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            ControlSource ="[N_KOL] & \"-\" &  [Number]"
+        End
+        Begin BreakLevel
+            ControlSource ="TDETAHES_NKOL"
+        End
+        Begin BreakLevel
+            ControlSource ="TDETAHES_NUMBER"
+        End
+        Begin BreakLevel
+            ControlSource ="TNUMBER"
+        End
+        Begin PageHeader
+            Height =495
+            Name ="PageHeader"
+            Begin
+                Begin Label
+                    FontItalic = NotDefault
+                    TextAlign =2
+                    TextFontFamily =2
+                    Left =3172
+                    Width =3075
+                    Height =495
+                    FontSize =14
+                    ForeColor =0
+                    Name ="Label31"
+                    Caption ="سرفصل حسابهاي تعريف شده"
+                    FontName ="Zar"
+                End
+            End
+        End
+        Begin BreakHeader
+            KeepTogether = NotDefault
+            Height =476
+            Name ="GroupHeader0"
+            Begin
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =2
+                    ReadingOrder =1
+                    KeyboardLanguage =15
+                    ScrollBarAlign =2
+                    NumeralShapes =2
+                    Left =6626
+                    Top =30
+                    Width =1110
+                    Height =420
+                    FontSize =12
+                    FontWeight =700
+                    BackColor =12632256
+                    Name ="kol"
+                    ControlSource ="kol"
+                    FontName ="Zar"
+                    Begin
+                        Begin Label
+                            FontItalic = NotDefault
+                            TextFontFamily =2
+                            Left =7856
+                            Top =30
+                            Width =1170
+                            Height =420
+                            FontSize =12
+                            BackColor =12632256
+                            ForeColor =0
+                            Name ="TOTA_HES.NUMBER Label"
+                            Caption ="حساب كل"
+                            FontName ="Zar"
+                            EventProcPrefix ="TOTA_HES_NUMBER_Label"
+                        End
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =2
+                    ReadingOrder =1
+                    KeyboardLanguage =15
+                    ScrollBarAlign =2
+                    NumeralShapes =2
+                    Left =1920
+                    Top =30
+                    Width =3660
+                    Height =420
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =1
+                    BackColor =12632256
+                    Name ="TOTA_HES.NAME"
+                    ControlSource ="NAME"
+                    FontName ="Zar"
+                    EventProcPrefix ="TOTA_HES_NAME"
+                    Begin
+                        Begin Label
+                            FontItalic = NotDefault
+                            TextFontFamily =2
+                            Left =5700
+                            Top =30
+                            Width =900
+                            Height =420
+                            FontSize =12
+                            BackColor =12632256
+                            ForeColor =0
+                            Name ="TOTA_HES.NAME Label"
+                            Caption ="نام حساب"
+                            FontName ="Zar"
+                            EventProcPrefix ="TOTA_HES_NAME_Label"
+                        End
+                    End
+                End
+            End
+        End
+        Begin BreakHeader
+            KeepTogether = NotDefault
+            Height =850
+            BreakLevel =1
+            Name ="GroupHeader1"
+            Begin
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =2
+                    ReadingOrder =1
+                    KeyboardLanguage =15
+                    ScrollBarAlign =2
+                    NumeralShapes =2
+                    Left =5415
+                    Width =1335
+                    Height =420
+                    FontSize =11
+                    Name ="DETA_HE"
+                    ControlSource ="=[N_KOL] & \" - \" & [NUMBER]"
+                    FontName ="Zar"
+                    Begin
+                        Begin Label
+                            FontItalic = NotDefault
+                            TextFontFamily =2
+                            Left =6780
+                            Width =990
+                            Height =375
+                            ForeColor =0
+                            Name ="DETA_HES.NUMBER Label"
+                            Caption ="حساب معين"
+                            FontName ="Zar"
+                            EventProcPrefix ="DETA_HES_NUMBER_Label"
+                        End
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =2
+                    ReadingOrder =1
+                    KeyboardLanguage =15
+                    ScrollBarAlign =2
+                    NumeralShapes =2
+                    Left =795
+                    Width =3300
+                    Height =405
+                    FontSize =11
+                    TabIndex =1
+                    Name ="DETA_HES.NAME"
+                    ControlSource ="detahes_name"
+                    FontName ="Zar"
+                    EventProcPrefix ="DETA_HES_NAME"
+                    Begin
+                        Begin Label
+                            FontItalic = NotDefault
+                            TextFontFamily =2
+                            Left =4125
+                            Width =1260
+                            Height =420
+                            ForeColor =0
+                            Name ="DETA_HES.NAME Label"
+                            Caption ="نام حساب معين"
+                            FontName ="Zar"
+                            EventProcPrefix ="DETA_HES_NAME_Label"
+                        End
+                    End
+                End
+                Begin Label
+                    FontItalic = NotDefault
+                    TextAlign =3
+                    TextFontFamily =2
+                    Left =5215
+                    Top =420
+                    Width =1065
+                    Height =375
+                    ForeColor =0
+                    Name ="TNUMBER Label"
+                    Caption ="معين تفضيلي"
+                    FontName ="Zar"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="TNUMBER_Label"
+                End
+                Begin Label
+                    FontItalic = NotDefault
+                    TextAlign =0
+                    TextFontFamily =2
+                    Left =2040
+                    Top =420
+                    Width =1260
+                    Height =375
+                    ForeColor =0
+                    Name ="TDETA_HES.NAME Label"
+                    Caption ="نام حساب معين"
+                    FontName ="Zar"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="TDETA_HES_NAME_Label"
+                End
+                Begin Line
+                    BorderWidth =1
+                    Left =150
+                    Top =448
+                    Width =7611
+                    Name ="Line25"
+                    Tag ="DetachedLabel"
+                End
+                Begin Line
+                    BorderWidth =1
+                    Left =150
+                    Top =420
+                    Width =7611
+                    Name ="Line26"
+                    Tag ="DetachedLabel"
+                End
+                Begin Line
+                    BorderWidth =1
+                    Left =150
+                    Top =795
+                    Width =7611
+                    Name ="Line27"
+                    Tag ="DetachedLabel"
+                End
+                Begin Line
+                    BorderWidth =1
+                    Left =150
+                    Top =823
+                    Width =7611
+                    Name ="Line28"
+                    Tag ="DetachedLabel"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    TextFontFamily =34
+                    Left =6859
+                    Top =477
+                    TabIndex =2
+                    Name ="DETA_HES.N_KOL"
+                    ControlSource ="N_KOL"
+                    EventProcPrefix ="DETA_HES_N_KOL"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    TextFontFamily =34
+                    Left =6973
+                    Top =477
+                    TabIndex =3
+                    Name ="Text34"
+                    ControlSource ="NUMBER"
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =510
+            Name ="Detail"
+            Begin
+                Begin TextBox
+                    TextAlign =2
+                    TextFontFamily =2
+                    ReadingOrder =1
+                    KeyboardLanguage =15
+                    ScrollBarAlign =2
+                    NumeralShapes =2
+                    Left =4932
+                    Top =56
+                    Width =1710
+                    Height =375
+                    FontSize =10
+                    Name ="TDETA_H"
+                    ControlSource ="=[tdetahes_nkol] & \" - \" & [TDETAHES_NUMBER] & \" - \" & [TNUMBER]"
+                    FontName ="Zar"
+                End
+                Begin TextBox
+                    TextAlign =2
+                    TextFontFamily =2
+                    ReadingOrder =2
+                    KeyboardLanguage =15
+                    ScrollBarAlign =2
+                    NumeralShapes =2
+                    Left =148
+                    Top =57
+                    Width =4725
+                    Height =375
+                    FontSize =10
+                    TabIndex =1
+                    Name ="TDETA_HES.NAME"
+                    ControlSource ="tdetahes_name"
+                    FontName ="Zar"
+                    EventProcPrefix ="TDETA_HES_NAME"
+                End
+                Begin TextBox
+                    RunningSum =1
+                    TextAlign =2
+                    TextFontFamily =2
+                    ReadingOrder =1
+                    KeyboardLanguage =15
+                    ScrollBarAlign =2
+                    NumeralShapes =2
+                    Left =6675
+                    Top =60
+                    Width =1080
+                    Height =375
+                    FontSize =10
+                    TabIndex =2
+                    Name ="Text36"
+                    ControlSource ="=1"
+                    FontName ="Zar"
+                End
+                Begin Subform
+                    CanShrink = NotDefault
+                    Left =30
+                    Top =465
+                    Width =8602
+                    Height =45
+                    TabIndex =3
+                    Name ="TDETAHES2"
+                    SourceObject ="Report.TDETAHES2"
+                    LinkChildFields ="N_KOL;NUMBER;TNUMBER"
+                    LinkMasterFields ="kol;NUMBER;TNUMBER"
+                End
+            End
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            Height =340
+            Name ="GroupFooter2"
+            Begin
+                Begin Line
+                    BorderWidth =3
+                    Width =9070
+                    BorderColor =12632256
+                    Name ="Line32"
+                End
+            End
+        End
+        Begin PageFooter
+            Height =558
+            Name ="PageFooter"
+            Begin
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =2
+                    ReadingOrder =1
+                    KeyboardLanguage =15
+                    AllowedText =2
+                    ScrollBarAlign =2
+                    NumeralShapes =2
+                    Left =4595
+                    Top =105
+                    Width =4421
+                    Height =330
+                    FontSize =9
+                    FontWeight =700
+                    Name ="Text19"
+                    ControlSource ="=FARSIDATE(Now())"
+                    FontName ="Zar"
+                    InputMask ="####/##/##"
+                End
+                Begin TextBox
+                    TextAlign =1
+                    TextFontFamily =2
+                    ReadingOrder =1
+                    KeyboardLanguage =15
+                    AllowedText =2
+                    ScrollBarAlign =2
+                    NumeralShapes =2
+                    Left =60
+                    Top =105
+                    Width =4421
+                    Height =330
+                    FontSize =9
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="Text20"
+                    ControlSource ="=\"صفحه \" & [Page] & \" از \" & [Pages]"
+                    FontName ="Zar"
+                End
+                Begin Line
+                    BorderWidth =3
+                    Width =9070
+                    BorderColor =12632256
+                    Name ="Line29"
+                End
+                Begin Line
+                    BorderWidth =3
+                    Top =28
+                    Width =9070
+                    BorderColor =12632256
+                    Name ="Line30"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "TOTA_HES.cls"

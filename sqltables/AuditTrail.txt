@@ -1,0 +1,65 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+AuditTrail	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+AuditId	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+EventTimeUtc	datetime2	no	7	23   	3    	no	(n/a)	(n/a)	
+SchemaName	sysname	no	256	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+TableName	sysname	no	256	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+PK	nvarchar	no	800	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+Operation	char	no	1	     	     	no	no	no	Arabic_CI_AS
+ColumnName	sysname	no	256	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+OldValue	nvarchar	no	8000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+NewValue	nvarchar	no	8000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SqlLogin	sysname	no	256	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+HostName	sysname	no	256	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+AppName	sysname	no	256	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+AppContext	nvarchar	no	256	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Spid	int	no	4	10   	0    	no	(n/a)	(n/a)	
+RowHash	varbinary	no	20	     	     	yes	no	yes	
+ChainHash	varbinary	no	20	     	     	yes	no	yes	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+AuditId	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+IX_AuditTrail_TablePK	nonclustered located on PRIMARY	TableName, PK, AuditId
+IX_AuditTrail_Time	nonclustered located on PRIMARY	EventTimeUtc(-)
+PK__AuditTra__A17F239800781D36	clustered, unique, primary key located on PRIMARY	AuditId
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column AppName	DF__AuditTrai__AppNa__053CD253	(n/a)	(n/a)	(n/a)	(n/a)	(app_name())
+DEFAULT on column EventTimeUtc	DF__AuditTrai__Event__026065A8	(n/a)	(n/a)	(n/a)	(n/a)	(sysutcdatetime())
+DEFAULT on column HostName	DF__AuditTrai__HostN__0448AE1A	(n/a)	(n/a)	(n/a)	(n/a)	(host_name())
+DEFAULT on column SqlLogin	DF__AuditTrai__SqlLo__035489E1	(n/a)	(n/a)	(n/a)	(n/a)	(original_login())
+DEFAULT on column CRT	DF__AuditTrail__CRT__31F46EDE	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column Spid	DF__AuditTrail__Spid__0630F68C	(n/a)	(n/a)	(n/a)	(n/a)	(@@spid)
+PRIMARY KEY (clustered)	PK__AuditTra__A17F239800781D36	(n/a)	(n/a)	(n/a)	(n/a)	AuditId

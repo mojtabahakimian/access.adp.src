@@ -1,0 +1,50 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+BugReportComments	dbo	user table	30/05/2026 07:16:53 ب.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+Id	int	no	4	10   	0    	no	(n/a)	(n/a)	
+BugReportId	int	no	4	10   	0    	no	(n/a)	(n/a)	
+UserId	nvarchar	no	200	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+UserName	nvarchar	no	400	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IsAdmin	bit	no	1	     	     	no	(n/a)	(n/a)	
+CommentText	nvarchar	no	-1	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+CreatedAt	datetime	no	8	     	     	no	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+Id	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__BugRepor__3214EC07E837638C	clustered, unique, primary key located on PRIMARY	Id
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CreatedAt	DF__BugReport__Creat__5756EC54	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column IsAdmin	DF__BugReport__IsAdm__5662C81B	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK__BugReport__BugRe__584B108D	Cascade	No Action	Enabled	Is_For_Replication	BugReportId
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.BugReports (Id)
+PRIMARY KEY (clustered)	PK__BugRepor__3214EC07E837638C	(n/a)	(n/a)	(n/a)	(n/a)	Id

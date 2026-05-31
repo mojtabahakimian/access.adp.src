@@ -1,0 +1,57 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+GRADE_CUST_GRP	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+GCGRPID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+GCGRPNAME	nvarchar	no	300	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+GCGRPZARIB	real	no	4	24   		no	(n/a)	(n/a)	
+GCGRPGRADE	real	no	4	24   		no	(n/a)	(n/a)	
+GCTABID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+GCVALUE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+GCVALUESCAL	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+GCPS	image	no	16	     	     	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_GRADE_CUST_GRP	clustered, unique, primary key located on PRIMARY	GCGRPID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__GRADE_CUST___CRT__5C979F60	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column GCGRPGRADE	DF_GRADE_CUST_GRP_GCGRPGRADE	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column GCGRPZARIB	DF_GRADE_CUST_GRP_GCGRPZARIB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column GCVALUE	DF_GRADE_CUST_GRP_GCVALUE	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_GRADE_CUST_GRP_GRADE_CUST_TAB	No Action	Cascade	Enabled	Is_For_Replication	GCTABID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.GRADE_CUST_TAB (GCTABID)
+FOREIGN KEY	FK_GRADE_CUST_GRP_GSCADTL	No Action	Cascade	Enabled	Is_For_Replication	GCVALUESCAL
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.GSCADTL (GSCADTCOD)
+PRIMARY KEY (clustered)	PK_GRADE_CUST_GRP	(n/a)	(n/a)	(n/a)	(n/a)	GCGRPID

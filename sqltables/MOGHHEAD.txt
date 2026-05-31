@@ -1,0 +1,56 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+MOGHHEAD	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+MONUM	int	no	4	10   	0    	no	(n/a)	(n/a)	
+MODATE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+ONVAN	nvarchar	no	160	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+HES	nvarchar	no	60	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+FDATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+TDATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+aaaaaMOGHHEAD_PK	nonclustered, unique, primary key located on PRIMARY	MONUM
+MONUM	nonclustered, unique located on PRIMARY	MONUM
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaMOGHHEAD_PK	(n/a)	(n/a)	(n/a)	(n/a)	MONUM
+DEFAULT on column CRT	DF__MOGHHEAD__CRT__6DC22B62	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column MONUM	DF__MOGHHEAD__MONUM__18EBB532	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.MO_DTL: MO_DTL_FK01

@@ -1,0 +1,3721 @@
+﻿-------------------------------------
+Beginning Export of Source Files
+mrcorrect.adp
+VCS Version 4.1.2
+Full Path: F:\software\prgaccess\sources\MrCorrectMain\mrcorrect.adp
+Export Folder: F:\software\prgaccess\sources\MrCorrectMain\mrcorrect.adp.src\
+Performing Full Export
+31/05/2026 09:25:37 ب.ظ
+-------------------------------------
+Scanning source files...
+No vbe forms found in this database.
+No saved specs found in this database.
+No table data found in this database.
+-------------------------------------
+Exporting project...          
+  mrcorrect.adp
+[1] project processed.
+-------------------------------------
+Exporting vb project...       
+  adp2
+[1] vb project processed.
+-------------------------------------
+Exporting vbe references...   
+  stdole
+[5] vbe references processed.
+-------------------------------------
+Exporting proj properties...  
+  Current Project Properties (Access)
+[38] proj properties processed.
+-------------------------------------
+Exporting modules...          
+  SSMFUNC
+  farsid
+  Incre
+  HOTELCOD
+  modTextWidth
+  FARSINUM
+  modChangeMDI
+  mod_BarCode_Generator
+  modColorPicker
+  STARTUP
+  POS
+  sms
+  Module1
+  Module2
+  Module3
+  api_TwipsPerPixels
+  Module4
+  mssystry
+  mdlDispatchToAustraliaPostHandshake
+  SIGNMUD
+  cDialog
+  api_SendMessage
+  printercf
+  HESABDARI
+  system
+  ftp
+  http
+  ERRR
+  network
+  FORMCENTER
+  api_CreateRoundRectRgn
+  SCREPT1
+  RefreshTableLinks
+  SALARY
+[34] modules processed.
+-------------------------------------
+Exporting commandbars...      
+  ANBAR
+  Custom 2
+  Custom Popup 44
+  Custom Popup 47
+  Custom Popup 48
+  Custom Popup 49
+  Custom Popup 50
+  Custom Popup 101
+  Custom Popup 102
+  Custom Popup 62
+  Custom Popup 63
+  Custom Popup 64
+  Custom Popup 65
+  Custom Popup 69
+  Custom Popup 70
+  Custom Popup 71
+  Custom Popup 72
+  Custom Popup 78
+  Custom Popup 79
+  Custom Popup 80
+  Custom Popup 81
+  Custom Popup 95
+  DENA
+
+-------------------------------------
+ERROR: Unhandled error, likely before `On Error` directive
+Error -2147467259: Method 'Controls' of object 'CommandBarPopup' failed Source: .Unknown.LogUnhandledErrors
+-------------------------------------
+
+-------------------------------------
+ERROR: Unhandled error, likely before `On Error` directive
+Source: .Unknown.LogUnhandledErrors
+-------------------------------------
+  DIALOG
+  dialog_abzar
+  dialog_questions
+  dialog_system
+  FROOSH
+  HESAB
+  HOT
+  HOTEL
+
+-------------------------------------
+ERROR: Unhandled error, likely before `On Error` directive
+Error -2147467259: Automation error
+Unspecified error  Source: .Unknown.LogUnhandledErrors
+-------------------------------------
+  HOTSH
+  KARKOZ
+  Macro25
+  macro26
+  Macro27
+  Macro28
+  savabegh
+  sort
+  ابزار
+  Custom Popup 126
+  Custom Popup 127
+  Custom Popup 128
+  Custom Popup 135
+  Custom Popup 136
+  Custom Popup 137
+  Custom Popup 4249046
+  Custom Popup 4253125
+  TALAR
+  SERVERFILTER
+  MNEMUDAR
+  null
+  Custom 3
+  Macro14
+  Macro24
+[55] commandbars processed.
+-------------------------------------
+Exporting functions...        
+  LIST_SALARY22TOFILE_10
+  Q_KHARED_CUSTOMER_BZ
+  LIST_SALARY_KOSURAT
+  Q_KHARED_DTL
+  Q_TAFKIK_MOIN
+  SALARY_BED
+  SURAT_HESAB_KHAREED
+  taraz_moin4_sub
+  PGET_HED_REP_ASHKHAS
+  LIST_SALARY22TOFILE
+  Q_TAFKIK_TAFZ_CHK
+  Q_KHARED_CUSTOMER
+  Q_LIST_FCT
+  SURAT_MANABE_SUB2
+  Q_LIST_FROOSH_DAYLY_CHK2
+  lastavrage_sub
+  SURAT_HESAB_FROOSH
+  SURAT_MANABE_SUB1
+  Q_FROOSH_CUSTOMER_BZ
+  MAND_VAM2
+  Q_FISH_MAND_SUBA1
+  Q_FROOSH_CUSTOMER
+  LIST_SALARY52
+  Q_FISH_MAND_SUBA
+  TARAZNAMAH_SUB
+  Q_FISH_MANDA
+  TARAZNAMAH
+  MANDGHEMATCROSS
+  KHOLASAH
+  CHKE_VLIST
+  SUDZIANGHEMAT
+  Q_FROOSH_DAYLY2
+  LASTHOK2
+  MAND_VAM
+  Q_DAFTAR_TAFZIL_2_2
+  LIST_SALARY5
+  MARKAZ_SUB_KOL_MOIN
+  Q_FISH_MAND2
+  QSL_LIST_INVOICE_KHAREDG
+  Q_FOROSH_DAYLY_HED1
+  HEAD_CHEK_KHARED
+  QSL_lIST_INVOICE_KHARED
+  MARKAZ_SUB_KOL
+  Q_FISH_MAND
+  Q_DAFTAR_TAFMAND2_H
+  QSL_LIST_INVOICE_FROOSH2
+  SURATMANABE
+  MARKAZ_KOL_MOIN
+  shemaresh
+  Q_DAFTAR_TAFZIL
+  Q_FOROSH_DAYLY_HED
+  HEAD_CHEK_FROOSH
+  CHEK_PRINT
+  AKMOGUDI_KOL_ANBAR_N_FANI
+  QSL_lIST_INVOICE_FROOSH
+  MARKAZ_SUB
+  QDAFTARTAFZIL2_H
+  QSL_FROOSH_DTL_mba2
+  Q_DAFTAR_TAFMAND2
+  MARKAZ_KOL
+  Q_FROOSH_DAYLY_HED3
+  TARAZ_TAFZ4_DIRECT4_SUB
+  QSL_INVOICE_FROOSH_GROUP
+  C_TARAZ_ANBAR_SUB
+  TARAZ4_TAFZ2
+  QSL_FROOSH_DTL_mba
+  TARAZ_TAFZ4_DIRECT3_SUB
+  Q_FROOSH_DAYLY_HED2_MBA
+  TARAZ4_TAFZ_DP
+  Q_BEDEHBESTANHA_SUB
+  CHEK_HES
+  Q_BEDEHBESTANHA_2
+  KART_KALA
+  QSL_FROOSH_DTL_BZ
+  AK_MOGO_AVL_KOL_SUB
+  DRIVER_HAVALAH
+  AK_MOGO_AVL_KOL
+  Q_FROOSH_DAYLY_HED2
+  AKMOGO_AVL_KOL
+  TARAZ4_TAFZ
+  AK_MOGO_FR_SUB
+  AK_MOGO_FR
+  GUSER_FACTDTL_PERDEPART_SUB
+  QSL_FROOSH_DTL
+  AKMOGUDI_KOL_ANBAR_ONE
+  GUSER_FACT_PERDEPART_SUB3
+  Q_FROOSH_DAYLY_HED4
+  FROOSH_MP
+  GUSER_FACT_PERDEPART_SUB
+  Q_LIST_PISHSH_DAYLY_DTL
+  mogudi_tafkik
+  Q_FROOSH_DAYLY_HED3_mba2
+  Q_FROOSH_DAYLY_FCT_USER
+  Q_FROOSH_DAYLY
+  QSL_FASIL_BARGASHTI_kh
+  Q_FROOSH_DAYLY_CHEK_USER
+  FROOSH_COUNTALL_CITY_N_FANI
+  Q_LIST_FROOSH_DAYLY_DTL
+  Q_FOROSH_DAYLY_HED_USER
+  mogudi
+  HAVALAH_KO
+  Q_FROOSH_DAYLY_USER
+  Q_FROOSH_CUSTOMER_mba2
+  Q_FROOSH_DAYLY_HED3_mba
+  BEDEH_USER
+  FROOSH_COUNTALL
+  Q_FISH_MAND_SUB12
+  LFKBF
+  CHEK_W_PASS
+  Q_FISH_MAND_SUB2
+  QSL_FASIL_BARGASHTI
+  AMAR_TOLID_FAREE
+  customers_whodid_purchase
+  Q_FROOSH_CUSTOMER_mba
+  Q_FROOSH_DAYLY_FCT4
+  Q_LIST_FROOSH_DAYLY_CHK
+  ASNAD_DARYAFTY
+  Q_FISH_MAND_VAM
+  AI
+  listsalary_end_main
+  FROOSH_COUNT_baz
+  Q_FROOSH_DAYLY_FCT2
+  AK_RESERVED
+  Q_LIST_FROOSH_DAYLY
+  LASTHOKM
+  Q_FROOSH_DAYLY_FCT1
+  KA_KH
+  Q_FROOSH_DAYLY1
+  LIST_SALARY_END
+  HESAB_ANBAR
+  LIST_SALARY22_ALL
+  qsl_fasli_bargash_main_KH
+  FROOSH_COUNT
+  qsl_fasli_bargash_main
+  CHEK_VPLS
+  Q_LIST_FROOSH_DAILY2
+  AMAR_TOLID
+  Q_FROOSH_DAYLY_FCT
+  PGET_HED_ASHKHAS
+  GUSER_JAM_CHEKS_PERDEPART_SUB
+  Q_GARDESH_KHFR_MAND_SUB
+  Q_FROOSH_DAYLY_CHEK4
+  AK_BARGIRI_NASHODAH
+  Q_GARDESH_KHFR_MAND
+  Q_GARDESH_KHFR_DAFTAR_SUB
+  Q_FROOSH_DAYLY4
+  Q_MAND_SALARY_SUB
+  Q_DAFTAR_TAFMAND_2_2
+  mogudi_1
+  Q_MAND_SALARY
+  mogudi_1_1
+  Q_FROOSH_DAYLY_CHEK2
+  Qsl_fasli_bargashti_head_kh
+  AVRAGE_VORUD_SUB
+  Q_KHARED_DAYLY_HED3
+  mogudi_2
+  AVRAGE_VORUD
+  mogudi_3
+  MASRAFST
+  Q_DAFTAR_TAFZIL2
+  LIST_SALARY_END_10
+  LIST_SALARY22_10
+  C_TARAZ_ANBAR_KHAS
+  AMAR_MASRAF_SUB
+  Q_FROOSH_DAYLY_CHEK1
+  Qsl_fasli_bargashti_head
+  Q_GARDESH_KHFR_DAFTAR_SUB1
+  mogudi_2_2
+  C_TARAZ_ANBAR_MAIN
+  Q_GARDESH_KHFR_DAFTAR1
+  Q_KHARED_DAYLY_HED
+  Q_MAND_SALARY_SUB2
+  Q_DAFTAR_MOIN
+  CHKE_VLISTALL
+  Q_MAND_SALARY2
+  DAFTAR_ROZZNAMEH
+  ASNAD_DARYAFTY2
+  amar_froosh_mosh
+  LIST_SALARY22
+  Q_DAFTAR_KOL1
+  Q_GARDESH_KHFR_DAFTAR
+  Q_FROOSH_DAYLY_CHEK
+  JAMFACTVISIT
+  nemudar_sub
+  VISITOR_DTL_KALA_mar
+  Q_DAFTAR_TAFMAND
+  CHEK_WITHOUT_SANAD2
+  ASNAD_DARYAFTY_BES2
+  QDAFTARTAFZIL
+  Q_TAFKIK_MOIN_MOIN
+  CHEK_W_PASSPW2
+  R_LIST_MEHMAN_KHORUG
+  CHEK_USER
+  VISITOR_DTL_KALA
+  q_khareed_dayly_hed
+  NEMUDAR
+  CHEK_WITHOUT_SANAD
+  ASNAD_DARYAFTY_BES
+  KHAREED_MP
+  AMAR_MASRAF
+  CHEK_W_PASSPW
+  Q_CHEK_FROOSH_DAYLY
+  MANDGHEMAT
+  RHEAD_CHEK_KHARED
+  VISITORS_KOL
+  RHEAD_CHEK_KHARED2
+  VISITOR_DTL_GRP
+  R_LIST_MEHMAN
+  SFRAV_MOG
+  AI2
+  CHEK_W_PASSP2
+  QMARKAZ_H
+  MANDFROOSH
+  VISITOR_DTL_KALA_mara
+  KHAREED_COUNTALL
+  SELECT_HOKM
+  AKMOGUDI_KOL_ANBAR
+  CHEK_W_PASSP
+  sudsury2
+  MOGHA_ANBAR
+  skh_mog
+  FINDSFROSH
+  INVO_LST_TAKHFIFAT3
+  AVREG_MOG_FR
+  sfr_mog
+  Q_BEDEHBESTANHA_FULL
+  AVREG_MOG_FR_SUB
+  RHEAD_CHEK_FROOSH
+  AVRAGE_MOG
+  RHEAD_CHEK_FROOSH2
+  HEAD_LST_CHK_USER3
+  HEAD_LST_FROOSH_USER3
+  QDAFTARTAFZIL2
+  SALARY_BEST2
+  GOZARESH_FROOSH_ROZANEH3
+  ASNAD_WITHOUT_CHEK2
+  TARAZ_TAFZ4_DIRECT2_SUB
+  Q_KHARED_DAYLY_FACT
+  Q_FR_KH_ANBAR
+  INVO_LST_TAKHFIFAT2
+  Q_LIST_DAYLY_1
+  ROOM_AMAR_SUB2
+  MOG_EN
+  ASNAD_WITHOUT_CHEK
+  MOG_KH_A
+  SALARY_BEDS2
+  TARAZ_TAFZ4_DIRECT_SUB
+  SALARY_BEST
+  Q_LIST_DALY
+  MOG_FR_A_sub
+  HEAD_LST_CHK_USER
+  MOG_FR_A
+  HEAD_LST_FROOSH_USER2
+  TARAZ_TAFZ_4SUB
+  Q_KHARED_DAYLY_CHEK
+  TARAZ_ANBAR_KHAS_GRP
+  GOZARESH_FROOSH_ROZANAH2
+  Q_FISH_MAND_SUB1
+  MAND_MOJT
+  INVO_LST_TAKHFIFAT
+  Q_FISH_MAND_SUB
+  SALARY_BEDS
+  q_khreed_dayly
+  SALARY_BED2
+  Q_KHARED_DTL_BZ
+  PGET_HED_REP_ASHKHAS1
+  TARAZ_ANBAR_KHAS
+  CHKE_VLIST1
+  HEAD_LST_FROOSH_USER
+  TARAZ_SUB
+  GOZARESH_FROOSH_ROZANAH
+  lastavrage
+  HIDVISIT
+  Umonth
+  UIIF
+  Uyear
+  Uday
+  KABISEH
+  BLOCKHES
+  MAHDAYS
+  UDATEADD
+  Getusersemat
+  lastKH
+  GETUSERHES
+  DECODEPS
+  DECODEUN
+  GETHESNAME
+  ExtractAccountPattern
+  GETKOL
+  GETMOIN
+  GETTAF2
+  GETTAF3
+  Udatediff
+  GETTAF4
+  GETTAF
+  fn_JalaliIntToGregorianDate
+  FN_PAY2_MONTH
+  Fixp
+  CODESAL
+  GETUSERCOD
+  FISHSTR
+  FN_PAY2_CALC_TAX
+  MAKEMODTL
+  SplitInts
+  ufn_SplitNVarchar
+[305] functions processed.
+-------------------------------------
+Exporting views...            
+  frinv122
+  Q_HEAD_MANF
+  frinv_New108
+  QSL_ORDER_LIST
+  KA_FSK
+  frsnd108
+  BEDNES
+  frinv108
+  ADAMTARAZ
+  HEAD_BACK
+  CHEKS_NOPASS_PERS
+  GHAEYMAT_TAMAM_SUB
+  GHEYMAT_TAMAM
+  CHKE_VLIST_1
+  eventsu171
+  frsnd173
+  eventsu87
+  eventsu115
+  eventsu114
+  RASID_ANBAR
+  MEGH_RAIS
+  KA_EN
+  MEGH_DAR
+  PRINT_FORMULA
+  QSL_BARGAH_ENTEGHAL
+  frsnd_New167
+  Zmavadmasrafe7
+  frinv_New167
+  frinv173
+  zanbekht4
+  frsnd167
+  sav_mog
+  ANBARGRD_SUB3
+  frinv167
+  QPROGPASS2
+  frsnd_New143
+  View_4
+  QSL_RASID_MOSTAGHIM_LARGE
+  zgheymatmiangin7
+  frinv_New143
+  Zmavadmasrafe4
+  serch_brf
+  frsnd143
+  zanbekht
+  SEARCH_KALA
+  frinv143
+  INVO_LSTF121
+  HEAD_CHEK_KHAREDG
+  QPROGPAS2
+  LASTPRICE_SUB
+  eventsu167
+  LASTPRICE
+  sum_sub2
+  ANBARGRD_SUB2
+  zdarsadenheraf4
+  frsnd_New125
+  SEARCH_ON SANAD
+  last_generate
+  INVO_LSTF12
+  MAXNS
+  frinv_New125
+  zgheymatmiangin10
+  frsnd125
+  HEAD_CHEK_FROOSHG
+  QSL_HAVALAH_ANBAR_VROUD
+  frinv125
+  eventsu150
+  FREE_SANAD
+  INVO_LST_TAKH
+  frsnd_New132
+  zgheymatmiangin4
+  frinv_New132
+  Q_BEDEHBESTANHA
+  ANBARGRD_SUB1
+  TOHESAB
+  frsnd132
+  Q_BEDEHBESTANH_MAIN
+  HEAD_LAST_RASID12
+  frsnd_New86
+  frinv132
+  frinv_New86
+  frsnd_New113
+  zanbekht10
+  frsnd86
+  frinv_New113
+  eventsu113
+  frinv86
+  CHEK_PLIST
+  frsnd113
+  frsnd_New152
+  SALSUSER
+  frsnd
+  CT1
+  frinv113
+  frsnd_New144
+  mandfactormr
+  frinv_New152
+  frsnd_New174
+  frinv_New144
+  grpinvoice
+  frsnd152
+  eventsu78
+  frinv_New174
+  AGHLAM
+  CHEK_MOGUD
+  frsnd144
+  frinv152
+  frsnd174
+  HEAD_LAST_HAV13
+  frinv144
+  frinv174
+  mandfactormr_visit
+  eventsu108
+  QSL_INVOICE_FROOSH_G
+  SALS
+  zanbekht8
+  Zmavadmasrafe10
+  frsnd_New171
+  MANF_JAMK
+  frsnd_New139
+  eventscount
+  frinv_New171
+  zchrbi
+  frinv_New139
+  APMOGO_FR
+  frsnd171
+  frsnd139
+  MOGH_SUB
+  frinv171
+  eventsu151
+  frsnd128
+  afrad_ozv
+  frinv139
+  chart
+  HEAD_CHEK_FROOSH2
+  zanbekht1
+  QSL_INVOICE_FROOSH_BACK
+  QSL_F_HEAD_LST
+  DEAD_WITHSUM
+  Zmavadmasrafe1
+  eventsu102
+  list_porsant_factors
+  zdarsadenheraf1
+  zgheymatmiangin1
+  frsnd_New4
+  Zmavadmasrafe8
+  QSL_INVOICE_FROOSH
+  frinv_New4
+  zdarsadenheraf10
+  FACTOREFROOSH
+  frsnd4
+  MOGO_AVL_KOL_SUB
+  frinv128
+  frinv4
+  MOGO_AVL_KOL
+  CHEK_BARGASHTI
+  DEED_DTL_REC
+  Q_STUF_DEF
+  MOG_FR_SUB
+  zgheymatmiangin12
+  QSL_HAVLAH_ANBAR
+  task_count_days
+  mog_fr
+  HEAD_LST_KBKazad
+  MOGUDI_KOL_ANBARHA_SUB
+  PERSON
+  AKHARINKH
+  QSL_HAVALEH_KHUROG
+  DEAD_HEAD_PRINT
+  zdarsadenheraf8
+  B_MOG_FSK
+  zanbekh
+  frsnd_New102
+  QSL_HAVALEH_EXIT
+  AKHARINFR
+  MOGUDI_KOL_ANBARHA
+  jamchkfact
+  frinv_New102
+  head_manf_dtl
+  zzz_list_mavad_dar_folmul
+  zgheymatmiangin11
+  frsnd102
+  zgheymatmiangin8
+  HEAD_LST_KBK
+  zanbekht5
+  frinv102
+  CHECK_BOK
+  eventsu125
+  QSL_HAVALEH_ENTER_MABL
+  B_MOG_FR_sub
+  QSL_F_INVO_LST
+  b_mog_fr
+  zenheraf
+  frsnd114
+  QSL_HAVALEH_ENTER
+  BACK_HEAD
+  B_MOG_KOL_SUB
+  PRGANBARGRP
+  frinv114
+  PGET_HED_REP
+  B_MOG_AVL_KOL_sub
+  DEED_HEAD_Q
+  B_MOG_AVL_KOL
+  Zmavadmasrafe5
+  QSL_KH_INVO_LST
+  frsnd151
+  B_MOG_ANBARHA
+  eventsu73
+  eventsu86
+  HED_SODUR
+  zdastmozd
+  frinv151
+  prganbar
+  frsnd_New112
+  DEAD_WITH_GRP1
+  HEAD_LST_FBK
+  zdarsadenheraf5
+  frinv_New112
+  TMPAV101
+  BED-BES
+  CUST_HESAB
+  QSL_INVOICE_PISHFROOSH
+  frsnd112
+  APMOGO_AV_KOL
+  frinv
+  frinv112
+  MODIRIYAT
+  frsnd1
+  INVOLSTCOUNT
+  QSL_KH_HEAD_LST
+  eventsu142
+  Q_LIST_FCT2
+  DEAD_WITH_GRP
+  AMAR_KOL_TOLID_KALA
+  QSL_INVOICE_KHAREED
+  eventsu143
+  zgheymatmiangin5
+  CHREC_LSP_Q
+  eventsu173
+  HEAD_LST_BRFR
+  zanbekht9
+  GRADEFORMATVIEW
+  frinv1
+  QSL_INVOICE_KHADAMAT
+  frsnd_New177
+  roundo
+  frsnd100
+  mabstandard
+  pish_view
+  frinv_New177
+  zanbekh6
+  frsnd142
+  eventsu152
+  frsnd177
+  GRADEVIEW
+  search_kala1
+  HAVALE
+  frinv177
+  eventsu145
+  Zmavadmasrafe6
+  frinv100
+  frsnd_New78
+  AMAR_KOL_FROOSH
+  frinv142
+  frinv_New78
+  Zmavadmasrafe9
+  QSL_INVOICE_KH_BACK_azad
+  frsnd78
+  CHRE_LIST_Q
+  v_reserved_daily
+  frinv78
+  CUST_HESAB_DTL
+  JAMFACTPRS
+  zanbekh5
+  VAH_SUB
+  zanbekht3
+  zekhtanb9
+  VAHEDS
+  zgheymatmiangin6
+  RASID_KHARID
+  QSL_INVOICE_KH_BACK
+  zdarsadenheraf9
+  eventsu42
+  Zmavadmasrafe3
+  CHKE_DLIST
+  daftar_kol_kh
+  CUST_HESAB_DTL_EXTENDED
+  eventsu122
+  zgheymatmiangin9
+  eventsu105
+  v_bg_daily
+  zdarsadenheraf3
+  VISITOR_DTLR
+  tablesize
+  FNESBAT
+  search_kalv
+  frsnd_New42
+  VISITOR_DTLO
+  frinv_New42
+  HAVALAH_FROOSH
+  AMAR_FROOSH_DAYLY
+  frsnd42
+  frinv42
+  ztolidformol
+  zgheymatmiangin3
+  search_kalM
+  V_PAY2_LOAN_BALANCE
+  hes_hes_hes
+  eventsu100
+  hamrah
+  APMOGO_AVL_KOL_SUB
+  View_1
+  APMOGO_AV_SUB
+  frsnd145
+  B_MOG_KH
+  nabz_mali7
+  stuf_def_nfani
+  qsl_invoice_froosh_y
+  manda_sarmayah
+  nabz_mali30
+  kalas_sub
+  frsnd_New116
+  frinv145
+  nabz_mali90
+  KALAS
+  frinv_New116
+  eventsu141
+  frsnd_New150
+  Zmavadmasrafe12
+  frsnd116
+  frinv_New150
+  frinv116
+  frsnd150
+  QPASED3
+  frinv150
+  ROOM SUB
+  MOG_KH_sub
+  eventsu139
+  eventsu118
+  MOG_KH
+  sudsury
+  MOG_FSK
+  TARAZ_ANBAR_KOL
+  CHK_SODUR
+  PGET_HEADQ
+  frsnd_New105
+  frinv_New105
+  KH_FR
+  frsnd105
+  View_2
+  Zmavadmasrafe11
+  frinv105
+  MOG_FSK_A
+  EVENTS_USER_DAYS
+  frsnd_New73
+  frsnd_New118
+  CHEKS_NOPASS_PERS_SUB
+  sanaddar_sub
+  frsnd_New114
+  frinv_New73
+  frinv_New118
+  eventsu128
+  frsnd73
+  frsnd118
+  zanbekht2
+  frsnd122
+  ROOM_AMAR_SUB
+  frinv73
+  frinv118
+  Zmavadmasrafe2
+  MAMAR_KOL_TOLID_KALA
+  zdarsadenheraf2
+  V_PAY2_BIMEH
+  zgheymatmiangin2
+  HEAD_BACK_ANBAR
+  aza_bedoon_sarmayah
+  eventsu132
+  sanadpar_sub
+  frinv_New114
+  eventsu4
+  eventsu116
+  eventsu112
+  frsnd_New108
+[383] views processed.
+-------------------------------------
+Exporting procedures...       
+  BAZMAR
+  BAZMANDO
+  SP_PAY2_CALC_RUN
+  DEED_DTL_P1
+  SP_PAY2_GEN_DEED
+  SP_PAY2_CALC_SETTLE
+  TARAZ_4
+  SP_PAY2_GEN_DEED_SETTLE
+  SP_PAY2_CLOSE_PERIOD
+  SP_PAY2_REVERT_RUN
+  DEED_DTL_P
+  SP_PAY2_FINALIZE_RUN
+  SP_PAY2_FINALIZE_SETTLE
+  SP_PAY2_LOAN_GEN_SCHED
+  SP_PAY2_CARRYOVER_LEAVE
+  Q_DAFTAR_TAFZIL22
+  SP_PAY2_NEW_PERIOD
+  Q_DAFTAR_TAFZIL_S
+  TARAZ4_TAFZ2_DIRECT
+  MARKAZ
+  GENERAT_ANBARGARDANY
+  TARAZ4_TAFZ3_DIRECT
+  TARAZ4_TAFZ_DIRECT
+  DEAD_HEAD_PRINT3
+  TARAZ4_MOIN
+  usp_Audit_GenerateTrigger
+  BAZSAZIF
+  MODTL_INSERT
+  PGET_TSANAD
+  ELAMV_DAD
+  APMOGUDI_KOL_ANBAR
+  ivolst_WITH_DEP
+  GET_NAME_HES
+  UT_CopyData
+  CODEPAGE
+  sp_Mogudi_Tafkik_Optimized
+  UNION_ALL
+  CREATECROSS
+  sp_UpdateInvoicePricingAndDiscount
+  sp_AMAR_MASRAF
+  UPDATETICKS
+  AMAR_FROOSH_DAYLY_MAIN
+  sp_ManageInvoiceRewards
+  CalculateVisitorPorsant
+  SP_PAY2_GET_ADVANCES
+  codepage2
+  usp_TafzilLedger
+  TARAZ4_TAFZ4_DIRECT
+  sp_CheckReservationTimeout
+  usp_KART_ANBAR_TOTAL_CLEAN_V2
+  BAZSAZIA
+  PGET_FSANAD
+  BAZSAZI
+  usp_KART_ANBAR_TOTAL_CLEAN_V3
+[54] procedures processed.
+-------------------------------------
+Exporting sql tables...       
+  PM_ASSETS
+  tblAmakenXML
+  BEDBESMAH108
+  PRICE_LIST
+  CHREC_HES
+  DAFT_ASN
+  BEDBESMAH132
+  MOIN128
+  BEDBESMAH133
+  RAAS
+  AuditLogSTUF_FSK
+  tblAmaken
+  FPFORMAT
+  MOIN108
+  CHRE_LSPH
+  DARSAD_TAKHFIF
+  BEDBESMAH125
+  BEDBESMAH142
+  tbl_BarCodes
+  MOIN113
+  MOIN142
+  BEDBESMAH144
+  TCOD_ANBAR_KIND
+  InvoiceRewards
+  COPMANES
+  KIND_PAPER
+  DEFAULTDEP
+  BEDBESMAH145
+  PM_EM_FAILURE_EVENTS
+  telef
+  REMAINDER
+  RewardRules
+  GRADE_CUST_TAB
+  CRMEVENTS
+  MOIN145
+  TCOD_CITY
+  DEFAULT
+  BEDBESMAH152
+  CHECK_BOOK
+  temp_us
+  Relations
+  MOIN150_2
+  TCODE_MENUITEM
+  DSKKAR00
+  GRADE_CUST_GRP
+  GHEYMAT
+  CUSTKIND
+  COD_HESAB
+  tmpent
+  BEDBESMAH78
+  IVO_EXTENDED
+  Religion
+  MOIN150_3
+  BLOCKNON_HES
+  TDETA_HES2
+  MOIN167
+  DSKWOR00
+  PM_EM_FAILURE
+  PAY2_ITEM_TEMPLATE
+  SALARY_BEDTT
+  CUSTKIND_TF
+  MOIN151
+  user_print
+  ROOM
+  DEED_HED
+  BLOCK_CUSTOMER
+  MOIN151_2
+  ENHESAR_KALA
+  PM_JOBTITLE
+  GSCADTL
+  SALARY_BESTT
+  TDETA_HES3
+  TAKHFIF_DEF
+  MOIN151_3
+  PAY2_ITEM_TMPL_LINE
+  PM_RUMAINTE
+  BLOCK_HES
+  TR_PGET_HED
+  MEHMAN
+  DEED_DTL
+  MOIN152_2
+  TDETA_HES4
+  EvaporationReports
+  TR_PGET_LST
+  CHKREC_H
+  BUGET_DEFAULT
+  GSCALE
+  MOIN152_3
+  MOIN125
+  PM_JOB
+  PAY2_DECREE
+  TR_TAKHFIF_APLAY
+  FormResponses
+  KAR_HEAD
+  TOZIE
+  PAY_GETP
+  TR_OTHER_DTL
+  MOIN167_2
+  GRADE_GRP_FT
+  HEAD_LST
+  MOIN132
+  KAR_BARG
+  TR_VISITOR_DTL
+  MO_DTL
+  TOZIE_SUB
+  GENERAL_OPTIONS
+  PM_MVAD
+  MOIN173
+  CHRE_LSP
+  PAY2_DECREE_LINE
+  USEROPTION
+  MOIN174
+  GRADE_TAB_FT
+  MOIN1
+  MOIN152
+  SAZMAN
+  SALARY_LISTKOL
+  MOGHHEAD
+  MOIN144
+  Visit_route
+  CHREC_HP
+  GPSLOCATION
+  PRGHEAD
+  MOIN2
+  PAY2_OVERRIDE
+  GRADE_RANGE
+  PAY_GETD
+  HAVE
+  MOIN143
+  PGHARAR
+  PRICE_ELAMIE_DTL
+  Visit_route_dtl
+  HEAD_LST_EXTENDED
+  SERIALS
+  MOIN73_2
+  MOIN171
+  PAY2_PERIOD
+  CHRE_LST
+  TR_PAY_GETP
+  GRADE_SHART
+  MOIN73_3
+  visitgol_head_grp
+  PRICE_GRP
+  BUGET_MAIN
+  PMORAKH
+  TCOD_BANKS
+  USER_AUDIT_LOG
+  MOIN86
+  PRICE_ELAMIETF_DTL
+  SEX
+  MOINA114
+  visitgol_dtl_grp
+  MOIN4
+  GRADE_SHART_FUNC
+  SHARH
+  TDETA_HES
+  MOINA122
+  USER_PERSONEL_ORDER
+  PAY2_ATTENDANCE
+  TR_PAY_GETD
+  MOINA150
+  PRICE_ELAMIETF_EXCEPTION
+  GRADE_FORMAT
+  SIGN_TRAN
+  UserState
+  STUF_STK
+  MOINA152
+  visitgol_head
+  SMS_FORMATS
+  TCOD_Countries
+  MOINA73
+  VISITORS_PORSANT
+  DEPART
+  MyTable_Audit
+  visitgol_dtl
+  SMS_SENDS
+  ENHESAR_MOSHTARI
+  PROGPAS1
+  TAKHPERS
+  PRICE_ELAMIE
+  amval
+  SQLSTATE
+  TCOD_OSTAN
+  MOIN102
+  PERSONEL
+  NOISREV
+  VISITOR_DTL
+  MODULE_D
+  SSM_CUST_ANALYS
+  PRICE_ELAMIETF
+  TCOD_HESKIND
+  VISITORS_DAY
+  MORINFO
+  desks
+  MON
+  INSERTED
+  BugReports
+  TCOD_HESVAZ
+  OBJECT
+  TOTA_HES
+  PSANDUGH_KARKONAN
+  VISITORS_DAY_DTL
+  MORINFO_SUB
+  ONE_SALARY
+  INVO_LST_EXTENDED
+  DEAD_DTL_PRINT
+  TCOD_HESGROUP
+  MOIN112
+  entebagh
+  PRICE_PAYNO
+  BEDBESMAH150
+  WORKHEAD
+  INVO_LST_TMP
+  PKINDCODING
+  ORDR_HED
+  font
+  AZAE
+  WORKING
+  FORMAT
+  PAY2_ATT_VALUE
+  SSM_CUST_RASPAY
+  DETA_HES
+  PTAMIRAT
+  SHIFT
+  Travelreason
+  FORMAT_HESAB
+  invo_edam
+  PAY2_CONFIG
+  Job
+  MOIN139
+  ORDR_LST
+  PAY2_LEAVE
+  SUDDAYT
+  TCOD_VAHEDS
+  Locations
+  TR_MEHMAN
+  PTVAZ
+  PAY2_CONFIG_LOG
+  MEHMAN_CHARJMAIN
+  MOIN177
+  OTHER_DTL
+  kart_tmp
+  TCOD_MARKAZHAZ
+  TALARS
+  TR_INVO_LST
+  DTL_MANF
+  PVAM
+  BugReportComments
+  TR_HEAD_MANF
+  MEHMAN_CHARJ
+  BEDBESMAH73
+  logetebar
+  BEDBESMAH105
+  PAY2_TAX_BRACKET
+  head_lst_log
+  TAXDTL
+  MOIN78
+  TR_HEAD_LST
+  PGET_HED
+  mogdt114
+  PAY2_LOAN
+  OPANBACCESS
+  TR_EVENTS
+  MEHMAN_CHARJ_KOL
+  OTHER_DTL_SUB
+  TCOD_ARZ
+  PAY2_WORKSHOP
+  PVAM_BAZ
+  TR_DETA_HES
+  STUFFSK
+  OSTAN_RPT
+  HEAD_MANF
+  mogdt
+  TCOD_MAP_GRP
+  TR_DEED_HED
+  SALA_DTL
+  OperatorReportsV2
+  TR_DEED_DTL
+  PAY2_WORKSHOP_ACC
+  PGET_LST
+  pagen
+  PAY2_LOAN_SCHED
+  VISITORS_PORSANT_KALA
+  TCOD_VAHED_EXTENDED
+  PLIST_MALIAT
+  TR_CUSTKIND_TF
+  MESAGEP
+  PAY2_JOB
+  PAY_GETD_LOG
+  TR_CRMEVENTS
+  MOIN42
+  TCOD_ZARMALIAT
+  SAL_CHEK
+  papersize
+  CROSSINVO
+  INVO_LST
+  TR_COPMANES
+  ANBGRD_HEAD
+  TCOD_DPS
+  PAY2_ADVANCE_EXCL
+  PAZIRESH
+  MOIN100
+  payorder
+  PAY2_EMPLOYEE
+  TR_CHREC_LSP
+  HEAD_LST_TMP_WPF
+  SAZMAN_Log
+  SUD
+  TCOD_DPSKIND
+  TR_CHREC_HP
+  TCOD_ANBAR
+  CHAPNUM
+  MOIN105_2
+  TARAZHES
+  TR_ANBGRD_LST
+  TCODE_MADRAK
+  PAY2_RUN
+  AuditTrail
+  CHARTSAZMANI
+  TR_ANBGRD_HEAD
+  ANBGRD_LST
+  MOIN108_2
+  TFORMS
+  ADEED_DTL
+  PENDJOB
+  TR_AMVAL
+  MOIN108_3
+  Countries
+  PHOKM
+  MOIN116
+  SALARY_EYDY
+  MOIN150
+  CustomerComplaints
+  TAGCOD
+  MOIN112_2
+  TCOD_STUFGROUP
+  ADEED_HEAD
+  BEDBESMAH167
+  PAY2_RUN_LINE
+  TCOD_MAP
+  TASKS
+  STUF_DEF
+  PAY2_CONTRACT
+  MOIN114
+  AI_DAFTARMOIN
+  Notes
+  MOIN114_2
+  SURAT_MALI_HEAD
+  SIGN
+  STUF_FSK
+  MOIN105
+  sala2
+  EVENTS
+  salaa
+  AI_DAFTAR
+  MOIN116_2
+  SURAT_MALI
+  search
+  PAY2_LEAVE_BAL
+  PAY2_RUN_DETAIL
+  sudmah
+  AMALIAT
+  MOIN122
+  MOIN73
+  MOIN118
+  PM_MVT
+  TAKHFIF_APLAY
+  FPFILEDS
+  MOIN122_2
+  STUF_FSK_Audit
+  PM_LOCATION
+  tab_job
+  BEDBESMAH102
+  PAY2_SETTLEMENT
+  MOIN122_3
+  TAKHFIF_DEF_DTL
+  PAY2_ITEM_DEF
+  FPFORMATFILELD
+  INVO_LST_TMP_WPF
+[379] sql tables processed.
+-------------------------------------
+Exporting triggers...         
+  trg_STUF_FSK_Audit
+  trg_Audit_YourMainTable
+  trg_AuditTrail_ReadOnly
+  TR_PAY2_CONFIG_LOG
+  TR_SAZMAN_Update_Log
+  TR_SAZMAN_Insert_Log
+  TR_SAZMAN_Delete_Log
+  ali
+[8] triggers processed.
+-------------------------------------
+Exporting forms...            
+  SMS_FORMATS_KHB
+    Sanitized in 0.003 seconds.
+  HEAD_LST_FROOSH_SND
+    Sanitized in 0.020 seconds.
+  AMAR_TOLID
+    Sanitized in 0.004 seconds.
+  CHECK_BOOK
+    Sanitized in 0.003 seconds.
+  LOK
+    Sanitized in 0.002 seconds.
+  ROOM
+    Sanitized in 0.005 seconds.
+  zoom
+    Sanitized in 0.001 seconds.
+  SELECT_HOKM
+    Sanitized in 0.007 seconds.
+  amar_frosh90
+    Sanitized in 0.003 seconds.
+  CHEK_VLISTALL
+    Sanitized in 0.014 seconds.
+  BEDEHBESTANMOIN
+    Sanitized in 0.006 seconds.
+  color
+    Sanitized in 0.021 seconds.
+  HEAD_LST_FROOSH_BACKO2
+    Sanitized in 0.018 seconds.
+  PTAMIR
+    Sanitized in 0.023 seconds.
+  Baseknow
+    Sanitized in 0.044 seconds.
+  KART_KALA
+    Sanitized in 0.005 seconds.
+  VISTEDAD_KALA
+    Sanitized in 0.002 seconds.
+  BEDEHKARAN_BESTANKARAN_MAHDOD
+    Sanitized in 0.010 seconds.
+  LIST_KALA
+    Sanitized in 0.006 seconds.
+  PENDJOB
+    Sanitized in 0.011 seconds.
+  BEHESABDIALOG
+    Sanitized in 0.003 seconds.
+  MSGDIALOG
+    Sanitized in 0.002 seconds.
+  SERCHKJOB
+    Sanitized in 0.001 seconds.
+  grade_havala
+    Sanitized in 0.004 seconds.
+  HEAD_LST_RASID
+    Sanitized in 0.018 seconds.
+  INVO_LST_HAVL_EXIT_SND
+    Sanitized in 0.009 seconds.
+  TCOD_MAPF
+    Sanitized in 0.002 seconds.
+  TR_HEAD_LST_RASID
+    Sanitized in 0.010 seconds.
+  CUSTKIND
+    Sanitized in 0.002 seconds.
+  TARFAND
+    Sanitized in 0.001 seconds.
+  hes_haz_tolid
+    Sanitized in 0.002 seconds.
+  hes_phaz_tolid
+    Sanitized in 0.003 seconds.
+  recording
+    Sanitized in 0.000 seconds.
+  JAMECOL
+    Sanitized in 0.002 seconds.
+  TCODE_CODING
+    Sanitized in 0.002 seconds.
+  WORKING
+    Sanitized in 0.012 seconds.
+  F_MENU_BIM
+    Sanitized in 0.006 seconds.
+  RACKROOM
+    Sanitized in 0.210 seconds.
+  CHEK_MON
+    Sanitized in 0.007 seconds.
+  CHEK_SERIAL_CONTROL
+    Sanitized in 0.004 seconds.
+  CREATEPERMISION
+    Sanitized in 0.001 seconds.
+  F_MENU_DATE_visit
+    Sanitized in 0.015 seconds.
+  Q_LIST_DALY
+    Sanitized in 0.020 seconds.
+  ZASESABBEESAB
+    Sanitized in 0.010 seconds.
+  emzab
+    Sanitized in 0.001 seconds.
+  HEAD_LST_KH_BACK_azad
+    Sanitized in 0.027 seconds.
+  AZAE
+    Sanitized in 0.006 seconds.
+  DEED_HEAD
+    Sanitized in 0.013 seconds.
+  INVO_LST_KHAD
+    Sanitized in 0.011 seconds.
+  TR_INVO_LST_KHAD
+    Sanitized in 0.009 seconds.
+  F_MENU_SERILA
+    Sanitized in 0.002 seconds.
+  DELETESND
+    Sanitized in 0.002 seconds.
+  ANBGRD_HEAD
+    Sanitized in 0.009 seconds.
+  KAR_HEAD
+    Sanitized in 0.010 seconds.
+  TAKHFIF_APLAY_SUB_khad
+    Sanitized in 0.002 seconds.
+  TR_DEED_HEAD
+    Sanitized in 0.009 seconds.
+  VISITORS_PORSANT_HEAD
+    Sanitized in 0.005 seconds.
+  F_MENU_ASNAD
+    Sanitized in 0.002 seconds.
+  AMAR_FROOSH_KOL
+    Sanitized in 0.003 seconds.
+  AMAR_KOL
+    Sanitized in 0.003 seconds.
+  CHKREC_H
+    Sanitized in 0.005 seconds.
+  hesheshes_mablk
+    Sanitized in 0.004 seconds.
+  TARAZ_ANBAR_KOL
+    Sanitized in 0.005 seconds.
+  CHEKCONTROL
+    Sanitized in 0.002 seconds.
+  F_ersal
+    Sanitized in 0.002 seconds.
+  MEHMAN
+    Sanitized in 0.012 seconds.
+  f10
+    Sanitized in 0.005 seconds.
+  f11
+    Sanitized in 0.004 seconds.
+  khareed_mp1
+    Sanitized in 0.005 seconds.
+  SAZMAN
+    Sanitized in 0.064 seconds.
+  f12
+    Sanitized in 0.003 seconds.
+  khareed_mp2
+    Sanitized in 0.005 seconds.
+  f13
+    Sanitized in 0.003 seconds.
+  khareed_mp3
+    Sanitized in 0.005 seconds.
+  SERCHKALF12
+    Sanitized in 0.003 seconds.
+  BAZ_ANBAR
+    Sanitized in 0.003 seconds.
+  f14
+    Sanitized in 0.005 seconds.
+  hes1hes2moghyerat
+    Sanitized in 0.002 seconds.
+  INVO_LST_BACK_SUBO2
+    Sanitized in 0.009 seconds.
+  khareed_mp4
+    Sanitized in 0.006 seconds.
+  SARBAR
+    Sanitized in 0.001 seconds.
+  SMS_FORMATS_SDAR
+    Sanitized in 0.002 seconds.
+  SMS_FORMATS_SPAR
+    Sanitized in 0.002 seconds.
+  TCOD_ANBAR
+    Sanitized in 0.003 seconds.
+  C_TARAZ_ANBAR_KHAS
+    Sanitized in 0.016 seconds.
+  f15
+    Sanitized in 0.003 seconds.
+  khareed_mp5
+    Sanitized in 0.006 seconds.
+  MOGUDI_ANBAR_KHAS
+    Sanitized in 0.004 seconds.
+  RAAS
+    Sanitized in 0.004 seconds.
+  TARAZ_ANBAR_KHAS
+    Sanitized in 0.009 seconds.
+  khareed_mp6
+    Sanitized in 0.007 seconds.
+  khareed_mp7
+    Sanitized in 0.008 seconds.
+  F_MENU_ANBAR
+    Sanitized in 0.004 seconds.
+  khareed_mp8
+    Sanitized in 0.009 seconds.
+  TARAZ_4
+    Sanitized in 0.009 seconds.
+  F_MENU_AJNAS
+    Sanitized in 0.004 seconds.
+  khareed_MP9
+    Sanitized in 0.008 seconds.
+  MARKAZ
+    Sanitized in 0.008 seconds.
+  TCOD_MARKAZHAZ
+    Sanitized in 0.002 seconds.
+  PARA
+    Sanitized in 0.001 seconds.
+  COD_HESAB
+    Sanitized in 0.004 seconds.
+  zjazbenheraf
+    Sanitized in 0.008 seconds.
+  BAZSND
+    Sanitized in 0.002 seconds.
+  FCODE_CUSTOMER_MORE
+    Sanitized in 0.058 seconds.
+  HEAD_MANF
+    Sanitized in 0.009 seconds.
+  mesag
+    Sanitized in 0.003 seconds.
+  F_MENU_ANBAR_MERG
+    Sanitized in 0.004 seconds.
+  HEAD_SERCH_MAIN_ADVANC
+    Sanitized in 0.073 seconds.
+  SERCHKHAD
+    Sanitized in 0.003 seconds.
+  CHEK_MAND
+    Sanitized in 0.002 seconds.
+  ERSAL_OFFLINE
+    Sanitized in 0.003 seconds.
+  SANAD_EFTETAHIYAH
+    Sanitized in 0.005 seconds.
+  SERSNDTAF
+    Sanitized in 0.002 seconds.
+  TCOD_ANBARINI
+    Sanitized in 0.002 seconds.
+  MARKAZ_kol
+    Sanitized in 0.008 seconds.
+  VISITORS_CUST_F
+    Sanitized in 0.009 seconds.
+  VISITORS_KOL
+    Sanitized in 0.009 seconds.
+  AK_MOGUDI_ANBAR_LIST_MERG
+    Sanitized in 0.008 seconds.
+  chek_pass_nashodah
+    Sanitized in 0.004 seconds.
+  GRADE_GRP_FT_FORM
+    Sanitized in 0.003 seconds.
+  GRADE_TAB_FORM
+    Sanitized in 0.003 seconds.
+  HEAD_LST_EXTENDED_FORM
+    Sanitized in 0.011 seconds.
+  PRICE_ELAMIE_DTL_FORM
+    Sanitized in 0.004 seconds.
+  PRICE_ELAMIETF_DTL_FORM
+    Sanitized in 0.005 seconds.
+  SALARY_FORM
+    Sanitized in 0.002 seconds.
+  Visit_route_dtl_FORM
+    Sanitized in 0.005 seconds.
+  FERSAL_SANAD_GRP
+    Sanitized in 0.010 seconds.
+  DISKETBANKMASKAN
+    Sanitized in 0.002 seconds.
+  FROOSH_MP1
+    Sanitized in 0.005 seconds.
+  INVO_LST_BACK_SUBO
+    Sanitized in 0.010 seconds.
+  FROOSH_MP2
+    Sanitized in 0.006 seconds.
+  GRADE_FORMAT_FORM
+    Sanitized in 0.005 seconds.
+  GRADE_GRP_FORM
+    Sanitized in 0.004 seconds.
+  GRADE_SHART_FUNC_FORM
+    Sanitized in 0.003 seconds.
+  JIS_TASK2
+    Sanitized in 0.007 seconds.
+  PRICE_GRP_FORM
+    Sanitized in 0.003 seconds.
+  TAKHFIF_DEF_FORM
+    Sanitized in 0.005 seconds.
+  Visit_gol_dtl_FORM
+    Sanitized in 0.005 seconds.
+  Visit_gol_dtl_grp_FORM
+    Sanitized in 0.006 seconds.
+  Visit_GOL_FORM
+    Sanitized in 0.008 seconds.
+  Visit_GOL_GRP_FORM
+    Sanitized in 0.006 seconds.
+  CRM_AMAR1
+    Sanitized in 0.003 seconds.
+  formeleman
+    Sanitized in 0.012 seconds.
+  froosh_mp3
+    Sanitized in 0.006 seconds.
+  INVO_LST_KH_SUB1
+    Sanitized in 0.015 seconds.
+  KALAS
+    Sanitized in 0.009 seconds.
+  selectdb1
+    Sanitized in 0.001 seconds.
+  TR_INVO_LST_KH_SUB1
+    Sanitized in 0.010 seconds.
+  DTL_MANF_SUB1
+    Sanitized in 0.007 seconds.
+  froosh_mp4
+    Sanitized in 0.006 seconds.
+  INVO_LST_BACK_SUB2
+    Sanitized in 0.014 seconds.
+  INVO_LST_sub1
+    Sanitized in 0.013 seconds.
+  MINVO_LST_SUB2
+    Sanitized in 0.012 seconds.
+  MOGHAYERAT_ANABR
+    Sanitized in 0.005 seconds.
+  PAY_GETD_BACK_SUB2
+    Sanitized in 0.011 seconds.
+  TR_INVO_LST_BACK_SUB2
+    Sanitized in 0.012 seconds.
+  TR_PAY_GETD_BACK_SUB2
+    Sanitized in 0.011 seconds.
+  FROOSH_COUNTALL_MP1
+    Sanitized in 0.005 seconds.
+  froosh_mp5
+    Sanitized in 0.007 seconds.
+  froosh_naraftah_PERS
+    Sanitized in 0.005 seconds.
+  INVO_LST_PISHFROOSH_SUB2
+    Sanitized in 0.019 seconds.
+  INVO_LST_sub2
+    Sanitized in 0.017 seconds.
+  TR_INVO_LST_SUB2
+    Sanitized in 0.012 seconds.
+  CHEK_MONP
+    Sanitized in 0.008 seconds.
+  DISKETBANKMELLAT
+    Sanitized in 0.002 seconds.
+  F_MENU_ANBAR_FRKH_bar
+    Sanitized in 0.003 seconds.
+  F_MENU_KART
+    Sanitized in 0.005 seconds.
+  FROOSH_COUNTALL_MP2
+    Sanitized in 0.006 seconds.
+  froosh_mp6
+    Sanitized in 0.008 seconds.
+  INVO_LST_PISHFROOSH_SUB3
+    Sanitized in 0.015 seconds.
+  PGHARAR
+    Sanitized in 0.008 seconds.
+  PSANDUGH_KAR
+    Sanitized in 0.005 seconds.
+  SERCHDPKOL1
+    Sanitized in 0.001 seconds.
+  FROOSH_COUNTALL_MP3
+    Sanitized in 0.006 seconds.
+  FROOSH_MP7
+    Sanitized in 0.007 seconds.
+  OTHER_DTL_SUB1
+    Sanitized in 0.007 seconds.
+  SERCHKF12
+    Sanitized in 0.001 seconds.
+  TR_OTHER_DTL_SUB1
+    Sanitized in 0.005 seconds.
+  FROOSH_COUNTALL_MP4
+    Sanitized in 0.006 seconds.
+  FROOSH_MP8
+    Sanitized in 0.008 seconds.
+  HEAD_LST_KHADAMAT
+    Sanitized in 0.031 seconds.
+  MOGHA_SUB_DSSAR
+    Sanitized in 0.002 seconds.
+  TR_HEAD_LST_KHADAMAT
+    Sanitized in 0.025 seconds.
+  WORKING_SUB2
+    Sanitized in 0.011 seconds.
+  ANBGRD_LST_SUB2
+    Sanitized in 0.005 seconds.
+  F_USER_PERMITION FORMS
+    Sanitized in 0.018 seconds.
+  FROOSH_MP9
+    Sanitized in 0.009 seconds.
+  ANBGRD_LST_SUB3
+    Sanitized in 0.005 seconds.
+  list_salary
+    Sanitized in 0.010 seconds.
+  taskspevent
+    Sanitized in 0.004 seconds.
+  SUDSURY
+    Sanitized in 0.005 seconds.
+  SERCHJOB
+    Sanitized in 0.002 seconds.
+  ERSAL_SANAD
+    Sanitized in 0.010 seconds.
+  FERSAL_SANAD
+    Sanitized in 0.008 seconds.
+  DEED_SEARCH
+    Sanitized in 0.009 seconds.
+  sudmah
+    Sanitized in 0.005 seconds.
+  grade_havala_arsh
+    Sanitized in 0.005 seconds.
+  VISTEDAD
+    Sanitized in 0.002 seconds.
+  NABZ_MOSHTARI
+    Sanitized in 0.006 seconds.
+  NABZ-khareed_MOSHTARI
+    Sanitized in 0.004 seconds.
+  nabzmali
+    Sanitized in 0.003 seconds.
+  ALLSEARCH
+    Sanitized in 0.001 seconds.
+  HEAD_LST_FROOSH_BACK
+    Sanitized in 0.019 seconds.
+  NABZ-PARDAKHT_MOSHTARI
+    Sanitized in 0.004 seconds.
+  mesageform
+    Sanitized in 0.002 seconds.
+  amvalform
+    Sanitized in 0.007 seconds.
+  F_MENU_KOL_MOIN_DATE_AI
+    Sanitized in 0.005 seconds.
+  VISITOR_DTL_SUBBACK
+    Sanitized in 0.005 seconds.
+  amar_FROOSH_MOSHTARI
+    Sanitized in 0.004 seconds.
+  PERSON
+    Sanitized in 0.011 seconds.
+  TCOD_OSTAN
+    Sanitized in 0.001 seconds.
+  AK_MOGUDI_ANBAR_LIST_MP1
+    Sanitized in 0.005 seconds.
+  ESTELAM
+    Sanitized in 0.002 seconds.
+  AK_MOGUDI_ANBAR_LIST_MP2
+    Sanitized in 0.006 seconds.
+  PAY_GETD_mon
+    Sanitized in 0.006 seconds.
+  SERCHDPKOL
+    Sanitized in 0.002 seconds.
+  VISITOR_GOL_DTL_GRP_REP_mar
+    Sanitized in 0.006 seconds.
+  VISITOR_GOL_GRP_REP_MAR
+    Sanitized in 0.006 seconds.
+  VISITOR_GOL_REP_MAR
+    Sanitized in 0.006 seconds.
+  AK_MOGUDI_ANBAR_LIST_MP3
+    Sanitized in 0.008 seconds.
+  COPMANES1
+    Sanitized in 0.009 seconds.
+  FREE_FACTOR
+    Sanitized in 0.004 seconds.
+  AK_MOGUDI_ANBAR_LIST_MP4
+    Sanitized in 0.006 seconds.
+  F_MENU_ANBAR_FRKH_GRP
+    Sanitized in 0.004 seconds.
+  AK_MOGUDI_ANBAR_LIST_MP5
+    Sanitized in 0.007 seconds.
+  FCODE_CUSTOMER_CUST
+    Sanitized in 0.011 seconds.
+  HAVLISTDAR
+    Sanitized in 0.004 seconds.
+  JOST
+    Sanitized in 0.001 seconds.
+  NABZEDAY30
+    Sanitized in 0.003 seconds.
+  PTAMIRAT_FACT
+    Sanitized in 0.005 seconds.
+  R_DAFTAR_MOIN_LIST
+    Sanitized in 0.009 seconds.
+  SELECTYEAR
+    Sanitized in 0.001 seconds.
+  AK_MOGUDI_ANBAR_LIST
+    Sanitized in 0.013 seconds.
+  AK_MOGUDI_ANBAR_LIST_MP6
+    Sanitized in 0.007 seconds.
+  PVAM_KAR
+    Sanitized in 0.007 seconds.
+  SMS_FORMAT
+    Sanitized in 0.017 seconds.
+  AK_MOGUDI_ANBAR_LIST_MP7
+    Sanitized in 0.008 seconds.
+  AK_MOGUDI_ANBAR_LIST_MP8
+    Sanitized in 0.008 seconds.
+  task_count_daysFORM_SUB_cust
+    Sanitized in 0.003 seconds.
+  AK_MOGUDI_ANBAR_LIST_MP9
+    Sanitized in 0.008 seconds.
+  KART_KALA_LIST
+    Sanitized in 0.004 seconds.
+  list_kala_takhpers
+    Sanitized in 0.009 seconds.
+  NABZEDARY
+    Sanitized in 0.003 seconds.
+  VISITORS_CUST_FACT
+    Sanitized in 0.008 seconds.
+  Paymentformorder_list
+    Sanitized in 0.017 seconds.
+  STUF_DEF_LIST
+    Sanitized in 0.008 seconds.
+  visitselect
+    Sanitized in 0.003 seconds.
+  ADAMTARAZ
+    Sanitized in 0.004 seconds.
+  FREE_SANAD
+    Sanitized in 0.003 seconds.
+  F_MENU_DATE
+    Sanitized in 0.004 seconds.
+  F_MENU_KOL_DATE
+    Sanitized in 0.004 seconds.
+  F_MENU_KOL_MOIN_DATE
+    Sanitized in 0.004 seconds.
+  password
+    Sanitized in 0.002 seconds.
+  PGET_LST_SEARCH
+    Sanitized in 0.011 seconds.
+  PKINDCODING
+    Sanitized in 0.002 seconds.
+  SERCHMOINF
+    Sanitized in 0.002 seconds.
+  TARAZ_4_MAH
+    Sanitized in 0.005 seconds.
+  FCHEK_WITHOUT_SANAD
+    Sanitized in 0.005 seconds.
+  SANAD_AMALKARD
+    Sanitized in 0.002 seconds.
+  TAKHFIF_DTL_F
+    Sanitized in 0.003 seconds.
+  ZMOGUDI_DATE
+    Sanitized in 0.004 seconds.
+  KARTBANK
+    Sanitized in 0.002 seconds.
+  VOSULDIALOG
+    Sanitized in 0.005 seconds.
+  VSANDUGHDIALOG
+    Sanitized in 0.003 seconds.
+  CHEK_BARGASHTI
+    Sanitized in 0.005 seconds.
+  grade_chek_bargashti
+    Sanitized in 0.006 seconds.
+  mogudi_search
+    Sanitized in 0.011 seconds.
+  QSL_FASLI_BARGASHTI
+    Sanitized in 0.006 seconds.
+  REMAIND_dtl
+    Sanitized in 0.006 seconds.
+  VBP_CHECK
+    Sanitized in 0.005 seconds.
+  PRICE_ELAMIETF_EXCEPTION_FRM
+    Sanitized in 0.004 seconds.
+  BEDBESKOL
+    Sanitized in 0.005 seconds.
+  CHRE_LSPH
+    Sanitized in 0.004 seconds.
+  DISKETBANK
+    Sanitized in 0.002 seconds.
+  telephon
+    Sanitized in 0.009 seconds.
+  list_salary_main1
+    Sanitized in 0.005 seconds.
+  LIST_SALARY22_10
+    Sanitized in 0.011 seconds.
+  ORDR_HED1
+    Sanitized in 0.007 seconds.
+  ORDR_HED2
+    Sanitized in 0.004 seconds.
+  SERCHMOIN1
+    Sanitized in 0.001 seconds.
+  SERSNDMOIN1
+    Sanitized in 0.001 seconds.
+  bordcolor
+    Sanitized in 0.022 seconds.
+  F_SELECTYEAR
+    Sanitized in 0.002 seconds.
+  USER_SELECT
+    Sanitized in 0.002 seconds.
+  users
+    Sanitized in 0.005 seconds.
+  INVO_LSTf121
+    Sanitized in 0.005 seconds.
+  SERCHMOINT
+    Sanitized in 0.003 seconds.
+  FROOSH_COUNTCUST_MP
+    Sanitized in 0.005 seconds.
+  F_MENU_MOGHAYERAT
+    Sanitized in 0.004 seconds.
+  MOGHAYERAT
+    Sanitized in 0.006 seconds.
+  OPTIONS
+    Sanitized in 0.030 seconds.
+  HEAD_LST_FROOSH22
+    Sanitized in 0.058 seconds.
+  LIST_PISHFACT
+    Sanitized in 0.003 seconds.
+  RASIDLIST
+    Sanitized in 0.004 seconds.
+  TARAZ_4_day
+    Sanitized in 0.010 seconds.
+  CHK_V_PRINT
+    Sanitized in 0.002 seconds.
+  F_MENU_ASNAD_PRINT
+    Sanitized in 0.002 seconds.
+  EVENTS_COMPANY
+    Sanitized in 0.004 seconds.
+  TASKS_COMPANY
+    Sanitized in 0.007 seconds.
+  GETSERV
+    Sanitized in 0.002 seconds.
+  F_MENU_ANBAR_TARAZ
+    Sanitized in 0.003 seconds.
+  INCO_LST_KH_SND_SUB
+    Sanitized in 0.010 seconds.
+  INVO_LST_KH_BACK_azad_SUB
+    Sanitized in 0.009 seconds.
+  web
+    Sanitized in 0.001 seconds.
+  F_MENU_SND
+    Sanitized in 0.003 seconds.
+  VISITORS_DAY_HEAD
+    Sanitized in 0.004 seconds.
+  parvad
+    Sanitized in 0.002 seconds.
+  SORTASNAD
+    Sanitized in 0.002 seconds.
+  SOUD
+    Sanitized in 0.004 seconds.
+  GUG
+    Sanitized in 0.003 seconds.
+  froosh_naraftah
+    Sanitized in 0.004 seconds.
+  PGHARARsub
+    Sanitized in 0.003 seconds.
+  SERCH
+    Sanitized in 0.001 seconds.
+  KHAD_DEF
+    Sanitized in 0.007 seconds.
+  LASTF
+    Sanitized in 0.001 seconds.
+  MHEAD_LST_FROOSH
+    Sanitized in 0.021 seconds.
+  LASTPRICE
+    Sanitized in 0.006 seconds.
+  lockok
+    Sanitized in 0.003 seconds.
+  ASNAD_WITHOUT_CHEK
+    Sanitized in 0.005 seconds.
+  F_MENU_CHEK
+    Sanitized in 0.003 seconds.
+  FASNAD_WITHOUT_CHEK
+    Sanitized in 0.005 seconds.
+  TEL
+    Sanitized in 0.004 seconds.
+  BACK_CHK_SERCH
+    Sanitized in 0.006 seconds.
+  ENTEGHAL
+    Sanitized in 0.002 seconds.
+  GOZARESH_FROOSH_MAHSUL
+    Sanitized in 0.004 seconds.
+  SERCHKAL
+    Sanitized in 0.006 seconds.
+  amarfroosh
+    Sanitized in 0.004 seconds.
+  BUN
+    Sanitized in 0.006 seconds.
+  F_MENU_GOZARESH_FROOSH
+    Sanitized in 0.004 seconds.
+  HAVALAH_WITHUT_BASKOOL
+    Sanitized in 0.003 seconds.
+  HES_CONTROL_JARIAN
+    Sanitized in 0.002 seconds.
+  mesage_dtl
+    Sanitized in 0.006 seconds.
+  nabzasnad30
+    Sanitized in 0.003 seconds.
+  CREATE_CHEKDP
+    Sanitized in 0.008 seconds.
+  CREATE_CHEKPDP
+    Sanitized in 0.007 seconds.
+  SOUDVAZIAN
+    Sanitized in 0.001 seconds.
+  PAY_GETP_mon
+    Sanitized in 0.006 seconds.
+  SAZMAN_2
+    Sanitized in 0.003 seconds.
+  R_DAFTAR_MOIN_LIST2
+    Sanitized in 0.007 seconds.
+  About
+    Sanitized in 0.023 seconds.
+  CHEKS_pBESTANKAR
+    Sanitized in 0.008 seconds.
+  R_DAFTAR_MOIN_LIST3
+    Sanitized in 0.007 seconds.
+  setver
+    Sanitized in 0.001 seconds.
+  TR_HAVALAH_ENTER
+    Sanitized in 0.007 seconds.
+  FCHEK_W_PASSP
+    Sanitized in 0.003 seconds.
+  VISITOR_DTL_SUB22
+    Sanitized in 0.005 seconds.
+  FROOSH_COUNTALL_CITY1_OSTAN_CUSTO
+    Sanitized in 0.004 seconds.
+  NABZ_MOSHTARI_PAYMENT
+    Sanitized in 0.009 seconds.
+  TCOD_ZARMALIAT
+    Sanitized in 0.002 seconds.
+  MASRAF_CENTER
+    Sanitized in 0.004 seconds.
+  CHEKS_BESTANKAR
+    Sanitized in 0.008 seconds.
+  FMENU_TARAZ_4
+    Sanitized in 0.006 seconds.
+  INVO_LST_REQUEST_SUB_ANBAR
+    Sanitized in 0.010 seconds.
+  HAVLIST
+    Sanitized in 0.005 seconds.
+  INVO_LST_sub22
+    Sanitized in 0.019 seconds.
+  R_DAFTAR_MOIN_LIST_ARZI_NT
+    Sanitized in 0.008 seconds.
+  NABZEDAYE7
+    Sanitized in 0.003 seconds.
+  INVO_LST_BACK_SUB
+    Sanitized in 0.010 seconds.
+  PAY_GETD_KHAD_SUB
+    Sanitized in 0.010 seconds.
+  tel_sub
+    Sanitized in 0.003 seconds.
+  TR_PAY_GETD_KHAD_SUB
+    Sanitized in 0.009 seconds.
+  FORMAT_HESAB
+    Sanitized in 0.018 seconds.
+  VISITORS_DTL_KALA_mara
+    Sanitized in 0.007 seconds.
+  PHOKMSUB
+    Sanitized in 0.004 seconds.
+  DEED_SERCH_CREATE
+    Sanitized in 0.013 seconds.
+  PRGHEAD
+    Sanitized in 0.011 seconds.
+  AMALKARD_SUB
+    Sanitized in 0.002 seconds.
+  INVO_LST_KH_BACK_SUB
+    Sanitized in 0.009 seconds.
+  MODULE_D_SUB
+    Sanitized in 0.003 seconds.
+  STUF_DEF
+    Sanitized in 0.015 seconds.
+  TARAZ_4_MAH_taf
+    Sanitized in 0.009 seconds.
+  TOZIE_SUB
+    Sanitized in 0.003 seconds.
+  TR_INVO_LST_KH_BACK_SUB
+    Sanitized in 0.009 seconds.
+  TR_STUF_DEF
+    Sanitized in 0.013 seconds.
+  VISITORS_PORSANT_KALAF
+    Sanitized in 0.002 seconds.
+  FPFORMATFILED
+    Sanitized in 0.006 seconds.
+  WORKHEAD
+    Sanitized in 0.019 seconds.
+  F_MENU_FROOSH
+    Sanitized in 0.004 seconds.
+  SANAD_EKHTETAMIYAH
+    Sanitized in 0.004 seconds.
+  SANADPAYANDORAH
+    Sanitized in 0.003 seconds.
+  BAKCHEK
+    Sanitized in 0.008 seconds.
+  GETFIRSTMOG
+    Sanitized in 0.002 seconds.
+  AMAR_TFT_FROOSH
+    Sanitized in 0.003 seconds.
+  BEDEHKARAN_BESTANKARAN
+    Sanitized in 0.012 seconds.
+  COPMANES_form
+    Sanitized in 0.011 seconds.
+  CUSTKIND_TF_FORM
+    Sanitized in 0.002 seconds.
+  F_MENU_HOTEL
+    Sanitized in 0.003 seconds.
+  F_MENU_MON
+    Sanitized in 0.003 seconds.
+  GRADE_RANGE_FORM
+    Sanitized in 0.004 seconds.
+  GRADE_SHART_FORM
+    Sanitized in 0.003 seconds.
+  GRADE_TAB_FT_FORM
+    Sanitized in 0.002 seconds.
+  HEAD_LST_PISHFROOSH
+    Sanitized in 0.009 seconds.
+  mandfactormr_visit_form
+    Sanitized in 0.007 seconds.
+  PAY_GETD_LOG_FORM
+    Sanitized in 0.006 seconds.
+  PRICE_ELAMIE_FORM
+    Sanitized in 0.008 seconds.
+  PRICE_ELAMIETF_FORM
+    Sanitized in 0.008 seconds.
+  f1
+    Sanitized in 0.007 seconds.
+  HEAD_LST_ENTEGHAL
+    Sanitized in 0.018 seconds.
+  HEAD_LST_HAVL
+    Sanitized in 0.023 seconds.
+  TR_HEAD_LST_ENTEGHAL
+    Sanitized in 0.009 seconds.
+  TR_HEAD_LST_HAVL
+    Sanitized in 0.011 seconds.
+  deleteform
+    Sanitized in 0.002 seconds.
+  ENHESAR_KALA_FORM
+    Sanitized in 0.006 seconds.
+  ENHESAR_MOSHTARI_FORM
+    Sanitized in 0.004 seconds.
+  f2
+    Sanitized in 0.004 seconds.
+  findform
+    Sanitized in 0.005 seconds.
+  FRM_RewardRules_Subform
+    Sanitized in 0.006 seconds.
+  PRICE_PAYNO_FORM
+    Sanitized in 0.003 seconds.
+  SSM_CUST_ANALYS_form
+    Sanitized in 0.006 seconds.
+  Visit_route_FORM
+    Sanitized in 0.006 seconds.
+  BUGET_MAIN_list2
+    Sanitized in 0.003 seconds.
+  ENHESAR1
+    Sanitized in 0.006 seconds.
+  f3
+    Sanitized in 0.004 seconds.
+  F_MENU_KHFR
+    Sanitized in 0.004 seconds.
+  f4
+    Sanitized in 0.003 seconds.
+  HAVALAH_ENTER
+    Sanitized in 0.013 seconds.
+  HAVLISTDAR_SUB2
+    Sanitized in 0.004 seconds.
+  INVO_LST_BRFR_SUB1
+    Sanitized in 0.014 seconds.
+  NABZ_KARSHENAS
+    Sanitized in 0.003 seconds.
+  SOUD2
+    Sanitized in 0.002 seconds.
+  f5
+    Sanitized in 0.002 seconds.
+  hesheshes
+    Sanitized in 0.005 seconds.
+  LIST_SALARY22TOFILE_10
+    Sanitized in 0.004 seconds.
+  SOUD3
+    Sanitized in 0.002 seconds.
+  TAKHPERS_SUB2
+    Sanitized in 0.004 seconds.
+  TOLID_COUNTALL_MP1
+    Sanitized in 0.004 seconds.
+  TR_TAKHPERS_SUB2
+    Sanitized in 0.004 seconds.
+  DEPART
+    Sanitized in 0.004 seconds.
+  f6
+    Sanitized in 0.004 seconds.
+  TCOD_HESGROUP
+    Sanitized in 0.002 seconds.
+  TOLID_COUNTALL_MP2
+    Sanitized in 0.005 seconds.
+  TR_HEAD_LST_KHREED1
+    Sanitized in 0.022 seconds.
+  VISITOR_DTL_SUBBACKFR
+    Sanitized in 0.005 seconds.
+  AK_MOGUDI_ANBAR_LIST2
+    Sanitized in 0.006 seconds.
+  EVENTS
+    Sanitized in 0.005 seconds.
+  f7
+    Sanitized in 0.003 seconds.
+  FEVENTS
+    Sanitized in 0.006 seconds.
+  HEAD_LST_BRFR
+    Sanitized in 0.037 seconds.
+  PAY_GETP_SUB_BRFR
+    Sanitized in 0.009 seconds.
+  TOLID_COUNTALL_MP3
+    Sanitized in 0.007 seconds.
+  ENTEGHAR_FROOSH_TOSERVER
+    Sanitized in 0.003 seconds.
+  f8
+    Sanitized in 0.003 seconds.
+  nabz_sand7
+    Sanitized in 0.002 seconds.
+  QPROGPAS3_SUB2
+    Sanitized in 0.004 seconds.
+  TOLID_COUNTALL_MP4
+    Sanitized in 0.005 seconds.
+  disket_maliat
+    Sanitized in 0.006 seconds.
+  f9
+    Sanitized in 0.002 seconds.
+  MPAY_GETD_SUB2
+    Sanitized in 0.009 seconds.
+  nabzasnad7
+    Sanitized in 0.003 seconds.
+  PAY_GETD_SUB2
+    Sanitized in 0.011 seconds.
+  SUDZIANGHEMAT
+    Sanitized in 0.004 seconds.
+  TR_PAY_GETD_SUB2
+    Sanitized in 0.011 seconds.
+  anbargardani-baz
+    Sanitized in 0.006 seconds.
+  AONE_SALARY
+    Sanitized in 0.013 seconds.
+  TARAZ_4_TAFZ
+    Sanitized in 0.009 seconds.
+  HEAD_MANF_DAY
+    Sanitized in 0.007 seconds.
+  ENTEGHAL_ASNAD_HESABDARY
+    Sanitized in 0.003 seconds.
+  CHRE_LSP_SUB
+    Sanitized in 0.007 seconds.
+  INVO_LST_PISHFROOSH_SUB
+    Sanitized in 0.012 seconds.
+  INVO_LST_sub
+    Sanitized in 0.011 seconds.
+  LIST_KHRID_KOL_SUB
+    Sanitized in 0.021 seconds.
+  MINVO_LST_SUB
+    Sanitized in 0.011 seconds.
+  OPANBACCESS_SUB
+    Sanitized in 0.002 seconds.
+  ORDER_LST_SUB
+    Sanitized in 0.005 seconds.
+  PAY_GETD_BACK_SUB
+    Sanitized in 0.009 seconds.
+  PAY_GETP_BACK_SUB
+    Sanitized in 0.010 seconds.
+  PROGPAS_SUB
+    Sanitized in 0.007 seconds.
+  SIGN_SUB
+    Sanitized in 0.044 seconds.
+  task_count_daysFORM_SUB
+    Sanitized in 0.002 seconds.
+  TR_HAVALAH_ENTER_SUB
+    Sanitized in 0.010 seconds.
+  TR_PAY_GETP_BACK_SUB
+    Sanitized in 0.009 seconds.
+  USER_SIGN_SUB
+    Sanitized in 0.002 seconds.
+  USER_USER_SUB
+    Sanitized in 0.002 seconds.
+  VISITORS_DAY_DTL_SUB
+    Sanitized in 0.004 seconds.
+  GOZARESH_MASRAF_MAVAD
+    Sanitized in 0.006 seconds.
+  BLOCK_HES_SUB
+    Sanitized in 0.002 seconds.
+  BLOCKNON_HES_SUB
+    Sanitized in 0.002 seconds.
+  HAVALA_EXIT_SUB
+    Sanitized in 0.010 seconds.
+  HAVLISTDAR_SUB
+    Sanitized in 0.004 seconds.
+  INVO_LST_ENTEGHAL_SUB
+    Sanitized in 0.011 seconds.
+  MEHMAN_sub
+    Sanitized in 0.012 seconds.
+  RAAS_SUB
+    Sanitized in 0.004 seconds.
+  TR_HAVALA_EXIT_SUB
+    Sanitized in 0.011 seconds.
+  TR_INVO_LST_ENTEGHAL_SUB
+    Sanitized in 0.010 seconds.
+  customers_didnot_purchase
+    Sanitized in 0.005 seconds.
+  CHK_V_PRINTSUB
+    Sanitized in 0.009 seconds.
+  grade_pish
+    Sanitized in 0.005 seconds.
+  ERSAL_HOGHUGHTJ
+    Sanitized in 0.003 seconds.
+  HEAD_LST_KH_BACK
+    Sanitized in 0.030 seconds.
+  TR_HEAD_LST_KH_BACK
+    Sanitized in 0.023 seconds.
+  mesagL
+    Sanitized in 0.015 seconds.
+  SQLSTATEFORM
+    Sanitized in 0.004 seconds.
+  CHAPCHEK
+    Sanitized in 0.072 seconds.
+  FORCHEK
+    Sanitized in 0.007 seconds.
+  GETCHEK
+    Sanitized in 0.010 seconds.
+  SGETCHEK
+    Sanitized in 0.011 seconds.
+  mesagepanel
+    Sanitized in 0.006 seconds.
+  VISITOR_GOL_DTL_GRP_REP
+    Sanitized in 0.006 seconds.
+  VISITOR_GOL_REP
+    Sanitized in 0.006 seconds.
+  FROOSH_COUNTCUST_MP1
+    Sanitized in 0.005 seconds.
+  FROOSH_COUNTCUST_MP2
+    Sanitized in 0.008 seconds.
+  JIS_TASK
+    Sanitized in 0.009 seconds.
+  tasksp
+    Sanitized in 0.010 seconds.
+  ALLSERM
+    Sanitized in 0.003 seconds.
+  Form11
+    Sanitized in 0.002 seconds.
+  FROOSH_COUNTCUST_MP3
+    Sanitized in 0.006 seconds.
+  mesag1
+    Sanitized in 0.002 seconds.
+  FEVENTSR
+    Sanitized in 0.005 seconds.
+  Form12
+    Sanitized in 0.006 seconds.
+  FROOSH_COUNTALL_CITY1_OSTAN
+    Sanitized in 0.003 seconds.
+  FROOSH_COUNTCUST_MP4
+    Sanitized in 0.006 seconds.
+  LIST_SALARY22
+    Sanitized in 0.011 seconds.
+  FCHEK_W_PASS
+    Sanitized in 0.003 seconds.
+  HEAD_LST_KHAREED1
+    Sanitized in 0.034 seconds.
+  HEAD_LST_RASID_OTHER
+    Sanitized in 0.014 seconds.
+  INBOXPAN
+    Sanitized in 0.006 seconds.
+  SelectUser
+    Sanitized in 0.002 seconds.
+  SHARH_LIST
+    Sanitized in 0.002 seconds.
+  BUGET_MAIN_list
+    Sanitized in 0.003 seconds.
+  flist_porsant_factors
+    Sanitized in 0.011 seconds.
+  FORMAT
+    Sanitized in 0.029 seconds.
+  HEAD_LST_KHAREED1_SADER
+    Sanitized in 0.031 seconds.
+  MOGUDI_ANBARHA_LIST
+    Sanitized in 0.005 seconds.
+  searchDEPART
+    Sanitized in 0.003 seconds.
+  FPFORMAT
+    Sanitized in 0.005 seconds.
+  CHK_SODUR
+    Sanitized in 0.005 seconds.
+  crmevents
+    Sanitized in 0.007 seconds.
+  FCODE_CUSTOMER
+    Sanitized in 0.015 seconds.
+  froosh_customer
+    Sanitized in 0.005 seconds.
+  INVO_LST_RASID_SUB_OTHER
+    Sanitized in 0.011 seconds.
+  mesagepanel_CUSTOMER
+    Sanitized in 0.005 seconds.
+  Q_FROOSH_CUSTOMER
+    Sanitized in 0.007 seconds.
+  Q_KHARID_CUSTOMER
+    Sanitized in 0.006 seconds.
+  DTL_MANF_SUB1_DAY
+    Sanitized in 0.005 seconds.
+  INVO_LST_HAV_SUB_OTHER
+    Sanitized in 0.011 seconds.
+  F_MENU_PRINTHES
+    Sanitized in 0.003 seconds.
+  PTAMIRAT_REPORT
+    Sanitized in 0.013 seconds.
+  SAVE_REPORT
+    Sanitized in 0.002 seconds.
+  BLOCK_CUSTOMER_SUB
+    Sanitized in 0.004 seconds.
+  CHRE_LST_SUB
+    Sanitized in 0.007 seconds.
+  HAVALAH_EXIT_SAYER_SUB
+    Sanitized in 0.010 seconds.
+  PTAMIR_SUB
+    Sanitized in 0.011 seconds.
+  STUF_DEF_LIST_sub
+    Sanitized in 0.005 seconds.
+  TR_HAVALAH_EXIT_SAYER_SUB
+    Sanitized in 0.010 seconds.
+  PGET_HED
+    Sanitized in 0.016 seconds.
+  TR_PGET_HED
+    Sanitized in 0.009 seconds.
+  databasetb
+    Sanitized in 0.007 seconds.
+  PAY_GETD
+    Sanitized in 0.017 seconds.
+  DETA_HES_SUB
+    Sanitized in 0.005 seconds.
+  INVO_LST_REQUEST_SUB
+    Sanitized in 0.011 seconds.
+  TAKHPERS_SUB
+    Sanitized in 0.003 seconds.
+  TDETA_HES_SUB
+    Sanitized in 0.008 seconds.
+  user_priter_sub
+    Sanitized in 0.003 seconds.
+  NAGHDF
+    Sanitized in 0.002 seconds.
+  NEWPASSWORD
+    Sanitized in 0.003 seconds.
+  USER_CHANGE
+    Sanitized in 0.003 seconds.
+  PAYCHEK
+    Sanitized in 0.008 seconds.
+  SPAYCHEK
+    Sanitized in 0.010 seconds.
+  SANDUGH
+    Sanitized in 0.002 seconds.
+  EYDY_PADASH
+    Sanitized in 0.004 seconds.
+  SERCHK
+    Sanitized in 0.002 seconds.
+  BAZ_AVRAGE_AUTO
+    Sanitized in 0.006 seconds.
+  GSCALE_DTL
+    Sanitized in 0.003 seconds.
+  TCOD_MAP_GRP
+    Sanitized in 0.002 seconds.
+  PAY_GETP
+    Sanitized in 0.018 seconds.
+  amar_pish30
+    Sanitized in 0.003 seconds.
+  SERCHP
+    Sanitized in 0.002 seconds.
+  DEED_SEARCH1
+    Sanitized in 0.006 seconds.
+  ALLSERCHM
+    Sanitized in 0.002 seconds.
+  Form22
+    Sanitized in 0.001 seconds.
+  INVO_LSTf12
+    Sanitized in 0.004 seconds.
+  CHKE_DLIST
+    Sanitized in 0.016 seconds.
+  F_NEWYEAR
+    Sanitized in 0.007 seconds.
+  QPASED3
+    Sanitized in 0.005 seconds.
+  SHIFT
+    Sanitized in 0.003 seconds.
+  NABZEDAYE30
+    Sanitized in 0.003 seconds.
+  taraz_4_tafz_dp
+    Sanitized in 0.009 seconds.
+  TCOD_VAHEDS
+    Sanitized in 0.002 seconds.
+  PTAMIRAT_REPORT_vazeyat
+    Sanitized in 0.012 seconds.
+  SMS_FORMATS_FR
+    Sanitized in 0.003 seconds.
+  tozieselect
+    Sanitized in 0.003 seconds.
+  TARAZ_TAF_DIRECT
+    Sanitized in 0.007 seconds.
+  INVO_LST_RASID_SUB
+    Sanitized in 0.012 seconds.
+  OTHER_DTL_SUB_SUB
+    Sanitized in 0.004 seconds.
+  PTVAZ_SUB
+    Sanitized in 0.003 seconds.
+  PVAM_BAZ_SUB
+    Sanitized in 0.003 seconds.
+  selectdb
+    Sanitized in 0.000 seconds.
+  SMS_FORMATS_FRB
+    Sanitized in 0.002 seconds.
+  TR_INVO_LST_RASID_SUB
+    Sanitized in 0.009 seconds.
+  USER_ANB_SUB
+    Sanitized in 0.002 seconds.
+  TELSUB
+    Sanitized in 0.002 seconds.
+  SERCHBED
+    Sanitized in 0.002 seconds.
+  ye
+    Sanitized in 0.002 seconds.
+  MPAY_GETD_SUB
+    Sanitized in 0.009 seconds.
+  PAY_GETD_SUB
+    Sanitized in 0.010 seconds.
+  TAKHFIF_APLAY_SUB
+    Sanitized in 0.003 seconds.
+  TR_MODULE_D_SUB
+    Sanitized in 0.003 seconds.
+  TR_TAKHFIF_APLAY_SUB
+    Sanitized in 0.003 seconds.
+  KALAS_MAIN_ADVANCE
+    Sanitized in 0.034 seconds.
+  AMAR_KOL_FROOSH
+    Sanitized in 0.004 seconds.
+  GENSANADFROOSH
+    Sanitized in 0.002 seconds.
+  SOUD_FROOSH
+    Sanitized in 0.004 seconds.
+  AVRAGE
+    Sanitized in 0.002 seconds.
+  CREATE_CHEK
+    Sanitized in 0.006 seconds.
+  F_MENU_DATE_KOL_MOIN_TAFKIK
+    Sanitized in 0.006 seconds.
+  datefdateh
+    Sanitized in 0.001 seconds.
+  F_MENU_KOL_MOIN_TAFZIL
+    Sanitized in 0.009 seconds.
+  grade_pish_karsh
+    Sanitized in 0.005 seconds.
+  FOR_CHK_SERCH
+    Sanitized in 0.005 seconds.
+  LIST_FROOSH
+    Sanitized in 0.008 seconds.
+  NABZFROOSH
+    Sanitized in 0.003 seconds.
+  MAIN
+    Sanitized in 0.013 seconds.
+  mogudi_search_main
+    Sanitized in 0.003 seconds.
+  TARAZ_4_MOIN
+    Sanitized in 0.008 seconds.
+  DEED_SEARCH_MAIN
+    Sanitized in 0.014 seconds.
+  head_manf_dtl
+    Sanitized in 0.007 seconds.
+  HEAD_SERCH_MAIN
+    Sanitized in 0.021 seconds.
+  MARKAZ_kol_moin
+    Sanitized in 0.008 seconds.
+  Notes_frm
+    Sanitized in 0.005 seconds.
+  startup
+    Sanitized in 0.099 seconds.
+  tozieselect1
+    Sanitized in 0.003 seconds.
+  amar_frosh30
+    Sanitized in 0.003 seconds.
+  CRM_calender
+    Sanitized in 0.034 seconds.
+  TDETA_HES_SHEET2
+    Sanitized in 0.012 seconds.
+  CHEK_BARGASHTI_MAIN
+    Sanitized in 0.001 seconds.
+  CHEK_DLISTS
+    Sanitized in 0.001 seconds.
+  CHEK_PLISTS
+    Sanitized in 0.001 seconds.
+  FROOSH_DAYLY1
+    Sanitized in 0.006 seconds.
+  nabz_sanad30
+    Sanitized in 0.003 seconds.
+  TDETA_HES_SHEET3
+    Sanitized in 0.011 seconds.
+  TR_HAVALAH_EXIT
+    Sanitized in 0.007 seconds.
+  HAVALAH_EXIT
+    Sanitized in 0.013 seconds.
+  NABZEDAY90
+    Sanitized in 0.003 seconds.
+  TDETA_HES_SHEET4
+    Sanitized in 0.010 seconds.
+  VAHEDS_exten
+    Sanitized in 0.008 seconds.
+  FROOSH_COUNTALL_CITY1
+    Sanitized in 0.003 seconds.
+  TARAZ_TAF2_DIRECT
+    Sanitized in 0.009 seconds.
+  TARAZHES
+    Sanitized in 0.002 seconds.
+  FROOSH_COUNTALL_CITY2
+    Sanitized in 0.003 seconds.
+  HEAD_LST_REQUEST
+    Sanitized in 0.013 seconds.
+  SUDDAYS
+    Sanitized in 0.003 seconds.
+  TOTA_HES
+    Sanitized in 0.005 seconds.
+  CHEK_PLIST
+    Sanitized in 0.009 seconds.
+  PAY_GETD_SUB22
+    Sanitized in 0.011 seconds.
+  tasksp_EDIT
+    Sanitized in 0.007 seconds.
+  ESLAHTEXT
+    Sanitized in 0.007 seconds.
+  TARAZ_TAF3_DIRECT
+    Sanitized in 0.010 seconds.
+  TARAZ_TAF4_DIRECT
+    Sanitized in 0.010 seconds.
+  DEED_DTL_SUB
+    Sanitized in 0.010 seconds.
+  INVO_LST_KH_SUB
+    Sanitized in 0.013 seconds.
+  OTHER_DTL_SUB
+    Sanitized in 0.007 seconds.
+  PAY_GETD_SND_SUB
+    Sanitized in 0.009 seconds.
+  PAY_GETP_SND_SUB
+    Sanitized in 0.007 seconds.
+  SANDUGH_SUB
+    Sanitized in 0.002 seconds.
+  TR_DEED_DTL_sub
+    Sanitized in 0.008 seconds.
+  VBP_CHECK_SUB
+    Sanitized in 0.005 seconds.
+  WORKING_SUB
+    Sanitized in 0.003 seconds.
+  PMORAKHSUB
+    Sanitized in 0.003 seconds.
+  FCODE_CUSTOMER_MORE_SUB
+    Sanitized in 0.060 seconds.
+  KAR_BARG_SUB
+    Sanitized in 0.018 seconds.
+  STUF_FSK_sub
+    Sanitized in 0.009 seconds.
+  SURAT_MALI_SUB
+    Sanitized in 0.002 seconds.
+  TR_STUF_FSK_sub
+    Sanitized in 0.007 seconds.
+  USER_BLK_SUB
+    Sanitized in 0.002 seconds.
+  BAZ_AVRAGE
+    Sanitized in 0.009 seconds.
+  TAKHFIF
+    Sanitized in 0.002 seconds.
+  list_kharid
+    Sanitized in 0.010 seconds.
+  USER_LOGIN_SUB_update
+    Sanitized in 0.003 seconds.
+  zinvoextended
+    Sanitized in 0.006 seconds.
+  ZF_IVO_EXTENDED
+    Sanitized in 0.004 seconds.
+  F_MENU_ssm
+    Sanitized in 0.013 seconds.
+  FDAFT_ASN
+    Sanitized in 0.002 seconds.
+  BUGET_DEFAUL
+    Sanitized in 0.012 seconds.
+  Visit_gol_dtl_REP
+    Sanitized in 0.006 seconds.
+  BUGET0
+    Sanitized in 0.022 seconds.
+  BUGET1
+    Sanitized in 0.023 seconds.
+  TCOD_STUFGROUP
+    Sanitized in 0.002 seconds.
+  BUGET2
+    Sanitized in 0.027 seconds.
+  CHKREC_HES
+    Sanitized in 0.005 seconds.
+  F_MENU_DATE_HES
+    Sanitized in 0.006 seconds.
+  F_MENU_PRINTHES2
+    Sanitized in 0.003 seconds.
+  HEAD_LST_FROOSH1
+    Sanitized in 0.027 seconds.
+  BUGET3
+    Sanitized in 0.023 seconds.
+  HEAD_LST_FROOSH2
+    Sanitized in 0.057 seconds.
+  MHEAD_LST_FROOSH2
+    Sanitized in 0.022 seconds.
+  MSGEXIT
+    Sanitized in 0.003 seconds.
+  TR_HEAD_LST_FROOSH2
+    Sanitized in 0.034 seconds.
+  USER_LOGIN
+    Sanitized in 0.004 seconds.
+  CHECK_PVLIST
+    Sanitized in 0.011 seconds.
+  BUGET5
+    Sanitized in 0.026 seconds.
+  nabz_mali90
+    Sanitized in 0.003 seconds.
+  NABZEDAY7
+    Sanitized in 0.003 seconds.
+  STUF_DEF_LIST2
+    Sanitized in 0.007 seconds.
+  STUF_DEF_NEW
+    Sanitized in 0.008 seconds.
+  SERSNDTAF1
+    Sanitized in 0.002 seconds.
+  VAZV
+    Sanitized in 0.001 seconds.
+  CHEK_VLIST
+    Sanitized in 0.009 seconds.
+  ANBGRD_LST_SUB
+    Sanitized in 0.005 seconds.
+  CHRE_LSTH_SUB
+    Sanitized in 0.007 seconds.
+  HAVALAH_ENTER_SUB
+    Sanitized in 0.011 seconds.
+  INVO_LST_HAVL_SUB
+    Sanitized in 0.013 seconds.
+  MO_DTL_SUB
+    Sanitized in 0.007 seconds.
+  PGET_LST_SUB
+    Sanitized in 0.017 seconds.
+  QPROGPAS2_SUB
+    Sanitized in 0.005 seconds.
+  TR_INVO_LST_HAVL_SUB
+    Sanitized in 0.009 seconds.
+  TR_PGET_LST_SUB
+    Sanitized in 0.009 seconds.
+  TR_VISITOR_DTL_SUB
+    Sanitized in 0.005 seconds.
+  USER_ENDN_SUB
+    Sanitized in 0.005 seconds.
+  USER_LOGIN_SUB
+    Sanitized in 0.002 seconds.
+  user_prn_sub
+    Sanitized in 0.002 seconds.
+  VISITOR_DTL_SUB
+    Sanitized in 0.005 seconds.
+  AUTOMATIC
+    Sanitized in 0.021 seconds.
+  ORDR_HED
+    Sanitized in 0.009 seconds.
+  NEMUDARFROOSHSUD
+    Sanitized in 0.004 seconds.
+  CHEK_MOGUD
+    Sanitized in 0.006 seconds.
+  INVO_LST_MO_SUB
+    Sanitized in 0.010 seconds.
+  PAY_GETP_SUB
+    Sanitized in 0.009 seconds.
+  QPROGPAS3_SUB
+    Sanitized in 0.004 seconds.
+  SALARY_BES_SUB
+    Sanitized in 0.004 seconds.
+  TR_PAY_GETP_SUB
+    Sanitized in 0.009 seconds.
+  USER_CHART_SUB
+    Sanitized in 0.002 seconds.
+  TR_AUTOMATIC
+    Sanitized in 0.065 seconds.
+  F_MENU_ANBAR_FRKH
+    Sanitized in 0.004 seconds.
+  tozie
+    Sanitized in 0.005 seconds.
+  ZCHANGE_FI
+    Sanitized in 0.003 seconds.
+  nabzasnad90
+    Sanitized in 0.003 seconds.
+  REMAINDERPANEL
+    Sanitized in 0.008 seconds.
+  visit_STUFGR_SEL
+    Sanitized in 0.002 seconds.
+  VISITOR_GOL_GRP_REP
+    Sanitized in 0.006 seconds.
+  BAKCHEKP
+    Sanitized in 0.007 seconds.
+  AUTO_RUN
+    Sanitized in 0.001 seconds.
+  VISITORS_MASIR
+    Sanitized in 0.002 seconds.
+  CHEK_VOSUL_LES
+    Sanitized in 0.001 seconds.
+  INVO_LST_sub2_SADER
+    Sanitized in 0.014 seconds.
+  PAY_GETD_SUB2_SADER
+    Sanitized in 0.010 seconds.
+  EVENTS_sends
+    Sanitized in 0.012 seconds.
+  paymentformorder
+    Sanitized in 0.018 seconds.
+  SMS_VIP
+    Sanitized in 0.003 seconds.
+  VOSULDIALOG2
+    Sanitized in 0.005 seconds.
+  HEAD_LST_HAV_OTHER
+    Sanitized in 0.014 seconds.
+  HAVALAH_EXIT_SAYER
+    Sanitized in 0.012 seconds.
+  TR_HAVALAH_EXIT_SAYER
+    Sanitized in 0.007 seconds.
+  HEAD_LST_FROOSH2_SADER
+    Sanitized in 0.033 seconds.
+  TCOD_BANKS
+    Sanitized in 0.002 seconds.
+  EVENT_COUNT_SUB
+    Sanitized in 0.002 seconds.
+  FROOSH_COUNT_SUB
+    Sanitized in 0.004 seconds.
+  SALARY_EYDY_SUB
+    Sanitized in 0.006 seconds.
+  VISITORS_DTL_KALA
+    Sanitized in 0.007 seconds.
+  F9_SUB
+    Sanitized in 0.003 seconds.
+  FROOSH_DAYLY1_KALA
+    Sanitized in 0.007 seconds.
+  AMAR_KOL_TOLID_KALA
+    Sanitized in 0.004 seconds.
+  visit_STUFGR_SEL_KALA
+    Sanitized in 0.002 seconds.
+  SURAT_MALI
+    Sanitized in 0.010 seconds.
+  TCOD_MENUITEM
+    Sanitized in 0.003 seconds.
+  HEAD_LST_FROOSH_BACKO
+    Sanitized in 0.018 seconds.
+  CHREC_HP
+    Sanitized in 0.005 seconds.
+  HEAD_LST_FROOSH_BACK2
+    Sanitized in 0.034 seconds.
+  TR_HEAD_LST_FROOSH_BACK2
+    Sanitized in 0.021 seconds.
+  INVO_LST_KH_SUB1_SADER
+    Sanitized in 0.012 seconds.
+  HED_SODUR
+    Sanitized in 0.004 seconds.
+  PAY_GETP_SUB_SADER
+    Sanitized in 0.010 seconds.
+  TARAZ_4_TAFZ2
+    Sanitized in 0.008 seconds.
+  DEFAULT
+    Sanitized in 0.003 seconds.
+  ENTEGHAL_DARYAFT_PARDAKHT
+    Sanitized in 0.003 seconds.
+  DETA_HES_SHEET
+    Sanitized in 0.004 seconds.
+  TDETA_HES_SHEET
+    Sanitized in 0.011 seconds.
+  TOTA_HES_SHEET
+    Sanitized in 0.004 seconds.
+  F_DARYAFT
+    Sanitized in 0.003 seconds.
+  DISKETBANKMELLI
+    Sanitized in 0.002 seconds.
+  PMORAKH
+    Sanitized in 0.013 seconds.
+  TR_PMORAKH
+    Sanitized in 0.011 seconds.
+  AMAR_FROOSH_KOL_all
+    Sanitized in 0.004 seconds.
+  SERCHKH
+    Sanitized in 0.001 seconds.
+  QSL_FASLI_BARGASHTI_KH
+    Sanitized in 0.006 seconds.
+  HEAD_LST_MOSTAGHIM
+    Sanitized in 0.010 seconds.
+  SMS_FORMATS_KH
+    Sanitized in 0.002 seconds.
+  R_F_MO
+    Sanitized in 0.003 seconds.
+  SURAT_MALI_MAIN
+    Sanitized in 0.017 seconds.
+  f1-1
+    Sanitized in 0.004 seconds.
+  f1-2
+    Sanitized in 0.004 seconds.
+  PHOKM
+    Sanitized in 0.012 seconds.
+  TR_PHOKM
+    Sanitized in 0.011 seconds.
+  AMAR_FROOSH_DAYLY_MAIN
+    Sanitized in 0.015 seconds.
+  F1-3
+    Sanitized in 0.003 seconds.
+  FROOSH_COUNTALL
+    Sanitized in 0.004 seconds.
+  BEDEHKARAN_BESTANKARAN_MAHDOD_MOIN
+    Sanitized in 0.011 seconds.
+  f1-4
+    Sanitized in 0.003 seconds.
+  KALAS_MAIN
+    Sanitized in 0.024 seconds.
+  SERSNDMOIN
+    Sanitized in 0.003 seconds.
+  SERCHK2
+    Sanitized in 0.002 seconds.
+  f10-1
+    Sanitized in 0.004 seconds.
+  F11-1
+    Sanitized in 0.004 seconds.
+  f12-1
+    Sanitized in 0.004 seconds.
+  Form1
+    Sanitized in 0.001 seconds.
+  TASKS
+    Sanitized in 0.010 seconds.
+  CHEK_MAND_bargasht
+    Sanitized in 0.002 seconds.
+  f10-2
+    Sanitized in 0.005 seconds.
+  Form2
+    Sanitized in 0.005 seconds.
+  f10-3
+    Sanitized in 0.005 seconds.
+  Form3
+    Sanitized in 0.001 seconds.
+  f10-4
+    Sanitized in 0.004 seconds.
+  Form4
+    Sanitized in 0.002 seconds.
+  Form5
+    Sanitized in 0.001 seconds.
+  Form6
+    Sanitized in 0.001 seconds.
+  F_MENU_SANAD_MOGHA
+    Sanitized in 0.005 seconds.
+  GSCALE
+    Sanitized in 0.002 seconds.
+  SERSND
+    Sanitized in 0.005 seconds.
+  users_chang
+    Sanitized in 0.003 seconds.
+  LIST_SALARY22TOFILE
+    Sanitized in 0.004 seconds.
+  R_DAFTAR_MOIN_LIST_ARZI
+    Sanitized in 0.008 seconds.
+  CRMMAIN
+    Sanitized in 0.008 seconds.
+  khareed_countall
+    Sanitized in 0.003 seconds.
+  amar_pish90
+    Sanitized in 0.003 seconds.
+  TR_HEAD_LST_PFROOSH2
+    Sanitized in 0.027 seconds.
+  NABZEDAYE90
+    Sanitized in 0.003 seconds.
+  HEAD_LST_PISHFROOSH2
+    Sanitized in 0.031 seconds.
+  AMAR_PISH7
+    Sanitized in 0.003 seconds.
+  amar_frosh7
+    Sanitized in 0.003 seconds.
+[818] forms processed.
+-------------------------------------
+Exporting macros...           
+  maximiz
+    Sanitized in 0.000 seconds.
+  autoexec
+    Sanitized in 0.000 seconds.
+  ref
+    Sanitized in 0.000 seconds.
+  PROG
+    Sanitized in 0.000 seconds.
+  M_REP_F
+    Sanitized in 0.003 seconds.
+  TARIF
+    Sanitized in 0.002 seconds.
+  TOLID
+    Sanitized in 0.001 seconds.
+  CHEK
+    Sanitized in 0.002 seconds.
+  Customer Labels Dialog
+    Sanitized in 0.001 seconds.
+  M_ERSAL
+    Sanitized in 0.003 seconds.
+  main
+    Sanitized in 0.000 seconds.
+  comp
+    Sanitized in 0.000 seconds.
+  dialog_tabdol
+    Sanitized in 0.000 seconds.
+  PAZTAM
+    Sanitized in 0.001 seconds.
+  Macro1
+    Sanitized in 0.000 seconds.
+  runpanel
+    Sanitized in 0.000 seconds.
+  Macro10
+    Sanitized in 0.000 seconds.
+  Macro2
+    Sanitized in 0.000 seconds.
+  Macro30
+    Sanitized in 0.000 seconds.
+  startup
+    Sanitized in 0.000 seconds.
+  stop
+    Sanitized in 0.000 seconds.
+  dialog_charts
+    Sanitized in 0.002 seconds.
+  Macro11
+    Sanitized in 0.000 seconds.
+  Macro3
+    Sanitized in 0.000 seconds.
+  Macro31
+    Sanitized in 0.000 seconds.
+  SYS
+    Sanitized in 0.002 seconds.
+  AUTOKEYS
+    Sanitized in 0.004 seconds.
+  dialog_questions
+    Sanitized in 0.002 seconds.
+  Macro12
+    Sanitized in 0.000 seconds.
+  Macro32
+    Sanitized in 0.000 seconds.
+  Macro4
+    Sanitized in 0.000 seconds.
+  mpas
+    Sanitized in 0.000 seconds.
+  KEYFOR
+    Sanitized in 0.003 seconds.
+  KEYKAR
+    Sanitized in 0.002 seconds.
+  Macro13
+    Sanitized in 0.000 seconds.
+  Macro33
+    Sanitized in 0.000 seconds.
+  Macro5
+    Sanitized in 0.000 seconds.
+  dialog_input
+    Sanitized in 0.001 seconds.
+  KEYHES
+    Sanitized in 0.002 seconds.
+  M_SURAT
+    Sanitized in 0.002 seconds.
+  Macro14
+    Sanitized in 0.000 seconds.
+  Macro6
+    Sanitized in 0.000 seconds.
+  dialog_amar
+    Sanitized in 0.001 seconds.
+  dialog_FRS
+    Sanitized in 0.001 seconds.
+  Macro15
+    Sanitized in 0.000 seconds.
+  Macro7
+    Sanitized in 0.000 seconds.
+  Macro16
+    Sanitized in 0.000 seconds.
+  Macro8
+    Sanitized in 0.000 seconds.
+  dialog_exit
+    Sanitized in 0.000 seconds.
+  Macro17
+    Sanitized in 0.000 seconds.
+  Macro9
+    Sanitized in 0.000 seconds.
+  Macro18
+    Sanitized in 0.000 seconds.
+  Macro19
+    Sanitized in 0.000 seconds.
+  KEYANB
+    Sanitized in 0.002 seconds.
+  HESAB
+    Sanitized in 0.005 seconds.
+  dialog
+    Sanitized in 0.001 seconds.
+  KEYOFF
+    Sanitized in 0.003 seconds.
+  HOTSH
+    Sanitized in 0.000 seconds.
+  CHPRN
+    Sanitized in 0.000 seconds.
+  KEYMAIN
+    Sanitized in 0.004 seconds.
+  M_FIX_REP
+    Sanitized in 0.004 seconds.
+  HOTEL
+    Sanitized in 0.000 seconds.
+  Macro20
+    Sanitized in 0.000 seconds.
+  dialog_abzar
+    Sanitized in 0.001 seconds.
+  Macro21
+    Sanitized in 0.000 seconds.
+  SERVERFILTER
+    Sanitized in 0.002 seconds.
+  dialog_system
+    Sanitized in 0.001 seconds.
+  Macro22
+    Sanitized in 0.000 seconds.
+  nemudar
+    Sanitized in 0.001 seconds.
+  FACTORS
+    Sanitized in 0.006 seconds.
+  Macro23
+    Sanitized in 0.000 seconds.
+  ANABAR
+    Sanitized in 0.002 seconds.
+  Macro24
+    Sanitized in 0.000 seconds.
+  sort
+    Sanitized in 0.001 seconds.
+  Macro25
+    Sanitized in 0.001 seconds.
+  Macro26
+    Sanitized in 0.001 seconds.
+  MNEMUDAR
+    Sanitized in 0.001 seconds.
+  Macro27
+    Sanitized in 0.000 seconds.
+  macro28
+    Sanitized in 0.001 seconds.
+  SALARY
+    Sanitized in 0.001 seconds.
+  M_DARYAFT
+    Sanitized in 0.002 seconds.
+  Macro29
+    Sanitized in 0.000 seconds.
+[82] macros processed.
+-------------------------------------
+Exporting reports...          
+  BEDEHKARAN_USERS_F
+    Sanitized in 0.007 seconds.
+  ORDER_LIST_tolid
+    Sanitized in 0.012 seconds.
+  LIST_FROOSH_KALA_BASKOL
+    Sanitized in 0.011 seconds.
+  R_DAFTAR_TAFZILY_2_2
+    Sanitized in 0.018 seconds.
+  R_LIST_MASIR
+    Sanitized in 0.009 seconds.
+  R_DAFTAR_ROOS
+    Sanitized in 0.010 seconds.
+  R_DAFTAR_TAFZILY2__2
+    Sanitized in 0.018 seconds.
+  R_TARAZ_TAFZ4_2
+    Sanitized in 0.005 seconds.
+  R_TARAZ_TAFZ4_3
+    Sanitized in 0.005 seconds.
+  R_TARAZ_TAFZ4_4
+    Sanitized in 0.004 seconds.
+  R_KA_KALA
+    Sanitized in 0.012 seconds.
+  R_FROOSH_DAYLY1_dakhel_kala
+    Sanitized in 0.013 seconds.
+  R_PENDJOB
+    Sanitized in 0.011 seconds.
+  visitgol_head_KALA
+    Sanitized in 0.007 seconds.
+  CHART_TOLID_MON
+    Sanitized in 0.003 seconds.
+  userobjectpermision
+    Sanitized in 0.006 seconds.
+  INVOICE_FROOSH_2_MBA_01
+    Sanitized in 0.013 seconds.
+  p1
+    Sanitized in 0.013 seconds.
+  ORDER_LIST_P
+    Sanitized in 0.011 seconds.
+  P2
+    Sanitized in 0.013 seconds.
+  R_DAFTAR_TAFZILY__2
+    Sanitized in 0.017 seconds.
+  INVOICE_FROOSH_2_MBA_03
+    Sanitized in 0.015 seconds.
+  R_DAFTAR_TAFZILY_2
+    Sanitized in 0.018 seconds.
+  R_DAFTAR_TAFZILY2
+    Sanitized in 0.016 seconds.
+  R_FROOSH_DAYLY_person
+    Sanitized in 0.012 seconds.
+  R_khareed_DAYLY_person
+    Sanitized in 0.011 seconds.
+  USER_PERMITION
+    Sanitized in 0.007 seconds.
+  R_FROOSH_DAYLY2_2
+    Sanitized in 0.015 seconds.
+  TARAZ4_moin2
+    Sanitized in 0.015 seconds.
+  TARAZ4_TAFZIL2
+    Sanitized in 0.015 seconds.
+  OR_DB_PRINT
+    Sanitized in 0.008 seconds.
+  R_DP_PRINT
+    Sanitized in 0.011 seconds.
+  INVOICE_KH_BACK_azad
+    Sanitized in 0.019 seconds.
+  TOZIE_FROOSH_ANBARS_HAVALA
+    Sanitized in 0.009 seconds.
+  ELVSL_APA
+    Sanitized in 0.007 seconds.
+  R_DAFTAR_KOL
+    Sanitized in 0.016 seconds.
+  CHRT_HES_KOL
+    Sanitized in 0.063 seconds.
+  RPHOKM
+    Sanitized in 0.012 seconds.
+  R_AK_MOGUDI_ANBAR
+    Sanitized in 0.008 seconds.
+  R_TARAZ_ANBAR_KHAS
+    Sanitized in 0.018 seconds.
+  R_LIST_maliat
+    Sanitized in 0.017 seconds.
+  INVOICE_FROOSH_1
+    Sanitized in 0.017 seconds.
+  INVOICE_FROOSH_2
+    Sanitized in 0.019 seconds.
+  R_FROOSH_DAYLY_person_mba2
+    Sanitized in 0.011 seconds.
+  R_TARAZ_4
+    Sanitized in 0.017 seconds.
+  INVOICE_FROOSH_2_MBA_19
+    Sanitized in 0.024 seconds.
+  OLGU_POORSANT
+    Sanitized in 0.006 seconds.
+  R_MARKAZ
+    Sanitized in 0.017 seconds.
+  BESTANKARAN_USER_F
+    Sanitized in 0.007 seconds.
+  PRINT_FORMULA
+    Sanitized in 0.010 seconds.
+  R_SURAT_HESAB
+    Sanitized in 0.017 seconds.
+  KHOLASAH
+    Sanitized in 0.011 seconds.
+  RASID_MOSTAGHIM_LARG
+    Sanitized in 0.010 seconds.
+  HAVALAH_ENTER_mabl
+    Sanitized in 0.012 seconds.
+  R_LIST_MEHMAN
+    Sanitized in 0.015 seconds.
+  R_TARAZ_ANBAR_KHAS_CUSTOM
+    Sanitized in 0.027 seconds.
+  h21
+    Sanitized in 0.011 seconds.
+  i21
+    Sanitized in 0.009 seconds.
+  i22
+    Sanitized in 0.428 seconds.
+  INVOICE_FROOSH_2_MBA_22
+    Sanitized in 0.417 seconds.
+  P22
+    Sanitized in 0.026 seconds.
+  R_LIST_BIMEH1_10
+    Sanitized in 0.022 seconds.
+  i23
+    Sanitized in 0.010 seconds.
+  IKB2
+    Sanitized in 0.022 seconds.
+  INVOICE_FROOSH2_1M
+    Sanitized in 0.018 seconds.
+  DARKHST_KALA_ANBAR
+    Sanitized in 0.012 seconds.
+  HOTEL_SUB1
+    Sanitized in 0.005 seconds.
+  I24
+    Sanitized in 0.010 seconds.
+  INVOICE_CUSTOM_2
+    Sanitized in 0.022 seconds.
+  INVOICE_FROOSH_2_MBA_24
+    Sanitized in 0.010 seconds.
+  HOTEL_SUB2
+    Sanitized in 0.005 seconds.
+  INVOICE_FROOSH_2GR2
+    Sanitized in 0.018 seconds.
+  zi22
+    Sanitized in 0.025 seconds.
+  PM_JOB_MAVAD_REPORT
+    Sanitized in 0.008 seconds.
+  R_KA_KALA2
+    Sanitized in 0.008 seconds.
+  INVOICE_KHADAMAT
+    Sanitized in 0.017 seconds.
+  invoice_pish_2_mba_19
+    Sanitized in 0.024 seconds.
+  R_DP_DAYLY_ASHKHAS
+    Sanitized in 0.009 seconds.
+  R_LIST_salary
+    Sanitized in 0.017 seconds.
+  HAVALA_KHORUG_MAVAD
+    Sanitized in 0.009 seconds.
+  R_TAG
+    Sanitized in 0.010 seconds.
+  CHECK_USERS_F
+    Sanitized in 0.008 seconds.
+  HAVALAH_ENTER_BACK
+    Sanitized in 0.012 seconds.
+  INVOICE_FROOSH_BACK
+    Sanitized in 0.015 seconds.
+  BUGETRP
+    Sanitized in 0.014 seconds.
+  INVOICE_PISH_2_MBA_22
+    Sanitized in 0.025 seconds.
+  INVOICE_FROOSH_3GRP3
+    Sanitized in 0.028 seconds.
+  invoice_pish_2_mba_24
+    Sanitized in 0.024 seconds.
+  INVOICE_PISH_2_MBA_25
+    Sanitized in 0.025 seconds.
+  INVOICE_FROOSH_BACKO2
+    Sanitized in 0.018 seconds.
+  ORDER_LIST
+    Sanitized in 0.012 seconds.
+  TARAZNAMAH11
+    Sanitized in 0.004 seconds.
+  R_COUNTER1
+    Sanitized in 0.007 seconds.
+  SALARYBED_2
+    Sanitized in 0.002 seconds.
+  R_COUNTER2
+    Sanitized in 0.007 seconds.
+  R_COUNTER3
+    Sanitized in 0.007 seconds.
+  order_list_19
+    Sanitized in 0.023 seconds.
+  invoice_frbk_2_mba
+    Sanitized in 0.023 seconds.
+  HAVLAH_ANBARd
+    Sanitized in 0.012 seconds.
+  R_SANAD_PRINT_B
+    Sanitized in 0.011 seconds.
+  invoice_frbk_3_mba
+    Sanitized in 0.023 seconds.
+  HAVLAH_ANBARH
+    Sanitized in 0.016 seconds.
+  gozaresh_froosh_rozanah
+    Sanitized in 0.007 seconds.
+  todaybargiri
+    Sanitized in 0.010 seconds.
+  HAVLAH_ANBAR_khback
+    Sanitized in 0.012 seconds.
+  FISH_HOGHUGH11
+    Sanitized in 0.002 seconds.
+  HAVLAH_ANBAR_01
+    Sanitized in 0.014 seconds.
+  FROOSH_VAHEDS
+    Sanitized in 0.007 seconds.
+  HAVLAH_ANBAR_02
+    Sanitized in 0.014 seconds.
+  R_TARAZ_ANBAR_KHAS_GRP
+    Sanitized in 0.017 seconds.
+  HAVLAH_ANBAR_03
+    Sanitized in 0.016 seconds.
+  INVOICE_KHAREED_1
+    Sanitized in 0.019 seconds.
+  SALARYBEST_2
+    Sanitized in 0.004 seconds.
+  R_AK_MOGUDI_ANBAR2
+    Sanitized in 0.007 seconds.
+  TOLID_PRINT
+    Sanitized in 0.009 seconds.
+  HAVALAH_ENTER_01
+    Sanitized in 0.012 seconds.
+  Visit_gol_dtl_REP_print
+    Sanitized in 0.010 seconds.
+  HAVALA_KHORUG_MAVAD1
+    Sanitized in 0.010 seconds.
+  MOGHAYERAT
+    Sanitized in 0.013 seconds.
+  CHECK_LIST_PRINT
+    Sanitized in 0.003 seconds.
+  R_SANAD_PRINT
+    Sanitized in 0.011 seconds.
+  rpt_barcode_09
+    Sanitized in 0.002 seconds.
+  INVOICE_FROOSH_2_MBA
+    Sanitized in 0.027 seconds.
+  ELVSL_ADA
+    Sanitized in 0.007 seconds.
+  INVOICE_KHAREED
+    Sanitized in 0.015 seconds.
+  INVOICE_FROOSH
+    Sanitized in 0.017 seconds.
+  R_DAFTAR_AI
+    Sanitized in 0.011 seconds.
+  R_FROOSH_DAYLY1_dakhel
+    Sanitized in 0.012 seconds.
+  SUDVAZIAN
+    Sanitized in 0.017 seconds.
+  INVOICE_FROOSH2_1
+    Sanitized in 0.021 seconds.
+  R_FROOSH_DAYLY21
+    Sanitized in 0.013 seconds.
+  havlah_anbar
+    Sanitized in 0.013 seconds.
+  INVOICE_CUSTOM
+    Sanitized in 0.017 seconds.
+  DARKHST_KHARID_01
+    Sanitized in 0.012 seconds.
+  GOZARESH_FROOSH_USER
+    Sanitized in 0.014 seconds.
+  GOZARESH_FROOSH_USER3
+    Sanitized in 0.016 seconds.
+  OPANBACCESS_SUB_R
+    Sanitized in 0.002 seconds.
+  rpt_BarCode_10
+    Sanitized in 0.002 seconds.
+  DARKHST_KHARID_02
+    Sanitized in 0.012 seconds.
+  rpt_barcode_11
+    Sanitized in 0.002 seconds.
+  DARKHST_KHARID_03
+    Sanitized in 0.012 seconds.
+  INVOICE_FROOSH_SADER_01
+    Sanitized in 0.012 seconds.
+  R_GARDESH_KHFR_DAFTAR_A4
+    Sanitized in 0.015 seconds.
+  HAVLAH_ANBAR_19
+    Sanitized in 0.013 seconds.
+  rpt_barcode_19
+    Sanitized in 0.002 seconds.
+  r_anbargrd
+    Sanitized in 0.008 seconds.
+  STUF_DEF
+    Sanitized in 0.005 seconds.
+  rpt_barcode
+    Sanitized in 0.002 seconds.
+  INVOICE_PISHFROOSH
+    Sanitized in 0.014 seconds.
+  LIST_INVOICE_FROOSH
+    Sanitized in 0.015 seconds.
+  BARGAH_ENTEGHAL
+    Sanitized in 0.015 seconds.
+  HAVLAH_ANBAR_KHORUG
+    Sanitized in 0.011 seconds.
+  list_froosh_cust_size_tarh
+    Sanitized in 0.008 seconds.
+  INVOICE_FROOSH_GROUP
+    Sanitized in 0.018 seconds.
+  INVOICE_FROOSH_BRFR
+    Sanitized in 0.020 seconds.
+  R_GARDESH_KHFR_DAFTAR
+    Sanitized in 0.019 seconds.
+  SURATMABEVA11
+    Sanitized in 0.005 seconds.
+  TARAZ4_TAFZIL_2
+    Sanitized in 0.016 seconds.
+  GRADE_REP
+    Sanitized in 0.012 seconds.
+  HAVALAH_ENTER
+    Sanitized in 0.012 seconds.
+  PRINT_FORMULA_2
+    Sanitized in 0.011 seconds.
+  Report1
+    Sanitized in 0.001 seconds.
+  rpt_barCode_22
+    Sanitized in 0.002 seconds.
+  R_LIST_MALI_EYDY_SANAWAT
+    Sanitized in 0.012 seconds.
+  rpt_barcode_23
+    Sanitized in 0.002 seconds.
+  BLOCK_HES_SUB_R
+    Sanitized in 0.002 seconds.
+  INVOICE_FROOSH_SADER_19
+    Sanitized in 0.012 seconds.
+  INVOICE_KHAREED_SADER_19
+    Sanitized in 0.011 seconds.
+  PTAMIR_PAGE
+    Sanitized in 0.012 seconds.
+  SALARYBED
+    Sanitized in 0.002 seconds.
+  INVOICE_KH_BACK
+    Sanitized in 0.018 seconds.
+  SANAD_PARDAKHT_DTL
+    Sanitized in 0.011 seconds.
+  TARAZNAMAH
+    Sanitized in 0.007 seconds.
+  INVOICE_FROOSH_1M
+    Sanitized in 0.016 seconds.
+  CHAPCHEK
+    Sanitized in 0.002 seconds.
+  TDETAHES2
+    Sanitized in 0.002 seconds.
+  TOTA_HES2
+    Sanitized in 0.006 seconds.
+  R_SANAD_PRINT22
+    Sanitized in 0.009 seconds.
+  TDETAHES3
+    Sanitized in 0.001 seconds.
+  LIST_FROOSH_ANBARS1
+    Sanitized in 0.010 seconds.
+  SURATMANABEVA22
+    Sanitized in 0.004 seconds.
+  TDETAHES4
+    Sanitized in 0.002 seconds.
+  PRINT_FORMULAR
+    Sanitized in 0.012 seconds.
+  HAVALAH_ANBAR_84744
+    Sanitized in 0.008 seconds.
+  PM_JOB_REPORT
+    Sanitized in 0.009 seconds.
+  INVOICE_KHAD_2_MBA
+    Sanitized in 0.023 seconds.
+  R_FROOSH_DAYLY_person_mba
+    Sanitized in 0.012 seconds.
+  R_MOGUDI_ANBARHA
+    Sanitized in 0.006 seconds.
+  SURATMABEVAMASAREF
+    Sanitized in 0.006 seconds.
+  HAVALAH_ANVAR_VROUD
+    Sanitized in 0.011 seconds.
+  morakhasi
+    Sanitized in 0.011 seconds.
+  Q_LIST_SEFARESH
+    Sanitized in 0.007 seconds.
+  INVOICE_FROOSH_2M
+    Sanitized in 0.019 seconds.
+  PPAZIRESHTAM
+    Sanitized in 0.016 seconds.
+  GRADE_FORMAT_REP
+    Sanitized in 0.014 seconds.
+  h1
+    Sanitized in 0.016 seconds.
+  H2
+    Sanitized in 0.015 seconds.
+  INVOICE_FROOSH_21
+    Sanitized in 0.017 seconds.
+  INVOICE_FROOSH_2GR
+    Sanitized in 0.019 seconds.
+  INVOICE_FROOSH_22
+    Sanitized in 0.028 seconds.
+  LIST_KHAREED_ANBARS
+    Sanitized in 0.010 seconds.
+  LIST_FROOSH_ANBARS_BAR
+    Sanitized in 0.009 seconds.
+  PAYMENTORDER2
+    Sanitized in 0.010 seconds.
+  FISH2
+    Sanitized in 0.009 seconds.
+  HAVLAH_BRDIRECT
+    Sanitized in 0.014 seconds.
+  INVOICE_KHADAMAT2
+    Sanitized in 0.017 seconds.
+  LIST_FROOSH_ANBARS
+    Sanitized in 0.010 seconds.
+  h8
+    Sanitized in 0.013 seconds.
+  R_LIST_MALI_EYDY
+    Sanitized in 0.014 seconds.
+  SANAD_DARYAFT
+    Sanitized in 0.016 seconds.
+  R_LIST_VISIT_DAY
+    Sanitized in 0.009 seconds.
+  INVOICE_PISH_2_MBA
+    Sanitized in 0.026 seconds.
+  tozie_dasti
+    Sanitized in 0.015 seconds.
+  groop_invoice
+    Sanitized in 0.015 seconds.
+  P_HESAB_CHEK
+    Sanitized in 0.004 seconds.
+  R_FROOSH_MAHSUL
+    Sanitized in 0.012 seconds.
+  R_LIST_BIMEH
+    Sanitized in 0.021 seconds.
+  R_DAFTAR_MOIN
+    Sanitized in 0.016 seconds.
+  R_SANAD_PRINT_GRP
+    Sanitized in 0.013 seconds.
+  BI1
+    Sanitized in 0.015 seconds.
+  I1
+    Sanitized in 0.015 seconds.
+  TEJA50
+    Sanitized in 0.002 seconds.
+  I2
+    Sanitized in 0.028 seconds.
+  R_DP_DAYLY_ASHKHAS1
+    Sanitized in 0.008 seconds.
+  R_DP_DAYLY_ASHKHAS2
+    Sanitized in 0.009 seconds.
+  TARAZ4_TAFZIL22
+    Sanitized in 0.015 seconds.
+  CHEK_DLISTS
+    Sanitized in 0.010 seconds.
+  R_FROOSH_DAYLY1
+    Sanitized in 0.012 seconds.
+  VBP_CHEK_DLISTS
+    Sanitized in 0.008 seconds.
+  Visit_gol_dtl_REP_print_grp
+    Sanitized in 0.009 seconds.
+  FISH_HOGHUGH2
+    Sanitized in 0.013 seconds.
+  HAVALAH_EXIT
+    Sanitized in 0.016 seconds.
+  R_FROOSH_DAYLY2
+    Sanitized in 0.012 seconds.
+  R_FROOSH_DAYLY3
+    Sanitized in 0.014 seconds.
+  rpt_BarCode1
+    Sanitized in 0.002 seconds.
+  TOTA_HES
+    Sanitized in 0.007 seconds.
+  I8
+    Sanitized in 0.018 seconds.
+  CHEK_PLIST
+    Sanitized in 0.009 seconds.
+  DARKHST_KHARID
+    Sanitized in 0.011 seconds.
+  LIST_INVOICE_KHARED
+    Sanitized in 0.016 seconds.
+  RASID_MOSTAGHIM
+    Sanitized in 0.011 seconds.
+  TARAZ4_TAFZIL
+    Sanitized in 0.017 seconds.
+  INVOICE_FROOSH2
+    Sanitized in 0.017 seconds.
+  LIST_INVOICE_FROOSH2
+    Sanitized in 0.017 seconds.
+  SALARYBES2
+    Sanitized in 0.003 seconds.
+  R_SANAD_PRINT2
+    Sanitized in 0.009 seconds.
+  HAVALAH_ANVAR_VROUD2
+    Sanitized in 0.010 seconds.
+  INVOICE_PISHFROOSH2
+    Sanitized in 0.017 seconds.
+  SALARYBEST
+    Sanitized in 0.002 seconds.
+  R_SANAD_PRINT4
+    Sanitized in 0.012 seconds.
+  P_HESAB_CHEKG
+    Sanitized in 0.005 seconds.
+  DAFTAR_ROOZNAMEH
+    Sanitized in 0.014 seconds.
+  R_DAFTAR_MOIN_TFKIK
+    Sanitized in 0.010 seconds.
+  LIST_FROOSH_ANBARS_DTL
+    Sanitized in 0.020 seconds.
+  LIST_PISH_ANBARS_DTL
+    Sanitized in 0.009 seconds.
+  SANAD_DARYAFT_DTL
+    Sanitized in 0.011 seconds.
+  ik1
+    Sanitized in 0.024 seconds.
+  IK2
+    Sanitized in 0.023 seconds.
+  R_FROOSH_DAYLY1_sader
+    Sanitized in 0.012 seconds.
+  SALARYBED2
+    Sanitized in 0.003 seconds.
+  R_LIST_salary2
+    Sanitized in 0.018 seconds.
+  paymentorder
+    Sanitized in 0.010 seconds.
+  TARAZ4_TAFZIL_other
+    Sanitized in 0.019 seconds.
+  INVOICE_FROOSH_2_MBA_84744
+    Sanitized in 0.010 seconds.
+  LIST_SALARY5
+    Sanitized in 0.005 seconds.
+  R_TARAZ_ANBARHA
+    Sanitized in 0.015 seconds.
+  FISH_HOGHUGH
+    Sanitized in 0.013 seconds.
+  INVOICE_FROOSH_BACKO
+    Sanitized in 0.015 seconds.
+  TARAZNAMAH1
+    Sanitized in 0.004 seconds.
+  TARAZNAMAH2
+    Sanitized in 0.006 seconds.
+  INVOICE_FROOSH_BACK2
+    Sanitized in 0.023 seconds.
+  R_DAFTAR_MOIN_TFKIK2
+    Sanitized in 0.010 seconds.
+  R_KHARED_DAYLY
+    Sanitized in 0.011 seconds.
+  R_DP_DAYLY
+    Sanitized in 0.009 seconds.
+  R_DAFTAR_TAFZILY
+    Sanitized in 0.019 seconds.
+  LIST_FROOSH_ANBARS_HAVALA
+    Sanitized in 0.009 seconds.
+  R_DAFTAR_KOL_kh
+    Sanitized in 0.014 seconds.
+  BUGETRP_tahlil
+    Sanitized in 0.038 seconds.
+  R_LIST_BIMEH1
+    Sanitized in 0.024 seconds.
+  TASKS
+    Sanitized in 0.006 seconds.
+  SANAD_PARDAKHT
+    Sanitized in 0.014 seconds.
+  R_FROOSH_DAYLY
+    Sanitized in 0.011 seconds.
+  PPAZIRESHTAMM
+    Sanitized in 0.016 seconds.
+[283] reports processed.
+-------------------------------------
+Done. (210.67 seconds)
+
+--------------------------------------------------
+                PERFORMANCE REPORTS
+--------------------------------------------------
+Category                      Count     Seconds
+--------------------------------------------------
+Forms                         818       86.40
+Reports                       283       37.94
+SQL Tables                    379       24.91
+CommandBars                   55        20.64
+Views                         383       18.06
+Functions                     305       12.06
+Macros                        82        4.69
+Procedures                    54        2.72
+Modules                       34        2.44
+Triggers                      8         0.53
+Project                       1         0.06
+Proj Properties               38        0.05
+VBE References                5         0.03
+VB Project                    1         0.02
+Table Data                    0         0.02
+VBE Forms                     0         0.01
+Saved Specs                   0         0.00
+--------------------------------------------------
+TOTALS:                       2446      210.58
+--------------------------------------------------
+
+--------------------------------------------------
+Operations                    Count     Seconds
+--------------------------------------------------
+Increment Progress            4810      83.87
+App.SaveAsText()              1183      23.38
+Read File                     1217      19.93
+Save CommandBar Images        51        15.32
+Read File Bytes               2400      14.90
+Sanitize File                 1183      11.49
+Console Updates               189       6.23
+Unicode Conversion            1183      4.58
+Write File                    4652      3.78
+Convert to JSON               45363     1.57
+Delete File                   3584      1.28
+Get File Property Hash        2405      1.27
+Get VBA Hash                  1135      1.12
+modFileAccess.VerifyPath      5886      0.97
+Scan DB Objects               1         0.90
+Compute SHA256                5911      0.70
+Export VBE Module             34        0.30
+Sanitize VBA Code             1098      0.26
+Get Modified Date             3540      0.25
+Close Open Objects            1         0.01
+Quick Count Objects           1         0.01
+modFileAccess.GetUncPath      2         0.00
+Quick Count Files             1         0.00
+Clear Orphaned Files          4         0.00
+Clear Files by Ext            8         0.00
+--------------------------------------------------
+Other Operations                        18.54
+--------------------------------------------------
+
+

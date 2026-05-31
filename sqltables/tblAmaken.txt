@@ -1,0 +1,66 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+tblAmaken	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+Id	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+Cd_Mah	nvarchar	no	16	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Name	nvarchar	no	30	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Family	nvarchar	no	50	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+F_Name	nvarchar	no	30	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Id_No	nvarchar	no	26	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+B_Date	nvarchar	no	20	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Sex	nvarchar	no	6	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Is_Place	nvarchar	no	50	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Tabe	nvarchar	no	50	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Job	nvarchar	no	50	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Reson	nvarchar	no	50	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+No_With	nvarchar	no	4	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Fam	nvarchar	no	50	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Source	nvarchar	no	50	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Target	nvarchar	no	50	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+In_Date	nvarchar	no	16	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Ex_Date	nvarchar	no	16	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Desc	nvarchar	no	60	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PsgCode	nvarchar	no	32	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MpsgCode	nvarchar	no	10	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+In_Time	nvarchar	no	4	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Ex_Time	nvarchar	no	4	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Tor	nvarchar	no	8	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+No_Room	nvarchar	no	8	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FlagSendAmaken	bit	no	1	     	     	yes	(n/a)	(n/a)	
+FlagSendGahan	bit	no	1	     	     	yes	(n/a)	(n/a)	
+Flag	bit	no	1	     	     	yes	(n/a)	(n/a)	
+NoMeli	nvarchar	no	30	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Religion	nvarchar	no	30	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Mezheb	nvarchar	no	14	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__tblAmaken__CRT__56A9BBE0	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())

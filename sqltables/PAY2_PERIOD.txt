@@ -1,0 +1,67 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PAY2_PERIOD	dbo	user table	04/05/2026 09:00:51 ب.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+PER_ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+WS_ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+PERIOD_DATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+HOLIDAY_DAYS	tinyint	no	1	3    	0    	no	(n/a)	(n/a)	
+TENDAR_APPLY	bit	no	1	     	     	no	(n/a)	(n/a)	
+DEED_N_S_PAY	float	no	8	53   		yes	(n/a)	(n/a)	
+STATUS	tinyint	no	1	3    	0    	no	(n/a)	(n/a)	
+OPENED_AT	datetime	no	8	     	     	no	(n/a)	(n/a)	
+CLOSED_AT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+NOTES	nvarchar	no	400	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+PER_ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_PAY2_PERIOD	clustered, unique, primary key located on PRIMARY	PER_ID
+UQ_PERIOD	nonclustered, unique, unique key located on PRIMARY	WS_ID, PERIOD_DATE
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PAY2_PERIOD__CRT__5BA6A025	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column HOLIDAY_DAYS	DF_PER_HD	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column OPENED_AT	DF_PER_OA	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column STATUS	DF_PER_ST	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column TENDAR_APPLY	DF_PER_TEN	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_PER_WS	No Action	No Action	Enabled	Is_For_Replication	WS_ID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PAY2_WORKSHOP (WS_ID)
+PRIMARY KEY (clustered)	PK_PAY2_PERIOD	(n/a)	(n/a)	(n/a)	(n/a)	PER_ID
+UNIQUE (non-clustered)	UQ_PERIOD	(n/a)	(n/a)	(n/a)	(n/a)	WS_ID, PERIOD_DATE
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.PAY2_ATTENDANCE: FK_ATT_PER
+YAZDSEPAR1405.dbo.PAY2_RUN: FK_RUN_PER

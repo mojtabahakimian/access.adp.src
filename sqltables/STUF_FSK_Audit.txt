@@ -1,0 +1,76 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+STUF_FSK_Audit	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+AuditID	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+AuditTime	datetime2	no	7	23   	3    	no	(n/a)	(n/a)	
+AuditUser	sysname	no	256	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+AuditHost	nvarchar	no	256	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Operation	char	no	1	     	     	no	no	no	Arabic_CI_AS
+CODE	nvarchar	no	30	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+ANBAR	int	no	4	10   	0    	no	(n/a)	(n/a)	
+IDD	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+Old_MOGODI_A	float	no	8	53   		yes	(n/a)	(n/a)	
+New_MOGODI_A	float	no	8	53   		yes	(n/a)	(n/a)	
+Old_FI_A	float	no	8	53   		yes	(n/a)	(n/a)	
+New_FI_A	float	no	8	53   		yes	(n/a)	(n/a)	
+Old_MABL_A	float	no	8	53   		yes	(n/a)	(n/a)	
+New_MABL_A	float	no	8	53   		yes	(n/a)	(n/a)	
+Old_MANDAH_A	float	no	8	53   		yes	(n/a)	(n/a)	
+New_MANDAH_A	float	no	8	53   		yes	(n/a)	(n/a)	
+Old_VAZ	float	no	8	53   		yes	(n/a)	(n/a)	
+New_VAZ	float	no	8	53   		yes	(n/a)	(n/a)	
+Old_POSITION	nvarchar	no	60	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+New_POSITION	nvarchar	no	60	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Old_B_SEF	float	no	8	53   		yes	(n/a)	(n/a)	
+New_B_SEF	float	no	8	53   		yes	(n/a)	(n/a)	
+Old_N_SEF	float	no	8	53   		yes	(n/a)	(n/a)	
+New_N_SEF	float	no	8	53   		yes	(n/a)	(n/a)	
+Old_MIN_M	float	no	8	53   		yes	(n/a)	(n/a)	
+New_MIN_M	float	no	8	53   		yes	(n/a)	(n/a)	
+Old_MAX_M	float	no	8	53   		yes	(n/a)	(n/a)	
+New_MAX_M	float	no	8	53   		yes	(n/a)	(n/a)	
+Old_CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+New_CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+Old_UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+New_UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+AuditID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__STUF_FSK__A17F23B8667F2319	clustered, unique, primary key located on PRIMARY	AuditID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column AuditTime	DF__STUF_FSK___Audit__68676B8B	(n/a)	(n/a)	(n/a)	(n/a)	(sysutcdatetime())
+DEFAULT on column AuditUser	DF__STUF_FSK___Audit__695B8FC4	(n/a)	(n/a)	(n/a)	(n/a)	(suser_sname())
+DEFAULT on column CRT	DF__STUF_FSK_Au__CRT__5FBD16F1	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK__STUF_FSK__A17F23B8667F2319	(n/a)	(n/a)	(n/a)	(n/a)	AuditID

@@ -1,0 +1,48 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+desks	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+desk	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+RFLAG	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+chair	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+COMMENT	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__desks__571DF1D5	clustered, unique, primary key located on PRIMARY	desk
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column chair	DF__desks__chair__69B1A35C	(n/a)	(n/a)	(n/a)	(n/a)	((4))
+DEFAULT on column CRT	DF__desks__CRT__579DE019	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column RFLAG	DF__desks__RFLAG__68BD7F23	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+PRIMARY KEY (clustered)	PK__desks__571DF1D5	(n/a)	(n/a)	(n/a)	(n/a)	desk

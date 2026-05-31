@@ -1,0 +1,74 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+STUF_FSK	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+CODE	nvarchar	no	30	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+ANBAR	int	no	4	10   	0    	no	(n/a)	(n/a)	
+MOGODI_A	float	no	8	53   		no	(n/a)	(n/a)	
+FI_A	float	no	8	53   		no	(n/a)	(n/a)	
+MABL_A	float	no	8	53   		no	(n/a)	(n/a)	
+MANDAH_A	float	no	8	53   		no	(n/a)	(n/a)	
+VAZ	float	no	8	53   		yes	(n/a)	(n/a)	
+IDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+POSITION	nvarchar	no	60	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+B_SEF	float	no	8	53   		yes	(n/a)	(n/a)	
+N_SEF	float	no	8	53   		yes	(n/a)	(n/a)	
+MIN_M	float	no	8	53   		yes	(n/a)	(n/a)	
+MAX_M	float	no	8	53   		yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDD	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{9A1BD9F6-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	CODE
+{9A1BDA01-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	ANBAR
+aaaaaSTUF_FSK_PK	nonclustered, unique, primary key located on PRIMARY	CODE, ANBAR
+CODE_I	nonclustered located on PRIMARY	CODE
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaSTUF_FSK_PK	(n/a)	(n/a)	(n/a)	(n/a)	CODE, ANBAR
+DEFAULT on column CRT	DF__STUF_FSK__CRT__2235F3A1	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column FI_A	DF__STUF_FSK__FI_A__5772F790	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MABL_A	DF__STUF_FSK__MABL_A__58671BC9	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MANDAH_A	DF__STUF_FSK__MANDAH__595B4002	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MOGODI_A	DF__STUF_FSK__MOGODI__567ED357	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	STUF_FSK_FK00	Cascade	Cascade	Enabled	Is_For_Replication	CODE
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.STUF_DEF (CODE)
+FOREIGN KEY	STUF_FSK_FK01	Cascade	Cascade	Enabled	Is_For_Replication	ANBAR
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_ANBAR (CODE)
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.INVO_LST: FK_INVO_LST_STUF_FSK
+YAZDSEPAR1405.dbo.INVO_LST_TMP_WPF: FK_INVO_LST_TMP_WPF_STUF_FSK
+YAZDSEPAR1405.dbo.STUF_STK: STUF_STK_FK00

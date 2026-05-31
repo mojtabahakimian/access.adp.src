@@ -1,0 +1,93 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PAY_GETP	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+N_SERI	float	no	8	53   		no	(n/a)	(n/a)	
+BANK	int	no	4	10   	0    	no	(n/a)	(n/a)	
+DATE_S	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+DATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+SHOBEH	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MABL	float	no	8	53   		no	(n/a)	(n/a)	
+NAME_TAH	nvarchar	no	400	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+N_HESAB	nvarchar	no	400	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+N_S	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+N_KOL	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+N_MOIN	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+N_TAF	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+N_KOL2	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+N_MOIN2	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+N_TAF2	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+N_KOL3	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+N_MOIN3	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+N_TAF3	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+NUMBER	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+TAG	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ANBAR	float	no	8	53   		yes	(n/a)	(n/a)	
+RADIF	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CUST_NO	float	no	8	53   		yes	(n/a)	(n/a)	
+KIND	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+VAZ	float	no	8	53   		yes	(n/a)	(n/a)	
+HES1	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+HES2	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+HES3	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SAYADI	nvarchar	no	32	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ID	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{9A1BD9EB-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	NUMBER, TAG
+{9A1BDA08-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	BANK
+aaaaaPAY_GETP_PK	nonclustered, unique, primary key located on PRIMARY	N_SERI, BANK, DATE_S
+DATEI	nonclustered located on PRIMARY	DATE
+S_BI	nonclustered located on PRIMARY	N_SERI, BANK
+SERI_I	nonclustered located on PRIMARY	N_SERI
+TDETA_HESPAY_GETP	nonclustered located on PRIMARY	N_KOL, N_MOIN, N_TAF
+TDETA_HESPAY_GETP1	nonclustered located on PRIMARY	N_KOL2, N_MOIN2, N_TAF2
+TDETA_HESPAY_GETP2	nonclustered located on PRIMARY	N_KOL3, N_MOIN3, N_TAF3
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaPAY_GETP_PK	(n/a)	(n/a)	(n/a)	(n/a)	N_SERI, BANK, DATE_S
+CHECK on column BANK	CK PAY_GETP BANK	(n/a)	(n/a)	Enabled	Is_For_Replication	(NOT [BANK] IS NULL)
+DEFAULT on column CRT	DF__PAY_GETP__CRT__6C98FCFF	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column CUST_NO	DF__PAY_GETP__CUST_N__24E777C3	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MABL	DF__PAY_GETP__MABL__23F3538A	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_PAY_GETP_TCOD_BANKS	No Action	Cascade	Enabled	Is_For_Replication	BANK
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_BANKS (CODE)
+FOREIGN KEY	FK_PAY_GETP_TDETA_HES	No Action	Cascade	Enabled	Is_For_Replication	N_KOL, N_MOIN, N_TAF
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TDETA_HES (N_KOL, NUMBER, TNUMBER)
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.CHRE_LSP: CHRE_LSP_FK00

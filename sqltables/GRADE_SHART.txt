@@ -1,0 +1,56 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+GRADE_SHART	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+GSID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+GID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+GSHARTID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+GSVALUE	real	no	4	24   		no	(n/a)	(n/a)	
+GSVALUE2	real	no	4	24   		no	(n/a)	(n/a)	
+GSVALUE3	real	no	4	24   		no	(n/a)	(n/a)	
+TOZI	nvarchar	no	500	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_GRADE_SHART	clustered, unique, primary key located on PRIMARY	GSID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__GRADE_SHART__CRT__7FABD173	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column GSVALUE	DF_GRADE_SHART_GSVALUE	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column GSVALUE2	DF_GRADE_SHART_GSVALUE2	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column GSVALUE3	DF_GRADE_SHART_GSVALUE3	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_GRADE_SHART_GRADE_RANGE	No Action	Cascade	Enabled	Is_For_Replication	GID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.GRADE_RANGE (GID)
+FOREIGN KEY	FK_GRADE_SHART_GRADE_SHART_FUNC	No Action	Cascade	Enabled	Is_For_Replication	GSHARTID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.GRADE_SHART_FUNC (GSHARTID)
+PRIMARY KEY (clustered)	PK_GRADE_SHART	(n/a)	(n/a)	(n/a)	(n/a)	GSID

@@ -1,0 +1,47 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+AMALIAT	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+USERID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+USERNAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ADATE	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+AMALID	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+aidd	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+aidd	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_amaliat	clustered, unique, primary key located on PRIMARY	aidd
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__AMALIAT__CRT__565FA31D	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_amaliat	(n/a)	(n/a)	(n/a)	(n/a)	aidd

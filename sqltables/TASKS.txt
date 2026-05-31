@@ -1,0 +1,75 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+TASKS	dbo	user table	03/05/2026 01:57:07 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+IDNUM	int	no	4	10   	0    	no	(n/a)	(n/a)	
+GR	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+PERSONEL	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+TASK	nvarchar	no	8000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PERIORITY	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+STATUS	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+STDATE	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+STTIME	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ENDATE	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ENTIME	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+USERNAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+COMP_COD	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+SUMTIME	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+pic	image	no	16	     	     	yes	(n/a)	(n/a)	
+ss	float	no	8	53   		yes	(n/a)	(n/a)	
+skid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+num	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+tg	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+CTIM	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+USERCO	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SEE	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SEET	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDNUM	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+IX_TASKS_Status1	nonclustered located on PRIMARY	STATUS, IDNUM
+PK_TASKS	clustered, unique, primary key located on PRIMARY	IDNUM
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__TASKS__CRT__00B82943	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column SEE	DF__TASKS__SEE__7FC4050A	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CTIM	DF_TASKS_CTIM	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column PERIORITY	DF_TASKS_PERIORITY	(n/a)	(n/a)	(n/a)	(n/a)	((2))
+DEFAULT on column STATUS	DF_TASKS_STATUS	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+PRIMARY KEY (clustered)	PK_TASKS	(n/a)	(n/a)	(n/a)	(n/a)	IDNUM
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.EVENTS: FK_EVENTS_TASKS

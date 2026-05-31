@@ -1,0 +1,58 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+OTHER_DTL	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+NUMBER	float	no	8	53   		no	(n/a)	(n/a)	
+TAG	float	no	8	53   		no	(n/a)	(n/a)	
+REQUEST_NO	nvarchar	no	20	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+BARNAMEH	nvarchar	no	50	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DRIVER	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DRIVER_MOB	nvarchar	no	50	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CAMIUN_NUM	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MAGHSAD	float	no	8	53   		yes	(n/a)	(n/a)	
+CAM_KHALY	float	no	8	53   		yes	(n/a)	(n/a)	
+CAM_POOR	float	no	8	53   		yes	(n/a)	(n/a)	
+TOZIH	nvarchar	no	300	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CAMIUN	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_OTHER_DTL	clustered, unique, primary key located on PRIMARY	NUMBER, TAG
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__OTHER_DTL__CRT__3FFB60B2	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column CAM_KHALY	DF_OTHER_DTL_CAM_KHALY	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CAM_POOR	DF_OTHER_DTL_CAM_POOR	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_OTHER_DTL_HEAD_LST	Cascade	Cascade	Enabled	Is_For_Replication	NUMBER, TAG
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.HEAD_LST (NUMBER, TAG)
+PRIMARY KEY (clustered)	PK_OTHER_DTL	(n/a)	(n/a)	(n/a)	(n/a)	NUMBER, TAG

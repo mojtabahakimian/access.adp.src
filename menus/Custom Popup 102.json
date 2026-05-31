@@ -1,0 +1,52 @@
+﻿{
+  "Info": {
+    "Class": "clsDbCommandBar",
+    "Description": "CommandBar"
+  },
+  "Items": {
+    "AdaptiveMenu": false,
+    "Context": "",
+    "Enabled": true,
+    "Height": 26,
+    "Left": 0,
+    "NameLocal": "Custom Popup 102",
+    "Position": 5,
+    "Protection": 22,
+    "RowIndex": 1,
+    "Top": 0,
+    "Type": 2,
+    "Visible": false,
+    "Width": 140,
+    "Controls": [
+      {
+        "BeginGroup": false,
+        "BuiltIn": true,
+        "BuiltInFace": false,
+        "Caption": "&خـــــــــــــــــــــروج",
+        "DescriptionText": "",
+        "Enabled": true,
+        "FaceId": 2151,
+        "Height": 22,
+        "HelpContextId": 0,
+        "HelpFile": "",
+        "HyperlinkType": 0,
+        "Index": 1,
+        "IsPriorityDropped": false,
+        "OLEUsage": 1,
+        "OnAction": "",
+        "Parameter": "dialog_exit.&خـــــــــــــــــــــروج",
+        "Priority": 3,
+        "ShortcutText": "",
+        "State": 0,
+        "Style": 3,
+        "Tag": "",
+        "TooltipText": "&خـــــــــــــــــــــروج",
+        "Type": 1,
+        "Visible": true,
+        "Width": 138,
+        "Id": 1839,
+        "ImagePath": "rel:Custom Popup 102_Images\\خـــــــــــــــــــــروج"
+      }
+    ]
+  }
+}

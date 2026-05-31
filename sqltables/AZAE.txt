@@ -1,0 +1,58 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+AZAE	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+HES	char	no	20	     	     	no	no	no	Arabic_CI_AS
+TOPETEB	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+TOPASN	bit	no	1	     	     	no	(n/a)	(n/a)	
+ENDIS	bit	no	1	     	     	no	(n/a)	(n/a)	
+TOPMEGH	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+JAMZARIB	real	no	4	24   		no	(n/a)	(n/a)	
+EMTIAZ	real	no	4	24   		no	(n/a)	(n/a)	
+gradeid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+DTTIM	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ID	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_AZAE	clustered, unique, primary key located on PRIMARY	HES
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__AZAE__CRT__0658CF02	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column ENDIS	DF__AZAE__ENDIS__25DD32AA	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column TOPASN	DF__AZAE__TOPASN__24E90E71	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column TOPMEGH	DF__AZAE__TOPMEGH__26D156E3	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column EMTIAZ	DF_azae_EMTIAZ	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column JAMZARIB	DF_azae_JAMZARIB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column TOPETEB	DF_AZAE_TOPETEB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+PRIMARY KEY (clustered)	PK_AZAE	(n/a)	(n/a)	(n/a)	(n/a)	HES

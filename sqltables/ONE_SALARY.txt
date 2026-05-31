@@ -1,0 +1,80 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+ONE_SALARY	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+ODATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+FMON	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+TMON	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+FRIDS	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+TATIL	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+MORA	int	no	4	10   	0    	no	(n/a)	(n/a)	
+KOL_SALARY	int	no	4	10   	0    	no	(n/a)	(n/a)	
+KOSURAT	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SALARYKH	int	no	4	10   	0    	no	(n/a)	(n/a)	
+JHOURVTKAR	int	no	4	10   	0    	no	(n/a)	(n/a)	
+JHOURVT	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CUSTOH	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CUSTOHTDL	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ENTEGHALS	int	no	4	10   	0    	no	(n/a)	(n/a)	
+NORS	bit	no	1	     	     	no	(n/a)	(n/a)	
+USER_NAME	nvarchar	no	80	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+N_S	float	no	8	53   		yes	(n/a)	(n/a)	
+KOSURATTEXT	nvarchar	no	500	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+EZAFH	int	no	4	10   	0    	no	(n/a)	(n/a)	
+DAYSTS	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+IX_ONE_SALARY	nonclustered, unique, unique key located on PRIMARY	FMON
+IX_ONE_SALARY_1	nonclustered, unique, unique key located on PRIMARY	TMON
+PK_ONE_SALARY	clustered, unique, primary key located on PRIMARY	ODATE
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__ONE_SALARY__CRT__6621099A	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column ENTEGHALS	DF_ONE_SALARY_CUSTOH	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CUSTOH	DF_ONE_SALARY_CUSTOH1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CUSTOHTDL	DF_ONE_SALARY_CUSTOHTDL1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DAYSTS	DF_ONE_SALARY_DAYSS	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column EZAFH	DF_ONE_SALARY_EZAFH	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FRIDS	DF_ONE_SALARY_FRIDS	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column JHOURVT	DF_ONE_SALARY_JHOURVT	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column JHOURVTKAR	DF_ONE_SALARY_JHOURVT1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column KOL_SALARY	DF_ONE_SALARY_KOL_SALARY	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column KOSURAT	DF_ONE_SALARY_KOSURAT	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MORA	DF_ONE_SALARY_MORA	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column NORS	DF_ONE_SALARY_NORS	(n/a)	(n/a)	(n/a)	(n/a)	((-1))
+DEFAULT on column SALARYKH	DF_ONE_SALARY_SALARYKH	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column TATIL	DF_ONE_SALARY_TATIL	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+UNIQUE (non-clustered)	IX_ONE_SALARY	(n/a)	(n/a)	(n/a)	(n/a)	FMON
+UNIQUE (non-clustered)	IX_ONE_SALARY_1	(n/a)	(n/a)	(n/a)	(n/a)	TMON
+PRIMARY KEY (clustered)	PK_ONE_SALARY	(n/a)	(n/a)	(n/a)	(n/a)	ODATE

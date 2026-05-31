@@ -1,0 +1,59 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+GSCADTL	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+GSCADTCOD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+GSCANAME	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+GSCAGRADE	real	no	4	24   		no	(n/a)	(n/a)	
+GSCAFROM	real	no	4	24   		no	(n/a)	(n/a)	
+GSCATO	real	no	4	24   		no	(n/a)	(n/a)	
+GSCACOD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_GSCADTL	clustered, unique, primary key located on PRIMARY	GSCADTCOD
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__GSCADTL__CRT__76226739	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column GSCAFROM	DF_GSCADTL_GSCAFROM	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column GSCAGRADE	DF_GSCADTL_GSCAGRADE	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column GSCATO	DF_GSCADTL_GSCATO	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_GSCADTL_GSCALE	No Action	Cascade	Enabled	Is_For_Replication	GSCACOD
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.GSCALE (GSCACOD)
+PRIMARY KEY (clustered)	PK_GSCADTL	(n/a)	(n/a)	(n/a)	(n/a)	GSCADTCOD
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.GRADE_CUST_GRP: FK_GRADE_CUST_GRP_GSCADTL

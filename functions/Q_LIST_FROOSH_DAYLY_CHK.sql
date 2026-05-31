@@ -1,0 +1,13 @@
+﻿CREATE FUNCTION [dbo].[Q_LIST_FROOSH_DAYLY_CHK]
+ (@DT1 bigint,
+ @DT2 bigint)
+ RETURNS TABLE
+ AS
+ RETURN ( SELECT     dbo.HEAD_LST.NUMBER, SUM(dbo.PAY_GETD.MABL) AS SumOfMABL, dbo.CUST_HESAB.NAME, dbo.HEAD_LST.DATE_N, dbo.CUST_HESAB.hes, 
+                       dbo.HEAD_LST.TAG
+ FROM         dbo.HEAD_LST INNER JOIN
+                       dbo.PAY_GETD ON dbo.HEAD_LST.TAG = dbo.PAY_GETD.TAG AND dbo.HEAD_LST.NUMBER = dbo.PAY_GETD.NUMBER INNER JOIN
+                       dbo.CUST_HESAB ON dbo.HEAD_LST.CUST_NO = dbo.CUST_HESAB.hes
+ WHERE     (dbo.HEAD_LST.TAG = 2)
+ GROUP BY dbo.HEAD_LST.NUMBER, dbo.CUST_HESAB.NAME, dbo.HEAD_LST.DATE_N, dbo.CUST_HESAB.hes, dbo.HEAD_LST.TAG
+ HAVING      (dbo.HEAD_LST.DATE_N BETWEEN @DT1 AND @DT2) )

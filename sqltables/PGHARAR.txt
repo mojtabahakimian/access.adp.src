@@ -1,0 +1,54 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PGHARAR	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+CODE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+GHNUM	int	no	4	10   	0    	no	(n/a)	(n/a)	
+GHSTART	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+GHEND	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+MORAKH	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{E560A24A-4508-11D8-A577-FB2A0C87E435}	nonclustered located on PRIMARY	CODE
+aaaaaPGHARAR_PK	nonclustered, unique, primary key located on PRIMARY	CODE, GHNUM
+CODE	nonclustered located on PRIMARY	CODE
+GHNUM	nonclustered located on PRIMARY	GHNUM
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaPGHARAR_PK	(n/a)	(n/a)	(n/a)	(n/a)	CODE, GHNUM
+DEFAULT on column CRT	DF__PGHARAR__CRT__210CC53E	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column GHNUM	DF__PGHARAR__GHNUM__38EE7070	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MORAKH	DF__PGHARAR__MORAKH__39E294A9	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	PGHARAR_FK00	No Action	Cascade	Enabled	Is_For_Replication	CODE
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PERSONEL (CODE)

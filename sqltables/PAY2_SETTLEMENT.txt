@@ -1,0 +1,105 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PAY2_SETTLEMENT	dbo	user table	04/05/2026 09:00:51 ب.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+SET_ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+EMP_ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+WS_ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SETTLE_DATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+HIRE_DATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+END_DATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+SENIORITY_DAYS	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SENIORITY_YEARS	decimal	no	5	6    	2    	no	(n/a)	(n/a)	
+LAST_SALARY	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+LAST_DAILY	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+PREV_SET_ID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+PREV_SENIORITY_DAYS	int	no	4	10   	0    	no	(n/a)	(n/a)	
+LEAVE_BAL_MIN	int	no	4	10   	0    	no	(n/a)	(n/a)	
+LEAVE_BAL_DAYS	decimal	no	5	5    	2    	no	(n/a)	(n/a)	
+EIDI	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+BON	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+LEAVE_PAY	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+SANAVAT	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+PREV_CREDIT	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+OTHER_INCOME	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+TOTAL_INCOME	bigint	yes	8	19   	0    	yes	(n/a)	(n/a)	
+PREV_DEBIT	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+EIDI_TAX	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+LOAN_BALANCE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+OTHER_DED	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+TOTAL_DED	bigint	yes	8	19   	0    	yes	(n/a)	(n/a)	
+NET_SETTLE	bigint	yes	8	19   	0    	yes	(n/a)	(n/a)	
+STATUS	tinyint	no	1	3    	0    	no	(n/a)	(n/a)	
+DEED_N_S	float	no	8	53   		yes	(n/a)	(n/a)	
+CALC_METHOD	nvarchar	no	400	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+NOTES	nvarchar	no	600	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CREATED_AT	datetime	no	8	     	     	no	(n/a)	(n/a)	
+CREATED_BY	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+APPROVED_BY	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+APPROVED_AT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+SET_ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+IX_SET_EMP	nonclustered located on PRIMARY	EMP_ID, SETTLE_DATE
+PK_PAY2_SETTLEMENT	clustered, unique, primary key located on PRIMARY	SET_ID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PAY2_SETTLE__CRT__7DFBB829	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column BON	DF_SET_BON	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CREATED_AT	DF_SET_CRT	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column EIDI	DF_SET_EID	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column EIDI_TAX	DF_SET_ETX	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column LEAVE_BAL_DAYS	DF_SET_LBD	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column LOAN_BALANCE	DF_SET_LBL	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column LEAVE_BAL_MIN	DF_SET_LBM	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column LEAVE_PAY	DF_SET_LPY	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column OTHER_DED	DF_SET_ODE	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column OTHER_INCOME	DF_SET_OIN	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column PREV_CREDIT	DF_SET_PCR	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column PREV_DEBIT	DF_SET_PDB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column PREV_SENIORITY_DAYS	DF_SET_PSD	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SANAVAT	DF_SET_SAN	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column STATUS	DF_SET_ST	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+FOREIGN KEY	FK_SET_EMP	No Action	No Action	Enabled	Is_For_Replication	EMP_ID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PAY2_EMPLOYEE (EMP_ID)
+FOREIGN KEY	FK_SET_PREV	No Action	No Action	Enabled	Is_For_Replication	PREV_SET_ID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PAY2_SETTLEMENT (SET_ID)
+FOREIGN KEY	FK_SET_WS	No Action	No Action	Enabled	Is_For_Replication	WS_ID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PAY2_WORKSHOP (WS_ID)
+PRIMARY KEY (clustered)	PK_PAY2_SETTLEMENT	(n/a)	(n/a)	(n/a)	(n/a)	SET_ID
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.PAY2_SETTLEMENT: FK_SET_PREV

@@ -1,0 +1,93 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+CustomerComplaints	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+ComplaintID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CustomerFirstName	nvarchar	no	200	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+CustomerLastName	nvarchar	no	200	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+CustomerMobile	nvarchar	no	40	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+CustomerEmail	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CustomerAddress	nvarchar	no	1000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ProductTypeComplaint	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PizzaType	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ProductWeight	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ProductionDate	date	no	3	10   	0    	yes	(n/a)	(n/a)	
+ExpiryDate	date	no	3	10   	0    	yes	(n/a)	(n/a)	
+ProductCode	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+OtherDairyProductName	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PurchaseLocation	nvarchar	no	400	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PurchaseDate	date	no	3	10   	0    	yes	(n/a)	(n/a)	
+BatchNumber	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ComplaintRegisteredDate	date	no	3	10   	0    	yes	(n/a)	(n/a)	
+IsComplaintType_TasteSmell	bit	no	1	     	     	no	(n/a)	(n/a)	
+IsComplaintType_Packaging	bit	no	1	     	     	no	(n/a)	(n/a)	
+IsComplaintType_WrongExpiryDate	bit	no	1	     	     	no	(n/a)	(n/a)	
+IsComplaintType_NonConformity	bit	no	1	     	     	no	(n/a)	(n/a)	
+IsComplaintType_ForeignObject	bit	no	1	     	     	no	(n/a)	(n/a)	
+IsComplaintType_AbnormalTexture	bit	no	1	     	     	no	(n/a)	(n/a)	
+IsComplaintType_Mold	bit	no	1	     	     	no	(n/a)	(n/a)	
+IsComplaintType_Other	bit	no	1	     	     	no	(n/a)	(n/a)	
+ComplaintType_OtherDescription	nvarchar	no	1000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ComplaintDescription	nvarchar	no	-1	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+CustomerActionTaken	bit	no	1	     	     	no	(n/a)	(n/a)	
+CustomerActionDescription	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+RequestedResolution_Refund	bit	no	1	     	     	no	(n/a)	(n/a)	
+RequestedResolution_Replacement	bit	no	1	     	     	no	(n/a)	(n/a)	
+RequestedResolution_FurtherInvestigation	bit	no	1	     	     	no	(n/a)	(n/a)	
+RequestedResolution_Explanation	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+InformationConfirmed	bit	no	1	     	     	no	(n/a)	(n/a)	
+SubmissionTimestamp	datetime2	no	8	27   	7    	no	(n/a)	(n/a)	
+ComplaintStatus	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+ComplaintID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__Customer__740D89AF6E169361	clustered, unique, primary key located on PRIMARY	ComplaintID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column ComplaintStatus	DF__CustomerC__Compl__7D58D6F1	(n/a)	(n/a)	(n/a)	(n/a)	(N'جدید')
+DEFAULT on column CustomerActionTaken	DF__CustomerC__Custo__779FFD9B	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column InformationConfirmed	DF__CustomerC__Infor__7B708E7F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column IsComplaintType_TasteSmell	DF__CustomerC__IsCom__6FFEDBD3	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column IsComplaintType_Packaging	DF__CustomerC__IsCom__70F3000C	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column IsComplaintType_WrongExpiryDate	DF__CustomerC__IsCom__71E72445	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column IsComplaintType_NonConformity	DF__CustomerC__IsCom__72DB487E	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column IsComplaintType_ForeignObject	DF__CustomerC__IsCom__73CF6CB7	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column IsComplaintType_AbnormalTexture	DF__CustomerC__IsCom__74C390F0	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column IsComplaintType_Mold	DF__CustomerC__IsCom__75B7B529	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column IsComplaintType_Other	DF__CustomerC__IsCom__76ABD962	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column RequestedResolution_Refund	DF__CustomerC__Reque__789421D4	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column RequestedResolution_Replacement	DF__CustomerC__Reque__7988460D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column RequestedResolution_FurtherInvestigation	DF__CustomerC__Reque__7A7C6A46	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SubmissionTimestamp	DF__CustomerC__Submi__7C64B2B8	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column CRT	DF__CustomerCom__CRT__56B4D673	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK__Customer__740D89AF6E169361	(n/a)	(n/a)	(n/a)	(n/a)	ComplaintID

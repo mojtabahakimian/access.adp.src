@@ -1,0 +1,80 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+TR_PAY_GETD	dbo	user table	03/05/2026 03:30:18 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+N_SERI	float	no	8	53   		yes	(n/a)	(n/a)	
+BANK	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+DATE_S	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+DATE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+SHOBEH	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MABL	float	no	8	53   		yes	(n/a)	(n/a)	
+NAME_TAH	nvarchar	no	240	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+N_HESAB	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+N_S	float	no	8	53   		yes	(n/a)	(n/a)	
+N_KOL	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+N_MOIN	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+N_TAF	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+N_KOL2	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+N_MOIN2	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+N_TAF2	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+N_KOL3	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+N_MOIN3	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+N_TAF3	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+NUMBER	float	no	8	53   		yes	(n/a)	(n/a)	
+TAG	float	no	8	53   		yes	(n/a)	(n/a)	
+ANBAR	float	no	8	53   		yes	(n/a)	(n/a)	
+RADIF	float	no	8	53   		yes	(n/a)	(n/a)	
+CUST_NO	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+VAZ	float	no	8	53   		yes	(n/a)	(n/a)	
+LIST_NO	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+KIND	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SANDUGH	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+HES1	nvarchar	no	160	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+HES2	nvarchar	no	160	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+HES3	nvarchar	no	160	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ESTELAM	nvarchar	no	1020	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SAYADI	nvarchar	no	64	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ID	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+UP_DATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+UP_TIME	float	no	8	53   		no	(n/a)	(n/a)	
+UP_USER_NAME	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PC_NAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IPADD	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TRIDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+TRIDD	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__TR_PAY_G__9FFE4EA46E02EDDB	clustered, unique, primary key located on PRIMARY	TRIDD
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (clustered)	PK__TR_PAY_G__9FFE4EA46E02EDDB	(n/a)	(n/a)	(n/a)	(n/a)	TRIDD

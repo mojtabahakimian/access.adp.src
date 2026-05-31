@@ -1,0 +1,85 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+TDETA_HES	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+N_KOL	int	no	4	10   	0    	no	(n/a)	(n/a)	
+NUMBER	int	no	4	10   	0    	no	(n/a)	(n/a)	
+TNUMBER	int	no	4	10   	0    	no	(n/a)	(n/a)	
+NAME	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TOZIH	nvarchar	no	510	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+BED_BES	float	no	8	53   		yes	(n/a)	(n/a)	
+ADDRESS	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TEL	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CODE_E	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+ECODE	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PCODE	nvarchar	no	20	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IYALAT	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CITY	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MCODEM	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CUST_COD	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+MOBILE	nvarchar	no	110	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ROUTE_NAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Longitude	float	no	8	53   		yes	(n/a)	(n/a)	
+Latitude	float	no	8	53   		yes	(n/a)	(n/a)	
+OSTANID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SHAHRID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+USERCO	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+USER_NAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+tob	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDD	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+CODE_E	nonclustered located on PRIMARY	CODE_E
+IX_TDETA_HES_NAME	nonclustered, unique, unique key located on PRIMARY	N_KOL, NUMBER, NAME
+PK_TDETA_HES	clustered, unique, primary key located on PRIMARY	N_KOL, NUMBER, TNUMBER
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CODE_E	DF__TDETA_HES__CODE___7DCDAAA2	(n/a)	(n/a)	(n/a)	(n/a)	('0')
+DEFAULT on column CRT	DF__TDETA_HES__CRT__4A43E4FB	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column tob	DF__TDETA_HES__tob__20389C96	(n/a)	(n/a)	(n/a)	(n/a)	((2))
+FOREIGN KEY	FK_TDETA_HES_DETA_HES	No Action	Cascade	Enabled	Is_For_Replication	N_KOL, NUMBER
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.DETA_HES (N_KOL, NUMBER)
+UNIQUE (non-clustered)	IX_TDETA_HES_NAME	(n/a)	(n/a)	(n/a)	(n/a)	N_KOL, NUMBER, NAME
+PRIMARY KEY (clustered)	PK_TDETA_HES	(n/a)	(n/a)	(n/a)	(n/a)	N_KOL, NUMBER, TNUMBER
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.DEED_DTL: FK_DEED_DTL_TDETA_HES
+YAZDSEPAR1405.dbo.HEAD_MANF: FK_HEAD_MANF_TDETA_HES
+YAZDSEPAR1405.dbo.PAY_GETD: FK_PAY_GETD_TDETA_HES
+YAZDSEPAR1405.dbo.PAY_GETP: FK_PAY_GETP_TDETA_HES
+YAZDSEPAR1405.dbo.PGET_LST: FK_PGET_LST_TDETA_HES
+YAZDSEPAR1405.dbo.TDETA_HES2: FK_TDETA_HES2_TDETA_HES

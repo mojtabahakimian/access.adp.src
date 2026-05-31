@@ -1,0 +1,81 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PM_ASSETS	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+IDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+AS_NAME	nvarchar	no	400	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+AS_SERIAL	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+AS_MODEL	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+AS_GRP	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+AS_Longitude	decimal	no	9	10   	7    	yes	(n/a)	(n/a)	
+AS_Latitude	decimal	no	9	10   	7    	yes	(n/a)	(n/a)	
+AS_IDDMAIN	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+AS_IDAMVAL	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+AS_IMAGE	image	no	16	     	     	yes	(n/a)	(n/a)	
+AS_HESAB	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+AS_GARANTI	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+AS_GARANTICOMP	nvarchar	no	400	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+AS_LOCATION	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+AS_STATUS	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+AS_CODING	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN1	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SGN2	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SGN3	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SGN4	bit	no	1	     	     	yes	(n/a)	(n/a)	
+sgn1usid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+sgn2usid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+sgn3usid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CR	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+US	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDD	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_PM_ASSETS	clustered, unique, primary key located on PRIMARY	IDD
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column AS_STATUS	DF__PM_ASSETS__AS_ST__010A0A00	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column CRT	DF__PM_ASSETS__CRT__1F247CCC	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column SGN1	DF__PM_ASSETS__SGN1__01FE2E39	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN2	DF__PM_ASSETS__SGN2__02F25272	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN3	DF__PM_ASSETS__SGN3__03E676AB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN4	DF__PM_ASSETS__SGN4__04DA9AE4	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_PM_ASSETS_PM_LOCATION	Cascade	Cascade	Enabled	Is_For_Replication	AS_LOCATION
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PM_LOCATION (IDD)
+PRIMARY KEY (clustered)	PK_PM_ASSETS	(n/a)	(n/a)	(n/a)	(n/a)	IDD
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.PM_EM_FAILURE_EVENTS: FK_PM_EM_FAILURE_EVENTS_PM_ASSETS
+YAZDSEPAR1405.dbo.PM_RUMAINTE: FK_PM_RUMAINTE_PM_ASSETS

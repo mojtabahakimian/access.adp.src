@@ -1,0 +1,45 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+pagen	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+pagenum	int	no	4	10   	0    	no	(n/a)	(n/a)	
+uid	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+uid	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+pagenum	nonclustered located on PRIMARY	pagenum
+PK_pagen	clustered, unique, primary key located on PRIMARY	uid
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__pagen__CRT__2018A105	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column pagenum	DF__pagen__pagenum__1B5E0D89	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+PRIMARY KEY (clustered)	PK_pagen	(n/a)	(n/a)	(n/a)	(n/a)	uid

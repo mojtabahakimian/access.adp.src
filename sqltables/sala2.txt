@@ -1,0 +1,73 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+sala2	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+CODE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+PNAME	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+PFAMILY	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+PNPF	nvarchar	no	202	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+KHNOWNUM	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+FATHER	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+BIMEH_NUM	float	no	8	53   		no	(n/a)	(n/a)	
+JOB	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+SEX	bit	no	1	     	     	no	(n/a)	(n/a)	
+WSDAT	float	no	8	53   		yes	(n/a)	(n/a)	
+WEDATE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+WDATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+DAYS	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SALARY_DAYLY	float	no	8	53   		yes	(n/a)	(n/a)	
+mosalary	float	no	8	53   		yes	(n/a)	(n/a)	
+hom	float	no	8	53   		yes	(n/a)	(n/a)	
+jmazsalmash	float	no	8	53   		yes	(n/a)	(n/a)	
+jmazsalmash3	float	no	8	53   		yes	(n/a)	(n/a)	
+jamazsalmash	float	no	8	53   		yes	(n/a)	(n/a)	
+bimper	float	no	8	53   		yes	(n/a)	(n/a)	
+ghabel	float	no	8	53   		yes	(n/a)	(n/a)	
+chid	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CONDITIONS	int	no	4	10   	0    	no	(n/a)	(n/a)	
+JAZB	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SAYER	int	no	4	10   	0    	no	(n/a)	(n/a)	
+EZAFAH	int	no	4	10   	0    	no	(n/a)	(n/a)	
+PADASH	int	no	4	10   	0    	no	(n/a)	(n/a)	
+KASR_VAM	int	no	4	10   	0    	no	(n/a)	(n/a)	
+MM	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+bimper2	float	no	8	53   		yes	(n/a)	(n/a)	
+JAMMAHS20	float	no	8	53   		yes	(n/a)	(n/a)	
+DSW_IDPLC	nvarchar	no	60	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSW_NAT	nvarchar	no	20	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSW_BDATE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+MaxOfHDATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+MAZMASH	float	no	8	53   		yes	(n/a)	(n/a)	
+mali	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+TAB56	bit	no	1	     	     	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__sala2__CRT__0B087586	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())

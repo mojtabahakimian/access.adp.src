@@ -1,0 +1,15 @@
+﻿CREATE FUNCTION [dbo].[MARKAZ_SUB]
+ (@Forms___FMENU_TARAZ_4___DT1 bigint,
+ @Forms___FMENU_TARAZ_4___DT2 bigint,
+ @Forms___FMENU_TARAZ_4___SNDNUM1 float,
+ @Forms___FMENU_TARAZ_4___SNDNUM2 float)
+ RETURNS TABLE
+ AS
+ RETURN ( SELECT     SUM(dbo.DEED_DTL.BED) AS SumOfBED, SUM(dbo.DEED_DTL.BES) AS SumOfBES, dbo.TCOD_MARKAZHAZ.MHAZ_NO, 
+                       dbo.TCOD_MARKAZHAZ.MHAZNAME
+ FROM         dbo.DEED_HED INNER JOIN
+                       dbo.DEED_DTL ON dbo.DEED_HED.N_S = dbo.DEED_DTL.N_S INNER JOIN
+                       dbo.TCOD_MARKAZHAZ ON dbo.DEED_DTL.MHAZ_NO = dbo.TCOD_MARKAZHAZ.MHAZ_NO
+ WHERE     (dbo.DEED_HED.DATE_S >= @Forms___FMENU_TARAZ_4___DT1) AND (dbo.DEED_HED.DATE_S <= @Forms___FMENU_TARAZ_4___DT2) AND 
+                       (dbo.DEED_HED.N_S BETWEEN @Forms___FMENU_TARAZ_4___SNDNUM1 AND @Forms___FMENU_TARAZ_4___SNDNUM2)
+ GROUP BY dbo.TCOD_MARKAZHAZ.MHAZ_NO, dbo.TCOD_MARKAZHAZ.MHAZNAME )

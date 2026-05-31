@@ -1,0 +1,23 @@
+﻿{
+  "Info": {
+    "Class": "clsDbCommandBar",
+    "Description": "CommandBar"
+  },
+  "Items": {
+    "AdaptiveMenu": false,
+    "Context": "",
+    "Enabled": true,
+    "Height": 26,
+    "Left": -8,
+    "NameLocal": "null",
+    "Position": 1,
+    "Protection": 7,
+    "RowIndex": 3,
+    "Top": -8,
+    "Type": 1,
+    "Visible": false,
+    "Width": 200,
+    "Controls": [
+    ]
+  }
+}

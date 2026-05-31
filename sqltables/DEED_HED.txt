@@ -1,0 +1,82 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+DEED_HED	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+N_S	float	no	8	53   		no	(n/a)	(n/a)	
+DATE_S	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+SHARH_S	nvarchar	no	510	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+NO_S	float	no	8	53   		no	(n/a)	(n/a)	
+ANBAR	float	no	8	53   		yes	(n/a)	(n/a)	
+N_FACTOR	float	no	8	53   		yes	(n/a)	(n/a)	
+GHATEI	bit	no	1	     	     	no	(n/a)	(n/a)	
+USER_NAME	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+base	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SGN1	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SGN2	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SGN3	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SGN4	bit	no	1	     	     	yes	(n/a)	(n/a)	
+OKF	bit	no	1	     	     	yes	(n/a)	(n/a)	
+sgn1usid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+sgn2usid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+sgn3usid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+BAYEG	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+base	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{9A1BD9F9-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	ANBAR
+aaaaaDEED_HED_PK	nonclustered, unique, primary key located on PRIMARY	N_S
+IX_DEED_HED_DATE_S	nonclustered located on PRIMARY	DATE_S
+N_SI	nonclustered located on PRIMARY	N_S
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaDEED_HED_PK	(n/a)	(n/a)	(n/a)	(n/a)	N_S
+CHECK on column DATE_S	CK_DEED_HED	(n/a)	(n/a)	Enabled	Is_For_Replication	([date_s]>=(10101))
+DEFAULT on column GHATEI	DF__DEED_HED__GHATEI__1DB06A4F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN1	DF__DEED_HED__SGN1__3BB699D9	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN2	DF__DEED_HED__SGN2__3CAABE12	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN3	DF__DEED_HED__SGN3__3D9EE24B	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN4	DF__DEED_HED__SGN4__3E930684	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.ANBGRD_HEAD: FK_ANBGRD_HEAD_DEED_HED
+YAZDSEPAR1405.dbo.CHKREC_H: CHKREC_H_FK00
+YAZDSEPAR1405.dbo.CHREC_HP: CHREC_HP_FK00
+YAZDSEPAR1405.dbo.DEED_DTL: FK_DEED_DTL_DEED_HED
+YAZDSEPAR1405.dbo.HEAD_LST: FK_HEAD_LST_DEED_HED
+YAZDSEPAR1405.dbo.HEAD_LST_TMP_WPF: FK_HEAD_LST_TMP_WPF_DEED_HED
+YAZDSEPAR1405.dbo.MO_DTL: MO_DTL_FK00
+YAZDSEPAR1405.dbo.PGET_HED: PGET_HED_FK00
+YAZDSEPAR1405.dbo.WORKHEAD: FK_WORKHEAD_DEED_HED

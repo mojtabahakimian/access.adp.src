@@ -1,0 +1,125 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+INVO_LST	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+NUMBER	float	no	8	53   		no	(n/a)	(n/a)	
+TAG	float	no	8	53   		no	(n/a)	(n/a)	
+ANBAR	int	no	4	10   	0    	no	(n/a)	(n/a)	
+RADIF	float	no	8	53   		yes	(n/a)	(n/a)	
+CODE	nvarchar	no	30	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+MEGH	float	no	8	53   		no	(n/a)	(n/a)	
+MEGHk	float	no	8	53   		no	(n/a)	(n/a)	
+MEGH_MAR	float	no	8	53   		no	(n/a)	(n/a)	
+MANDAH	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MABL	float	no	8	53   		no	(n/a)	(n/a)	
+MABL_K	float	no	8	53   		no	(n/a)	(n/a)	
+FROM_A	bit	no	1	     	     	no	(n/a)	(n/a)	
+N_RASID	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MEGH_R	float	no	8	53   		no	(n/a)	(n/a)	
+RADAH	float	no	8	53   		yes	(n/a)	(n/a)	
+SANAD_NO	float	no	8	53   		yes	(n/a)	(n/a)	
+CUST_NO	float	no	8	53   		yes	(n/a)	(n/a)	
+ANBARF	float	no	8	53   		yes	(n/a)	(n/a)	
+VAHED_K	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+N_KOL	float	no	8	53   		yes	(n/a)	(n/a)	
+N_MOIN	float	no	8	53   		yes	(n/a)	(n/a)	
+N_TAF	float	no	8	53   		yes	(n/a)	(n/a)	
+AVRAGE	float	no	8	53   		yes	(n/a)	(n/a)	
+id	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+AVRAGE2	float	no	8	53   		yes	(n/a)	(n/a)	
+IMBAA	float	no	8	53   		yes	(n/a)	(n/a)	
+TOTALARZ	float	no	8	53   		yes	(n/a)	(n/a)	
+VISITOR	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TKHN	float	no	8	53   		yes	(n/a)	(n/a)	
+JAY	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+JAYO	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+id	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{9A1BD9E9-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	NUMBER, TAG
+{9A1BDA11-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	VAHED_K
+A_T_NI	nonclustered located on PRIMARY	ANBAR, NUMBER, TAG
+C_T_NI	nonclustered located on PRIMARY	NUMBER, TAG, CUST_NO
+CODE_TI	nonclustered located on PRIMARY	TAG(-), CODE(-)
+CODE_TKI	nonclustered located on PRIMARY	TAG(-), CODE(-), VAHED_K(-)
+FIFO_I	nonclustered located on PRIMARY	ANBAR, TAG, CODE
+FIFO_I1	nonclustered located on PRIMARY	ANBAR, NUMBER, TAG, CODE
+INVO_LSTN_KOL	nonclustered located on PRIMARY	N_KOL
+IX_N_RASID	nonclustered located on PRIMARY	N_RASID
+N_MOIN	nonclustered located on PRIMARY	N_MOIN
+N_TAF	nonclustered located on PRIMARY	N_TAF
+PK_INVO_LST	clustered, unique, primary key located on PRIMARY	id
+STUF_FSKINVO_LST	nonclustered located on PRIMARY	CODE, ANBAR
+TDETA_HESINVO_LST	nonclustered located on PRIMARY	N_KOL, N_MOIN, N_TAF
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+CHECK on column MABL	CK INVO_LST MABL	(n/a)	(n/a)	Enabled	Is_For_Replication	(NOT [MABL] IS NULL)
+CHECK on column MABL_K	CK INVO_LST MABL_K	(n/a)	(n/a)	Enabled	Is_For_Replication	(NOT [MABL_K] IS NULL)
+CHECK on column MEGH	CK INVO_LST MEGH	(n/a)	(n/a)	Enabled	Is_For_Replication	(NOT [MEGH] IS NULL)
+CHECK on column MEGHk	CK INVO_LST MEGHk	(n/a)	(n/a)	Enabled	Is_For_Replication	(NOT [MEGHk] IS NULL)
+DEFAULT on column CRT	DF__INVO_LST__CRT__5C629536	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column FROM_A	DF__INVO_LST__FROM_A__164452B1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column IMBAA	DF__INVO_LST__IMBAA__24F264BB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column JAY	DF__INVO_LST__JAY__27CED166	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MABL	DF__INVO_LST__MABL__145C0A3F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MABL_K	DF__INVO_LST__MABL_K__15502E78	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MEGH	DF__INVO_LST__MEGH__117F9D94	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MEGH_MAR	DF__INVO_LST__MEGH_M__1367E606	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MEGH_R	DF__INVO_LST__MEGH_R__173876EA	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MEGHk	DF__INVO_LST__MEGHk__1273C1CD	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column TKHN	DF__INVO_LST__TKHN__26DAAD2D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column TOTALARZ	DF__INVO_LST__TOTALA__25E688F4	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column AVRAGE	DF_INVO_LST_AVRAGE	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column AVRAGE2	DF_INVO_LST_AVRAGE1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column N_KOL	DF_INVO_LST_N_KOL	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column N_MOIN	DF_INVO_LST_N_MOIN	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_INVO_LST_HEAD_LST	No Action	Cascade	Enabled	Is_For_Replication	NUMBER, TAG
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.HEAD_LST (NUMBER, TAG)
+FOREIGN KEY	FK_INVO_LST_STUF_FSK	No Action	Cascade	Enabled	Is_For_Replication	CODE, ANBAR
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.STUF_FSK (CODE, ANBAR)
+FOREIGN KEY	FK_INVO_LST_TCOD_VAHEDS	No Action	Cascade	Enabled	Is_For_Replication	VAHED_K
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_VAHEDS (CODE)
+PRIMARY KEY (clustered)	PK_INVO_LST	(n/a)	(n/a)	(n/a)	(n/a)	id
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.IVO_EXTENDED: FK_IVO_EXTENDED_INVO_LST
+
+
+-- sp_help Recordset 9
+
+Table is referenced by views	
+v_bg_daily
+v_reserved_daily

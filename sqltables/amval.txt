@@ -1,0 +1,59 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+amval	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+barchasb	float	no	8	53   		no	(n/a)	(n/a)	
+aname	nvarchar	no	510	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+calmethod	int	no	4	10   	0    	no	(n/a)	(n/a)	
+rate	float	no	8	53   		no	(n/a)	(n/a)	
+hesab	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+khdate	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+price	float	no	8	53   		yes	(n/a)	(n/a)	
+place	nvarchar	no	510	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+arzesh	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+astatus	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+Description	nvarchar	no	510	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+USER_NAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_amval	clustered, unique, primary key located on PRIMARY	barchasb
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__amval__CRT__7251D655	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column arzesh	DF_amval_arzesh	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column astatus	DF_amval_astatus	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column calmethod	DF_amval_calmethod	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column price	DF_amval_price	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column rate	DF_amval_rate	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+PRIMARY KEY (clustered)	PK_amval	(n/a)	(n/a)	(n/a)	(n/a)	barchasb

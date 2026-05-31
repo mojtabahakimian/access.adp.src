@@ -1,0 +1,60 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PM_MVAD	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+IDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+JOB_IDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+MV_ANBAR	int	no	4	10   	0    	no	(n/a)	(n/a)	
+MV_CODE	nvarchar	no	30	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+MV_MEGH	float	no	8	53   		no	(n/a)	(n/a)	
+MV_MEGHk	float	no	8	53   		no	(n/a)	(n/a)	
+MV_VAHED_K	int	no	4	10   	0    	no	(n/a)	(n/a)	
+MV_DESCRIPTION	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CR	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+US	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDD	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_PM_MVAD	clustered, unique, primary key located on PRIMARY	IDD
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PM_MVAD__CRT__76577163	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column MV_MEGH	DF__PM_MVAD__MV_MEGH__235F2204	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MV_MEGHk	DF__PM_MVAD__MV_MEGH__2453463D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_PM_MVAD_PM_MVAD	No Action	Cascade	Enabled	Is_For_Replication	JOB_IDD
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PM_JOB (IDD)
+FOREIGN KEY	FK_PM_MVAD_STUF_DEF	Cascade	Cascade	Enabled	Is_For_Replication	MV_CODE
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.STUF_DEF (CODE)
+FOREIGN KEY	FK_PM_MVAD_TCOD_ANBAR	Cascade	Cascade	Enabled	Is_For_Replication	MV_ANBAR
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_ANBAR (CODE)
+PRIMARY KEY (clustered)	PK_PM_MVAD	(n/a)	(n/a)	(n/a)	(n/a)	IDD

@@ -1,0 +1,24 @@
+﻿CREATE VIEW [dbo].[MOGO_AVL_KOL_SUB]
+AS
+
+SELECT     CODE, SUM(MOGODI_A) AS MEG, SUM(MABL_A) AS SumOfMABL_A, 0 AS AA
+FROM         dbo.STUF_FSK
+GROUP BY CODE
+UNION
+SELECT     CODE, SUM(MEGHk - MEGH_MAR) AS MEG, SUM(MABL_K) AS SumOfMABL_K, 1 AS AA
+FROM         dbo.INVO_LST
+WHERE     (TAG = 1) OR
+                      (TAG = 7) OR
+                      (TAG = 9) OR
+                      (TAG = 24)
+GROUP BY CODE
+UNION
+SELECT     CODE, SUM(MEGHk) AS MEG, SUM(MABL_K) AS SumOfMABL_K, 1 AS AA
+FROM         dbo.INVO_LST
+WHERE     (TAG = 22)
+GROUP BY CODE
+UNION
+SELECT     dbo.ANBGRD_LST.CODE, (dbo.ANBGRD_LST.MOG - dbo.ANBGRD_LST.NUM3) * - 1 AS MEG, 0 AS mabl, 2 AS aa
+FROM         dbo.ANBGRD_LST INNER JOIN
+                      dbo.ANBGRD_HEAD ON dbo.ANBGRD_LST.GRD_NUM = dbo.ANBGRD_HEAD.GRD_NUM
+WHERE     ((dbo.ANBGRD_LST.MOG - dbo.ANBGRD_LST.NUM3) * - 1 > 0) AND (dbo.ANBGRD_HEAD.N_S IS NOT NULL)

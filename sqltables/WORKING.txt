@@ -1,0 +1,93 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+WORKING	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+PCODE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+WDATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+DAYS	int	no	4	10   	0    	no	(n/a)	(n/a)	
+EZAFAH	int	no	4	10   	0    	no	(n/a)	(n/a)	
+PADASH	int	no	4	10   	0    	no	(n/a)	(n/a)	
+KASR_VAM	int	no	4	10   	0    	no	(n/a)	(n/a)	
+HAZCENTER	int	no	4	10   	0    	no	(n/a)	(n/a)	
+KHADAMAT	int	no	4	10   	0    	no	(n/a)	(n/a)	
+FROSH	int	no	4	10   	0    	no	(n/a)	(n/a)	
+TOLID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+EZAD	float	no	8	53   		no	(n/a)	(n/a)	
+EZTAT	float	no	8	53   		no	(n/a)	(n/a)	
+KASRS	int	no	4	10   	0    	no	(n/a)	(n/a)	
+KASRM	int	no	4	10   	0    	no	(n/a)	(n/a)	
+TDAYS	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+DAYSB	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+ECOL1	int	no	4	10   	0    	no	(n/a)	(n/a)	
+ECOL2	int	no	4	10   	0    	no	(n/a)	(n/a)	
+ECOL3	int	no	4	10   	0    	no	(n/a)	(n/a)	
+KCOL1	int	no	4	10   	0    	no	(n/a)	(n/a)	
+ECOL4	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{E560A248-4508-11D8-A577-FB2A0C87E435}	nonclustered located on PRIMARY	PCODE
+{E560A249-4508-11D8-A577-FB2A0C87E435}	nonclustered located on PRIMARY	WDATE
+aaaaaWORKING_PK	nonclustered, unique, primary key located on PRIMARY	PCODE, WDATE
+PCODE	nonclustered located on PRIMARY	PCODE
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaWORKING_PK	(n/a)	(n/a)	(n/a)	(n/a)	PCODE, WDATE
+CHECK on column EZAFAH	CK WORKING EZAFAH	(n/a)	(n/a)	Enabled	Is_For_Replication	(NOT [EZAFAH] IS NULL)
+CHECK on column KASR_VAM	CK WORKING KASR_VAM	(n/a)	(n/a)	Enabled	Is_For_Replication	(NOT [KASR_VAM] IS NULL)
+CHECK on column PADASH	CK WORKING PADASH	(n/a)	(n/a)	Enabled	Is_For_Replication	(NOT [PADASH] IS NULL)
+DEFAULT on column CRT	DF__WORKING__CRT__11FF8BD8	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column DAYS	DF__WORKING__DAYS__297722B6	(n/a)	(n/a)	(n/a)	(n/a)	((31))
+DEFAULT on column ECOL1	DF__WORKING__ECOL1__01A9287E	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ECOL2	DF__WORKING__ECOL2__029D4CB7	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ECOL3	DF__WORKING__ECOL3__039170F0	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ECOL4	DF__WORKING__ECOL4__0579B962	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column EZAD	DF__WORKING__EZAD__2E3BD7D3	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column EZAFAH	DF__WORKING__EZAFAH__2A6B46EF	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column EZTAT	DF__WORKING__EZTAT__2F2FFC0C	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column TOLID	DF__WORKING__HAZCENT__2D47B39A	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column KASR_VAM	DF__WORKING__KASR_VA__2C538F61	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column KCOL1	DF__WORKING__KCOL1__04859529	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column PADASH	DF__WORKING__PADASH__2B5F6B28	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column PCODE	DF__WORKING__PCODE__2882FE7D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DAYSB	DF_WORKING_DAYSB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column KASRS	DF_WORKING_EZTAT1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FROSH	DF_WORKING_HAZCENTER1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column KHADAMAT	DF_WORKING_HAZCENTER2	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column HAZCENTER	DF_WORKING_HAZCENTER3	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column KASRM	DF_WORKING_KASR1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column TDAYS	DF_WORKING_TDAYS	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	WORKING_FK00	No Action	Cascade	Enabled	Is_For_Replication	PCODE
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PERSONEL (CODE)
+FOREIGN KEY	WORKING_FK01	No Action	Cascade	Enabled	Is_For_Replication	WDATE
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.WORKHEAD (WDATE)

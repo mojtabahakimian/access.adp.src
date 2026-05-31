@@ -1,0 +1,45 @@
+﻿
+-- ================================================================
+-- ۷. SP_PAY2_FINALIZE_RUN — نهایی‌کردن محاسبه (STATUS 1→2)
+-- ================================================================
+CREATE   PROCEDURE [dbo].[SP_PAY2_FINALIZE_RUN]
+    @RUN_ID   INT,
+    @FINAL_BY INT = NULL
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    DECLARE @STATUS TINYINT;
+    SELECT @STATUS = STATUS FROM PAY2_RUN WHERE RUN_ID = @RUN_ID;
+
+    IF @STATUS <> 1
+    BEGIN
+        RAISERROR(N'SP_PAY2_FINALIZE_RUN: اجرا %d باید در وضعیت پیش‌نویس (1) باشد.', 16, 1, @RUN_ID);
+        RETURN;
+    END;
+
+    DECLARE @PER_ID INT;
+    DECLARE @WS_ID  INT;
+    SELECT @PER_ID = R.PER_ID, @WS_ID = P.WS_ID
+    FROM PAY2_RUN R INNER JOIN PAY2_PERIOD P ON R.PER_ID=P.PER_ID
+    WHERE R.RUN_ID = @RUN_ID;
+
+    DECLARE @MISSING INT;
+    SELECT @MISSING = COUNT(*)
+    FROM PAY2_EMPLOYEE E
+    WHERE E.WS_ID = @WS_ID AND E.IS_ACTIVE = 1
+      AND EXISTS (SELECT 1 FROM PAY2_ATTENDANCE A WHERE A.PER_ID=@PER_ID AND A.EMP_ID=E.EMP_ID)
+      AND NOT EXISTS (SELECT 1 FROM PAY2_RUN_LINE RL WHERE RL.RUN_ID=@RUN_ID AND RL.EMP_ID=E.EMP_ID);
+
+    IF @MISSING > 0
+    BEGIN
+        RAISERROR(N'SP_PAY2_FINALIZE_RUN: %d پرسنل هنوز محاسبه نشده‌اند.', 16, 1, @MISSING);
+        RETURN;
+    END;
+
+    UPDATE PAY2_RUN
+    SET STATUS = 2, NOTES = ISNULL(NOTES,'') + N' | Finalized by ' + CAST(ISNULL(@FINAL_BY,0) AS NVARCHAR)
+    WHERE RUN_ID = @RUN_ID;
+
+    PRINT N'SP_PAY2_FINALIZE_RUN — RUN_ID ' + CAST(@RUN_ID AS NVARCHAR) + N' نهایی شد.';
+END;

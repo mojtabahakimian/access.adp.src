@@ -1,0 +1,59 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+SAL_CHEK	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+USERCO	int	no	4	10   	0    	no	(n/a)	(n/a)	
+OBJECT	int	no	4	10   	0    	no	(n/a)	(n/a)	
+RUN	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SEE	bit	no	1	     	     	yes	(n/a)	(n/a)	
+INP	bit	no	1	     	     	yes	(n/a)	(n/a)	
+UPD	bit	no	1	     	     	yes	(n/a)	(n/a)	
+DEL	bit	no	1	     	     	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_SAL_CHEK	clustered, unique, primary key located on PRIMARY	USERCO, OBJECT
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__SAL_CHEK__CRT__1B88F612	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column UPD	DF_SAL_CHEK_CHN	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column DEL	DF_SAL_CHEK_DEL	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column INP	DF_SAL_CHEK_INP	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column RUN	DF_SAL_CHEK_RUN	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column SEE	DF_SAL_CHEK_SEE	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column USERCO	DF_SAL_CHEK_USERCO	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_SAL_CHEK_SALA_DTL	Cascade	Cascade	Enabled	Is_For_Replication	USERCO
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.SALA_DTL (IDD)
+FOREIGN KEY	FK_SAL_CHEK_TFORMS	Cascade	Cascade	Enabled	Is_For_Replication	OBJECT
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TFORMS (IDH)
+PRIMARY KEY (clustered)	PK_SAL_CHEK	(n/a)	(n/a)	(n/a)	(n/a)	USERCO, OBJECT

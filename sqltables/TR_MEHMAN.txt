@@ -1,0 +1,83 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+TR_MEHMAN	dbo	user table	03/05/2026 01:57:02 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+UP_DATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+UP_TIME	float	no	8	53   		no	(n/a)	(n/a)	
+ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+MNAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MFAMILY	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FATHER	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+KNOW	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MSODUR	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+BDATE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+TAHSIL	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+JOB	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+GHASD	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SCITY	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DCITY	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ENGIN	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ADDRESS	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+VDATE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+KDATE	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+KTIME	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+VTIME	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+HAMRAH	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+ROOMN	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+EZAFAH	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+MABLPISH	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+MOLAH	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+NAHVAH	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+SEX	bit	no	1	     	     	yes	(n/a)	(n/a)	
+TAFZ	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+IDH	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SAZMANM	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TABEI	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+ENDEGH	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+USER_NAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+OKF	bit	no	1	     	     	yes	(n/a)	(n/a)	
+UP_USER_NAME	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PC_NAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IPADD	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DEPATMAN	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SHIFT	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CUST_KIND	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+NCode	nvarchar	no	20	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__TR_MEHMA__366B41FE40A01037	clustered, unique, primary key located on PRIMARY	UP_DATE, UP_TIME, ID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__TR_MEHMAN__CRT__726A09EC	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK__TR_MEHMA__366B41FE40A01037	(n/a)	(n/a)	(n/a)	(n/a)	UP_DATE, UP_TIME, ID

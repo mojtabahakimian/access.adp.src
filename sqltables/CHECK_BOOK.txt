@@ -1,0 +1,53 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+CHECK_BOOK	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+COD_HES	float	no	8	53   		no	(n/a)	(n/a)	
+DATEDB	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+SER_FRM	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SER_TO	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+KIND	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{9A1BD9DD-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	KIND
+{9A1BD9E0-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	COD_HES
+aaaaaCHECK_BOOK_PK	nonclustered, unique, primary key located on PRIMARY	COD_HES, DATEDB
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaCHECK_BOOK_PK	(n/a)	(n/a)	(n/a)	(n/a)	COD_HES, DATEDB
+FOREIGN KEY	CHECK_BOOK_FK00	Cascade	Cascade	Enabled	Is_For_Replication	KIND
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.KIND_PAPER (CO_KIND)
+FOREIGN KEY	CHECK_BOOK_FK01	No Action	Cascade	Enabled	Is_For_Replication	COD_HES
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.COD_HESAB (CODE)
+DEFAULT on column CRT	DF__CHECK_BOOK__CRT__7DF8932B	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())

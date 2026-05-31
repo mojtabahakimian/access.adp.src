@@ -1,0 +1,53 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+TCODE_MADRAK	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+CODE	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+MADRAK_NAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MADRAK_NAME2	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+CODE	nonclustered, unique located on PRIMARY	CODE
+PK_TCODE_MADRAK	clustered, unique, primary key located on PRIMARY	CODE
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CODE	DF__TCODE_MADR__CODE__7720AD13	(n/a)	(n/a)	(n/a)	(n/a)	((5))
+DEFAULT on column CRT	DF__TCODE_MADRA__CRT__5D56B96F	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_TCODE_MADRAK	(n/a)	(n/a)	(n/a)	(n/a)	CODE
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.PHOKM: FK_PHOKM_TCODE_MADRAK

@@ -1,0 +1,89 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+MEHMAN	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+MNAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MFAMILY	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FATHER	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+KNOW	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MSODUR	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+BDATE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+TAHSIL	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+JOB	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+GHASD	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SCITY	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DCITY	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ENGIN	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ADDRESS	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+VDATE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+KDATE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+VTIME	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+KTIME	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+HAMRAH	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+ROOMN	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+EZAFAH	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+MABLPISH	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+MOLAH	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+NAHVAH	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+SEX	bit	no	1	     	     	no	(n/a)	(n/a)	
+TAFZ	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+IDH	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SAZMANM	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TABEI	nvarchar	no	60	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+USER_NAME	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ENDEGH	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+OKF	bit	no	1	     	     	yes	(n/a)	(n/a)	
+NCode	nvarchar	no	20	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FAM	nvarchar	no	4	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DEPATMAN	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SHIFT	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CUST_KIND	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+IDH	nonclustered located on PRIMARY	IDH
+PK_MEHMAN	clustered, unique, primary key located on PRIMARY	ID
+ROOMMEHMAN	nonclustered located on PRIMARY	ROOMN
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+CHECK on column MABLPISH	CK MEHMAN MABLPISH	(n/a)	(n/a)	Enabled	Is_For_Replication	([MABLPISH] IS NOT NULL)
+DEFAULT on column CRT	DF__MEHMAN__CRT__04708690	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column EZAFAH	DF__MEHMAN__EZAFAH__21B6055D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column HAMRAH	DF__MEHMAN__HAMRAH__20C1E124	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MABLPISH	DF__MEHMAN__MABLPISH__22AA2996	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column NAHVAH	DF__MEHMAN__NAHVAH__239E4DCF	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SEX	DF__MEHMAN__SEX__24927208	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+FOREIGN KEY	MEHMAN_FK01	No Action	Cascade	Enabled	Is_For_Replication	ROOMN
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.ROOM (ROOM_NUM)
+PRIMARY KEY (clustered)	PK_MEHMAN	(n/a)	(n/a)	(n/a)	(n/a)	ID

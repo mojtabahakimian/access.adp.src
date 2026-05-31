@@ -1,0 +1,50 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+SALARY_LISTKOL	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+CODE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+MM	tinyint	no	1	3    	0    	no	(n/a)	(n/a)	
+DAYS	tinyint	no	1	3    	0    	no	(n/a)	(n/a)	
+JAMMAZASAL	int	no	4	10   	0    	no	(n/a)	(n/a)	
+mali	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_SALARY_LISTKOL	clustered, unique, primary key located on PRIMARY	CODE, MM
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column JAMMAZASAL	DF__SALARY_LI__JAMMA__6F00685E	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DAYS	DF__SALARY_LIS__DAYS__6E0C4425	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column mali	DF__SALARY_LIS__mali__6FF48C97	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CRT	DF__SALARY_LIST__CRT__01C9240F	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_SALARY_LISTKOL	(n/a)	(n/a)	(n/a)	(n/a)	CODE, MM

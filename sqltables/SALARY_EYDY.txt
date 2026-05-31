@@ -1,0 +1,64 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+SALARY_EYDY	dbo	user table	19/05/2026 02:29:50 ب.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+CODE	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+ROOZ	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+DARAMAD	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+MALIAT	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+EYDY	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+SANAVAT	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+MOAFIYAT	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+DARMASH	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+MALIKOL	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+EPM	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+EYDYMAL	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_SALARY_EYDY	clustered, unique, primary key located on PRIMARY	CODE
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column DARAMAD	DF__SALARY_EY__DARAM__73691B1D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DARMASH	DF__SALARY_EY__DARMA__782DD03A	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column EYDYMAL	DF__SALARY_EY__EYDYM__7B0A3CE5	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MALIAT	DF__SALARY_EY__MALIA__745D3F56	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MALIKOL	DF__SALARY_EY__MALIK__7921F473	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MOAFIYAT	DF__SALARY_EY__MOAFI__7739AC01	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SANAVAT	DF__SALARY_EY__SANAV__764587C8	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CODE	DF__SALARY_EYD__CODE__7180D2AB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column EYDY	DF__SALARY_EYD__EYDY__7551638F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ROOZ	DF__SALARY_EYD__ROOZ__7274F6E4	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CRT	DF__SALARY_EYDY__CRT__7BFE611E	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column EPM	DF__SALARY_EYDY__EPM__7A1618AC	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+PRIMARY KEY (clustered)	PK_SALARY_EYDY	(n/a)	(n/a)	(n/a)	(n/a)	CODE

@@ -1,0 +1,65 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+SSM_CUST_ANALYS	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+SCAID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CUST_NO	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+SCADATE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SCAJAMF	float	no	8	53   		no	(n/a)	(n/a)	
+SCARASFR	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SCARASTAV	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SCARASPAY	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SCATAFAVOT	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SCAMABNADATE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SCAMABLA	float	no	8	53   		no	(n/a)	(n/a)	
+SCAMABP	real	no	4	24   		no	(n/a)	(n/a)	
+CTIM	datetime	no	8	     	     	no	(n/a)	(n/a)	
+USERCO	int	no	4	10   	0    	no	(n/a)	(n/a)	
+MONTH	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_SSM_CUST_ANALYS	clustered, unique, primary key located on PRIMARY	SCAID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column MONTH	DF__SSM_CUST___MONTH__51700577	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SCAJAMF	DF__SSM_CUST___SCAJA__49CEE3AF	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SCAMABLA	DF__SSM_CUST___SCAMA__4E9398CC	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SCAMABP	DF__SSM_CUST___SCAMA__4F87BD05	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SCARASFR	DF__SSM_CUST___SCARA__4AC307E8	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SCARASTAV	DF__SSM_CUST___SCARA__4BB72C21	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SCARASPAY	DF__SSM_CUST___SCARA__4CAB505A	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SCATAFAVOT	DF__SSM_CUST___SCATA__4D9F7493	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CRT	DF__SSM_CUST_AN__CRT__4F3DA442	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column CTIM	DF_SSM_CUST_ANALYS_CTIM	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_SSM_CUST_ANALYS	(n/a)	(n/a)	(n/a)	(n/a)	SCAID

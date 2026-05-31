@@ -1,0 +1,6 @@
+﻿create view  [dbo].[task_count_days]
+ as
+ SELECT     TOP 100 PERCENT COUNT(USERNAME) AS CountOfUSERNAME, STDATE, USERNAME
+ FROM         dbo.TASKS
+ GROUP BY STDATE, USERNAME
+ ORDER BY STDATE DESC

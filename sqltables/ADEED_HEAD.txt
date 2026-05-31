@@ -1,0 +1,52 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+ADEED_HEAD	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+N_S	float	no	8	53   		no	(n/a)	(n/a)	
+DATE_S	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+SHARH_S	nvarchar	no	140	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+NO_S	float	no	8	53   		no	(n/a)	(n/a)	
+ANBAR	float	no	8	53   		yes	(n/a)	(n/a)	
+N_FACTOR	float	no	8	53   		yes	(n/a)	(n/a)	
+GHATEI	bit	no	1	     	     	no	(n/a)	(n/a)	
+USER_NAME	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+BASE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+BASE	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_ADEED_HEAD	clustered, unique, primary key located on PRIMARY	N_S
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__ADEED_HEAD__CRT__65EBFF70	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column GHATEI	DF_ADEED_HEAD_GHATEI	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+PRIMARY KEY (clustered)	PK_ADEED_HEAD	(n/a)	(n/a)	(n/a)	(n/a)	N_S

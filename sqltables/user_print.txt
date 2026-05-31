@@ -1,0 +1,51 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+user_print	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+PRNAM	nvarchar	no	300	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+USERCO	int	no	4	10   	0    	no	(n/a)	(n/a)	
+ACT	int	no	4	10   	0    	no	(n/a)	(n/a)	
+PCOUNT	int	no	4	10   	0    	no	(n/a)	(n/a)	
+REPNAM	nvarchar	no	20	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+pcd	datetime	no	8	     	     	no	(n/a)	(n/a)	
+IDP	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_user_print	clustered, unique, primary key located on PRIMARY	IDP
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column PCOUNT	DF__user_prin__PCOUN__529933DA	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column ACT	DF__user_print__ACT__51A50FA1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CRT	DF__user_print__CRT__41AE9EFA	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_user_print	(n/a)	(n/a)	(n/a)	(n/a)	IDP

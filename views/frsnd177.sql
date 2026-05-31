@@ -1,0 +1,1 @@
+﻿create  view frsnd177 as SELECT     SUM(BES - BED) AS Expr2, NUMBER FROM dbo.DEED_DTL WHERE     (TAG = 12) AND (HES = N'115-6-31') GROUP BY NUMBER

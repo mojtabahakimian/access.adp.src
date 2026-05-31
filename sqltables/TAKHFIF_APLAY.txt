@@ -1,0 +1,49 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+TAKHFIF_APLAY	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+TID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+NUMBER	float	no	8	53   		no	(n/a)	(n/a)	
+KIND	float	no	8	53   		no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_TAKHFIF_APLAY	clustered, unique, primary key located on PRIMARY	TID, NUMBER, KIND
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__TAKHFIF_APL__CRT__1E6562BD	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+FOREIGN KEY	FK_TAKHFIF_APLAY_HEAD_LST	Cascade	Cascade	Enabled	Is_For_Replication	NUMBER, KIND
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.HEAD_LST (NUMBER, TAG)
+FOREIGN KEY	FK_TAKHFIF_APLAY_TAKHFIF_DEF	Cascade	Cascade	Enabled	Is_For_Replication	TID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TAKHFIF_DEF (TID)
+PRIMARY KEY (clustered)	PK_TAKHFIF_APLAY	(n/a)	(n/a)	(n/a)	(n/a)	TID, NUMBER, KIND

@@ -1,0 +1,47 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+CHAPNUM	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+NUMBER	float	no	8	53   		no	(n/a)	(n/a)	
+TAG	float	no	8	53   		no	(n/a)	(n/a)	
+NUM	tinyint	no	1	3    	0    	no	(n/a)	(n/a)	
+USER_NAME	nvarchar	no	80	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+IDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDD	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_CHAPNUM	clustered, unique, primary key located on PRIMARY	IDD
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__CHAPNUM__CRT__3D1EF407	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_CHAPNUM	(n/a)	(n/a)	(n/a)	(n/a)	IDD

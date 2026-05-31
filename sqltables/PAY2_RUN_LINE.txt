@@ -1,0 +1,73 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PAY2_RUN_LINE	dbo	user table	04/05/2026 09:00:51 ب.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+RUN_ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+EMP_ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+DEC_ID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+WORK_DAYS	decimal	no	5	5    	2    	no	(n/a)	(n/a)	
+GROSS_PAY	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+INS_BASE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+INS_WORKER	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+INS_EMPLOYER	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+TAX_BASE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+TAX_AMOUNT	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+LOAN_DED	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+ADVANCE_DED	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+OTHER_DED	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+TOTAL_DED	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+NET_PAY	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+LEAVE_BAL_DAYS	decimal	no	5	5    	2    	yes	(n/a)	(n/a)	
+LOAN_BALANCE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+ADVANCE_BALANCE_SNAP	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_PAY2_RUN_LINE	clustered, unique, primary key located on PRIMARY	RUN_ID, EMP_ID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PAY2_RUN_LI__CRT__774EBA9A	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column ADVANCE_DED	DF_RL_AD	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column LOAN_DED	DF_RL_LD	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column OTHER_DED	DF_RL_OD	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_RL_EMP	No Action	No Action	Enabled	Is_For_Replication	EMP_ID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PAY2_EMPLOYEE (EMP_ID)
+FOREIGN KEY	FK_RL_RUN	No Action	No Action	Enabled	Is_For_Replication	RUN_ID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PAY2_RUN (RUN_ID)
+PRIMARY KEY (clustered)	PK_PAY2_RUN_LINE	(n/a)	(n/a)	(n/a)	(n/a)	RUN_ID, EMP_ID
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.PAY2_RUN_DETAIL: FK_RD_LINE

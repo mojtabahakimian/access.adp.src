@@ -1,0 +1,28 @@
+﻿{
+  "Info": {
+    "Class": "clsDbVbeReference",
+    "Description": "VBE References"
+  },
+  "Items": {
+    "stdole": {
+      "GUID": "{00020430-0000-0000-C000-000000000046}",
+      "Version": "2.0"
+    },
+    "ADODB": {
+      "GUID": "{00000205-0000-0010-8000-00AA006D2EA4}",
+      "Version": "2.5"
+    },
+    "DAO": {
+      "GUID": "{00025E01-0000-0000-C000-000000000046}",
+      "Version": "5.0"
+    },
+    "TSMSLIB_TLB": {
+      "GUID": "{F8F48F8E-6D60-4D79-9E17-E96CF817ACD3}",
+      "Version": "1.1"
+    },
+    "TINYLib": {
+      "GUID": "{DF1D4B1E-D56E-4A40-BA98-2CC06080E796}",
+      "Version": "1.0"
+    }
+  }
+}

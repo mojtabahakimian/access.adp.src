@@ -1,0 +1,57 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+SSM_CUST_RASPAY	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+SCMID	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+CUST_NO	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+SCMMABNADATE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SCMDATECH	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SCMDATE_S	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SCMMABL	float	no	8	53   		no	(n/a)	(n/a)	
+SCMMABCHK	float	no	8	53   		no	(n/a)	(n/a)	
+SCMMABCHKR	float	no	8	53   		no	(n/a)	(n/a)	
+SCMMAND	float	no	8	53   		no	(n/a)	(n/a)	
+SCMDIFF	int	no	4	10   	0    	no	(n/a)	(n/a)	
+NOTCH	float	no	8	53   		no	(n/a)	(n/a)	
+CTIM	datetime	no	8	     	     	no	(n/a)	(n/a)	
+USERCO	int	no	4	10   	0    	no	(n/a)	(n/a)	
+MONTH	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_SSM_CUST_RASPAY	clustered, unique, primary key located on PRIMARY	SCMID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__SSM_CUST_RA__CRT__4B6D135E	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column CTIM	DF_SSM_CUST_RASPAY	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_SSM_CUST_RASPAY	(n/a)	(n/a)	(n/a)	(n/a)	SCMID

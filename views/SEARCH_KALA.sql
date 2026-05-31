@@ -1,0 +1,10 @@
+﻿CREATE VIEW  [dbo].[SEARCH_KALA]
+ AS
+ SELECT     TOP 100 PERCENT dbo.STUF_DEF.CODE, dbo.STUF_DEF.NAME, dbo.STUF_DEF.MABL_F, dbo.STUF_STK.MOGODI_A + dbo.STUF_STK.MOGODI AS MOG, 
+                       dbo.STUF_STK.ANBAR, dbo.STUF_DEF.VAHED, dbo.STUF_DEF.B_SEF
+ FROM         dbo.STUF_DEF INNER JOIN
+                       dbo.STUF_STK ON dbo.STUF_DEF.CODE = dbo.STUF_STK.CODE INNER JOIN
+                       dbo.VAHEDS ON dbo.STUF_DEF.CODE = dbo.VAHEDS.CODE
+ GROUP BY dbo.STUF_DEF.CODE, dbo.STUF_DEF.NAME, dbo.STUF_DEF.MABL_F, dbo.STUF_STK.MOGODI_A + dbo.STUF_STK.MOGODI, dbo.STUF_STK.ANBAR, 
+                       dbo.STUF_DEF.VAHED, dbo.STUF_DEF.B_SEF
+ ORDER BY dbo.STUF_DEF.CODE

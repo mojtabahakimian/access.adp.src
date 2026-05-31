@@ -1,0 +1,51 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PTVAZ	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+PIDT	int	no	4	10   	0    	no	(n/a)	(n/a)	
+PVAZ	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+PDATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+PTIME	int	no	4	10   	0    	no	(n/a)	(n/a)	
+PIDC	int	no	4	10   	0    	no	(n/a)	(n/a)	
+TOZIH	nvarchar	no	160	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+POST	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+PIDC	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__PTVAZ__408F9238	clustered, unique, primary key located on PRIMARY	PIDC
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PTVAZ__CRT__33607FA3	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+FOREIGN KEY	FK_PTVAZ_PTAMIRAT	Cascade	Cascade	Enabled	Is_For_Replication	PIDT
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PTAMIRAT (PIDT)
+PRIMARY KEY (clustered)	PK__PTVAZ__408F9238	(n/a)	(n/a)	(n/a)	(n/a)	PIDC

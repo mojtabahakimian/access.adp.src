@@ -1,0 +1,57 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PAY2_JOB	dbo	user table	04/05/2026 09:00:50 ب.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+JOB_ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+JOB_CODE	nvarchar	no	40	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+JOB_NAME	nvarchar	no	200	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+JOB_GROUP	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IS_ACTIVE	bit	no	1	     	     	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+JOB_ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+IX_PAY2_JOB_PERFORMANCE	nonclustered located on PRIMARY	IS_ACTIVE, JOB_NAME
+PK_PAY2_JOB	clustered, unique, primary key located on PRIMARY	JOB_ID
+UQ_JOB_CODE	nonclustered, unique, unique key located on PRIMARY	JOB_CODE
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PAY2_JOB__CRT__6EB97499	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column IS_ACTIVE	DF_JOB_ACT	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+PRIMARY KEY (clustered)	PK_PAY2_JOB	(n/a)	(n/a)	(n/a)	(n/a)	JOB_ID
+UNIQUE (non-clustered)	UQ_JOB_CODE	(n/a)	(n/a)	(n/a)	(n/a)	JOB_CODE
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.PAY2_EMPLOYEE: FK_EMP_JOB

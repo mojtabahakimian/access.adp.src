@@ -1,0 +1,116 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+FormResponses	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+ResponseId	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+SubmittedAt	datetime2	no	8	27   	7    	no	(n/a)	(n/a)	
+q1	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q2	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q3	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q4	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q5	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q6	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q7	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q8	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q9	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q10	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q_3_4	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q12	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q13	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q14	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q15	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q16	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q17	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q18	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q19	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q20	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q21	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q22	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q23	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q24	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q25	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q26	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q27	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q28	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q29	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q30	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q31	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q32	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q33	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q34	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q35	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q36	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q37	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q38	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q39	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q40	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q41	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q42	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q43	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q44	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q45	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q46	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q47	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q48	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q49	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q50	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q51	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q52	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q53	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q54	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q_1	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q_2	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q_3	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q_4	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q_5	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q_6	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q_7	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q_8	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q_9	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q_10	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q_11	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q_12	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q_13	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q_14	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q_15	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q_16	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+q_17	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+ResponseId	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__FormResp__1AAA646C699FDEFE	clustered, unique, primary key located on PRIMARY	ResponseId
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column SubmittedAt	DF__FormRespo__Submi__6B882770	(n/a)	(n/a)	(n/a)	(n/a)	(sysutcdatetime())
+DEFAULT on column CRT	DF__FormRespons__CRT__7690C2E9	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK__FormResp__1AAA646C699FDEFE	(n/a)	(n/a)	(n/a)	(n/a)	ResponseId

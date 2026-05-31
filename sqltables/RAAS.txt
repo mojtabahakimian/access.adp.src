@@ -1,0 +1,51 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+RAAS	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+DATE_S	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+MABL	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+ROOS	int	no	4	10   	0    	no	(n/a)	(n/a)	
+MABK	float	no	8	53   		no	(n/a)	(n/a)	
+USERID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+aaaaaRAAS_PK	nonclustered, unique, primary key located on PRIMARY	ID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaRAAS_PK	(n/a)	(n/a)	(n/a)	(n/a)	ID
+DEFAULT on column CRT	DF__RAAS__CRT__7286E07F	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column MABK	DF__RAAS__MABK__60083D91	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MABL	DF__RAAS__MABL__5E1FF51F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ROOS	DF__RAAS__ROOS__5F141958	(n/a)	(n/a)	(n/a)	(n/a)	((0))

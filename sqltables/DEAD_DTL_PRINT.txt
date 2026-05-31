@@ -1,0 +1,65 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+DEAD_DTL_PRINT	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+DATE_S	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+SHARH_S	nvarchar	no	510	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+N_S	float	no	8	53   		yes	(n/a)	(n/a)	
+HES	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TNUMBER	float	no	8	53   		yes	(n/a)	(n/a)	
+NUMBER	float	no	8	53   		yes	(n/a)	(n/a)	
+HNAME	nvarchar	no	500	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TNAME	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MNAME	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+KNAME	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+N_KOL	float	no	8	53   		yes	(n/a)	(n/a)	
+BED	float	no	8	53   		yes	(n/a)	(n/a)	
+BES	float	no	8	53   		yes	(n/a)	(n/a)	
+SHARH	nvarchar	no	510	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+kk	nvarchar	no	510	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+BASE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+RADIF	float	no	8	53   		yes	(n/a)	(n/a)	
+GR	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IDDH	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+UNAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDDH	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+IX_DEAD_DTL_PRINT	nonclustered located on PRIMARY	DATE_S
+IX_DEAD_DTL_PRINT_1	nonclustered located on PRIMARY	UNAME
+IX_DEAD_DTL_PRINT_2	nonclustered located on PRIMARY	N_S
+PK_DEAD_DTL_PRINT	clustered, unique, primary key located on PRIMARY	IDDH
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__DEAD_DTL_PR__CRT__0EEE1503	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_DEAD_DTL_PRINT	(n/a)	(n/a)	(n/a)	(n/a)	IDDH

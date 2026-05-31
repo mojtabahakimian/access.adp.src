@@ -1,0 +1,15 @@
+﻿CREATE FUNCTION [dbo].[DAFTAR_ROZZNAMEH]
+(@DT1 bigint,
+@DT2 bigint)
+RETURNS TABLE
+AS
+RETURN ( SELECT     TOP 100 PERCENT dbo.DEED_HED.N_S, dbo.DEED_HED.DATE_S, dbo.DEED_HED.SHARH_S, SUM(dbo.DEED_DTL.BED) AS SBED, 
+                      SUM(dbo.DEED_DTL.BES) AS SBES, dbo.DEED_DTL.HES_K, dbo.UIIF(dbo.DEED_DTL.BED, N'=', 0, 0, 1) AS BEDBES, 
+                      dbo.TOTA_HES.NAME AS KNAME
+FROM         dbo.DEED_HED INNER JOIN
+                      dbo.DEED_DTL ON dbo.DEED_HED.N_S = dbo.DEED_DTL.N_S INNER JOIN
+                      dbo.TOTA_HES ON dbo.DEED_DTL.HES_K = dbo.TOTA_HES.NUMBER
+GROUP BY dbo.DEED_HED.N_S, dbo.DEED_HED.DATE_S, dbo.DEED_HED.SHARH_S, dbo.DEED_DTL.HES_K, dbo.UIIF(dbo.DEED_DTL.BED, N'=', 0, 0, 1), 
+                      dbo.TOTA_HES.NAME
+HAVING      (dbo.DEED_HED.DATE_S BETWEEN @DT1 AND @DT2)
+ORDER BY dbo.DEED_HED.N_S, SUM(dbo.DEED_DTL.BED) DESC, SUM(dbo.DEED_DTL.BES) DESC )

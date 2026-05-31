@@ -1,0 +1,60 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+TCOD_ANBAR	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+CODE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+NAMES	nvarchar	no	64	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+KIND	int	no	4	10   	0    	no	(n/a)	(n/a)	
+idd	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+idd	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+aaaaaTCOD_ANBAR_PK	nonclustered, unique, primary key located on PRIMARY	CODE
+BAR_COD	nonclustered located on PRIMARY	CODE
+NAMES	nonclustered, unique located on PRIMARY	NAMES
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaTCOD_ANBAR_PK	(n/a)	(n/a)	(n/a)	(n/a)	CODE
+DEFAULT on column CRT	DF__TCOD_ANBAR__CRT__241E3C13	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column KIND	DF__TCOD_ANBAR__KIND__467D75B8	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_TCOD_ANBAR_TCOD_ANBAR_KIND	Cascade	Cascade	Enabled	Is_For_Replication	KIND
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_ANBAR_KIND (CODE)
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.ANBGRD_HEAD: FK_ANBGRD_HEAD_TCOD_ANBAR
+YAZDSEPAR1405.dbo.PM_MVAD: FK_PM_MVAD_TCOD_ANBAR
+YAZDSEPAR1405.dbo.STUF_FSK: STUF_FSK_FK01
+YAZDSEPAR1405.dbo.TCODE_MENUITEM: FK_TCODE_MENUITEM_TCOD_ANBAR

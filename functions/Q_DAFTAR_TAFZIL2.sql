@@ -1,0 +1,32 @@
+﻿CREATE FUNCTION [dbo].[Q_DAFTAR_TAFZIL2]
+(@Forms___F_MENU_KOL_MOIN_TAFZIL___DT1 bigint,
+@Forms___F_MENU_KOL_MOIN_TAFZIL___DT2 bigint,
+@Forms___F_MENU_KOL_MOIN_TAFZIL___HKOL int,
+@Forms___F_MENU_KOL_MOIN_TAFZIL___HMOIN int,
+@Forms___F_MENU_KOL_MOIN_TAFZIL___HTAF int)
+RETURNS TABLE
+AS
+RETURN ( SELECT     TOP 100 PERCENT dbo.DEED_HED.BASE, dbo.DEED_HED.DATE_S, dbo.DEED_DTL.HES_K, dbo.DEED_DTL.HES_M, dbo.DEED_DTL.HES_T, 
+                      dbo.DEED_DTL.SHARH, dbo.DEED_DTL.BED, dbo.DEED_DTL.BES, dbo.DEED_DTL.BED - dbo.DEED_DTL.BES AS MAND, dbo.TOTA_HES.NAME, 
+                      dbo.DETA_HES.NAME AS MOIN, dbo.TDETA_HES.NAME AS TAFZIL, dbo.DEED_DTL.id, dbo.DEED_DTL.NUMBER
+FROM         dbo.TOTA_HES INNER JOIN
+                      dbo.DETA_HES ON dbo.TOTA_HES.NUMBER = dbo.DETA_HES.N_KOL INNER JOIN
+                      dbo.TDETA_HES ON dbo.DETA_HES.N_KOL = dbo.TDETA_HES.N_KOL AND dbo.DETA_HES.NUMBER = dbo.TDETA_HES.NUMBER AND 
+                      dbo.DETA_HES.N_KOL = dbo.TDETA_HES.N_KOL INNER JOIN
+                      dbo.DEED_HED INNER JOIN
+                      dbo.DEED_DTL ON dbo.DEED_HED.N_S = dbo.DEED_DTL.N_S ON dbo.TDETA_HES.TNUMBER = dbo.DEED_DTL.HES_T AND 
+                      dbo.TDETA_HES.NUMBER = dbo.DEED_DTL.HES_M AND dbo.TDETA_HES.N_KOL = dbo.DEED_DTL.HES_K AND 
+                      dbo.TDETA_HES.TNUMBER = dbo.DEED_DTL.HES_T AND dbo.TDETA_HES.NUMBER = dbo.DEED_DTL.HES_M AND 
+                      dbo.TDETA_HES.N_KOL = dbo.DEED_DTL.HES_K
+WHERE     (dbo.DEED_HED.DATE_S BETWEEN @Forms___F_MENU_KOL_MOIN_TAFZIL___DT1 AND @Forms___F_MENU_KOL_MOIN_TAFZIL___DT2) AND 
+                      (dbo.DEED_DTL.HES_K = @Forms___F_MENU_KOL_MOIN_TAFZIL___HKOL) AND 
+                      (dbo.DEED_DTL.HES_M = @Forms___F_MENU_KOL_MOIN_TAFZIL___HMOIN) AND 
+                      (dbo.DEED_DTL.HES_T = @Forms___F_MENU_KOL_MOIN_TAFZIL___HTAF)
+ORDER BY dbo.DEED_HED.DATE_S 
+UNION
+SELECT     NN, MaxOfDATE_S, HES_K, HES_M, HES_T, SHARH, dbo.UIIF(MAND, '>', 0, MAND, 0) AS BED, dbo.UIIF(MAND, '>', 0, 0, MAND * - 1) AS BES, MAND, 
+                      NAME, MOIN, TAFZIL, 0 AS Expr1
+, 0 AS Expr2
+
+FROM         dbo.Q_DAFTAR_TAFMAND(@Forms___F_MENU_KOL_MOIN_TAFZIL___DT1, @Forms___F_MENU_KOL_MOIN_TAFZIL___HKOL, 
+                      @Forms___F_MENU_KOL_MOIN_TAFZIL___HMOIN, @Forms___F_MENU_KOL_MOIN_TAFZIL___HTAF) Q_DAFTAR_TAFMAND )

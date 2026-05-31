@@ -1,0 +1,49 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+Notes	dbo	user table	03/05/2026 01:57:07 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+idd	int	no	4	10   	0    	no	(n/a)	(n/a)	
+Note	nvarchar	no	500	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Ndate	nchar	no	20	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Ntime	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+userid	int	no	4	10   	0    	no	(n/a)	(n/a)	
+Ndone	bit	no	1	     	     	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+idd	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_Notes	clustered, unique, primary key located on PRIMARY	idd
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__Notes__CRT__7BF37426	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column Ndone	DF_Notes_Ndone	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+PRIMARY KEY (clustered)	PK_Notes	(n/a)	(n/a)	(n/a)	(n/a)	idd

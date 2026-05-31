@@ -1,0 +1,10 @@
+﻿CREATE PROCEDURE [dbo].[Q_DAFTAR_TAFZIL_S]
+ (@Forms___F_MENU_KOL_MOIN_TAFZIL___DT1 bigint,
+ @Forms___F_MENU_KOL_MOIN_TAFZIL___DT2 bigint,
+ @Forms___F_MENU_KOL_MOIN_TAFZIL___HKOL int,
+ @Forms___F_MENU_KOL_MOIN_TAFZIL___HMOIN int,
+ @Forms___F_MENU_KOL_MOIN_TAFZIL___HTAF int)
+ AS SELECT     N_S, DATE_S, HES_K, HES_M, HES_T, SHARH, BED, MAND, BES, NAME, MOIN, TAFZIL, ID
+ FROM         dbo.Q_DAFTAR_TAFZIL(@Forms___F_MENU_KOL_MOIN_TAFZIL___DT1, @Forms___F_MENU_KOL_MOIN_TAFZIL___DT2, 
+                       @Forms___F_MENU_KOL_MOIN_TAFZIL___HKOL, @Forms___F_MENU_KOL_MOIN_TAFZIL___HMOIN, 
+                       @Forms___F_MENU_KOL_MOIN_TAFZIL___HTAF) Q_DAFTAR_TAFZIL

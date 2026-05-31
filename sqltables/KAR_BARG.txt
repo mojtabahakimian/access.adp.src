@@ -1,0 +1,112 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+KAR_BARG	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+KNUM	int	no	4	10   	0    	no	(n/a)	(n/a)	
+KMON	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+DEPART	nvarchar	no	80	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+D31	real	no	4	24   		no	(n/a)	(n/a)	
+D30	real	no	4	24   		no	(n/a)	(n/a)	
+D29	real	no	4	24   		no	(n/a)	(n/a)	
+D28	real	no	4	24   		no	(n/a)	(n/a)	
+D27	real	no	4	24   		no	(n/a)	(n/a)	
+D26	real	no	4	24   		no	(n/a)	(n/a)	
+D25	real	no	4	24   		no	(n/a)	(n/a)	
+D24	real	no	4	24   		no	(n/a)	(n/a)	
+D23	real	no	4	24   		no	(n/a)	(n/a)	
+D22	real	no	4	24   		no	(n/a)	(n/a)	
+D21	real	no	4	24   		no	(n/a)	(n/a)	
+D20	real	no	4	24   		no	(n/a)	(n/a)	
+D19	real	no	4	24   		no	(n/a)	(n/a)	
+D18	real	no	4	24   		no	(n/a)	(n/a)	
+D17	real	no	4	24   		no	(n/a)	(n/a)	
+D16	real	no	4	24   		no	(n/a)	(n/a)	
+D15	real	no	4	24   		no	(n/a)	(n/a)	
+D14	real	no	4	24   		no	(n/a)	(n/a)	
+D13	real	no	4	24   		no	(n/a)	(n/a)	
+D12	real	no	4	24   		no	(n/a)	(n/a)	
+D11	real	no	4	24   		no	(n/a)	(n/a)	
+D10	real	no	4	24   		no	(n/a)	(n/a)	
+D9	real	no	4	24   		no	(n/a)	(n/a)	
+D8	real	no	4	24   		no	(n/a)	(n/a)	
+D7	real	no	4	24   		no	(n/a)	(n/a)	
+D6	real	no	4	24   		no	(n/a)	(n/a)	
+D5	real	no	4	24   		no	(n/a)	(n/a)	
+D4	real	no	4	24   		no	(n/a)	(n/a)	
+D3	real	no	4	24   		no	(n/a)	(n/a)	
+D2	real	no	4	24   		no	(n/a)	(n/a)	
+D1	real	no	4	24   		no	(n/a)	(n/a)	
+ZD	real	no	4	24   		no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+IX_KAR_BARG	nonclustered located on PRIMARY	KNUM
+PK_KAR_BARG	clustered, unique, primary key located on PRIMARY	KMON, DEPART
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__KAR_BARG__CRT__621B6E8C	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column D1	DF_KAR_BARG_D1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D10	DF_KAR_BARG_D10	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D11	DF_KAR_BARG_D11	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D12	DF_KAR_BARG_D12	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D13	DF_KAR_BARG_D13	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D14	DF_KAR_BARG_D14	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D15	DF_KAR_BARG_D15	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D16	DF_KAR_BARG_D16	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D17	DF_KAR_BARG_D17	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D18	DF_KAR_BARG_D18	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D19	DF_KAR_BARG_D19	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D2	DF_KAR_BARG_D2	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D20	DF_KAR_BARG_D20	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D21	DF_KAR_BARG_D21	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D22	DF_KAR_BARG_D22	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D23	DF_KAR_BARG_D23	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D24	DF_KAR_BARG_D24	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D25	DF_KAR_BARG_D25	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D26	DF_KAR_BARG_D26	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D27	DF_KAR_BARG_D27	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D28	DF_KAR_BARG_D28	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D29	DF_KAR_BARG_D29	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D3	DF_KAR_BARG_D3	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D30	DF_KAR_BARG_D30	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D31	DF_KAR_BARG_D31	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D4	DF_KAR_BARG_D4	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D5	DF_KAR_BARG_D5	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D6	DF_KAR_BARG_D6	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D7	DF_KAR_BARG_D7	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D8	DF_KAR_BARG_D8	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column D9	DF_KAR_BARG_D9	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ZD	DF_KAR_BARG_ZD	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_KAR_BARG_KAR_HEAD	No Action	Cascade	Enabled	Is_For_Replication	KNUM
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.KAR_HEAD (KNUM)
+PRIMARY KEY (clustered)	PK_KAR_BARG	(n/a)	(n/a)	(n/a)	(n/a)	KMON, DEPART

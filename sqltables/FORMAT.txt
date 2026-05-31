@@ -1,0 +1,155 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+FORMAT	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+BANK	int	no	4	10   	0    	no	(n/a)	(n/a)	
+KIND	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+DATE_TOP	real	no	4	24   		yes	(n/a)	(n/a)	
+DATE_LEFT	real	no	4	24   		yes	(n/a)	(n/a)	
+DATE_FONT	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DATE_SIZE	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+DATE_COLOR	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+DATE_B	bit	no	1	     	     	no	(n/a)	(n/a)	
+DATE_I	bit	no	1	     	     	no	(n/a)	(n/a)	
+DATE_U	bit	no	1	     	     	no	(n/a)	(n/a)	
+DATE_P	bit	no	1	     	     	no	(n/a)	(n/a)	
+ALPHA_TOP	real	no	4	24   		yes	(n/a)	(n/a)	
+ALPHA_LEFT	real	no	4	24   		yes	(n/a)	(n/a)	
+ALPHA_FONT	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ALPHA_SIZE	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+ALPHA_WITH	real	no	4	24   		yes	(n/a)	(n/a)	
+ALPHA_COLOR	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ALPHA_B	bit	no	1	     	     	no	(n/a)	(n/a)	
+ALPHA_I	bit	no	1	     	     	no	(n/a)	(n/a)	
+ALPHA_U	bit	no	1	     	     	no	(n/a)	(n/a)	
+ALPHA_P	bit	no	1	     	     	no	(n/a)	(n/a)	
+VAJH_TOP	real	no	4	24   		yes	(n/a)	(n/a)	
+VAJH_LEFT	real	no	4	24   		yes	(n/a)	(n/a)	
+VAJH_FONT	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+VAJH_SIZE	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+VAJH_WITH	real	no	4	24   		yes	(n/a)	(n/a)	
+VAJH_COLOR	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+VAJH_B	bit	no	1	     	     	no	(n/a)	(n/a)	
+VAJH_I	bit	no	1	     	     	no	(n/a)	(n/a)	
+VAJH_U	bit	no	1	     	     	no	(n/a)	(n/a)	
+VAJH_P	bit	no	1	     	     	no	(n/a)	(n/a)	
+NUM_TOP	real	no	4	24   		yes	(n/a)	(n/a)	
+NUM_LEFT	real	no	4	24   		yes	(n/a)	(n/a)	
+NUM_FONT	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+NUM_SIZE	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+NUM_COLOR	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+NUM_B	bit	no	1	     	     	no	(n/a)	(n/a)	
+NUM_I	bit	no	1	     	     	no	(n/a)	(n/a)	
+NUM_U	bit	no	1	     	     	no	(n/a)	(n/a)	
+NUM_P	bit	no	1	     	     	no	(n/a)	(n/a)	
+DATE_HEIGHT	real	no	4	24   		yes	(n/a)	(n/a)	
+ALPHA_HEIGHT	real	no	4	24   		yes	(n/a)	(n/a)	
+VAJH_HEIGHT	real	no	4	24   		yes	(n/a)	(n/a)	
+NUM_HEIGHT	real	no	4	24   		yes	(n/a)	(n/a)	
+DATE_TOPN	real	no	4	24   		yes	(n/a)	(n/a)	
+DATE_LEFTN	real	no	4	24   		yes	(n/a)	(n/a)	
+DATE_FONTN	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DATE_SIZEN	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+DATE_COLORN	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+DATE_BN	bit	no	1	     	     	yes	(n/a)	(n/a)	
+DATE_IN	bit	no	1	     	     	yes	(n/a)	(n/a)	
+DATE_UN	bit	no	1	     	     	yes	(n/a)	(n/a)	
+DATE_PN	bit	no	1	     	     	yes	(n/a)	(n/a)	
+DATE_HEIGHTN	real	no	4	24   		yes	(n/a)	(n/a)	
+DATE_WITHN	real	no	4	24   		yes	(n/a)	(n/a)	
+DATE_VERN	bit	no	1	     	     	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+aaaaaFORMAT_PK	nonclustered, unique, primary key located on PRIMARY	BANK, KIND
+NUM_COLOR	nonclustered located on PRIMARY	NUM_COLOR
+NUM_FONT	nonclustered located on PRIMARY	NUM_FONT
+NUM_LEFT	nonclustered located on PRIMARY	NUM_LEFT
+NUM_SIZE	nonclustered located on PRIMARY	NUM_SIZE
+NUM_TOP	nonclustered located on PRIMARY	NUM_TOP
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaFORMAT_PK	(n/a)	(n/a)	(n/a)	(n/a)	BANK, KIND
+DEFAULT on column ALPHA_B	DF__FORMAT__ALPHA_B__2156DE01	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ALPHA_COLOR	DF__FORMAT__ALPHA_CO__2062B9C8	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ALPHA_FONT	DF__FORMAT__ALPHA_FO__1D864D1D	(n/a)	(n/a)	(n/a)	(n/a)	('Zar')
+DEFAULT on column ALPHA_I	DF__FORMAT__ALPHA_I__224B023A	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ALPHA_LEFT	DF__FORMAT__ALPHA_LE__1C9228E4	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ALPHA_P	DF__FORMAT__ALPHA_P__24334AAC	(n/a)	(n/a)	(n/a)	(n/a)	((-1))
+DEFAULT on column ALPHA_SIZE	DF__FORMAT__ALPHA_SI__1E7A7156	(n/a)	(n/a)	(n/a)	(n/a)	((14))
+DEFAULT on column ALPHA_TOP	DF__FORMAT__ALPHA_TO__1B9E04AB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ALPHA_U	DF__FORMAT__ALPHA_U__233F2673	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ALPHA_WITH	DF__FORMAT__ALPHA_WI__1F6E958F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BANK	DF__FORMAT__BANK__12149A71	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column CRT	DF__FORMAT__CRT__6AB0B48D	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column DATE_B	DF__FORMAT__DATE_B__17CD73C7	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DATE_BN	DF__FORMAT__DATE_BN__3B16B004	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DATE_COLOR	DF__FORMAT__DATE_COL__16D94F8E	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DATE_COLORN	DF__FORMAT__DATE_COL__3A228BCB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DATE_FONT	DF__FORMAT__DATE_FON__14F1071C	(n/a)	(n/a)	(n/a)	(n/a)	('Zar')
+DEFAULT on column DATE_HEIGHTN	DF__FORMAT__DATE_HEI__3EE740E8	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DATE_I	DF__FORMAT__DATE_I__18C19800	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DATE_IN	DF__FORMAT__DATE_IN__3C0AD43D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DATE_LEFT	DF__FORMAT__DATE_LEF__13FCE2E3	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DATE_LEFTN	DF__FORMAT__DATE_LEF__383A4359	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DATE_P	DF__FORMAT__DATE_P__1AA9E072	(n/a)	(n/a)	(n/a)	(n/a)	((-1))
+DEFAULT on column DATE_PN	DF__FORMAT__DATE_PN__3DF31CAF	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DATE_SIZE	DF__FORMAT__DATE_SIZ__15E52B55	(n/a)	(n/a)	(n/a)	(n/a)	((14))
+DEFAULT on column DATE_SIZEN	DF__FORMAT__DATE_SIZ__392E6792	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DATE_TOP	DF__FORMAT__DATE_TOP__1308BEAA	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DATE_TOPN	DF__FORMAT__DATE_TOP__37461F20	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DATE_U	DF__FORMAT__DATE_U__19B5BC39	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DATE_UN	DF__FORMAT__DATE_UN__3CFEF876	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DATE_VERN	DF__FORMAT__DATE_VER__40CF895A	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DATE_WITHN	DF__FORMAT__DATE_WIT__3FDB6521	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column NUM_B	DF__FORMAT__NUM_B__33758E3C	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column NUM_COLOR	DF__FORMAT__NUM_COLO__32816A03	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column NUM_FONT	DF__FORMAT__NUM_FONT__30992191	(n/a)	(n/a)	(n/a)	(n/a)	('Zar')
+DEFAULT on column NUM_I	DF__FORMAT__NUM_I__3469B275	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column NUM_LEFT	DF__FORMAT__NUM_LEFT__2FA4FD58	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column NUM_P	DF__FORMAT__NUM_P__3651FAE7	(n/a)	(n/a)	(n/a)	(n/a)	((-1))
+DEFAULT on column NUM_SIZE	DF__FORMAT__NUM_SIZE__318D45CA	(n/a)	(n/a)	(n/a)	(n/a)	((14))
+DEFAULT on column NUM_TOP	DF__FORMAT__NUM_TOP__2EB0D91F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column NUM_U	DF__FORMAT__NUM_U__355DD6AE	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column VAJH_B	DF__FORMAT__VAJH_B__2AE0483B	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column VAJH_COLOR	DF__FORMAT__VAJH_COL__29EC2402	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column VAJH_FONT	DF__FORMAT__VAJH_FON__270FB757	(n/a)	(n/a)	(n/a)	(n/a)	('Zar')
+DEFAULT on column VAJH_I	DF__FORMAT__VAJH_I__2BD46C74	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column VAJH_LEFT	DF__FORMAT__VAJH_LEF__261B931E	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column VAJH_P	DF__FORMAT__VAJH_P__2DBCB4E6	(n/a)	(n/a)	(n/a)	(n/a)	((-1))
+DEFAULT on column VAJH_SIZE	DF__FORMAT__VAJH_SIZ__2803DB90	(n/a)	(n/a)	(n/a)	(n/a)	((14))
+DEFAULT on column VAJH_TOP	DF__FORMAT__VAJH_TOP__25276EE5	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column VAJH_U	DF__FORMAT__VAJH_U__2CC890AD	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column VAJH_WITH	DF__FORMAT__VAJH_WIT__28F7FFC9	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_FORMAT_TCOD_BANKS	Cascade	Cascade	Enabled	Is_For_Replication	BANK
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_BANKS (CODE)

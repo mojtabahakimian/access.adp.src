@@ -1,0 +1,88 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+BugReports	dbo	user table	30/05/2026 11:14:28 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+Id	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CreatedAt	datetime	no	8	     	     	no	(n/a)	(n/a)	
+CreatedBy	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CustomerName	nvarchar	no	400	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ContactInfo	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+AppVersion	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FrontendVersion	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+BackendVersion	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PageUrl	nvarchar	no	1000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Route	nvarchar	no	400	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ModuleName	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MenuName	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DatabaseName	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ServerName	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+EnvironmentName	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Severity	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+Category	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+HappensAlways	bit	no	1	     	     	no	(n/a)	(n/a)	
+IsBlocking	bit	no	1	     	     	no	(n/a)	(n/a)	
+TestedOnAnotherDevice	bit	no	1	     	     	no	(n/a)	(n/a)	
+HasRecentChanges	bit	no	1	     	     	no	(n/a)	(n/a)	
+ReproduceSteps	nvarchar	no	-1	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+ExpectedResult	nvarchar	no	-1	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+ActualResult	nvarchar	no	-1	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+UserDescription	nvarchar	no	-1	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+BrowserInfo	nvarchar	no	400	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+OperatingSystem	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ScreenSize	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+UserAgent	nvarchar	no	1000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ApiEndpoint	nvarchar	no	1000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+HttpStatusCode	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ErrorMessage	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+StackTrace	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TraceId	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Status	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+AdminNote	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+UserNote	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+Id	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__BugRepor__3214EC07E9F47288	clustered, unique, primary key located on PRIMARY	Id
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CreatedAt	DF__BugReport__Creat__462C6052	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column HappensAlways	DF__BugReport__Happe__4720848B	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column HasRecentChanges	DF__BugReport__HasRe__49FCF136	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column IsBlocking	DF__BugReport__IsBlo__4814A8C4	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column Status	DF__BugReport__Statu__4AF1156F	(n/a)	(n/a)	(n/a)	(n/a)	('New')
+DEFAULT on column TestedOnAnotherDevice	DF__BugReport__Teste__4908CCFD	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+PRIMARY KEY (clustered)	PK__BugRepor__3214EC07E9F47288	(n/a)	(n/a)	(n/a)	(n/a)	Id
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.BugReportComments: FK__BugReport__BugRe__584B108D

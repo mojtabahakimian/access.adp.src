@@ -1,0 +1,46 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+MON	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+MON_ID	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+MON	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+aaaaaMON_PK	nonclustered, unique, primary key located on PRIMARY	MON_ID
+MON_ID	nonclustered, unique located on PRIMARY	MON_ID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaMON_PK	(n/a)	(n/a)	(n/a)	(n/a)	MON_ID
+DEFAULT on column CRT	DF__MON__CRT__5402595F	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column MON_ID	DF__MON__MON_ID__4297D63B	(n/a)	(n/a)	(n/a)	(n/a)	((0))

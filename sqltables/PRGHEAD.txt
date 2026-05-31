@@ -1,0 +1,61 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PRGHEAD	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+PRGID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+PRG_DATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+PCODE	nvarchar	no	30	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+NUM	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+GRP	int	no	4	10   	0    	no	(n/a)	(n/a)	
+formula	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+PRGID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+aaaaaPRGHEAD_PK	nonclustered, unique, primary key located on PRIMARY	PRGID
+CODE	nonclustered located on PRIMARY	PCODE
+NUM	nonclustered located on PRIMARY	NUM
+PRGID	nonclustered, unique located on PRIMARY	PRGID
+STUF_DEFPRGHEAD	nonclustered located on PRIMARY	PCODE
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaPRGHEAD_PK	(n/a)	(n/a)	(n/a)	(n/a)	PRGID
+DEFAULT on column CRT	DF__PRGHEAD__CRT__4890A6B3	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column NUM	DF__PRGHEAD__NUM__51BA1E3A	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+FOREIGN KEY	FK_PRGHEAD_STUF_DEF	Cascade	Cascade	Enabled	Is_For_Replication	PCODE
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.STUF_DEF (CODE)
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.PROGPAS1: FK_PROGPAS1_PRGHEAD

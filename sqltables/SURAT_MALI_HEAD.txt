@@ -1,0 +1,52 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+SURAT_MALI_HEAD	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+prg	int	no	4	10   	0    	no	(n/a)	(n/a)	
+ONVAN	nvarchar	no	300	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DATE_E	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+USERNAME	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_SURAT_MALI_HEAD	clustered, unique, primary key located on PRIMARY	prg
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__SURAT_MALI___CRT__6809520C	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_SURAT_MALI_HEAD	(n/a)	(n/a)	(n/a)	(n/a)	prg
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.SURAT_MALI: FK_SURAT_MALI_SURAT_MALI_HEAD

@@ -1,0 +1,67 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PM_RUMAINTE	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+IDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+AS_IDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+RM_RSANGESH	int	no	4	10   	0    	no	(n/a)	(n/a)	
+RM_PERIOD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+RM_MEGHDAR	int	no	4	10   	0    	no	(n/a)	(n/a)	
+RM_PERSON	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+RM_JOB	int	no	4	10   	0    	no	(n/a)	(n/a)	
+RM_STDATE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+RM_STTIME	int	no	4	10   	0    	no	(n/a)	(n/a)	
+RM_TAKHIRMO	int	no	4	10   	0    	no	(n/a)	(n/a)	
+RM_TAKHVAHED	int	no	4	10   	0    	no	(n/a)	(n/a)	
+RM_ELAMBE	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TM_TIMENEED	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+TM_HESAB_HAZINE	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CR	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+US	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDD	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_PM_RUMAINTE	clustered, unique, primary key located on PRIMARY	IDD
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column RM_TAKHIRMO	DF__PM_RUMAIN__RM_TA__08AB2BC8	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CRT	DF__PM_RUMAINTE__CRT__40EF84EB	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+FOREIGN KEY	FK_PM_RUMAINTE_PM_ASSETS	Cascade	Cascade	Enabled	Is_For_Replication	AS_IDD
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PM_ASSETS (IDD)
+PRIMARY KEY (clustered)	PK_PM_RUMAINTE	(n/a)	(n/a)	(n/a)	(n/a)	IDD
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.PM_JOB: FK_PM_JOB_PM_RUMAINTE

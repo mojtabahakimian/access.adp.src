@@ -1,0 +1,80 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+DEED_DTL	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+N_S	float	no	8	53   		no	(n/a)	(n/a)	
+RADIF	float	no	8	53   		yes	(n/a)	(n/a)	
+HES_K	int	no	4	10   	0    	no	(n/a)	(n/a)	
+HES_M	int	no	4	10   	0    	no	(n/a)	(n/a)	
+HES_T	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SHARH	nvarchar	no	510	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+BED	float	no	8	53   		no	(n/a)	(n/a)	
+BES	float	no	8	53   		no	(n/a)	(n/a)	
+N_SERI	float	no	8	53   		yes	(n/a)	(n/a)	
+BANK	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+NUMBER	float	no	8	53   		yes	(n/a)	(n/a)	
+TAG	float	no	8	53   		yes	(n/a)	(n/a)	
+HES	nvarchar	no	80	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+id	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+ARZD	float	no	8	53   		yes	(n/a)	(n/a)	
+MHAZ_NO	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+HES_T2	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+HES_T3	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+HES_T4	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+id	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{9A1BD9E8-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	NUMBER, TAG
+{9A1BDA06-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	BANK
+{9A1BDA13-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	HES_K, HES_M, HES_T
+IX_DEED_DTL	nonclustered located on PRIMARY	HES
+IX_DEED_DTL_HES_COVER	nonclustered located on PRIMARY	HES
+N_SI	nonclustered located on PRIMARY	N_S
+PK_DEED_DTL	clustered, unique, primary key located on PRIMARY	id
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+CHECK on column BED	CK DEED_DTL BED	(n/a)	(n/a)	Enabled	Is_For_Replication	(NOT [BED] IS NULL)
+CHECK on column BES	CK DEED_DTL BES	(n/a)	(n/a)	Enabled	Is_For_Replication	(NOT [BES] IS NULL)
+DEFAULT on column ARZD	DF__DEED_DTL__ARZD__3528CC84	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column BED	DF__DEED_DTL__BED__43D61337	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BES	DF__DEED_DTL__BES__44CA3770	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CRT	DF__DEED_DTL__CRT__096A45D7	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+FOREIGN KEY	FK_DEED_DTL_DEED_HED	No Action	Cascade	Enabled	Is_For_Replication	N_S
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.DEED_HED (N_S)
+FOREIGN KEY	FK_DEED_DTL_HEAD_LST	No Action	No Action	Enabled	Is_For_Replication	NUMBER, TAG
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.HEAD_LST (NUMBER, TAG)
+FOREIGN KEY	FK_DEED_DTL_TCOD_BANKS	No Action	Cascade	Enabled	Is_For_Replication	BANK
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_BANKS (CODE)
+FOREIGN KEY	FK_DEED_DTL_TDETA_HES	No Action	Cascade	Enabled	Is_For_Replication	HES_K, HES_M, HES_T
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TDETA_HES (N_KOL, NUMBER, TNUMBER)
+PRIMARY KEY (clustered)	PK_DEED_DTL	(n/a)	(n/a)	(n/a)	(n/a)	id

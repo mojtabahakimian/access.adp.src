@@ -1,0 +1,69 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+DSKWOR00	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+DSW_ID	nvarchar	no	20	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSW_YY	float	no	8	53   		no	(n/a)	(n/a)	
+DSW_MM	float	no	8	53   		no	(n/a)	(n/a)	
+DSW_LISTNO	nvarchar	no	24	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSW_ID1	nvarchar	no	16	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSW_FNAME	nvarchar	no	120	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSW_LNAME	nvarchar	no	120	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSW_DNAME	nvarchar	no	120	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSW_IDNO	nvarchar	no	30	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSW_IDPLC	nvarchar	no	60	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSW_IDATE	nvarchar	no	16	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSW_BDATE	nvarchar	no	16	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSW_SEX	nvarchar	no	6	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSW_NAT	nvarchar	no	20	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSW_OCP	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSW_SDATE	nvarchar	no	16	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSW_EDATE	nvarchar	no	16	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSW_DD	float	no	8	53   		yes	(n/a)	(n/a)	
+DSW_ROOZ	float	no	8	53   		yes	(n/a)	(n/a)	
+DSW_MAH	float	no	8	53   		yes	(n/a)	(n/a)	
+DSW_MAZ	float	no	8	53   		yes	(n/a)	(n/a)	
+DSW_MASH	float	no	8	53   		yes	(n/a)	(n/a)	
+DSW_TOTL	float	no	8	53   		yes	(n/a)	(n/a)	
+DSW_BIME	float	no	8	53   		yes	(n/a)	(n/a)	
+DSW_PRATE	float	no	8	53   		yes	(n/a)	(n/a)	
+DSW_JOB	nvarchar	no	12	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PER_NATCOD	nvarchar	no	20	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_DSKWOR00	clustered, unique, primary key located on PRIMARY	DSW_YY, DSW_MM, PER_NATCOD
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__DSKWOR00__CRT__457F2FDE	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_DSKWOR00	(n/a)	(n/a)	(n/a)	(n/a)	DSW_YY, DSW_MM, PER_NATCOD

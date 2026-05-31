@@ -1,0 +1,103 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+STUF_DEF	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+CODE	nvarchar	no	30	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+NAME	nvarchar	no	160	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+N_FANI	nvarchar	no	60	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TOZIH	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+VAHED	int	no	4	10   	0    	no	(n/a)	(n/a)	
+B_SEF	float	no	8	53   		no	(n/a)	(n/a)	
+N_SEF	float	no	8	53   		no	(n/a)	(n/a)	
+MIN_M	float	no	8	53   		no	(n/a)	(n/a)	
+MAX_M	float	no	8	53   		no	(n/a)	(n/a)	
+RADAH	float	no	8	53   		no	(n/a)	(n/a)	
+KINDK	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+MABL_F	float	no	8	53   		no	(n/a)	(n/a)	
+DEPART	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+IDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CMBAA	bit	no	1	     	     	yes	(n/a)	(n/a)	
+VAZN	float	no	8	53   		yes	(n/a)	(n/a)	
+OKF	bit	no	1	     	     	yes	(n/a)	(n/a)	
+MENUIT	float	no	8	53   		yes	(n/a)	(n/a)	
+MEGHTA	float	no	8	53   		yes	(n/a)	(n/a)	
+MEGHJAY	float	no	8	53   		yes	(n/a)	(n/a)	
+PGID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+BARCODE	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+mu	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+sstid	nvarchar	no	26	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+vra	float	no	8	53   		yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDD	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{9A1BDA0E-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	RADAH
+aaaaaSTUF_DEF_PK	nonclustered, unique, primary key located on PRIMARY	CODE
+CODE	nonclustered, unique located on PRIMARY	CODE
+DEPARTSTUF_DEF	nonclustered located on PRIMARY	DEPART
+NAME	nonclustered, unique located on PRIMARY	NAME
+TCOD_VAHEDSSTUF_DEF	nonclustered located on PRIMARY	VAHED
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaSTUF_DEF_PK	(n/a)	(n/a)	(n/a)	(n/a)	CODE
+DEFAULT on column B_SEF	DF__STUF_DEF__B_SEF__6225902D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CMBAA	DF__STUF_DEF__CMBAA__02133CD2	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CRT	DF__STUF_DEF__CRT__17B8652E	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column KINDK	DF__STUF_DEF__KINDK__65F62111	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MABL_F	DF__STUF_DEF__MABL_F__66EA454A	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MAX_M	DF__STUF_DEF__MAX_M__6501FCD8	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MEGHJAY	DF__STUF_DEF__MEGHJA__04EFA97D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MEGHTA	DF__STUF_DEF__MEGHTA__03FB8544	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MIN_M	DF__STUF_DEF__MIN_M__640DD89F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column N_SEF	DF__STUF_DEF__N_SEF__6319B466	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column VAZN	DF__STUF_DEF__VAZN__0307610B	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column vra	DF__STUF_DEF__vra__75193467	(n/a)	(n/a)	(n/a)	(n/a)	((9))
+FOREIGN KEY	FK_STUF_DEF_TCOD_STUFGROUP	No Action	Cascade	Enabled	Is_For_Replication	RADAH
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_STUFGROUP (CODE)
+FOREIGN KEY	FK_STUF_DEF_TCOD_VAHEDS	No Action	No Action	Enabled	Is_For_Replication	VAHED
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_VAHEDS (CODE)
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.ANBGRD_LST: FK_ANBGRD_LST_STUF_DEF
+YAZDSEPAR1405.dbo.HEAD_MANF: HEAD_MANF_FK00
+YAZDSEPAR1405.dbo.MODULE_D: MODULE_D_FK00
+YAZDSEPAR1405.dbo.ORDR_LST: FK_ORDR_LST_STUF_DEF
+YAZDSEPAR1405.dbo.PM_MVAD: FK_PM_MVAD_STUF_DEF
+YAZDSEPAR1405.dbo.PRGHEAD: FK_PRGHEAD_STUF_DEF
+YAZDSEPAR1405.dbo.PRICE_ELAMIETF_EXCEPTION: FK_PRICE_ELAMIETF_EXCEPTION_STUF
+YAZDSEPAR1405.dbo.RewardRules: FK_RewardRules_ProductID_Target
+YAZDSEPAR1405.dbo.RewardRules: FK_RewardRules_Reward_ProductID
+YAZDSEPAR1405.dbo.STUF_FSK: STUF_FSK_FK00
+YAZDSEPAR1405.dbo.TAKHPERS: TAKHPERS_FK01

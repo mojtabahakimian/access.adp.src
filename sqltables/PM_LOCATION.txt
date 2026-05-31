@@ -1,0 +1,56 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PM_LOCATION	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+IDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+LO_NAME	nvarchar	no	500	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+LO_IDD	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CR	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+US	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDD	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_PM_LOCATION	clustered, unique, primary key located on PRIMARY	IDD
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PM_LOCATION__CRT__709E980D	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+FOREIGN KEY	FK_PM_LOCATION_PM_LOCATION	No Action	No Action	Enabled	Is_For_Replication	IDD
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PM_LOCATION (IDD)
+PRIMARY KEY (clustered)	PK_PM_LOCATION	(n/a)	(n/a)	(n/a)	(n/a)	IDD
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.PM_ASSETS: FK_PM_ASSETS_PM_LOCATION
+YAZDSEPAR1405.dbo.PM_LOCATION: FK_PM_LOCATION_PM_LOCATION

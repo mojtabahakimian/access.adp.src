@@ -1,0 +1,4 @@
+﻿CREATE VIEW [dbo].[APMOGO_AV_KOL]
+AS
+SELECT     CODE, SumOfMEG, dbo.UIIF(SumOfMEG, '=', 0, 0, SumOfSumOfMABL_A / SumOfMEG) AS FI, ANBAR
+FROM         dbo.APMOGO_AV_SUB

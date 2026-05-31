@@ -1,0 +1,59 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+MORINFO_SUB	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+HES	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+CODEMELLI	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+NAMP	nvarchar	no	200	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+TAVALOD_DATE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+MARRID_DATE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+EMAILM	nvarchar	no	220	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SITEM	nvarchar	no	220	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+WATSAP	nvarchar	no	220	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TELEGRAM	nvarchar	no	220	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+INSTAM	nvarchar	no	220	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+LINKEDINM	nvarchar	no	220	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MOTAHEL	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ADDRESSMANZEL	nvarchar	no	500	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+AKS	image	no	16	     	     	yes	(n/a)	(n/a)	
+NESBAT	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_MORINFO_SUB	clustered, unique, primary key located on PRIMARY	HES, CODEMELLI
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__MORINFO_SUB__CRT__009FF5AC	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+FOREIGN KEY	FK_MORINFO_SUB_MORINFO	No Action	Cascade	Enabled	Is_For_Replication	HES
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.MORINFO (HES)
+PRIMARY KEY (clustered)	PK_MORINFO_SUB	(n/a)	(n/a)	(n/a)	(n/a)	HES, CODEMELLI

@@ -1,0 +1,51 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PAY2_TAX_BRACKET	dbo	user table	04/05/2026 09:00:50 ب.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+BRK_ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+TAX_YEAR	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+UPPER_LIMIT	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+RATE_PCT	decimal	no	5	5    	2    	no	(n/a)	(n/a)	
+FIXED_TAX	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+SORT_ORDER	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+BRK_ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_PAY2_TAX_BRACKET	clustered, unique, primary key located on PRIMARY	BRK_ID
+UQ_BRK	nonclustered, unique, unique key located on PRIMARY	TAX_YEAR, SORT_ORDER
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PAY2_TAX_BR__CRT__69009B43	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column FIXED_TAX	DF_BRK_FT	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+PRIMARY KEY (clustered)	PK_PAY2_TAX_BRACKET	(n/a)	(n/a)	(n/a)	(n/a)	BRK_ID
+UNIQUE (non-clustered)	UQ_BRK	(n/a)	(n/a)	(n/a)	(n/a)	TAX_YEAR, SORT_ORDER

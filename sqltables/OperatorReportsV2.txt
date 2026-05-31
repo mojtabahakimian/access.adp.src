@@ -1,0 +1,64 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+OperatorReportsV2	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+Id	int	no	4	10   	0    	no	(n/a)	(n/a)	
+Date	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+StartTime	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+EndTime	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Duration	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+DryMatter	float	no	8	53   		yes	(n/a)	(n/a)	
+FillTime	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+BoilerPressure	float	no	8	53   		yes	(n/a)	(n/a)	
+Vacuum	float	no	8	53   		yes	(n/a)	(n/a)	
+Vacuum1	float	no	8	53   		yes	(n/a)	(n/a)	
+Vacuum2	float	no	8	53   		yes	(n/a)	(n/a)	
+Vacuum3	float	no	8	53   		yes	(n/a)	(n/a)	
+Tower1Temp	float	no	8	53   		yes	(n/a)	(n/a)	
+Tower2Temp	float	no	8	53   		yes	(n/a)	(n/a)	
+Tower3Temp	float	no	8	53   		yes	(n/a)	(n/a)	
+CondenserInlet	float	no	8	53   		yes	(n/a)	(n/a)	
+CondenserOutlet	float	no	8	53   		yes	(n/a)	(n/a)	
+Pump1	bit	no	1	     	     	yes	(n/a)	(n/a)	
+Pump2	bit	no	1	     	     	yes	(n/a)	(n/a)	
+DistilledTemp	float	no	8	53   		yes	(n/a)	(n/a)	
+CreatedAt	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+Id	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__Operator__3214EC07741A5CF4	clustered, unique, primary key located on PRIMARY	Id
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CreatedAt	DF__OperatorR__Creat__7602A566	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column CRT	DF__OperatorRep__CRT__13A44BCE	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK__Operator__3214EC07741A5CF4	(n/a)	(n/a)	(n/a)	(n/a)	Id

@@ -1,0 +1,70 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+MO_DTL	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+MONUM	int	no	4	10   	0    	no	(n/a)	(n/a)	
+N_S	float	no	8	53   		no	(n/a)	(n/a)	
+HES_K	float	no	8	53   		no	(n/a)	(n/a)	
+HES_M	float	no	8	53   		no	(n/a)	(n/a)	
+HES_T	float	no	8	53   		no	(n/a)	(n/a)	
+SHARH	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+BED	float	no	8	53   		no	(n/a)	(n/a)	
+BES	float	no	8	53   		no	(n/a)	(n/a)	
+TICK	bit	no	1	     	     	no	(n/a)	(n/a)	
+N_SERI	float	no	8	53   		yes	(n/a)	(n/a)	
+BANK	float	no	8	53   		yes	(n/a)	(n/a)	
+NUMBER	float	no	8	53   		yes	(n/a)	(n/a)	
+TAG	float	no	8	53   		yes	(n/a)	(n/a)	
+IDDH	int	no	4	10   	0    	no	(n/a)	(n/a)	
+ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDDH	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+DEED_HEDMO_DTL	nonclustered located on PRIMARY	N_S
+MOGHHEADMO_DTL	nonclustered located on PRIMARY	MONUM
+MONUM	nonclustered located on PRIMARY	MONUM
+N_S_HI	nonclustered located on PRIMARY	N_S, HES_K, HES_M
+N_SI	nonclustered located on PRIMARY	N_S
+NUMBER	nonclustered located on PRIMARY	NUMBER
+PK_MO_DTL	clustered, unique, primary key located on PRIMARY	IDDH
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column BED	DF__MO_DTL__BED__29572725	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BES	DF__MO_DTL__BES__2A4B4B5E	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CRT	DF__MO_DTL__CRT__08411774	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column TICK	DF__MO_DTL__TICK__2B3F6F97	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	MO_DTL_FK00	No Action	Cascade	Enabled	Is_For_Replication	N_S
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.DEED_HED (N_S)
+FOREIGN KEY	MO_DTL_FK01	No Action	Cascade	Enabled	Is_For_Replication	MONUM
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.MOGHHEAD (MONUM)
+PRIMARY KEY (clustered)	PK_MO_DTL	(n/a)	(n/a)	(n/a)	(n/a)	IDDH

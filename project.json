@@ -1,0 +1,11 @@
+﻿{
+  "Info": {
+    "Class": "clsDbProject",
+    "Description": "Project"
+  },
+  "Items": {
+    "BaseConnectionString": "PROVIDER=SQLOLEDB.1;INTEGRATED SECURITY=SSPI;PERSIST SECURITY INFO=FALSE;INITIAL CATALOG=YAZDSEPAR1405;DATA SOURCE=MERCEDES\\SQL2022",
+    "FileFormat": 10,
+    "RemovePersonalInformation": false
+  }
+}

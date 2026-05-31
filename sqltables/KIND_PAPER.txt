@@ -1,0 +1,52 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+KIND_PAPER	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+CO_KIND	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+KIND	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+aaaaaKIND_PAPER_PK	nonclustered, unique, primary key located on PRIMARY	CO_KIND
+KIND_PAPERKIND	nonclustered located on PRIMARY	KIND
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaKIND_PAPER_PK	(n/a)	(n/a)	(n/a)	(n/a)	CO_KIND
+DEFAULT on column CO_KIND	DF__KIND_PAPE__CO_KI__64ECEE3F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CRT	DF__KIND_PAPER__CRT__494FC0C2	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.CHECK_BOOK: CHECK_BOOK_FK00

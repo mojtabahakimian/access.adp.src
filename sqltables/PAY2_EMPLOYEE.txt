@@ -1,0 +1,108 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PAY2_EMPLOYEE	dbo	user table	04/05/2026 09:00:50 ب.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+EMP_ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+EMP_CODE	nvarchar	no	40	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+WS_ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+FIRST_NAME	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+LAST_NAME	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+FATHER_NAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+NATIONAL_CODE	nvarchar	no	20	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ID_NUMBER	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+BIRTH_PLACE	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+BIRTH_DATE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+GENDER	tinyint	no	1	3    	0    	no	(n/a)	(n/a)	
+NATIONALITY	tinyint	no	1	3    	0    	no	(n/a)	(n/a)	
+IS_JANBAZ	bit	no	1	     	     	no	(n/a)	(n/a)	
+HIRE_DATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+FIRE_DATE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+JOB_ID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+UNIT	tinyint	no	1	3    	0    	yes	(n/a)	(n/a)	
+EDU_LEVEL	tinyint	no	1	3    	0    	yes	(n/a)	(n/a)	
+MARITAL	tinyint	no	1	3    	0    	no	(n/a)	(n/a)	
+IS_MANAGER	bit	no	1	     	     	no	(n/a)	(n/a)	
+INS_CODE	nvarchar	no	30	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+INS_TYPE	tinyint	no	1	3    	0    	no	(n/a)	(n/a)	
+TAX_EXEMPT	bit	no	1	     	     	no	(n/a)	(n/a)	
+REGION_DEPRIVATION	tinyint	no	1	3    	0    	no	(n/a)	(n/a)	
+ACC_T	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CARD_NO	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MOBILE	nvarchar	no	30	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+BANK_ACC	nvarchar	no	60	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IBAN	nvarchar	no	52	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IS_ACTIVE	bit	no	1	     	     	no	(n/a)	(n/a)	
+NOTES	nvarchar	no	600	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CREATED_AT	datetime	no	8	     	     	no	(n/a)	(n/a)	
+CREATED_BY	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+EMP_ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_PAY2_EMPLOYEE	clustered, unique, primary key located on PRIMARY	EMP_ID
+UQ_EMP_CODE	nonclustered, unique, unique key located on PRIMARY	EMP_CODE
+UX_EMP_NATCODE	nonclustered, unique located on PRIMARY	NATIONAL_CODE
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PAY2_EMPLOY__CRT__7195E144	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column IS_ACTIVE	DF_EMP_ACT	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column CREATED_AT	DF_EMP_CRT	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column REGION_DEPRIVATION	DF_EMP_DEP	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column GENDER	DF_EMP_GND	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column INS_TYPE	DF_EMP_INS	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column IS_JANBAZ	DF_EMP_JAN	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MARITAL	DF_EMP_MAR	(n/a)	(n/a)	(n/a)	(n/a)	((2))
+DEFAULT on column IS_MANAGER	DF_EMP_MGR	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column NATIONALITY	DF_EMP_NAT	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column TAX_EXEMPT	DF_EMP_TEX	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_EMP_JOB	No Action	No Action	Enabled	Is_For_Replication	JOB_ID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PAY2_JOB (JOB_ID)
+FOREIGN KEY	FK_EMP_WS	No Action	No Action	Enabled	Is_For_Replication	WS_ID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PAY2_WORKSHOP (WS_ID)
+PRIMARY KEY (clustered)	PK_PAY2_EMPLOYEE	(n/a)	(n/a)	(n/a)	(n/a)	EMP_ID
+UNIQUE (non-clustered)	UQ_EMP_CODE	(n/a)	(n/a)	(n/a)	(n/a)	EMP_CODE
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.PAY2_ADVANCE_EXCL: FK_AE_EMP
+YAZDSEPAR1405.dbo.PAY2_ATTENDANCE: FK_ATT_EMP
+YAZDSEPAR1405.dbo.PAY2_CONTRACT: FK_CON_EMP
+YAZDSEPAR1405.dbo.PAY2_DECREE: FK_DEC_EMP
+YAZDSEPAR1405.dbo.PAY2_LEAVE: FK_LEV_EMP
+YAZDSEPAR1405.dbo.PAY2_LEAVE: FK_LEV_REFER
+YAZDSEPAR1405.dbo.PAY2_LEAVE_BAL: FK_LB_EMP
+YAZDSEPAR1405.dbo.PAY2_LOAN: FK_LN_EMP
+YAZDSEPAR1405.dbo.PAY2_OVERRIDE: FK_OV_EMP
+YAZDSEPAR1405.dbo.PAY2_RUN_LINE: FK_RL_EMP
+YAZDSEPAR1405.dbo.PAY2_SETTLEMENT: FK_SET_EMP

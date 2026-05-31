@@ -1,0 +1,55 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+MESAGEP	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+IDNUM	int	no	4	10   	0    	no	(n/a)	(n/a)	
+PERSONEL	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+PAYAM	nvarchar	no	4096	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+STATUS	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+STDATE	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+STTIME	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+USERNAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+COMP_COD	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+IsNotifyCalled	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SNOOZE_COUNT	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+LAST_NOTIFY_TIME	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDNUM	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__MESAGEP__693CA210	clustered, unique, primary key located on PRIMARY	IDNUM
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__MESAGEP__CRT__7C104AB9	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column IsNotifyCalled	DF__MESAGEP__IsNotif__6463A9B1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SNOOZE_COUNT	DF__MESAGEP__SNOOZE___0F32152A	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+PRIMARY KEY (clustered)	PK__MESAGEP__693CA210	(n/a)	(n/a)	(n/a)	(n/a)	IDNUM

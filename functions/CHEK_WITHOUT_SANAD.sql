@@ -1,0 +1,15 @@
+﻿CREATE FUNCTION [dbo].[CHEK_WITHOUT_SANAD]
+(@Forms___Baseknow___ADA nvarchar(50),
+@Forms___Baseknow___ADV nvarchar(50))
+RETURNS TABLE
+AS
+RETURN ( SELECT     dbo.PAY_GETD.N_SERI, dbo.PAY_GETD.BANK, dbo.PAY_GETD.DATE_S, dbo.PAY_GETD.DATE, dbo.PAY_GETD.SHOBEH, dbo.PAY_GETD.MABL, 
+                      dbo.PAY_GETD.NAME_TAH, dbo.PAY_GETD.N_HESAB, dbo.PAY_GETD.N_S, dbo.PAY_GETD.N_KOL, dbo.PAY_GETD.N_MOIN, dbo.PAY_GETD.N_TAF, 
+                      dbo.PAY_GETD.N_KOL2, dbo.PAY_GETD.N_MOIN2, dbo.PAY_GETD.N_TAF2, dbo.PAY_GETD.N_KOL3, dbo.PAY_GETD.N_MOIN3, dbo.PAY_GETD.N_TAF3, 
+                      dbo.PAY_GETD.NUMBER, dbo.PAY_GETD.TAG, ASNAD_DARYAFTY.N_SERI AS Expr1, ASNAD_DARYAFTY.BANK AS Expr2, ASNAD_DARYAFTY.N_SERI AS Expr3, 
+                      ASNAD_DARYAFTY.BANK AS Expr4
+FROM         dbo.ASNAD_DARYAFTY(@Forms___Baseknow___ADA, @Forms___Baseknow___ADV) ASNAD_DARYAFTY RIGHT OUTER JOIN
+                      dbo.PAY_GETD ON ASNAD_DARYAFTY.BED = dbo.PAY_GETD.MABL AND ASNAD_DARYAFTY.N_SERI = dbo.PAY_GETD.N_SERI AND 
+                      ASNAD_DARYAFTY.BANK = dbo.PAY_GETD.BANK
+WHERE     (ASNAD_DARYAFTY.N_SERI IS NULL) AND (dbo.PAY_GETD.N_KOL <> 911 OR
+                      dbo.PAY_GETD.N_KOL IS NULL) )

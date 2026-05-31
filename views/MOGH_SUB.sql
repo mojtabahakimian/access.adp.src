@@ -1,0 +1,6 @@
+﻿CREATE VIEW  [dbo].[MOGH_SUB]
+AS
+SELECT     TOP 100 PERCENT dbo.DEED_HED.DATE_S, dbo.MO_DTL.*
+FROM         dbo.MO_DTL INNER JOIN
+                      dbo.DEED_HED ON dbo.MO_DTL.N_S = dbo.DEED_HED.N_S
+ORDER BY dbo.DEED_HED.DATE_S, dbo.MO_DTL.N_S

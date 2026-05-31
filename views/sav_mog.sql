@@ -1,0 +1,5 @@
+﻿CREATE VIEW [dbo].[sav_mog]
+ AS
+ SELECT     CODE, SUM(MABL_A) AS SumOfMABL_A, SUM(MOGODI_A) AS SumOfMOGODI_A
+ FROM         dbo.STUF_FSK
+ GROUP BY CODE

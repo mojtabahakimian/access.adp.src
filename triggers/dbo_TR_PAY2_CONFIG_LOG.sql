@@ -1,0 +1,22 @@
+﻿
+-- ── Trigger — لاگ خودکار تغییرات PAY2_CONFIG ───────────────────
+
+CREATE   TRIGGER [dbo].[TR_PAY2_CONFIG_LOG]
+ON [dbo].[PAY2_CONFIG]
+AFTER UPDATE
+AS
+BEGIN
+    SET NOCOUNT ON;
+    INSERT INTO PAY2_CONFIG_LOG
+        (CFG_KEY, OLD_VALUE, NEW_VALUE, CHANGED_BY, CHANGED_AT, REASON)
+    SELECT
+        i.CFG_KEY,
+        d.CFG_VALUE,
+        i.CFG_VALUE,
+        ISNULL(i.CHANGED_BY, 0),
+        GETDATE(),
+        i.CHANGE_NOTE
+    FROM INSERTED i
+    INNER JOIN DELETED d ON i.CFG_KEY = d.CFG_KEY
+    WHERE i.CFG_VALUE <> d.CFG_VALUE;
+END;

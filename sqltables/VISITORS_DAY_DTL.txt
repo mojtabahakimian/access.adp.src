@@ -1,0 +1,51 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+VISITORS_DAY_DTL	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+HES	nvarchar	no	80	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+VDATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+COUST_NO	nvarchar	no	80	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+CDATE	datetime	no	8	     	     	no	(n/a)	(n/a)	
+RACTIVE	bit	no	1	     	     	no	(n/a)	(n/a)	
+CLASS	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TOPLACE	bit	no	1	     	     	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__VISITORS_DAY_DTL__6CFB51B7	clustered, unique, primary key located on PRIMARY	HES, VDATE, COUST_NO
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__VISITORS_DA__CRT__3ED2324F	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+FOREIGN KEY	FK_VISITORS_DAY_DTL_VISITORS_DAY	No Action	Cascade	Enabled	Is_For_Replication	HES, VDATE
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.VISITORS_DAY (HES, VDATE)
+PRIMARY KEY (clustered)	PK__VISITORS_DAY_DTL__6CFB51B7	(n/a)	(n/a)	(n/a)	(n/a)	HES, VDATE, COUST_NO

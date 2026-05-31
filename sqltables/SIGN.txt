@@ -1,0 +1,275 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+SIGN	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+USERCO	int	no	4	10   	0    	no	(n/a)	(n/a)	
+FFR_FROOSH	bit	no	1	     	     	yes	(n/a)	(n/a)	
+FFR_HESAB	bit	no	1	     	     	yes	(n/a)	(n/a)	
+FFR_MODIR	bit	no	1	     	     	yes	(n/a)	(n/a)	
+KFR_BAZAR	bit	no	1	     	     	yes	(n/a)	(n/a)	
+KFR_HESAB	bit	no	1	     	     	yes	(n/a)	(n/a)	
+KFR_MODIR	bit	no	1	     	     	yes	(n/a)	(n/a)	
+ANB_RASID_ANB	bit	no	1	     	     	yes	(n/a)	(n/a)	
+ANB_RASID_QC	bit	no	1	     	     	yes	(n/a)	(n/a)	
+ANB_HAVL_FROSH	bit	no	1	     	     	yes	(n/a)	(n/a)	
+ANB_HAVL_ANB	bit	no	1	     	     	yes	(n/a)	(n/a)	
+ANB_HAVL_MODIR	bit	no	1	     	     	yes	(n/a)	(n/a)	
+ANB_TOLID_MODIRT	bit	no	1	     	     	yes	(n/a)	(n/a)	
+ANB_TOLID_QC	bit	no	1	     	     	yes	(n/a)	(n/a)	
+ANB_TOLID_ANB	bit	no	1	     	     	yes	(n/a)	(n/a)	
+ANB_KHOROG_ANB	bit	no	1	     	     	yes	(n/a)	(n/a)	
+ANB_KHOROG_MODIRT	bit	no	1	     	     	yes	(n/a)	(n/a)	
+ANB_KHOROGS_ANB	bit	no	1	     	     	yes	(n/a)	(n/a)	
+ANB_KHOROGS_MODIRT	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SND_TAHI	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SND_MALI	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SND_MODIR	bit	no	1	     	     	yes	(n/a)	(n/a)	
+FFRB_FROOSH	bit	no	1	     	     	yes	(n/a)	(n/a)	
+FFRB_ANB	bit	no	1	     	     	yes	(n/a)	(n/a)	
+FFRB_HESAB	bit	no	1	     	     	yes	(n/a)	(n/a)	
+FFRB_MODIR	bit	no	1	     	     	yes	(n/a)	(n/a)	
+KFRB_BAZAR	bit	no	1	     	     	yes	(n/a)	(n/a)	
+KFRB_ANB	bit	no	1	     	     	yes	(n/a)	(n/a)	
+KFRB_HESAB	bit	no	1	     	     	yes	(n/a)	(n/a)	
+KFRB_MODIR	bit	no	1	     	     	yes	(n/a)	(n/a)	
+FFRP_FROOSH	bit	no	1	     	     	yes	(n/a)	(n/a)	
+FFRP_ANB	bit	no	1	     	     	yes	(n/a)	(n/a)	
+FFRP_HESAB	bit	no	1	     	     	yes	(n/a)	(n/a)	
+FFRP_MODIR	bit	no	1	     	     	yes	(n/a)	(n/a)	
+RASM_HESAB	bit	no	1	     	     	yes	(n/a)	(n/a)	
+RASM_MODIR	bit	no	1	     	     	yes	(n/a)	(n/a)	
+PAY_MVAHED	bit	no	1	     	     	yes	(n/a)	(n/a)	
+PAY_HESAB	bit	no	1	     	     	yes	(n/a)	(n/a)	
+PAY_MAMEL	bit	no	1	     	     	yes	(n/a)	(n/a)	
+ENTGH_AZANB	bit	no	1	     	     	yes	(n/a)	(n/a)	
+ENTGH_BEANB	bit	no	1	     	     	yes	(n/a)	(n/a)	
+ENTGH_MODIR	bit	no	1	     	     	yes	(n/a)	(n/a)	
+PAZ_PAZ	bit	no	1	     	     	no	(n/a)	(n/a)	
+PAZ_HES	bit	no	1	     	     	no	(n/a)	(n/a)	
+PAZ_CEO	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0124	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0224	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0324	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0126	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0226	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0326	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0133	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0233	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0333	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0132	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0232	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0332	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0134	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0234	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0334	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0135	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0235	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0335	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0136	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0236	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0336	bit	no	1	     	     	no	(n/a)	(n/a)	
+FFR_FROOSHTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FFR_HESABTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FFR_MODIRTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+KFR_BAZARTX	varbinary	no	50	     	     	yes	no	yes	
+KFR_HESABTX	varbinary	no	50	     	     	yes	no	yes	
+KFR_MODIRTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ANB_RASID_ANBTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ANB_RASID_QCTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ANB_HAVL_FROSHTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ANB_HAVL_ANBTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ANB_HAVL_MODIRTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ANB_TOLID_MODIRTTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ANB_TOLID_QCTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ANB_TOLID_ANBTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ANB_KHOROG_ANBTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ANB_KHOROG_MODIRTTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ANB_KHOROGS_ANBTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ANB_KHOROGS_MODIRTTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SND_TAHITX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SND_MALITX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SND_MODIRTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FFRB_FROOSHTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FFRB_ANBTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FFRB_HESABTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FFRB_MODIRTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+KFRB_BAZARTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+KFRB_ANBTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+KFRB_HESABTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+KFRB_MODIRTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FFRP_FROOSHTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FFRP_ANBTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FFRP_HESABTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FFRP_MODIRTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+RASM_HESABTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+RASM_MODIRTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PAY_MVAHEDTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PAY_HESABTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PAY_MAMELTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ENTGH_AZANBTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ENTGH_BEANBTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ENTGH_MODIRTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PAZ_PAZTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PAZ_HESTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PAZ_CEOTX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0124TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0224TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0324TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0126TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0226TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0326TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0133TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0233TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0333TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0132TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0232TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0332TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0134TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0234TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0334TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0135TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0235TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0335TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0136TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0236TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0336TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0137	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0237	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0337	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0137TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0237TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0337TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0140	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0240	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0340	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0140TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0240TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0340TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0141	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0241	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0341	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0141TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0241TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0341TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0142	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0242	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0342	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN0142TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0242TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN0342TX	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_SIGN	clustered, unique, primary key located on PRIMARY	USERCO
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__SIGN__CRT__42C2BEC4	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column ENTGH_AZANB	DF__SIGN__ENTGH_AZAN__1D913A15	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ENTGH_BEANB	DF__SIGN__ENTGH_BEAN__1E855E4E	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ENTGH_MODIR	DF__SIGN__ENTGH_MODI__1F798287	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column PAY_HESAB	DF__SIGN__PAY_HESAB__1BA8F1A3	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column PAY_MAMEL	DF__SIGN__PAY_MAMEL__1C9D15DC	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column PAY_MVAHED	DF__SIGN__PAY_MVAHED__1AB4CD6A	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column PAZ_CEO	DF__SIGN__PAZ_CEO__2255EF32	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column PAZ_HES	DF__SIGN__PAZ_HES__2161CAF9	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column PAZ_PAZ	DF__SIGN__PAZ_PAZ__206DA6C0	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0124	DF__SIGN__SGN0124__234A136B	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0126	DF__SIGN__SGN0126__26268016	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0132	DF__SIGN__SGN0132__2BDF596C	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0133	DF__SIGN__SGN0133__2902ECC1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0134	DF__SIGN__SGN0134__2EBBC617	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0135	DF__SIGN__SGN0135__319832C2	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0136	DF__SIGN__SGN0136__34749F6D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0137	DF__SIGN__SGN0137__37510C18	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0140	DF__SIGN__SGN0140__3A2D78C3	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0141	DF__SIGN__SGN0141__3D09E56E	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0142	DF__SIGN__SGN0142__3FE65219	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0224	DF__SIGN__SGN0224__243E37A4	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0226	DF__SIGN__SGN0226__271AA44F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0232	DF__SIGN__SGN0232__2CD37DA5	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0233	DF__SIGN__SGN0233__29F710FA	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0234	DF__SIGN__SGN0234__2FAFEA50	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0235	DF__SIGN__SGN0235__328C56FB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0236	DF__SIGN__SGN0236__3568C3A6	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0237	DF__SIGN__SGN0237__38453051	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0240	DF__SIGN__SGN0240__3B219CFC	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0241	DF__SIGN__SGN0241__3DFE09A7	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0242	DF__SIGN__SGN0242__40DA7652	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0324	DF__SIGN__SGN0324__25325BDD	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0326	DF__SIGN__SGN0326__280EC888	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0332	DF__SIGN__SGN0332__2DC7A1DE	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0333	DF__SIGN__SGN0333__2AEB3533	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0334	DF__SIGN__SGN0334__30A40E89	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0335	DF__SIGN__SGN0335__33807B34	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0336	DF__SIGN__SGN0336__365CE7DF	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0337	DF__SIGN__SGN0337__3939548A	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0340	DF__SIGN__SGN0340__3C15C135	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0341	DF__SIGN__SGN0341__3EF22DE0	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN0342	DF__SIGN__SGN0342__41CE9A8B	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ANB_HAVL_ANB	DF_SIGN_ANB_HAVL_ANB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ANB_HAVL_FROSH	DF_SIGN_ANB_HAVL_FROSH	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ANB_HAVL_MODIR	DF_SIGN_ANB_HAVL_MODIR	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ANB_KHOROG_ANB	DF_SIGN_ANB_KHOROG_ANB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ANB_KHOROG_MODIRT	DF_SIGN_ANB_KHOROG_MODIRT	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ANB_KHOROGS_ANB	DF_SIGN_ANB_KHOROGS_ANB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ANB_KHOROGS_MODIRT	DF_SIGN_ANB_KHOROGS_MODIRT	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ANB_RASID_ANB	DF_SIGN_ANB_RASID_ANB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ANB_RASID_QC	DF_SIGN_ANB_RASID_QC	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ANB_TOLID_ANB	DF_SIGN_ANB_TOLID_ANB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ANB_TOLID_MODIRT	DF_SIGN_ANB_TOLID_MODIRT	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ANB_TOLID_QC	DF_SIGN_ANB_TOLID_QC	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FFR_FROOSH	DF_SIGN_FFR_FROOSH	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FFR_HESAB	DF_SIGN_FFR_HESAB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FFR_MODIR	DF_SIGN_FFR_MODIR	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FFRB_ANB	DF_SIGN_FFRB_ANB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FFRB_FROOSH	DF_SIGN_FFRB_FROOSH	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FFRB_HESAB	DF_SIGN_FFRB_HESAB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FFRB_MODIR	DF_SIGN_FFRB_MODIR	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FFRP_ANB	DF_SIGN_FFRP_ANB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FFRP_FROOSH	DF_SIGN_FFRP_FROOSH	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FFRP_HESAB	DF_SIGN_FFRP_HESAB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FFRP_MODIR	DF_SIGN_FFRP_MODIR	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column KFR_BAZAR	DF_SIGN_KFR_BAZAR	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column KFR_HESAB	DF_SIGN_KFR_HESAB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column KFR_MODIR	DF_SIGN_KFR_MODIR	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column KFRB_ANB	DF_SIGN_KFRB_ANB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column KFRB_BAZAR	DF_SIGN_KFRB_BAZAR	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column KFRB_HESAB	DF_SIGN_KFRB_HESAB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column KFRB_MODIR	DF_SIGN_KFRB_MODIR	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column RASM_HESAB	DF_SIGN_RASM_HESAB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column RASM_MODIR	DF_SIGN_RASM_MODIR	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SND_MALI	DF_SIGN_SND_MALI	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SND_MODIR	DF_SIGN_SND_MODIR	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SND_TAHI	DF_SIGN_SND_TAHI	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column USERCO	DF_SIGN_USERCO	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+PRIMARY KEY (clustered)	PK_SIGN	(n/a)	(n/a)	(n/a)	(n/a)	USERCO

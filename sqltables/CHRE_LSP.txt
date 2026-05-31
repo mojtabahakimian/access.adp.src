@@ -1,0 +1,57 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+CHRE_LSP	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+N_SERI	float	no	8	53   		no	(n/a)	(n/a)	
+BANK	int	no	4	10   	0    	no	(n/a)	(n/a)	
+DATE_S	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+DATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+RADIF	float	no	8	53   		yes	(n/a)	(n/a)	
+N_MOIN	float	no	8	53   		yes	(n/a)	(n/a)	
+N_TAF	float	no	8	53   		yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{9A1BDA03-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	BANK
+B_SI	nonclustered located on PRIMARY	N_SERI, BANK
+DATE_I	nonclustered located on PRIMARY	DATE
+PK_CHRE_LSP	clustered, unique, primary key located on PRIMARY	N_SERI, BANK, DATE_S
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+FOREIGN KEY	CHRE_LSP_FK00	Cascade	Cascade	Enabled	Is_For_Replication	N_SERI, BANK, DATE_S
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PAY_GETP (N_SERI, BANK, DATE_S)
+FOREIGN KEY	CHRE_LSP_FK02	No Action	Cascade	Enabled	Is_For_Replication	DATE
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.CHREC_HP (DATE)
+DEFAULT on column CRT	DF__CHRE_LSP__CRT__479C827A	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column N_MOIN	DF__CHRE_LSP__N_MOIN__2645B050	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+PRIMARY KEY (clustered)	PK_CHRE_LSP	(n/a)	(n/a)	(n/a)	(n/a)	N_SERI, BANK, DATE_S

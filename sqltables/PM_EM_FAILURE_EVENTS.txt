@@ -1,0 +1,74 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PM_EM_FAILURE_EVENTS	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+IDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+FI_IDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+FIO_JOB	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+AS_IDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+FIO_DATE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+FIO_TIME	int	no	4	10   	0    	no	(n/a)	(n/a)	
+FIO_PERIO	int	no	4	10   	0    	no	(n/a)	(n/a)	
+FIO_AS_VAS	int	no	4	10   	0    	no	(n/a)	(n/a)	
+FIO_DESCRIPTION	nvarchar	no	1000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FIO_ZAMEM	image	no	16	     	     	yes	(n/a)	(n/a)	
+FIO_EVKIND	int	no	4	10   	0    	no	(n/a)	(n/a)	
+FIO_JOBIDD	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SGN1	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SGN2	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SGN3	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SGN4	bit	no	1	     	     	yes	(n/a)	(n/a)	
+sgn1usid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+sgn2usid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+sgn3usid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CR	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+US	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDD	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_PM_EM_FAILURE_EVENTS	clustered, unique, primary key located on PRIMARY	IDD
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column FIO_PERIO	DF__PM_EM_FAI__FIO_P__0F582957	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN1	DF__PM_EM_FAIL__SGN1__104C4D90	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN2	DF__PM_EM_FAIL__SGN2__114071C9	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN3	DF__PM_EM_FAIL__SGN3__12349602	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN4	DF__PM_EM_FAIL__SGN4__1328BA3B	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CRT	DF__PM_EM_FAILU__CRT__5031C87B	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+FOREIGN KEY	FK_PM_EM_FAILURE_EVENTS_PM_ASSETS	No Action	Cascade	Enabled	Is_For_Replication	AS_IDD
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PM_ASSETS (IDD)
+FOREIGN KEY	FK_PM_EM_FAILURE_EVENTS_PM_EM_FAILURE	Cascade	Cascade	Enabled	Is_For_Replication	FI_IDD
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PM_EM_FAILURE (IDD)
+FOREIGN KEY	FK_PM_EM_FAILURE_EVENTS_PM_JOBTITLE	No Action	No Action	Enabled	Is_For_Replication	FIO_JOB
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PM_JOBTITLE (IDD)
+PRIMARY KEY (clustered)	PK_PM_EM_FAILURE_EVENTS	(n/a)	(n/a)	(n/a)	(n/a)	IDD

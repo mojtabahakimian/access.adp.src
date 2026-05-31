@@ -1,0 +1,103 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+TCOD_BANKS	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+CODE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+NAMES	nvarchar	no	64	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+IDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+TEJ_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+MEL_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SAD_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+MLA_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+REF_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+TOS_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+KES_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+KAR_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+POS_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+TAT_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SEP_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+TSA_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SAN_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+MAS_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+EGH_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+PAR_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+PAS_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+DEY_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SAM_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SAR_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SIN_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SHA_C	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDD	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+aaaaaTCOD_BANKS_PK	nonclustered, unique, primary key located on PRIMARY	CODE
+BAR_COD	nonclustered located on PRIMARY	CODE
+NAMES	nonclustered, unique located on PRIMARY	NAMES
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaTCOD_BANKS_PK	(n/a)	(n/a)	(n/a)	(n/a)	CODE
+DEFAULT on column DEY_C	DF__TCOD_BANK__DEY_C__6482D9EB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column EGH_C	DF__TCOD_BANK__EGH_C__61A66D40	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column KAR_C	DF__TCOD_BANK__KAR_C__5AF96FB1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column KES_C	DF__TCOD_BANK__KES_C__5A054B78	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MAS_C	DF__TCOD_BANK__MAS_C__60B24907	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MEL_C	DF__TCOD_BANK__MEL_C__5540965B	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MLA_C	DF__TCOD_BANK__MLA_C__5728DECD	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column PAR_C	DF__TCOD_BANK__PAR_C__629A9179	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column PAS_C	DF__TCOD_BANK__PAS_C__638EB5B2	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column POS_C	DF__TCOD_BANK__POS_C__5BED93EA	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column REF_C	DF__TCOD_BANK__REF_C__581D0306	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SAD_C	DF__TCOD_BANK__SAD_C__5634BA94	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SAM_C	DF__TCOD_BANK__SAM_C__6576FE24	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SAN_C	DF__TCOD_BANK__SAN_C__5FBE24CE	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SAR_C	DF__TCOD_BANK__SAR_C__666B225D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SEP_C	DF__TCOD_BANK__SEP_C__5DD5DC5C	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SHA_C	DF__TCOD_BANK__SHA_C__68536ACF	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SIN_C	DF__TCOD_BANK__SIN_C__675F4696	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column TAT_C	DF__TCOD_BANK__TAT_C__5CE1B823	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column TEJ_C	DF__TCOD_BANK__TEJ_C__544C7222	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column TOS_C	DF__TCOD_BANK__TOS_C__5911273F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column TSA_C	DF__TCOD_BANK__TSA_C__5ECA0095	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CRT	DF__TCOD_BANKS__CRT__69F19A7E	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.COD_HESAB: COD_HESAB_FK00
+YAZDSEPAR1405.dbo.DEED_DTL: FK_DEED_DTL_TCOD_BANKS
+YAZDSEPAR1405.dbo.FORMAT: FK_FORMAT_TCOD_BANKS
+YAZDSEPAR1405.dbo.FORMAT_HESAB: FORMAT_HESAB_FK00
+YAZDSEPAR1405.dbo.PAY_GETD: FK_PAY_GETD_TCOD_BANKS
+YAZDSEPAR1405.dbo.PAY_GETP: FK_PAY_GETP_TCOD_BANKS
+YAZDSEPAR1405.dbo.PGET_LST: FK_PGET_LST_TCOD_BANKS

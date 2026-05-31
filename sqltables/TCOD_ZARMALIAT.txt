@@ -1,0 +1,48 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+TCOD_ZARMALIAT	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+MABL_H	int	no	4	10   	0    	no	(n/a)	(n/a)	
+ZARIB	float	no	8	53   		no	(n/a)	(n/a)	
+MALIAT	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_TCOD_ZARMALIAT	clustered, unique, primary key located on PRIMARY	MABL_H
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__TCOD_ZARMAL__CRT__6033261A	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column MABL_H	DF_TCOD_ZARMALIAT_MABL_H	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MALIAT	DF_TCOD_ZARMALIAT_MALIAT	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ZARIB	DF_TCOD_ZARMALIAT_ZARIB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+PRIMARY KEY (clustered)	PK_TCOD_ZARMALIAT	(n/a)	(n/a)	(n/a)	(n/a)	MABL_H

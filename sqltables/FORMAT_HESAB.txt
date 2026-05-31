@@ -1,0 +1,181 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+FORMAT_HESAB	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+BANK	int	no	4	10   	0    	no	(n/a)	(n/a)	
+KIND	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+DATE_TOP	real	no	4	24   		yes	(n/a)	(n/a)	
+DATE_LEFT	real	no	4	24   		yes	(n/a)	(n/a)	
+DATE_FONT	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DATE_SIZE	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+DATE_P	bit	no	1	     	     	no	(n/a)	(n/a)	
+DATE_WITH	real	no	4	24   		yes	(n/a)	(n/a)	
+SHO_TOP	real	no	4	24   		yes	(n/a)	(n/a)	
+SHO_LEFT	real	no	4	24   		yes	(n/a)	(n/a)	
+SHO_FONT	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SHO_SIZE	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+SHO_P	bit	no	1	     	     	no	(n/a)	(n/a)	
+SHO_WITH	real	no	4	24   		yes	(n/a)	(n/a)	
+SHES_TOP	real	no	4	24   		yes	(n/a)	(n/a)	
+SHES_LEFT	real	no	4	24   		yes	(n/a)	(n/a)	
+SHES_FONT	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SHES_SIZE	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+SHES_P	bit	no	1	     	     	no	(n/a)	(n/a)	
+SHES_WITH	real	no	4	24   		yes	(n/a)	(n/a)	
+NAME_TOP	real	no	4	24   		yes	(n/a)	(n/a)	
+NAME_LEFT	real	no	4	24   		yes	(n/a)	(n/a)	
+NAME_FONT	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+NAME_SIZE	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+NAME_P	bit	no	1	     	     	no	(n/a)	(n/a)	
+NAME_WITH	real	no	4	24   		yes	(n/a)	(n/a)	
+CDATE_TOP	real	no	4	24   		yes	(n/a)	(n/a)	
+CDATE_LEFT	real	no	4	24   		yes	(n/a)	(n/a)	
+CDATE_FONT	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CDATE_SIZE	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+CDATE_P	bit	no	1	     	     	no	(n/a)	(n/a)	
+CDATE_WITH	real	no	4	24   		yes	(n/a)	(n/a)	
+SER_TOP	real	no	4	24   		yes	(n/a)	(n/a)	
+SER_LEFT	real	no	4	24   		yes	(n/a)	(n/a)	
+SER_FONT	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SER_SIZE	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+SER_P	bit	no	1	     	     	no	(n/a)	(n/a)	
+SER_WITH	real	no	4	24   		yes	(n/a)	(n/a)	
+CHES_TOP	real	no	4	24   		yes	(n/a)	(n/a)	
+CHES_LEFT	real	no	4	24   		yes	(n/a)	(n/a)	
+CHES_FONT	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CHES_SIZE	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+CHES_P	bit	no	1	     	     	no	(n/a)	(n/a)	
+CHES_WITH	real	no	4	24   		yes	(n/a)	(n/a)	
+BSHO_TOP	real	no	4	24   		yes	(n/a)	(n/a)	
+BSHO_LEFT	real	no	4	24   		yes	(n/a)	(n/a)	
+BSHO_FONT	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+BSHO_SIZE	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+BSHO_P	bit	no	1	     	     	no	(n/a)	(n/a)	
+BSHO_WITH	real	no	4	24   		yes	(n/a)	(n/a)	
+MAB_TOP	real	no	4	24   		yes	(n/a)	(n/a)	
+MAB_LEFT	real	no	4	24   		yes	(n/a)	(n/a)	
+MAB_FONT	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MAB_SIZE	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+MAB_P	bit	no	1	     	     	no	(n/a)	(n/a)	
+MAB_WITH	real	no	4	24   		yes	(n/a)	(n/a)	
+AMAB_TOP	real	no	4	24   		yes	(n/a)	(n/a)	
+AMAB_LEFT	real	no	4	24   		yes	(n/a)	(n/a)	
+AMAB_FONT	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+AMAB_SIZE	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+AMAB_P	bit	no	1	     	     	no	(n/a)	(n/a)	
+AMAB_WITH	real	no	4	24   		yes	(n/a)	(n/a)	
+CITY_TOP	real	no	4	24   		yes	(n/a)	(n/a)	
+CITY_LEFT	real	no	4	24   		yes	(n/a)	(n/a)	
+CITY_FONT	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CITY_SIZE	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+CITY_P	bit	no	1	     	     	no	(n/a)	(n/a)	
+CITY_WITH	real	no	4	24   		yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+aaaaaFORMAT_HESAB_PK	nonclustered, unique, primary key located on PRIMARY	BANK, KIND
+TCOD_BANKSFORMAT_HESAB	nonclustered located on PRIMARY	BANK
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaFORMAT_HESAB_PK	(n/a)	(n/a)	(n/a)	(n/a)	BANK, KIND
+DEFAULT on column AMAB_SIZE	DF__FORMAT_HE__AMAB___00DF2177	(n/a)	(n/a)	(n/a)	(n/a)	((14))
+DEFAULT on column AMAB_P	DF__FORMAT_HE__AMAB___01D345B0	(n/a)	(n/a)	(n/a)	(n/a)	((-1))
+DEFAULT on column AMAB_WITH	DF__FORMAT_HE__AMAB___02C769E9	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column AMAB_TOP	DF__FORMAT_HE__AMAB___7E02B4CC	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column AMAB_LEFT	DF__FORMAT_HE__AMAB___7EF6D905	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column AMAB_FONT	DF__FORMAT_HE__AMAB___7FEAFD3E	(n/a)	(n/a)	(n/a)	(n/a)	('Zar')
+DEFAULT on column BSHO_TOP	DF__FORMAT_HE__BSHO___72910220	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BSHO_LEFT	DF__FORMAT_HE__BSHO___73852659	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BSHO_FONT	DF__FORMAT_HE__BSHO___74794A92	(n/a)	(n/a)	(n/a)	(n/a)	('Zar')
+DEFAULT on column BSHO_SIZE	DF__FORMAT_HE__BSHO___756D6ECB	(n/a)	(n/a)	(n/a)	(n/a)	((14))
+DEFAULT on column BSHO_P	DF__FORMAT_HE__BSHO___76619304	(n/a)	(n/a)	(n/a)	(n/a)	((-1))
+DEFAULT on column BSHO_WITH	DF__FORMAT_HE__BSHO___7755B73D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CDATE_TOP	DF__FORMAT_HE__CDATE__6166761E	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CDATE_LEFT	DF__FORMAT_HE__CDATE__625A9A57	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CDATE_FONT	DF__FORMAT_HE__CDATE__634EBE90	(n/a)	(n/a)	(n/a)	(n/a)	('Zar')
+DEFAULT on column CDATE_SIZE	DF__FORMAT_HE__CDATE__6442E2C9	(n/a)	(n/a)	(n/a)	(n/a)	((14))
+DEFAULT on column CDATE_P	DF__FORMAT_HE__CDATE__65370702	(n/a)	(n/a)	(n/a)	(n/a)	((-1))
+DEFAULT on column CDATE_WITH	DF__FORMAT_HE__CDATE__662B2B3B	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CHES_TOP	DF__FORMAT_HE__CHES___6CD828CA	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CHES_LEFT	DF__FORMAT_HE__CHES___6DCC4D03	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CHES_FONT	DF__FORMAT_HE__CHES___6EC0713C	(n/a)	(n/a)	(n/a)	(n/a)	('Zar')
+DEFAULT on column CHES_SIZE	DF__FORMAT_HE__CHES___6FB49575	(n/a)	(n/a)	(n/a)	(n/a)	((14))
+DEFAULT on column CHES_P	DF__FORMAT_HE__CHES___70A8B9AE	(n/a)	(n/a)	(n/a)	(n/a)	((-1))
+DEFAULT on column CHES_WITH	DF__FORMAT_HE__CHES___719CDDE7	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CITY_TOP	DF__FORMAT_HE__CITY___03BB8E22	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CITY_LEFT	DF__FORMAT_HE__CITY___04AFB25B	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CITY_FONT	DF__FORMAT_HE__CITY___05A3D694	(n/a)	(n/a)	(n/a)	(n/a)	('Zar')
+DEFAULT on column CITY_SIZE	DF__FORMAT_HE__CITY___0697FACD	(n/a)	(n/a)	(n/a)	(n/a)	((14))
+DEFAULT on column CITY_P	DF__FORMAT_HE__CITY___078C1F06	(n/a)	(n/a)	(n/a)	(n/a)	((-1))
+DEFAULT on column CITY_WITH	DF__FORMAT_HE__CITY___0880433F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DATE_TOP	DF__FORMAT_HE__DATE___4A8310C6	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DATE_LEFT	DF__FORMAT_HE__DATE___4B7734FF	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DATE_FONT	DF__FORMAT_HE__DATE___4C6B5938	(n/a)	(n/a)	(n/a)	(n/a)	('Zar')
+DEFAULT on column DATE_SIZE	DF__FORMAT_HE__DATE___4D5F7D71	(n/a)	(n/a)	(n/a)	(n/a)	((14))
+DEFAULT on column DATE_P	DF__FORMAT_HE__DATE___4E53A1AA	(n/a)	(n/a)	(n/a)	(n/a)	((-1))
+DEFAULT on column DATE_WITH	DF__FORMAT_HE__DATE___4F47C5E3	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MAB_FONT	DF__FORMAT_HE__MAB_F__7A3223E8	(n/a)	(n/a)	(n/a)	(n/a)	('Zar')
+DEFAULT on column MAB_LEFT	DF__FORMAT_HE__MAB_L__793DFFAF	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MAB_P	DF__FORMAT_HE__MAB_P__7C1A6C5A	(n/a)	(n/a)	(n/a)	(n/a)	((-1))
+DEFAULT on column MAB_SIZE	DF__FORMAT_HE__MAB_S__7B264821	(n/a)	(n/a)	(n/a)	(n/a)	((14))
+DEFAULT on column MAB_TOP	DF__FORMAT_HE__MAB_T__7849DB76	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MAB_WITH	DF__FORMAT_HE__MAB_W__7D0E9093	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column NAME_TOP	DF__FORMAT_HE__NAME___5BAD9CC8	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column NAME_LEFT	DF__FORMAT_HE__NAME___5CA1C101	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column NAME_FONT	DF__FORMAT_HE__NAME___5D95E53A	(n/a)	(n/a)	(n/a)	(n/a)	('Zar')
+DEFAULT on column NAME_SIZE	DF__FORMAT_HE__NAME___5E8A0973	(n/a)	(n/a)	(n/a)	(n/a)	((14))
+DEFAULT on column NAME_P	DF__FORMAT_HE__NAME___5F7E2DAC	(n/a)	(n/a)	(n/a)	(n/a)	((-1))
+DEFAULT on column NAME_WITH	DF__FORMAT_HE__NAME___607251E5	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SER_FONT	DF__FORMAT_HE__SER_F__690797E6	(n/a)	(n/a)	(n/a)	(n/a)	('Zar')
+DEFAULT on column SER_LEFT	DF__FORMAT_HE__SER_L__681373AD	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SER_P	DF__FORMAT_HE__SER_P__6AEFE058	(n/a)	(n/a)	(n/a)	(n/a)	((-1))
+DEFAULT on column SER_SIZE	DF__FORMAT_HE__SER_S__69FBBC1F	(n/a)	(n/a)	(n/a)	(n/a)	((14))
+DEFAULT on column SER_TOP	DF__FORMAT_HE__SER_T__671F4F74	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SER_WITH	DF__FORMAT_HE__SER_W__6BE40491	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SHES_TOP	DF__FORMAT_HE__SHES___55F4C372	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SHES_LEFT	DF__FORMAT_HE__SHES___56E8E7AB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SHES_FONT	DF__FORMAT_HE__SHES___57DD0BE4	(n/a)	(n/a)	(n/a)	(n/a)	('Zar')
+DEFAULT on column SHES_SIZE	DF__FORMAT_HE__SHES___58D1301D	(n/a)	(n/a)	(n/a)	(n/a)	((14))
+DEFAULT on column SHES_P	DF__FORMAT_HE__SHES___59C55456	(n/a)	(n/a)	(n/a)	(n/a)	((-1))
+DEFAULT on column SHES_WITH	DF__FORMAT_HE__SHES___5AB9788F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SHO_FONT	DF__FORMAT_HE__SHO_F__5224328E	(n/a)	(n/a)	(n/a)	(n/a)	('Zar')
+DEFAULT on column SHO_LEFT	DF__FORMAT_HE__SHO_L__51300E55	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SHO_P	DF__FORMAT_HE__SHO_P__540C7B00	(n/a)	(n/a)	(n/a)	(n/a)	((-1))
+DEFAULT on column SHO_SIZE	DF__FORMAT_HE__SHO_S__531856C7	(n/a)	(n/a)	(n/a)	(n/a)	((14))
+DEFAULT on column SHO_TOP	DF__FORMAT_HE__SHO_T__503BEA1C	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SHO_WITH	DF__FORMAT_HE__SHO_W__55009F39	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BANK	DF__FORMAT_HES__BANK__489AC854	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column KIND	DF__FORMAT_HES__KIND__498EEC8D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CRT	DF__FORMAT_HESA__CRT__67D447E2	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+FOREIGN KEY	FORMAT_HESAB_FK00	No Action	Cascade	Enabled	Is_For_Replication	BANK
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_BANKS (CODE)

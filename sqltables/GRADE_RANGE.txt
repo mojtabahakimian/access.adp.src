@@ -1,0 +1,55 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+GRADE_RANGE	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+GID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+GNAME	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+GAZ	real	no	4	24   		no	(n/a)	(n/a)	
+GTA	real	no	4	24   		no	(n/a)	(n/a)	
+GTOZIH	nvarchar	no	500	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_GRADE_RANGE	clustered, unique, primary key located on PRIMARY	GID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__GRADE_RANGE__CRT__2141CF68	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column GAZ	DF_GRADE_RANGE_GAZ	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column GID	DF_GRADE_RANGE_GID	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+PRIMARY KEY (clustered)	PK_GRADE_RANGE	(n/a)	(n/a)	(n/a)	(n/a)	GID
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.GRADE_SHART: FK_GRADE_SHART_GRADE_RANGE

@@ -1,0 +1,58 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+EVENTS	dbo	user table	03/05/2026 01:57:07 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+IDNUM	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+IDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+EVENTS	nvarchar	no	8000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+STDATE	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+STTIME	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+USERNAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+COMPANY	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SUMTIME	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+pic	image	no	16	     	     	yes	(n/a)	(n/a)	
+skid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+num	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+tg	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+FXTYPE	nvarchar	no	20	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDD	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_EVENTS	clustered, unique, primary key located on PRIMARY	IDD
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__EVENTS__CRT__7A0B2BB4	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column SUMTIME	DF_EVENTS_SUMTIME	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_EVENTS_TASKS	No Action	Cascade	Enabled	Is_For_Replication	IDNUM
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TASKS (IDNUM)
+PRIMARY KEY (clustered)	PK_EVENTS	(n/a)	(n/a)	(n/a)	(n/a)	IDD

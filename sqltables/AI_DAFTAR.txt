@@ -1,0 +1,55 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+AI_DAFTAR	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+N_S	float	no	8	53   		yes	(n/a)	(n/a)	
+HES_T	float	no	8	53   		yes	(n/a)	(n/a)	
+HES_M	float	no	8	53   		yes	(n/a)	(n/a)	
+DATE_S	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+HES_K	float	no	8	53   		yes	(n/a)	(n/a)	
+SHARH	nvarchar	no	510	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+BED	float	no	8	53   		yes	(n/a)	(n/a)	
+BES	float	no	8	53   		yes	(n/a)	(n/a)	
+MAND	float	no	8	53   		yes	(n/a)	(n/a)	
+TS	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+HES	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DIFF	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__AI_DAFTAR__66603565	clustered, unique, primary key located on PRIMARY	ID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__AI_DAFTAR__CRT__6E814571	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK__AI_DAFTAR__66603565	(n/a)	(n/a)	(n/a)	(n/a)	ID

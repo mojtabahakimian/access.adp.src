@@ -1,0 +1,18 @@
+﻿CREATE VIEW [dbo].[zchrbi]
+AS
+SELECT     dbo.HEAD_LST.DATE_N, SUM(dbo.IVO_EXTENDED.FLD1 * dbo.INVO_LST.MEGHk) AS FLD1, SUM(dbo.IVO_EXTENDED.FLD2 * dbo.INVO_LST.MEGHk) AS FLD2, 
+                      SUM(dbo.IVO_EXTENDED.FLD3 * dbo.INVO_LST.MEGHk) AS FLD3, SUM(dbo.IVO_EXTENDED.FLD4 * dbo.INVO_LST.MEGHk) AS FLD4, 
+                      SUM(dbo.IVO_EXTENDED.FLD5 * dbo.INVO_LST.MEGHk) AS FLD5, SUM(dbo.IVO_EXTENDED.FLD6 * dbo.INVO_LST.MEGHk) AS FLD6, 
+                      SUM(dbo.IVO_EXTENDED.FLD7 * dbo.INVO_LST.MEGHk) AS FLD7, SUM(dbo.IVO_EXTENDED.FLD8 * dbo.INVO_LST.MEGHk) AS FLD8, 
+                      SUM(dbo.IVO_EXTENDED.FLD9 * dbo.INVO_LST.MEGHk) AS FLD9, SUM(dbo.IVO_EXTENDED.FLD10 * dbo.INVO_LST.MEGHk) AS FLD10, SUM(dbo.INVO_LST.MEGHk) 
+                      AS MEGHK, dbo.HEAD_LST.CUST_NO, dbo.CUST_HESAB.NAME, dbo.HEAD_LST.NUMBER, dbo.HEAD_LST.TAG, dbo.Umonth(dbo.HEAD_LST.DATE_N) AS mm, 
+                      dbo.DEPART.DEPATMAN, dbo.DEPART.DEPNAME
+FROM         dbo.HEAD_LST INNER JOIN
+                      dbo.INVO_LST ON dbo.HEAD_LST.NUMBER = dbo.INVO_LST.NUMBER AND dbo.HEAD_LST.TAG = dbo.INVO_LST.TAG INNER JOIN
+                      dbo.IVO_EXTENDED ON dbo.INVO_LST.id = dbo.IVO_EXTENDED.id INNER JOIN
+                      dbo.CUST_HESAB ON dbo.HEAD_LST.CUST_NO = dbo.CUST_HESAB.hes INNER JOIN
+                      dbo.DEPART ON dbo.HEAD_LST.DEPATMAN = dbo.DEPART.DEPATMAN
+WHERE     (dbo.INVO_LST.MEGHk <> 0)
+GROUP BY dbo.HEAD_LST.DATE_N, dbo.HEAD_LST.TAG, dbo.INVO_LST.CODE, dbo.HEAD_LST.CUST_NO, dbo.CUST_HESAB.NAME, dbo.HEAD_LST.NUMBER, 
+                      dbo.Umonth(dbo.HEAD_LST.DATE_N), dbo.DEPART.DEPATMAN, dbo.DEPART.DEPNAME
+HAVING      (dbo.HEAD_LST.TAG = 1) AND (dbo.INVO_LST.CODE = N'374')

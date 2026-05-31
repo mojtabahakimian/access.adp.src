@@ -1,0 +1,67 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+ORDR_HED	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+id	int	no	4	10   	0    	no	(n/a)	(n/a)	
+DATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+MOLAH	nvarchar	no	510	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+N_S	float	no	8	53   		yes	(n/a)	(n/a)	
+CUST_NO	nvarchar	no	300	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+USER_NAME	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SHARAYET	nvarchar	no	1200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+sgn1usid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+sgn2usid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+sgn3usid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SGN1	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN2	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN3	bit	no	1	     	     	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+aaaaaORDR_HED_PK	nonclustered, unique, primary key located on PRIMARY	id
+DATE_I	nonclustered located on PRIMARY	DATE
+IX_ORDR_HED	nonclustered, unique, unique key located on PRIMARY	id
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaORDR_HED_PK	(n/a)	(n/a)	(n/a)	(n/a)	id
+DEFAULT on column CRT	DF__ORDR_HED__CRT__5BA37B27	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column SGN1	DF__ORDR_HED__SGN1__628582E0	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN2	DF__ORDR_HED__SGN2__6379A719	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN3	DF__ORDR_HED__SGN3__646DCB52	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+UNIQUE (non-clustered)	IX_ORDR_HED	(n/a)	(n/a)	(n/a)	(n/a)	id
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.ORDR_LST: FK_ORDR_LST_ORDR_HED

@@ -1,0 +1,64 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+EvaporationReports	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+Id	int	no	4	10   	0    	no	(n/a)	(n/a)	
+ReportDate	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+Shift	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+OperatorName	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+StartTime	time	no	5	16   	7    	yes	(n/a)	(n/a)	
+EndTime	time	no	5	16   	7    	yes	(n/a)	(n/a)	
+DurationInMinutes	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+OutletDryMatterPercentage	decimal	no	5	5    	2    	yes	(n/a)	(n/a)	
+FillTime20LitreContainerInSeconds	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+BoilerSteamPressure	decimal	no	5	5    	2    	yes	(n/a)	(n/a)	
+TvrSteamPressure	decimal	no	5	5    	2    	yes	(n/a)	(n/a)	
+VacuumPressure	decimal	no	5	5    	2    	yes	(n/a)	(n/a)	
+Tower1Temperature	decimal	no	5	5    	2    	yes	(n/a)	(n/a)	
+Tower2Temperature	decimal	no	5	5    	2    	yes	(n/a)	(n/a)	
+Tower3Temperature	decimal	no	5	5    	2    	yes	(n/a)	(n/a)	
+CondenserInletTemperature	decimal	no	5	5    	2    	yes	(n/a)	(n/a)	
+CondenserOutletTemperature	decimal	no	5	5    	2    	yes	(n/a)	(n/a)	
+IsTower1PumpOn	bit	no	1	     	     	yes	(n/a)	(n/a)	
+IsTower2PumpOn	bit	no	1	     	     	yes	(n/a)	(n/a)	
+DistilledWaterTemperature	decimal	no	5	5    	2    	yes	(n/a)	(n/a)	
+CipStatus	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+HoursSinceLastCip	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+Id	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__Evaporat__3214EC0703528312	clustered, unique, primary key located on PRIMARY	Id
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF_EvaporationReports_CRT	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK__Evaporat__3214EC0703528312	(n/a)	(n/a)	(n/a)	(n/a)	Id

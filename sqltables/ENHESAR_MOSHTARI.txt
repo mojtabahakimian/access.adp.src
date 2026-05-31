@@ -1,0 +1,55 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+ENHESAR_MOSHTARI	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+EN_CUST_CO	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+EN_COUNTRY	int	no	4	10   	0    	no	(n/a)	(n/a)	
+EN_IYALAT	int	no	4	10   	0    	no	(n/a)	(n/a)	
+EN_CITY	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+EN_STDATE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+EN_ENDEN	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+EN_CDATE	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+USERID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+USERID_REM	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_ENHESAR_MOSHTARI	clustered, unique, primary key located on PRIMARY	EN_CUST_CO
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__ENHESAR_MOS__CRT__70698DE3	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+FOREIGN KEY	FK_ENHESAR_MOSHTARI_TCOD_Countries	Cascade	Cascade	Enabled	Is_For_Replication	EN_COUNTRY
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_Countries (Code)
+FOREIGN KEY	FK_ENHESAR_MOSHTARI_TCOD_OSTAN	Cascade	Cascade	Enabled	Is_For_Replication	EN_IYALAT
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_OSTAN (OSCODE)
+PRIMARY KEY (clustered)	PK_ENHESAR_MOSHTARI	(n/a)	(n/a)	(n/a)	(n/a)	EN_CUST_CO

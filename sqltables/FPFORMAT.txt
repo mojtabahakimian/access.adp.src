@@ -1,0 +1,62 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+FPFORMAT	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+FPID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+FPONVAN	nvarchar	no	140	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FPSATRNUM	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+FPHIGH	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+FPWITH	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+FPPAPER	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+FPARM	image	no	16	     	     	yes	(n/a)	(n/a)	
+FPPGHHIGH	float	no	8	53   		yes	(n/a)	(n/a)	
+FPPGHFOOTER	float	no	8	53   		yes	(n/a)	(n/a)	
+FPPGHDETAIL	float	no	8	53   		yes	(n/a)	(n/a)	
+LANDSC	bit	no	1	     	     	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_FPFORMAT	clustered, unique, primary key located on PRIMARY	FPID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__FPFORMAT__CRT__382534C0	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column FPPGHFOOTER	DF_FPFORMAT_FPPGHFOOTER1	(n/a)	(n/a)	(n/a)	(n/a)	((6))
+DEFAULT on column FPPGHHIGH	DF_FPFORMAT_FPPGHHIGH	(n/a)	(n/a)	(n/a)	(n/a)	((6))
+DEFAULT on column FPPGHDETAIL	DF_FPFORMAT_FPPGHHIGH1	(n/a)	(n/a)	(n/a)	(n/a)	((0.79))
+PRIMARY KEY (clustered)	PK_FPFORMAT	(n/a)	(n/a)	(n/a)	(n/a)	FPID
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.FPFORMATFILELD: FK_FPFORMATFILELD_FPFORMAT

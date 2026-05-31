@@ -1,0 +1,59 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+SMS_SENDS	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+IDS	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SM_DT	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+SM_TT	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+SM_DTQ	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+SM_TTQ	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+SM_DTT	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+SM_TTT	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+SM_AMobiles	nvarchar	no	110	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+AMSG	nvarchar	no	500	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+NUMBER	float	no	8	53   		yes	(n/a)	(n/a)	
+TAGS	float	no	8	53   		yes	(n/a)	(n/a)	
+id_sms	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CUST_NO	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+USERNAME	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PC_NAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IPADD	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+STATUSSMS	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDS	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_SMS_SENDS	clustered, unique, primary key located on PRIMARY	IDS
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__SMS_SENDS__CRT__55EAA1D1	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_SMS_SENDS	(n/a)	(n/a)	(n/a)	(n/a)	IDS

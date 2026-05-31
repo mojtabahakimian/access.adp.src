@@ -1,0 +1,65 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+IVO_EXTENDED	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+id	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+FLD1	float	no	8	53   		yes	(n/a)	(n/a)	
+FLD2	float	no	8	53   		yes	(n/a)	(n/a)	
+FLD3	float	no	8	53   		yes	(n/a)	(n/a)	
+FLD4	float	no	8	53   		yes	(n/a)	(n/a)	
+FLD5	float	no	8	53   		yes	(n/a)	(n/a)	
+FLD6	float	no	8	53   		yes	(n/a)	(n/a)	
+FLD7	float	no	8	53   		yes	(n/a)	(n/a)	
+FLD8	float	no	8	53   		yes	(n/a)	(n/a)	
+FLD9	float	no	8	53   		yes	(n/a)	(n/a)	
+FLD10	float	no	8	53   		yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_IVO_EXTENDED	clustered, unique, primary key located on PRIMARY	id
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column FLD10	DF__IVO_EXTEN__FLD10__4EF38B7F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FLD1	DF__IVO_EXTEND__FLD1__465E457E	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FLD2	DF__IVO_EXTEND__FLD2__475269B7	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FLD3	DF__IVO_EXTEND__FLD3__48468DF0	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FLD4	DF__IVO_EXTEND__FLD4__493AB229	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FLD5	DF__IVO_EXTEND__FLD5__4A2ED662	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FLD6	DF__IVO_EXTEND__FLD6__4B22FA9B	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FLD7	DF__IVO_EXTEND__FLD7__4C171ED4	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FLD8	DF__IVO_EXTEND__FLD8__4D0B430D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FLD9	DF__IVO_EXTEND__FLD9__4DFF6746	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CRT	DF__IVO_EXTENDE__CRT__5753C756	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+FOREIGN KEY	FK_IVO_EXTENDED_INVO_LST	Cascade	Cascade	Enabled	Is_For_Replication	id
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.INVO_LST (id)
+PRIMARY KEY (clustered)	PK_IVO_EXTENDED	(n/a)	(n/a)	(n/a)	(n/a)	id

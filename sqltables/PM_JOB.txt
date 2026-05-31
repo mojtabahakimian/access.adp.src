@@ -1,0 +1,75 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PM_JOB	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+IDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+RM_IDD	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+AS_IDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+JO_JOB	int	no	4	10   	0    	no	(n/a)	(n/a)	
+JO_RSANGESH	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+JO_PERIOD	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+JO_MEGHDAR	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+JO_PERSON	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+JO_STDATE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+JO_STTIME	int	no	4	10   	0    	no	(n/a)	(n/a)	
+JO_DONE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+JO_ENDATE	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+JO_ENTIME	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+JO_HESAB_HAZINE	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+JO_LOCATION	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+JO_TAKHIRMO	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+JO_TAKHVAHED	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+JO_ELAMBE	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+JO_TIMENEED	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+JO_KIND	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CR	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+US	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDD	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_PM_JOB	clustered, unique, primary key located on PRIMARY	IDD
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PM_JOB__CRT__63449CEF	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column JO_DONE	DF__PM_JOB__JO_DONE__18E19391	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column JO_KIND	DF__PM_JOB__JO_KIND__1AC9DC03	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column JO_TAKHIRMO	DF__PM_JOB__JO_TAKHI__19D5B7CA	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_PM_JOB_PM_RUMAINTE	No Action	Cascade	Enabled	Is_For_Replication	RM_IDD
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PM_RUMAINTE (IDD)
+PRIMARY KEY (clustered)	PK_PM_JOB	(n/a)	(n/a)	(n/a)	(n/a)	IDD
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.PM_MVAD: FK_PM_MVAD_PM_MVAD

@@ -1,0 +1,52 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+SALARY_BESTT	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+HES_K	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+HES_M	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+HES_T	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+BED	float	no	8	53   		yes	(n/a)	(n/a)	
+BES	float	no	8	53   		yes	(n/a)	(n/a)	
+MM	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+DATE_S	float	no	8	53   		yes	(n/a)	(n/a)	
+SHR	nvarchar	no	140	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+USR	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_SALARY_BESTT	clustered, unique, primary key located on PRIMARY	ID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__SALARY_BEST__CRT__0A5E6A10	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_SALARY_BESTT	(n/a)	(n/a)	(n/a)	(n/a)	ID

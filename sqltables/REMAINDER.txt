@@ -1,0 +1,54 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+REMAINDER	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+IDNUM	int	no	4	10   	0    	no	(n/a)	(n/a)	
+PERSONEL	int	no	4	10   	0    	no	(n/a)	(n/a)	
+PAYAM	nvarchar	no	510	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+STATUS	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CTDATE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CTTIME	datetime	no	8	     	     	no	(n/a)	(n/a)	
+USERNAME	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+COMP_COD	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+STDATE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+STTIME	datetime	no	8	     	     	no	(n/a)	(n/a)	
+SMSOK	bit	no	1	     	     	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDNUM	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__REMAINDER__05D8E0BE	clustered, unique, primary key located on PRIMARY	IDNUM
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__REMAINDER__CRT__75634D2A	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column SMSOK	DF_REMAINDER_SMSOK	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+PRIMARY KEY (clustered)	PK__REMAINDER__05D8E0BE	(n/a)	(n/a)	(n/a)	(n/a)	IDNUM

@@ -1,0 +1,9 @@
+﻿Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+
+Private Sub Form_Open(CANCEL As Integer)
+    Me.RecordSource = "SELECT SUM(PAY_GETD.MABL) AS MABLs, PAY_GETD.CUST_NO, CUST_HESAB.NAME FROM PAY_GETD INNER JOIN CUST_HESAB ON PAY_GETD.CUST_NO = CUST_HESAB.hes WHERE (PAY_GETD.N_KOL2 IS NULL) AND (PAY_GETD.N_KOL3 IS NULL) AND (PAY_GETD.N_KOL = " & Forms![BASEKNOW]![BANKHA] & " OR PAY_GETD.N_KOL IS NULL) GROUP BY PAY_GETD.CUST_NO, CUST_HESAB.NAME ORDER BY SUM(PAY_GETD.MABL) DESC"
+End Sub

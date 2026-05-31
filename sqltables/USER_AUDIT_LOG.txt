@@ -1,0 +1,63 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+USER_AUDIT_LOG	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+ID	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+UserName	nvarchar	no	200	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+WindowsUserName	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ActionType	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+TableName	nvarchar	no	200	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+RecordID	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+OldValue	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+NewValue	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IPAddress	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MachineName	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ApplicationVersion	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+WindowsVersion	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ActionDateTime	datetime2	no	8	27   	7    	no	(n/a)	(n/a)	
+AdditionalInfo	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SessionID	uniqueidentifier	no	16	     	     	yes	(n/a)	(n/a)	
+ProcessID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ThreadID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+StackTrace	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IsSuccess	bit	no	1	     	     	no	(n/a)	(n/a)	
+ErrorMessage	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__USER_AUD__3214EC2761873D06	clustered, unique, primary key located on PRIMARY	ID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column IsSuccess	DF__USER_AUDI__IsSuc__636F8578	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column CRT	DF__USER_AUDIT___CRT__444CAB31	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK__USER_AUD__3214EC2761873D06	(n/a)	(n/a)	(n/a)	(n/a)	ID

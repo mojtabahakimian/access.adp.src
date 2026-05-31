@@ -1,0 +1,72 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+TR_COPMANES	dbo	user table	03/05/2026 01:57:02 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+id	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+COMPANY_NAME	nvarchar	no	400	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CITY	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MANAGER	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FACT_TEL	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MOBILE	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PERNUM	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+STATUS_FACT	nvarchar	no	400	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PRODUCTS	nvarchar	no	400	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ADDR	nvarchar	no	1000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ACCOUNTANT	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SOFTWARE	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ESP_PERSON	nvarchar	no	400	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+REAGENT	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+STATUS	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+COMMENT	nvarchar	no	1020	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+date_sabt	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+USER_NAME	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+pic	image	no	16	     	     	yes	(n/a)	(n/a)	
+dt	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+userid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+Longitude	float	no	8	53   		yes	(n/a)	(n/a)	
+Latitude	float	no	8	53   		yes	(n/a)	(n/a)	
+OSTANID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SHAHRID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+UP_DATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+UP_TIME	float	no	8	53   		no	(n/a)	(n/a)	
+UP_USER_NAME	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PC_NAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IPADD	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TRIDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+TRIDD	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__TR_COPMA__9FFE4EA41EF96457	clustered, unique, primary key located on PRIMARY	TRIDD
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (clustered)	PK__TR_COPMA__9FFE4EA41EF96457	(n/a)	(n/a)	(n/a)	(n/a)	TRIDD

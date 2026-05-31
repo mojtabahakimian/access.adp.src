@@ -1,0 +1,5 @@
+﻿CREATE VIEW  [dbo].[PGET_HEADQ]
+ AS
+ SELECT     TOP 100 PERCENT dbo.PGET_LST.*
+ FROM         dbo.PGET_LST
+ ORDER BY RADIF

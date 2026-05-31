@@ -1,0 +1,82 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PHOKM	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+HONUM	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CODE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+HDATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+SALARY_DAYLY	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SALARY_DAYLYB	int	no	4	10   	0    	no	(n/a)	(n/a)	
+HOME	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CHILDREN	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CONDITIONS	int	no	4	10   	0    	no	(n/a)	(n/a)	
+BON	int	no	4	10   	0    	no	(n/a)	(n/a)	
+JAZB	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SAYER	int	no	4	10   	0    	no	(n/a)	(n/a)	
+MADRAK	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+TAHOL	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+MABEZT	int	no	4	10   	0    	no	(n/a)	(n/a)	
+MABEZ	int	no	4	10   	0    	no	(n/a)	(n/a)	
+HSHIFT	float	no	8	53   		no	(n/a)	(n/a)	
+OKF	bit	no	1	     	     	yes	(n/a)	(n/a)	
+bonj	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ISCEO	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+HAGHTAHOL	float	no	8	53   		yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+HONUM	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{E560A24B-4508-11D8-A577-FB2A0C87E435}	nonclustered located on PRIMARY	CODE
+aaaaaPHOKM_PK	nonclustered, unique, primary key located on PRIMARY	HONUM
+CODE	nonclustered located on PRIMARY	CODE
+HONUM	nonclustered, unique located on PRIMARY	HONUM
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaPHOKM_PK	(n/a)	(n/a)	(n/a)	(n/a)	HONUM
+DEFAULT on column BON	DF__PHOKM__BON__436BFEE3	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column bonj	DF__PHOKM__bonj__5F54107A	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CHILDREN	DF__PHOKM__CHILDREN__4183B671	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CONDITIONS	DF__PHOKM__CONDITION__4277DAAA	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column HAGHTAHOL	DF__PHOKM__HAGHTAHOL__0B087586	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column HOME	DF__PHOKM__HOME__408F9238	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ISCEO	DF__PHOKM__ISCEO__3489AE06	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column JAZB	DF__PHOKM__JAZB__4460231C	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MABEZ	DF__PHOKM__MABEZ__46486B8E	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SALARY_DAYLY	DF__PHOKM__SALARY_DA__3EA749C6	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SALARY_DAYLYB	DF__PHOKM__SALARY_DA__3F9B6DFF	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SAYER	DF__PHOKM__SAYER__45544755	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column HSHIFT	DF_PHOKM_HSHIFT	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MABEZT	DF_PHOKM_MABEZ1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_PHOKM_TCODE_MADRAK	No Action	Cascade	Enabled	Is_For_Replication	MADRAK
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCODE_MADRAK (CODE)
+FOREIGN KEY	PHOKM_FK00	No Action	Cascade	Enabled	Is_For_Replication	CODE
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PERSONEL (CODE)

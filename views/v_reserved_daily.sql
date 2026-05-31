@@ -1,0 +1,15 @@
+﻿CREATE VIEW [dbo].[v_reserved_daily]
+WITH SCHEMABINDING
+AS
+SELECT
+    il.CODE,
+    il.ANBAR,
+    hl.DATE_N,
+    MEGHRES_D = SUM(CAST(il.MEGHK AS DECIMAL(38,10))),
+    CNT = COUNT_BIG(*)
+FROM dbo.HEAD_LST AS hl
+JOIN dbo.INVO_LST AS il
+  ON hl.TAG = il.TAG AND hl.NUMBER = il.NUMBER
+WHERE il.TAG = 20
+  AND (hl.TAMIR = 1 OR hl.TAMIR = 4)
+GROUP BY il.CODE, il.ANBAR, hl.DATE_N;

@@ -1,0 +1,8 @@
+﻿CREATE VIEW [dbo].[INVO_LSTF121]
+ AS
+ SELECT     TOP 100 PERCENT dbo.INVO_LST.CODE, dbo.INVO_LST.MABL, dbo.INVO_LST.MABL_K, dbo.HEAD_LST.CUST_NO, dbo.HEAD_LST.DATE_N, 
+                       dbo.INVO_LST.MEGHk, dbo.HEAD_LST.TAG
+ FROM         dbo.HEAD_LST INNER JOIN
+                       dbo.INVO_LST ON dbo.HEAD_LST.TAG = dbo.INVO_LST.TAG AND dbo.HEAD_LST.NUMBER = dbo.INVO_LST.NUMBER
+ WHERE     (dbo.HEAD_LST.TAG = 1)
+ ORDER BY dbo.HEAD_LST.DATE_N DESC

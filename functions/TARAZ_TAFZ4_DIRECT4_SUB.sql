@@ -1,0 +1,26 @@
+﻿CREATE FUNCTION [dbo].[TARAZ_TAFZ4_DIRECT4_SUB]
+ (@Forms___FMENU_TARAZ_4___DT1 bigint,
+ @Forms___FMENU_TARAZ_4___DT2 bigint,
+ @Forms___FMENU_TARAZ_4___SNDNUM1 float,
+ @Forms___FMENU_TARAZ_4___SNDNUM2 float,
+ @KOL int,
+ @MOIN int,
+ @TAF int,
+ @TAF2 int,
+ @TAF3 int)
+ RETURNS TABLE
+ AS
+ RETURN ( SELECT     dbo.TDETA_HES4.N_KOL, dbo.TDETA_HES4.NUMBER, dbo.TDETA_HES4.TNUMBER, dbo.TDETA_HES4.TNUMBER2, dbo.TDETA_HES4.TNUMBER3, 
+                       dbo.TDETA_HES4.TNUMBER4, dbo.DEED_DTL.HES_T2, SUM(dbo.DEED_DTL.BED) AS SumOfBED, SUM(dbo.DEED_DTL.BES) AS SumOfBES, 
+                       dbo.TDETA_HES4.ECODE, dbo.TDETA_HES4.NAME
+ FROM         dbo.DEED_HED INNER JOIN
+                       dbo.DEED_DTL ON dbo.DEED_HED.N_S = dbo.DEED_DTL.N_S INNER JOIN
+                       dbo.TDETA_HES4 ON dbo.DEED_DTL.HES_K = dbo.TDETA_HES4.N_KOL AND dbo.DEED_DTL.HES_M = dbo.TDETA_HES4.NUMBER AND 
+                       dbo.DEED_DTL.HES_T = dbo.TDETA_HES4.TNUMBER AND dbo.DEED_DTL.HES_T2 = dbo.TDETA_HES4.TNUMBER2 AND 
+                       dbo.DEED_DTL.HES_T3 = dbo.TDETA_HES4.TNUMBER3 AND dbo.DEED_DTL.HES_T4 = dbo.TDETA_HES4.TNUMBER4
+ WHERE     (dbo.DEED_HED.DATE_S >= @Forms___FMENU_TARAZ_4___DT1) AND (dbo.DEED_HED.DATE_S <= @Forms___FMENU_TARAZ_4___DT2) AND 
+                       (dbo.DEED_HED.N_S BETWEEN @Forms___FMENU_TARAZ_4___SNDNUM1 AND @Forms___FMENU_TARAZ_4___SNDNUM2)
+ GROUP BY dbo.TDETA_HES4.N_KOL, dbo.TDETA_HES4.NUMBER, dbo.TDETA_HES4.TNUMBER, dbo.TDETA_HES4.ECODE, dbo.DEED_DTL.HES_T2, 
+                       dbo.TDETA_HES4.TNUMBER2, dbo.TDETA_HES4.TNUMBER3, dbo.TDETA_HES4.TNUMBER4, dbo.TDETA_HES4.NAME
+ HAVING      (dbo.TDETA_HES4.N_KOL = @KOL) AND (dbo.TDETA_HES4.NUMBER = @MOIN) AND (dbo.TDETA_HES4.TNUMBER = @TAF) AND 
+                       (dbo.TDETA_HES4.TNUMBER2 = @TAF2) AND (dbo.TDETA_HES4.TNUMBER3 = @TAF3) )

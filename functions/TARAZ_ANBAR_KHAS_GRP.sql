@@ -1,0 +1,25 @@
+﻿CREATE FUNCTION [dbo].[TARAZ_ANBAR_KHAS_GRP]
+ (@FORMS___F_MENU_ANBAR_TARAZ___DT2 BIGINT)
+ RETURNS TABLE
+ AS
+ RETURN ( SELECT     TOP 100 PERCENT dbo.TCOD_STUFGROUP.CODE, SUM(dbo.MOG_FSK_A.MEG) AS MEG, SUM(dbo.MOG_FSK_A.SumOfMABL_A) AS SumOfMABL_A, 
+                       SUM(ISNULL(MOG_KH_A.SMEG, 0)) AS MEGHKH, SUM(CAST(ISNULL(dbo.GHEYMAT_TAMAM.GHEMAT * ISNULL(MOG_KH_A.SMEG, 0), 
+                       ISNULL(MOG_KH_A.SMABL_K, 0)) AS bigint)) AS MABKH, SUM(ISNULL(MOG_FR_A.MEG, 0)) AS MEGFR, 
+                       SUM(CAST(ISNULL(dbo.GHEYMAT_TAMAM.GHEMAT * ISNULL(MOG_FR_A.MEG, 0), ISNULL(MOG_FR_A.avgofmabl, 0)) AS bigint)) AS MABFR, 
+                       SUM(dbo.MOG_FSK_A.MEG + ISNULL(MOG_KH_A.SMEG, 0) - ISNULL(MOG_FR_A.MEG, 0)) AS MEGMA, 
+                       SUM(CAST(dbo.MOG_FSK_A.SumOfMABL_A + ISNULL(dbo.GHEYMAT_TAMAM.GHEMAT * ISNULL(MOG_KH_A.SMEG, 0), 
+                       ISNULL(MOG_KH_A.SMABL_K, 0)) - ISNULL(dbo.GHEYMAT_TAMAM.GHEMAT * ISNULL(MOG_FR_A.MEG, 0), ISNULL(MOG_FR_A.avgofmabl, 0)) 
+                       AS bigint)) AS MABMA, dbo.STUF_DEF.RADAH, dbo.TCOD_STUFGROUP.NAMES AS grname, 1 AS GG
+ FROM         dbo.TCOD_ANBAR INNER JOIN
+                       dbo.STUF_DEF LEFT OUTER JOIN
+                       dbo.GHEYMAT_TAMAM ON dbo.STUF_DEF.CODE = dbo.GHEYMAT_TAMAM.CODE INNER JOIN
+                       dbo.MOG_KH_A(@FORMS___F_MENU_ANBAR_TARAZ___DT2) MOG_KH_A RIGHT OUTER JOIN
+                       dbo.MOG_FSK_A RIGHT OUTER JOIN
+                       dbo.MOG_FR_A(@FORMS___F_MENU_ANBAR_TARAZ___DT2) MOG_FR_A RIGHT OUTER JOIN
+                       dbo.STUF_FSK ON MOG_FR_A.ANBAR = dbo.STUF_FSK.ANBAR AND MOG_FR_A.CODE = dbo.STUF_FSK.CODE ON 
+                       dbo.MOG_FSK_A.CODE = dbo.STUF_FSK.CODE AND dbo.MOG_FSK_A.ANBAR = dbo.STUF_FSK.ANBAR ON 
+                       MOG_KH_A.CODE = dbo.STUF_FSK.CODE AND MOG_KH_A.ANBAR = dbo.STUF_FSK.ANBAR ON dbo.STUF_DEF.CODE = dbo.STUF_FSK.CODE ON 
+                       dbo.TCOD_ANBAR.CODE = dbo.STUF_FSK.ANBAR LEFT OUTER JOIN
+                       dbo.TCOD_STUFGROUP ON dbo.STUF_DEF.RADAH = dbo.TCOD_STUFGROUP.CODE
+ WHERE     (dbo.STUF_FSK.ANBAR > 0)
+ GROUP BY dbo.TCOD_STUFGROUP.CODE, dbo.STUF_DEF.RADAH, dbo.TCOD_STUFGROUP.NAMES )

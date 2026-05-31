@@ -1,0 +1,58 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PROGPAS1	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+PRGID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CODA	nvarchar	no	30	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CODB	nvarchar	no	30	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+VAHED	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+MEGH	float	no	8	53   		yes	(n/a)	(n/a)	
+MEGHK	float	no	8	53   		yes	(n/a)	(n/a)	
+PERT	float	no	8	53   		yes	(n/a)	(n/a)	
+KOLMAV	float	no	8	53   		yes	(n/a)	(n/a)	
+MABL	real	no	4	24   		yes	(n/a)	(n/a)	
+MABLK	real	no	4	24   		yes	(n/a)	(n/a)	
+PASED	bit	no	1	     	     	no	(n/a)	(n/a)	
+RADAH	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+IDDH	int	no	4	10   	0    	no	(n/a)	(n/a)	
+FR	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDDH	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_PROGPAS1	clustered, unique, primary key located on PRIMARY	IDDH
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PROGPAS1__CRT__66E023A9	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+FOREIGN KEY	FK_PROGPAS1_PRGHEAD	Cascade	Cascade	Enabled	Is_For_Replication	PRGID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PRGHEAD (PRGID)
+PRIMARY KEY (clustered)	PK_PROGPAS1	(n/a)	(n/a)	(n/a)	(n/a)	IDDH

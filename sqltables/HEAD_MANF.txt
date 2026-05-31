@@ -1,0 +1,77 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+HEAD_MANF	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+FNUMB	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CODE	nvarchar	no	30	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DATE_ACTIV	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+IMBIBE_MANF	float	no	8	53   		no	(n/a)	(n/a)	
+IMBIBE_SAR	float	no	8	53   		no	(n/a)	(n/a)	
+GHEYMAT	float	no	8	53   		yes	(n/a)	(n/a)	
+NAMES	nvarchar	no	64	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+N_KOL	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+NUMBER	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+TNUMBER	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SA_HOUR	float	no	8	53   		no	(n/a)	(n/a)	
+SA_NHOU	int	no	4	10   	0    	no	(n/a)	(n/a)	
+TOZIH	nvarchar	no	500	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ID	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{9A1BD9F2-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	CODE
+aaaaaHEAD_MANF_PK	nonclustered, unique, primary key located on PRIMARY	FNUMB
+CODE	nonclustered located on PRIMARY	CODE
+NUMBER	nonclustered located on PRIMARY	NUMBER
+TDETA_HESHEAD_MANF	nonclustered located on PRIMARY	N_KOL, NUMBER, TNUMBER
+TNUMBER	nonclustered located on PRIMARY	TNUMBER
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaHEAD_MANF_PK	(n/a)	(n/a)	(n/a)	(n/a)	FNUMB
+DEFAULT on column CRT	DF__HEAD_MANF__CRT__074CF33B	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column FNUMB	DF__HEAD_MANF__FNUMB__09DE7BCC	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column GHEYMAT	DF__HEAD_MANF__GHEYM__0CBAE877	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column IMBIBE_MANF	DF__HEAD_MANF__IMBIB__0AD2A005	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column IMBIBE_SAR	DF__HEAD_MANF__IMBIB__0BC6C43E	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SA_HOUR	DF_HEAD_MANF_SA_HOUR	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SA_NHOU	DF_HEAD_MANF_SA_NHOU	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_HEAD_MANF_TDETA_HES	No Action	Cascade	Enabled	Is_For_Replication	N_KOL, NUMBER, TNUMBER
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TDETA_HES (N_KOL, NUMBER, TNUMBER)
+FOREIGN KEY	HEAD_MANF_FK00	No Action	Cascade	Enabled	Is_For_Replication	CODE
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.STUF_DEF (CODE)
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.DTL_MANF: DTL_MANF_FK01

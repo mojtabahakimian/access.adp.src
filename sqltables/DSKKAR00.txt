@@ -1,0 +1,65 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+DSKKAR00	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+DSK_ID	nvarchar	no	20	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSK_NAME	nvarchar	no	60	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSK_FARM	nvarchar	no	60	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSK_ADRS	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSK_KIND	float	no	8	53   		yes	(n/a)	(n/a)	
+DSK_YY	float	no	8	53   		yes	(n/a)	(n/a)	
+DSK_MM	float	no	8	53   		no	(n/a)	(n/a)	
+DSK_LISTNO	nvarchar	no	24	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSK_DISC	nvarchar	no	60	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSK_NUM	float	no	8	53   		yes	(n/a)	(n/a)	
+DSK_TDD	float	no	8	53   		yes	(n/a)	(n/a)	
+DSK_TROOZ	float	no	8	53   		yes	(n/a)	(n/a)	
+DSK_TMAH	float	no	8	53   		yes	(n/a)	(n/a)	
+DSK_TMAZ	float	no	8	53   		yes	(n/a)	(n/a)	
+DSK_TMASH	float	no	8	53   		yes	(n/a)	(n/a)	
+DSK_TTOTL	float	no	8	53   		yes	(n/a)	(n/a)	
+DSK_TBIME	float	no	8	53   		yes	(n/a)	(n/a)	
+DSK_TKOSO	float	no	8	53   		yes	(n/a)	(n/a)	
+DSK_BIC	float	no	8	53   		yes	(n/a)	(n/a)	
+DSK_RATE	float	no	8	53   		yes	(n/a)	(n/a)	
+DSK_PRATE	float	no	8	53   		yes	(n/a)	(n/a)	
+DSK_BIMH	float	no	8	53   		yes	(n/a)	(n/a)	
+MON_PYM	nvarchar	no	6	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_DSKKAR001	clustered, unique, primary key located on PRIMARY	DSK_MM
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__DSKKAR00__CRT__4B380934	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_DSKKAR001	(n/a)	(n/a)	(n/a)	(n/a)	DSK_MM

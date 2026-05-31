@@ -1,0 +1,61 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+kart_tmp	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+ANBAR	float	no	8	53   		yes	(n/a)	(n/a)	
+avrage	float	no	8	53   		yes	(n/a)	(n/a)	
+BARGAH	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+BEDNAME	nvarchar	no	302	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CODE	nvarchar	no	30	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+DATE_N	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+FNUMCO	float	no	8	53   		yes	(n/a)	(n/a)	
+mabl_a	float	no	8	53   		no	(n/a)	(n/a)	
+MABLK	float	no	8	53   		yes	(n/a)	(n/a)	
+MABM	float	no	8	53   		yes	(n/a)	(n/a)	
+MEG	float	no	8	53   		yes	(n/a)	(n/a)	
+MEGK	float	no	8	53   		yes	(n/a)	(n/a)	
+MEGKM	float	no	8	53   		yes	(n/a)	(n/a)	
+N_FANI	nvarchar	no	60	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+NAME	nvarchar	no	160	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+NAMES	nvarchar	no	64	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+NUMBER	float	no	8	53   		yes	(n/a)	(n/a)	
+TAG	float	no	8	53   		yes	(n/a)	(n/a)	
+id	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+id	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_kart_tmp	clustered, unique, primary key located on PRIMARY	id
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__kart_tmp__CRT__1680B879	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_kart_tmp	(n/a)	(n/a)	(n/a)	(n/a)	id

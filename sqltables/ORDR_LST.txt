@@ -1,0 +1,60 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+ORDR_LST	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CODE	nvarchar	no	30	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+DATE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+RADIF	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+MEGH	float	no	8	53   		no	(n/a)	(n/a)	
+MEGHK	float	no	8	53   		no	(n/a)	(n/a)	
+VAHED_K	float	no	8	53   		yes	(n/a)	(n/a)	
+CUST_NO	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+idd	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+idd	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{9A1BD9ED-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	DATE
+CODE	nonclustered located on PRIMARY	CODE
+IX_ORDR_LST	nonclustered located on PRIMARY	ID
+PK_ORDR_LST	clustered, unique, primary key located on PRIMARY	idd
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+CHECK on column MEGH	CK ORDR_LST MEGH	(n/a)	(n/a)	Enabled	Is_For_Replication	(NOT [MEGH] IS NULL)
+CHECK on column MEGHK	CK ORDR_LST MEGHK	(n/a)	(n/a)	Enabled	Is_For_Replication	(NOT [MEGHK] IS NULL)
+DEFAULT on column CRT	DF__ORDR_LST__CRT__44C015CF	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+FOREIGN KEY	FK_ORDR_LST_ORDR_HED	Cascade	Cascade	Enabled	Is_For_Replication	ID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.ORDR_HED (id)
+FOREIGN KEY	FK_ORDR_LST_STUF_DEF	No Action	Cascade	Enabled	Is_For_Replication	CODE
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.STUF_DEF (CODE)
+PRIMARY KEY (clustered)	PK_ORDR_LST	(n/a)	(n/a)	(n/a)	(n/a)	idd

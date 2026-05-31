@@ -1,0 +1,52 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+MyTable_Audit	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+AuditID	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+AuditTime	datetime2	no	7	23   	3    	no	(n/a)	(n/a)	
+AuditUser	sysname	no	256	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+AuditHost	nvarchar	no	256	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Operation	char	no	1	     	     	no	no	no	Arabic_CI_AS
+KeyID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+OldValue	nvarchar	no	8000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+NewValue	nvarchar	no	8000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+AuditID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__MyTable___A17F23B837C43430	clustered, unique, primary key located on PRIMARY	AuditID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column AuditTime	DF__MyTable_A__Audit__39AC7CA2	(n/a)	(n/a)	(n/a)	(n/a)	(sysutcdatetime())
+DEFAULT on column AuditUser	DF__MyTable_A__Audit__3AA0A0DB	(n/a)	(n/a)	(n/a)	(n/a)	(suser_sname())
+DEFAULT on column CRT	DF__MyTable_Aud__CRT__4E928AEF	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK__MyTable___A17F23B837C43430	(n/a)	(n/a)	(n/a)	(n/a)	AuditID

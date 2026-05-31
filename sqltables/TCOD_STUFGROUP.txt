@@ -1,0 +1,58 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+TCOD_STUFGROUP	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+CODE	float	no	8	53   		no	(n/a)	(n/a)	
+NAMES	nvarchar	no	64	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+pic	image	no	16	     	     	yes	(n/a)	(n/a)	
+tic	bit	no	1	     	     	yes	(n/a)	(n/a)	
+MEGHTA	float	no	8	53   		yes	(n/a)	(n/a)	
+MEGHJAY	float	no	8	53   		yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+aaaaaTCOD_STUFGROUP_PK	nonclustered, unique, primary key located on PRIMARY	CODE
+BAR_COD	nonclustered located on PRIMARY	CODE
+NAMES	nonclustered, unique located on PRIMARY	NAMES
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaTCOD_STUFGROUP_PK	(n/a)	(n/a)	(n/a)	(n/a)	CODE
+DEFAULT on column MEGHJAY	DF__TCOD_STUF__MEGHJ__5EFF0ABF	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MEGHTA	DF__TCOD_STUF__MEGHT__5E0AE686	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CRT	DF__TCOD_STUFGR__CRT__64F7DB37	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.STUF_DEF: FK_STUF_DEF_TCOD_STUFGROUP

@@ -1,0 +1,1 @@
+﻿CREATE  view [dbo].[zdarsadenheraf8] as  SELECT     dbo.zanbekht8.ekh / dbo.Zmavadmasrafe8.MEGHk * 100 AS darsad, dbo.Zmavadmasrafe8.code FROM         dbo.zanbekht8 INNER JOIN  dbo.Zmavadmasrafe8 ON dbo.zanbekht8.CODE = dbo.Zmavadmasrafe8.code where dbo.Zmavadmasrafe8.MEGHk <>0  

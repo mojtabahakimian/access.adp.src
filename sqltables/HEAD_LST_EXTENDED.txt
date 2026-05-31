@@ -1,0 +1,97 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+HEAD_LST_EXTENDED	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+NUMBER	float	no	8	53   		no	(n/a)	(n/a)	
+tgu	float	no	8	53   		no	(n/a)	(n/a)	
+inty	int	no	4	10   	0    	no	(n/a)	(n/a)	
+inp	int	no	4	10   	0    	no	(n/a)	(n/a)	
+ins	int	no	4	10   	0    	no	(n/a)	(n/a)	
+tob	int	no	4	10   	0    	no	(n/a)	(n/a)	
+sbc	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+bbc	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ft	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+bpn	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+scln	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+scc	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+cdcn	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+cdcd	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+crn	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+billid	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+todam	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+tonw	decimal	no	9	18   	3    	yes	(n/a)	(n/a)	
+torv	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+tocv	decimal	no	9	15   	4    	yes	(n/a)	(n/a)	
+setm	int	no	4	10   	0    	no	(n/a)	(n/a)	
+cap	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+insp	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+tvop	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+tax17	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+cut	nvarchar	no	6	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+irtaxid	nvarchar	no	44	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+exr	float	no	8	53   		yes	(n/a)	(n/a)	
+sscv	float	no	8	53   		yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_HEAD_LST_EXTENDED	clustered, unique, primary key located on PRIMARY	NUMBER, tgu
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column billid	DF__HEAD_LST___billi__64E2CC9E	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column NUMBER	DF__HEAD_LST___NUMBE__5694AD47	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column tax17	DF__HEAD_LST___tax17__6D78129F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column todam	DF__HEAD_LST___todam__65D6F0D7	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column cdcd	DF__HEAD_LST_E__cdcd__62FA842C	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column cdcn	DF__HEAD_LST_E__cdcn__62065FF3	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column insp	DF__HEAD_LST_E__insp__6B8FCA2D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column inty	DF__HEAD_LST_E__inty__587CF5B9	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column scln	DF__HEAD_LST_E__scln__601E1781	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column setm	DF__HEAD_LST_E__setm__69A781BB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column tocv	DF__HEAD_LST_E__tocv__68B35D82	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column tonw	DF__HEAD_LST_E__tonw__66CB1510	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column torv	DF__HEAD_LST_E__torv__67BF3949	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column tvop	DF__HEAD_LST_E__tvop__6C83EE66	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column bbc	DF__HEAD_LST_EX__bbc__5D41AAD6	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column bpn	DF__HEAD_LST_EX__bpn__5F29F348	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column cap	DF__HEAD_LST_EX__cap__6A9BA5F4	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column crn	DF__HEAD_LST_EX__crn__63EEA865	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CRT	DF__HEAD_LST_EX__CRT__593C0FC8	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column cut	DF__HEAD_LST_EX__cut__6E6C36D8	(n/a)	(n/a)	(n/a)	(n/a)	((37))
+DEFAULT on column inp	DF__HEAD_LST_EX__inp__597119F2	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ins	DF__HEAD_LST_EX__ins__5A653E2B	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column sbc	DF__HEAD_LST_EX__sbc__5C4D869D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column scc	DF__HEAD_LST_EX__scc__61123BBA	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column tgu	DF__HEAD_LST_EX__tgu__5788D180	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column tob	DF__HEAD_LST_EX__tob__5B596264	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ft	DF__HEAD_LST_EXT__ft__5E35CF0F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+PRIMARY KEY (clustered)	PK_HEAD_LST_EXTENDED	(n/a)	(n/a)	(n/a)	(n/a)	NUMBER, tgu

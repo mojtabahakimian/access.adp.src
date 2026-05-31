@@ -1,0 +1,61 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+ANBGRD_HEAD	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+GRD_NUM	int	no	4	10   	0    	no	(n/a)	(n/a)	
+GRD_DATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+GRD_ANBAR	int	no	4	10   	0    	no	(n/a)	(n/a)	
+GRD_HES	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+N_S	float	no	8	53   		yes	(n/a)	(n/a)	
+COMMENT	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+USER_NAME	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+IX_ANBGRD_HEAD	nonclustered, unique, unique key located on PRIMARY	GRD_DATE, GRD_ANBAR
+PK_ANBGRD_HEAD	clustered, unique, primary key located on PRIMARY	GRD_NUM
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__ANBGRD_HEAD__CRT__04A590BA	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+FOREIGN KEY	FK_ANBGRD_HEAD_DEED_HED	No Action	Cascade	Enabled	Is_For_Replication	N_S
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.DEED_HED (N_S)
+FOREIGN KEY	FK_ANBGRD_HEAD_TCOD_ANBAR	No Action	Cascade	Enabled	Is_For_Replication	GRD_ANBAR
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_ANBAR (CODE)
+UNIQUE (non-clustered)	IX_ANBGRD_HEAD	(n/a)	(n/a)	(n/a)	(n/a)	GRD_DATE, GRD_ANBAR
+PRIMARY KEY (clustered)	PK_ANBGRD_HEAD	(n/a)	(n/a)	(n/a)	(n/a)	GRD_NUM
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.ANBGRD_LST: FK_ANBGRD_LST_ANBGRD_HEAD

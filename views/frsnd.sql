@@ -1,0 +1,1 @@
+﻿CREATE  view [dbo].[frsnd] as SELECT     SUM(BES) AS Expr2, NUMBER FROM dbo.DEED_DTL WHERE (HES_K = 511) And (TAG = 2)GROUP BY NUMBER 

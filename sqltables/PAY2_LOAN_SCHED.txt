@@ -1,0 +1,53 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PAY2_LOAN_SCHED	dbo	user table	04/05/2026 09:00:51 ب.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+SCHED_ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+LOAN_ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+INST_NUM	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+DUE_PERIOD	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+AMOUNT	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+RUN_ID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+PAID_AT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+SCHED_ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_PAY2_LOAN_SCHED	clustered, unique, primary key located on PRIMARY	SCHED_ID
+UQ_LOAN_INST	nonclustered, unique, unique key located on PRIMARY	LOAN_ID, INST_NUM
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PAY2_LOAN_S__CRT__6DC55060	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+FOREIGN KEY	FK_LS_LOAN	No Action	No Action	Enabled	Is_For_Replication	LOAN_ID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PAY2_LOAN (LOAN_ID)
+PRIMARY KEY (clustered)	PK_PAY2_LOAN_SCHED	(n/a)	(n/a)	(n/a)	(n/a)	SCHED_ID
+UNIQUE (non-clustered)	UQ_LOAN_INST	(n/a)	(n/a)	(n/a)	(n/a)	LOAN_ID, INST_NUM

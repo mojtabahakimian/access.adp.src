@@ -1,0 +1,68 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+DETA_HES	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+N_KOL	int	no	4	10   	0    	no	(n/a)	(n/a)	
+NUMBER	int	no	4	10   	0    	no	(n/a)	(n/a)	
+NAME	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TOZIH	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+BED_BES	float	no	8	53   		yes	(n/a)	(n/a)	
+ADDRESS	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TEL	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CODE_E	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+USERCO	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+USER_NAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ID	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{9A1BDA16-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	N_KOL
+aaaaaDETA_HES_PK	nonclustered, unique, primary key located on PRIMARY	N_KOL, NUMBER
+CODE_E	nonclustered located on PRIMARY	CODE_E
+K_NI	nonclustered located on PRIMARY	N_KOL, NUMBER
+NAME	nonclustered, unique located on PRIMARY	NAME, N_KOL
+NUMBERI	nonclustered located on PRIMARY	NUMBER
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaDETA_HES_PK	(n/a)	(n/a)	(n/a)	(n/a)	N_KOL, NUMBER
+FOREIGN KEY	DETA_HES_FK00	No Action	Cascade	Enabled	Is_For_Replication	N_KOL
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TOTA_HES (NUMBER)
+DEFAULT on column CRT	DF__DETA_HES__CRT__67152DD3	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column N_KOL	DF__DETA_HES__N_KOL__15DA3E5D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column NUMBER	DF__DETA_HES__NUMBER__16CE6296	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.TDETA_HES: FK_TDETA_HES_DETA_HES

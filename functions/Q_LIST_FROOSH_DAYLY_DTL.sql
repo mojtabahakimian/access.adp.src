@@ -1,0 +1,20 @@
+﻿CREATE FUNCTION [dbo].[Q_LIST_FROOSH_DAYLY_DTL]
+ (@DT1 bigint,
+ @DT2 bigint,
+ @DEP int,
+ @SHIFT nvarchar(10),
+ @USER nvarchar(40))
+ RETURNS TABLE
+ AS
+ RETURN ( SELECT     dbo.HEAD_LST.NUMBER, dbo.HEAD_LST.TAG, dbo.HEAD_LST.DATE_N, dbo.HEAD_LST.CUST_NO, dbo.CUST_HESAB.NAME AS MOSHTARY, 
+                       dbo.HEAD_LST.M_NAGHD, dbo.HEAD_LST.MABL_VAR, dbo.HEAD_LST.MABL_HAV, dbo.HEAD_LST.MABL_HAZ, dbo.HEAD_LST.TAKHFIF, dbo.HEAD_LST.DEPATMAN, 
+                       CAST(dbo.HEAD_LST.SHIFT AS NVARCHAR) AS SHIFT, dbo.HEAD_LST.CUST_KIND, dbo.HEAD_LST.USER_NAME, dbo.HEAD_LST.HMBAA, dbo.STUF_DEF.CODE, 
+                       dbo.STUF_DEF.NAME AS KALA, dbo.INVO_LST.MEGH, dbo.INVO_LST.MEGHk, dbo.INVO_LST.MABL, dbo.INVO_LST.MABL_K, dbo.INVO_LST.N_MOIN, 
+                       dbo.DEPART.DEPNAME, dbo.INVO_LST.MABL_K + dbo.INVO_LST.IMBAA - dbo.INVO_LST.N_MOIN AS GHABEL, dbo.INVO_LST.IMBAA, 1 AS SORTI
+ FROM         dbo.HEAD_LST INNER JOIN
+                       dbo.INVO_LST ON dbo.HEAD_LST.NUMBER = dbo.INVO_LST.NUMBER AND dbo.HEAD_LST.TAG = dbo.INVO_LST.TAG INNER JOIN
+                       dbo.CUST_HESAB ON dbo.HEAD_LST.CUST_NO = dbo.CUST_HESAB.hes INNER JOIN
+                       dbo.STUF_DEF ON dbo.INVO_LST.CODE = dbo.STUF_DEF.CODE INNER JOIN
+                       dbo.DEPART ON dbo.HEAD_LST.DEPATMAN = dbo.DEPART.DEPATMAN
+ WHERE     (dbo.HEAD_LST.TAG = 2) AND (dbo.HEAD_LST.DATE_N BETWEEN @DT1 AND @DT2) AND (dbo.HEAD_LST.DEPATMAN = @DEP) AND 
+                       (CAST(dbo.HEAD_LST.SHIFT AS NVARCHAR) LIKE @SHIFT) AND (dbo.HEAD_LST.USER_NAME LIKE @USER) )

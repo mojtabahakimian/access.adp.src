@@ -1,0 +1,60 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+BEDBESMAH125	dbo	user table	06/04/2026 08:45:33 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+TAFZIL	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+HES_K	int	no	4	10   	0    	no	(n/a)	(n/a)	
+HES_M	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SumOfBED	float	no	8	53   		yes	(n/a)	(n/a)	
+SumOfBES	float	no	8	53   		yes	(n/a)	(n/a)	
+BEDBES	float	no	8	53   		yes	(n/a)	(n/a)	
+NAME	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+MOIN	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+BEDM	float	no	8	53   		yes	(n/a)	(n/a)	
+BESM	float	no	8	53   		yes	(n/a)	(n/a)	
+HES_T	int	no	4	10   	0    	no	(n/a)	(n/a)	
+ADDRESS	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TEL	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CODE_E	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TOZIH	nvarchar	no	510	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+HES	nvarchar	no	80	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+ECODE	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CUST_COD	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ROUTE_NAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+VCOD	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+VNAME	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+HES_T2	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+HES_T3	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+HES_T4	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+tafname	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__BEDBESMAH12__CRT__4C645C95	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())

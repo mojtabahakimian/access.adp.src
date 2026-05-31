@@ -1,0 +1,47 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+TCOD_ARZ	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+Code	int	no	4	10   	0    	no	(n/a)	(n/a)	
+Title	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ISOCode	nvarchar	no	6	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CountryName	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ID	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__TCOD_ARZ__A25C5AA677F5A112	clustered, unique, primary key located on PRIMARY	Code
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__TCOD_ARZ__CRT__5B24583A	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK__TCOD_ARZ__A25C5AA677F5A112	(n/a)	(n/a)	(n/a)	(n/a)	Code

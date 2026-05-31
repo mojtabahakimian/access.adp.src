@@ -1,0 +1,56 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+COD_HESAB	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+CODE	float	no	8	53   		no	(n/a)	(n/a)	
+BANK	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SHOBEH	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MOIN	float	no	8	53   		yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{9A1BDA05-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	BANK
+aaaaaCOD_HESAB_PK	nonclustered, unique, primary key located on PRIMARY	CODE
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaCOD_HESAB_PK	(n/a)	(n/a)	(n/a)	(n/a)	CODE
+FOREIGN KEY	COD_HESAB_FK00	No Action	Cascade	Enabled	Is_For_Replication	BANK
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_BANKS (CODE)
+DEFAULT on column BANK	DF__COD_HESAB__BANK__30C33EC3	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column CRT	DF__COD_HESAB__CRT__4C2C2D6D	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.CHECK_BOOK: CHECK_BOOK_FK01

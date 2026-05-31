@@ -1,0 +1,12 @@
+﻿CREATE FUNCTION [dbo].[CHEK_W_PASSPW2]
+ (@Forms___Baseknow___ADA nvarchar(20),
+ @Forms___Baseknow___BANKHA int,
+ @Forms___Baseknow___ADV nvarchar(20))
+ RETURNS TABLE
+ AS
+ RETURN ( SELECT     ASNAD_DARYAFTY_BES2.N_S, ASNAD_DARYAFTY_BES2.SHARH, ASNAD_DARYAFTY_BES2.BES, ASNAD_DARYAFTY_BES2.N_SERI, 
+                       ASNAD_DARYAFTY_BES2.BANK
+ FROM         dbo.ASNAD_DARYAFTY_BES2(@Forms___Baseknow___ADA, @Forms___Baseknow___ADV) ASNAD_DARYAFTY_BES2 LEFT OUTER JOIN
+                       dbo.CHEK_W_PASS(@Forms___Baseknow___BANKHA) CHEK_W_PASS ON ASNAD_DARYAFTY_BES2.N_SERI = CHEK_W_PASS.N_SERI AND 
+                       ASNAD_DARYAFTY_BES2.BANK = CHEK_W_PASS.BANK
+ WHERE     (CHEK_W_PASS.N_SERI IS NULL) )

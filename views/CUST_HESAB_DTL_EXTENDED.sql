@@ -1,0 +1,97 @@
+﻿
+						CREATE VIEW [dbo].[CUST_HESAB_DTL_EXTENDED]
+						AS
+						SELECT
+						    dbo.TDETA_HES.TNUMBER,
+						    dbo.TDETA_HES.NAME,
+						    dbo.TDETA_HES.NUMBER,
+						    dbo.TDETA_HES.N_KOL,
+						    dbo.DETA_HES.NAME AS NMOIN,
+						    dbo.TOTA_HES.NAME AS NKOL,
+						    -- Corrected ADDRESS selection for Tafsili 1 and Tafsili 2
+						    COALESCE(dbo.TDETA_HES2.ADDRESS, dbo.TDETA_HES.ADDRESS) AS ADDRESS,
+						    RTRIM(CAST(dbo.TDETA_HES2.N_KOL AS nvarchar)) 
+						    + '-' + RTRIM(CAST(dbo.TDETA_HES2.NUMBER AS nvarchar)) + '-' + RTRIM(CAST(dbo.TDETA_HES2.TNUMBER AS nvarchar)) 
+						    + '-' + RTRIM(CAST(dbo.TDETA_HES2.TNUMBER2 AS nvarchar)) AS tnumber2, -- Hierarchical key for TDETA_HES2
+						    dbo.TDETA_HES2.NAME AS TNAME,
+						    dbo.TDETA_HES2.CODE_E
+						FROM dbo.TOTA_HES
+						INNER JOIN dbo.DETA_HES
+						    INNER JOIN dbo.TDETA_HES
+						        ON dbo.DETA_HES.NUMBER = dbo.TDETA_HES.NUMBER AND dbo.DETA_HES.N_KOL = dbo.TDETA_HES.N_KOL
+						    ON dbo.TOTA_HES.NUMBER = dbo.DETA_HES.N_KOL
+						LEFT OUTER JOIN dbo.TDETA_HES2
+						    ON dbo.TDETA_HES.N_KOL = dbo.TDETA_HES2.N_KOL
+						    AND dbo.TDETA_HES.NUMBER = dbo.TDETA_HES2.NUMBER
+						    AND dbo.TDETA_HES.TNUMBER = dbo.TDETA_HES2.TNUMBER
+						
+						UNION
+						
+						SELECT
+						    TOP 100 PERCENT dbo.TDETA_HES.TNUMBER,
+						    dbo.TDETA_HES.NAME,
+						    dbo.TDETA_HES.NUMBER,
+						    dbo.TDETA_HES.N_KOL,
+						    dbo.DETA_HES.NAME AS NMOIN,
+						    dbo.TOTA_HES.NAME AS NKOL,
+						    -- ADDRESS selection for Tafsili 3 (was already correct)
+						    dbo.TDETA_HES3.ADDRESS,
+						    RTRIM(CAST(dbo.TDETA_HES3.N_KOL AS nvarchar)) 
+						    + '-' + RTRIM(CAST(dbo.TDETA_HES3.NUMBER AS nvarchar)) + '-' + RTRIM(CAST(dbo.TDETA_HES3.TNUMBER AS nvarchar)) 
+						    + '-' + RTRIM(CAST(dbo.TDETA_HES3.TNUMBER2 AS nvarchar)) + '-' + RTRIM(CAST(dbo.TDETA_HES3.TNUMBER3 AS nvarchar)) AS TNUMBER2, -- Hierarchical key for TDETA_HES3
+						    dbo.TDETA_HES3.NAME AS TNAME,
+						    dbo.TDETA_HES3.CODE_E
+						FROM dbo.DETA_HES
+						INNER JOIN dbo.TOTA_HES
+						    ON dbo.DETA_HES.N_KOL = dbo.TOTA_HES.NUMBER
+						INNER JOIN dbo.TDETA_HES
+						    ON dbo.DETA_HES.N_KOL = dbo.TDETA_HES.N_KOL AND dbo.DETA_HES.NUMBER = dbo.TDETA_HES.NUMBER
+						INNER JOIN dbo.TDETA_HES2
+						    ON dbo.TDETA_HES.N_KOL = dbo.TDETA_HES2.N_KOL
+						    AND dbo.TDETA_HES.NUMBER = dbo.TDETA_HES2.NUMBER
+						    AND dbo.TDETA_HES.TNUMBER = dbo.TDETA_HES2.TNUMBER
+						INNER JOIN dbo.TDETA_HES3
+						    ON dbo.TDETA_HES2.N_KOL = dbo.TDETA_HES3.N_KOL
+						    AND dbo.TDETA_HES2.NUMBER = dbo.TDETA_HES3.NUMBER
+						    AND dbo.TDETA_HES2.TNUMBER = dbo.TDETA_HES3.TNUMBER
+						    AND dbo.TDETA_HES2.TNUMBER2 = dbo.TDETA_HES3.TNUMBER2
+						ORDER BY dbo.TDETA_HES.NAME -- This ORDER BY applies to this part before UNION if TOP is used
+						
+						UNION
+						
+						SELECT
+						    TOP 100 PERCENT dbo.TDETA_HES.TNUMBER,
+						    dbo.TDETA_HES.NAME,
+						    dbo.TDETA_HES.NUMBER,
+						    dbo.TDETA_HES.N_KOL,
+						    dbo.DETA_HES.NAME AS NMOIN,
+						    dbo.TOTA_HES.NAME AS NKOL,
+						    -- Corrected ADDRESS selection for Tafsili 4
+						    dbo.TDETA_HES4.ADDRESS,
+						    RTRIM(CAST(dbo.TDETA_HES4.N_KOL AS nvarchar)) 
+						    + '-' + RTRIM(CAST(dbo.TDETA_HES4.NUMBER AS nvarchar)) + '-' + RTRIM(CAST(dbo.TDETA_HES4.TNUMBER AS nvarchar)) 
+						    + '-' + RTRIM(CAST(dbo.TDETA_HES4.TNUMBER2 AS nvarchar)) + '-' + RTRIM(CAST(dbo.TDETA_HES4.TNUMBER3 AS nvarchar)) 
+						    + '-' + RTRIM(CAST(dbo.TDETA_HES4.TNUMBER4 AS nvarchar)) AS TNUMBER2, -- Hierarchical key for TDETA_HES4
+						    dbo.TDETA_HES4.NAME AS TNAME,
+						    dbo.TDETA_HES4.CODE_E
+						FROM dbo.DETA_HES
+						INNER JOIN dbo.TOTA_HES
+						    ON dbo.DETA_HES.N_KOL = dbo.TOTA_HES.NUMBER
+						INNER JOIN dbo.TDETA_HES
+						    ON dbo.DETA_HES.N_KOL = dbo.TDETA_HES.N_KOL AND dbo.DETA_HES.NUMBER = dbo.TDETA_HES.NUMBER
+						INNER JOIN dbo.TDETA_HES2
+						    ON dbo.TDETA_HES.N_KOL = dbo.TDETA_HES2.N_KOL
+						    AND dbo.TDETA_HES.NUMBER = dbo.TDETA_HES2.NUMBER
+						    AND dbo.TDETA_HES.TNUMBER = dbo.TDETA_HES2.TNUMBER
+						INNER JOIN dbo.TDETA_HES3
+						    ON dbo.TDETA_HES2.N_KOL = dbo.TDETA_HES3.N_KOL
+						    AND dbo.TDETA_HES2.NUMBER = dbo.TDETA_HES3.NUMBER
+						    AND dbo.TDETA_HES2.TNUMBER = dbo.TDETA_HES3.TNUMBER
+						    AND dbo.TDETA_HES2.TNUMBER2 = dbo.TDETA_HES3.TNUMBER2
+						INNER JOIN dbo.TDETA_HES4
+						    ON dbo.TDETA_HES3.N_KOL = dbo.TDETA_HES4.N_KOL
+						    AND dbo.TDETA_HES3.NUMBER = dbo.TDETA_HES4.NUMBER
+						    AND dbo.TDETA_HES3.TNUMBER = dbo.TDETA_HES4.TNUMBER
+						    AND dbo.TDETA_HES3.TNUMBER2 = dbo.TDETA_HES4.TNUMBER2
+						    AND dbo.TDETA_HES3.TNUMBER3 = dbo.TDETA_HES4.TNUMBER3
+						ORDER BY dbo.TDETA_HES.NAME -- This ORDER BY applies to the entire UNION result set 

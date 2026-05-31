@@ -1,0 +1,23 @@
+﻿ CREATE FUNCTION dbo.lastavrage_sub
+  (@DT bigint,
+  @CODE nvarchar(15),
+  @ANBAR int)
+  RETURNS TABLE
+  AS
+  RETURN ( SELECT     TOP 100 PERCENT dbo.INVO_LST.AVRAGE, dbo.HEAD_LST.DATE_N, dbo.INVO_LST.NUMBER, dbo.INVO_LST.CODE, dbo.INVO_LST.ANBAR, 
+                        dbo.INVO_LST.TAG
+  FROM         dbo.INVO_LST INNER JOIN
+                        dbo.HEAD_LST ON dbo.INVO_LST.NUMBER = dbo.HEAD_LST.NUMBER AND dbo.INVO_LST.TAG = dbo.HEAD_LST.TAG
+  WHERE     (dbo.HEAD_LST.DATE_N <= @DT) AND (dbo.INVO_LST.CODE = @CODE) AND (dbo.INVO_LST.ANBAR = @ANBAR) AND (dbo.INVO_LST.TAG <> 20) AND (dbo.INVO_LST.TAG <> 23)
+  ORDER BY dbo.HEAD_LST.DATE_N DESC, dbo.INVO_LST.NUMBER DESC
+  UNION
+  SELECT     TOP 100 PERCENT dbo.INVO_LST.AVRAGE2, dbo.HEAD_LST.DATE_N, dbo.INVO_LST.NUMBER, dbo.INVO_LST.CODE, dbo.INVO_LST.ANBARF, 
+                        dbo.INVO_LST.TAG
+  FROM         dbo.INVO_LST INNER JOIN
+                        dbo.HEAD_LST ON dbo.INVO_LST.NUMBER = dbo.HEAD_LST.NUMBER AND dbo.INVO_LST.TAG = dbo.HEAD_LST.TAG
+  WHERE     (dbo.HEAD_LST.DATE_N <= @DT) AND (dbo.INVO_LST.CODE = @CODE) AND (dbo.INVO_LST.ANBARF = @ANBAR) AND (dbo.INVO_LST.TAG <> 20) AND (dbo.INVO_LST.TAG <> 23)
+  ORDER BY dbo.HEAD_LST.DATE_N DESC, dbo.INVO_LST.NUMBER DESC )
+  
+  
+ 
+

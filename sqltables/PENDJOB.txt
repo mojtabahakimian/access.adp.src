@@ -1,0 +1,70 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PENDJOB	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+CODE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+DATE_TS	int	no	4	10   	0    	no	(n/a)	(n/a)	
+DATESTA	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+DATEEND	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+LASTSAB	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+DASTM	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+MANDMORA	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+EYDY	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+BON	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+MANDMO	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+HSANAVAT	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+BEST	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+BEDH	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+MALIATE	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+VAM	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+DAYS	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_PENDJOB	clustered, unique, primary key located on PRIMARY	CODE, DATE_TS
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PENDJOB__CRT__10D65D75	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column DAYS	DF__PENDJOB__DAYS__13DCE752	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BEDH	DF_PENDJOB_BEDH	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BEST	DF_PENDJOB_BEST	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BON	DF_PENDJOB_BON	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DASTM	DF_PENDJOB_DASTM	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column EYDY	DF_PENDJOB_EYDY	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column HSANAVAT	DF_PENDJOB_HSANAVAT	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column LASTSAB	DF_PENDJOB_LASTSAB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MALIATE	DF_PENDJOB_MALIATE	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MANDMO	DF_PENDJOB_MANDMO	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MANDMORA	DF_PENDJOB_MANDMORA	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column VAM	DF_PENDJOB_VAM	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+PRIMARY KEY (clustered)	PK_PENDJOB	(n/a)	(n/a)	(n/a)	(n/a)	CODE, DATE_TS

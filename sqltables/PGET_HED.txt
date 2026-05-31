@@ -1,0 +1,79 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PGET_HED	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+DATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+MOLAH	nvarchar	no	120	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+N_S	float	no	8	53   		yes	(n/a)	(n/a)	
+DEPATMAN	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SHIFT	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CUST_KIND	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+USER_NAME	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+KIND	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+IDK	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+OKF	bit	no	1	     	     	yes	(n/a)	(n/a)	
+RPLICA	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SGN1	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN2	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN3	bit	no	1	     	     	no	(n/a)	(n/a)	
+sgn1usid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+sgn2usid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+sgn3usid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{9A1BD9E5-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered, unique, unique key located on PRIMARY	N_S
+aaaaaPGET_HED_PK	nonclustered, unique, primary key located on PRIMARY	ID, DATE
+DATE_I	nonclustered located on PRIMARY	DATE
+ID	nonclustered, unique located on PRIMARY	ID
+N_S	nonclustered located on PRIMARY	N_S
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+UNIQUE (non-clustered)	{9A1BD9E5-AA11-11D7-842A-CCEC3B3F45A3}	(n/a)	(n/a)	(n/a)	(n/a)	N_S
+PRIMARY KEY (non-clustered)	aaaaaPGET_HED_PK	(n/a)	(n/a)	(n/a)	(n/a)	ID, DATE
+CHECK on column DATE	CK_PGET_HED	(n/a)	(n/a)	Enabled	Is_For_Replication	([DATE]>=(10101))
+DEFAULT on column CRT	DF__PGET_HED__CRT__3B36AB95	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column SGN1	DF__PGET_HED__SGN1__5CCCA98A	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN2	DF__PGET_HED__SGN2__5DC0CDC3	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN3	DF__PGET_HED__SGN3__5EB4F1FC	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column IDK	DF_PGET_HED_IDK	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column KIND	DF_PGET_HED_KIND	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	PGET_HED_FK00	No Action	Cascade	Enabled	Is_For_Replication	N_S
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.DEED_HED (N_S)
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.PGET_LST: FK_PGET_LST_PGET_HED

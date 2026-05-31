@@ -1,0 +1,68 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+DTL_MANF	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+FNUMB	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CODE	nvarchar	no	30	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+ANBAR	int	no	4	10   	0    	no	(n/a)	(n/a)	
+VAHED_K	int	no	4	10   	0    	no	(n/a)	(n/a)	
+MEGH	float	no	8	53   		no	(n/a)	(n/a)	
+MEGHk	float	no	8	53   		no	(n/a)	(n/a)	
+PERT	float	no	8	53   		no	(n/a)	(n/a)	
+SMABL	float	no	8	53   		yes	(n/a)	(n/a)	
+MABLK	float	no	8	53   		yes	(n/a)	(n/a)	
+TOZIH	nvarchar	no	500	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ID	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{9A1BDA0F-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	VAHED_K
+CODE	nonclustered located on PRIMARY	CODE
+HEAD_MANFDTL_MANF	nonclustered located on PRIMARY	FNUMB
+IX_DTL_MANF	nonclustered located on PRIMARY	ANBAR
+PK_DTL_MANF	clustered, unique, primary key located on PRIMARY	FNUMB, CODE
+STUF_FSKDTL_MANF	nonclustered located on PRIMARY	CODE, ANBAR
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__DTL_MANF__CRT__783FB9D5	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column FNUMB	DF__DTL_MANF__FNUMB__214BF109	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MABLK	DF__DTL_MANF__MABLK__2610A626	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MEGH	DF__DTL_MANF__MEGH__22401542	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MEGHk	DF__DTL_MANF__MEGHk__2334397B	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column PERT	DF__DTL_MANF__PERT__24285DB4	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SMABL	DF__DTL_MANF__SMABL__251C81ED	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	DTL_MANF_FK00	No Action	Cascade	Enabled	Is_For_Replication	VAHED_K
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_VAHEDS (CODE)
+FOREIGN KEY	DTL_MANF_FK01	No Action	Cascade	Enabled	Is_For_Replication	FNUMB
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.HEAD_MANF (FNUMB)
+PRIMARY KEY (clustered)	PK_DTL_MANF	(n/a)	(n/a)	(n/a)	(n/a)	FNUMB, CODE

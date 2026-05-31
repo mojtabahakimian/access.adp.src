@@ -1,0 +1,9 @@
+﻿CREATE FUNCTION [dbo].[Q_MAND_SALARY2]
+ (@Forms___F_MENU_BIM___MMO INT,
+ @Forms___Baseknow___PERSONEL int,
+ @MOIN INT)
+ RETURNS TABLE
+ AS
+ RETURN ( SELECT     HES_T, CAST(CAST(dbo.UIIF(BEDH, N'>', 0, BEDH, 0) / 1000 AS bigint) * 1000 AS BIGINT) AS BEDH
+ FROM         dbo.Q_MAND_SALARY_SUB2(@Forms___F_MENU_BIM___MMO, @Forms___Baseknow___PERSONEL, @MOIN) Q_MAND_SALARY_SUB2
+ GROUP BY HES_T, CAST(CAST(dbo.UIIF(BEDH, N'>', 0, BEDH, 0) / 1000 AS bigint) * 1000 AS BIGINT) )

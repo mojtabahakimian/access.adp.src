@@ -1,0 +1,22 @@
+﻿CREATE VIEW [dbo].[QSL_HAVALEH_KHUROG]
+AS
+SELECT     dbo.HEAD_LST.NUMBER, dbo.HEAD_LST.TAG, dbo.HEAD_LST.DATE_N, dbo.HEAD_LST.CUST_NO, 
+                      dbo.HEAD_LST.ANBAR, dbo.HEAD_LST.NUMBER1, dbo.HEAD_LST.TAH, dbo.HEAD_LST.MAS, dbo.HEAD_LST.VAS, 
+                      dbo.HEAD_LST.N_S, dbo.HEAD_LST.MOLAH, dbo.HEAD_LST.M_NAGHD, dbo.HEAD_LST.MABL_VAR, 
+                      dbo.HEAD_LST.MOIN_VAR, dbo.HEAD_LST.MABL_HAV, dbo.HEAD_LST.MOIN_HAV, dbo.HEAD_LST.MABL_HAZ, 
+                      dbo.HEAD_LST.MOIN_HAZ, dbo.HEAD_LST.TAKHFIF, dbo.HEAD_LST.MOIN_KHF, dbo.HEAD_LST.ANBARF, 
+                      dbo.HEAD_LST.FNUMCO, dbo.INVO_LST.NUMBER AS INUMBER, dbo.INVO_LST.TAG AS ITAG, 
+                      dbo.INVO_LST.ANBAR AS IANBAR, dbo.INVO_LST.RADIF, dbo.INVO_LST.CODE, dbo.INVO_LST.MEGH, 
+                      dbo.INVO_LST.MEGHk, dbo.INVO_LST.MEGH_MAR, dbo.INVO_LST.MANDAH, dbo.INVO_LST.MABL, 
+                      dbo.INVO_LST.MABL_K, dbo.INVO_LST.FROM_A, dbo.INVO_LST.N_RASID, dbo.INVO_LST.MEGH_R, 
+                      dbo.INVO_LST.RADAH, dbo.INVO_LST.SANAD_NO, dbo.INVO_LST.CUST_NO AS ICUST_NO, 
+                      dbo.INVO_LST.ANBARF AS IANBARF, dbo.INVO_LST.VAHED_K, dbo.CUST_HESAB.NAME, dbo.CUST_HESAB.ADDRESS, 
+                      dbo.CUST_HESAB.TEL, dbo.TCOD_ANBAR.NAMES, dbo.STUF_DEF.NAME AS SNAME, 
+                      dbo.TCOD_VAHEDS.NAMES AS VNAMES, dbo.CUST_HESAB.hes
+FROM         dbo.INVO_LST INNER JOIN
+                      dbo.TCOD_VAHEDS ON dbo.INVO_LST.VAHED_K = dbo.TCOD_VAHEDS.CODE INNER JOIN
+                      dbo.HEAD_LST ON dbo.INVO_LST.NUMBER = dbo.HEAD_LST.NUMBER AND 
+                      dbo.INVO_LST.TAG = dbo.HEAD_LST.TAG INNER JOIN
+                      dbo.CUST_HESAB ON dbo.HEAD_LST.CUST_NO = dbo.CUST_HESAB.hes INNER JOIN
+                      dbo.TCOD_ANBAR ON dbo.INVO_LST.ANBAR = dbo.TCOD_ANBAR.CODE INNER JOIN
+                      dbo.STUF_DEF ON dbo.INVO_LST.CODE = dbo.STUF_DEF.CODE

@@ -1,0 +1,64 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PRICE_ELAMIETF_DTL	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+PEID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CUSTCODE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+PPID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+TF1	real	no	4	24   		no	(n/a)	(n/a)	
+TF2	real	no	4	24   		no	(n/a)	(n/a)	
+PETID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+TR_DATE	datetime	no	8	     	     	no	(n/a)	(n/a)	
+USERNAME	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_PRICE_ELAMIETF_DTL	clustered, unique, primary key located on PRIMARY	PETID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PRICE_ELAMI__CRT__0DF9F0CA	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column TF1	DF_PRICE_ELAMIETF_DTL_TF1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column TF2	DF_PRICE_ELAMIETF_DTL_TF2	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_PRICE_ELAMIETF_DTL_PRICE_ELAMIETF	No Action	Cascade	Enabled	Is_For_Replication	PEID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PRICE_ELAMIETF (PEID)
+FOREIGN KEY	FK_PRICE_ELAMIETF_DTL_PRICE_ELAMIETF_DTL	No Action	Cascade	Enabled	Is_For_Replication	CUSTCODE
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.CUSTKIND (CUST_COD)
+FOREIGN KEY	FK_PRICE_ELAMIETF_DTL_PRICE_PAYNO	No Action	Cascade	Enabled	Is_For_Replication	PPID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PRICE_PAYNO (PPID)
+PRIMARY KEY (clustered)	PK_PRICE_ELAMIETF_DTL	(n/a)	(n/a)	(n/a)	(n/a)	PETID
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.PRICE_ELAMIETF_EXCEPTION: FK_PRICE_ELAMIETF_EXCEPTION_DTL

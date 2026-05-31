@@ -1,0 +1,12 @@
+﻿CREATE VIEW  [dbo].[MEGH_DAR]
+ AS
+ SELECT     dbo.HEAD_LST.NUMBER, dbo.HEAD_LST.TAG, dbo.HEAD_LST.DATE_N, dbo.HEAD_LST.TAH, SUM(dbo.INVO_LST.MEGHk) AS MEGHk, 
+                       SUM(ISNULL(dbo.MEGH_RAIS.MEGHkS, 0)) AS MEGHKS, SUM(dbo.INVO_LST.MEGHk - ISNULL(dbo.MEGH_RAIS.MEGHkS, 0)) AS MAND, dbo.HEAD_LST.SADER, 
+                       dbo.HEAD_LST.FNUMCO
+ FROM         dbo.HEAD_LST INNER JOIN
+                       dbo.INVO_LST ON dbo.HEAD_LST.NUMBER = dbo.INVO_LST.NUMBER AND dbo.HEAD_LST.TAG = dbo.INVO_LST.TAG INNER JOIN
+                       dbo.STUF_DEF ON dbo.INVO_LST.CODE = dbo.STUF_DEF.CODE INNER JOIN
+                       dbo.TCOD_ANBAR ON dbo.INVO_LST.ANBAR = dbo.TCOD_ANBAR.CODE LEFT OUTER JOIN
+                       dbo.MEGH_RAIS ON dbo.INVO_LST.id = dbo.MEGH_RAIS.RADAH AND dbo.HEAD_LST.NUMBER = dbo.MEGH_RAIS.NUMBER1
+ GROUP BY dbo.HEAD_LST.NUMBER, dbo.HEAD_LST.TAG, dbo.HEAD_LST.DATE_N, dbo.HEAD_LST.TAH, dbo.HEAD_LST.SADER, dbo.HEAD_LST.FNUMCO
+ HAVING      (dbo.HEAD_LST.TAG = 23)

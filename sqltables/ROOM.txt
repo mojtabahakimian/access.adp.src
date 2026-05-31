@@ -1,0 +1,57 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+ROOM	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+ROOM_NUM	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+RFLAG	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+TAKHT	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+VASAYEL	nvarchar	no	510	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+COMMENT	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+aaaaaROOM_PK	nonclustered, unique, primary key located on PRIMARY	ROOM_NUM
+ROOM_NUM	nonclustered, unique located on PRIMARY	ROOM_NUM
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaROOM_PK	(n/a)	(n/a)	(n/a)	(n/a)	ROOM_NUM
+CHECK on column ROOM_NUM	CK ROOM ROOM_NUM	(n/a)	(n/a)	Enabled	Is_For_Replication	(NOT [ROOM_NUM] IS NULL)
+DEFAULT on column CRT	DF__ROOM__CRT__0E2EFAF4	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column RFLAG	DF__ROOM__RFLAG__64CCF2AE	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column TAKHT	DF__ROOM__TAKHT__65C116E7	(n/a)	(n/a)	(n/a)	(n/a)	((2))
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.MEHMAN: MEHMAN_FK01

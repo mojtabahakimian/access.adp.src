@@ -1,0 +1,34 @@
+﻿Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+
+Option Compare Database
+Option Explicit
+
+Private Sub Form_BeforeUpdate(CANCEL As Integer)
+                      On Error Resume Next
+   If IsNull(Me.PKINDCO) Then
+    Dim rst As New ADODB.Recordset
+    rst.Open "SELECT MAX(PKINDCO) AS MaxOfCODE FROM dbo.PKINDCODING", CurrentProject.Connection, adOpenKeyset, adLockOptimistic
+    If rst.RecordCount > 0 And Not IsNull(rst.Fields(0)) Then
+       Me.PKINDCO = rst.Fields(0) + 1
+    Else
+       Me.PKINDCO = 1
+    End If
+  End If
+End Sub
+
+Private Sub Form_Error(DataErr As Integer, Response As Integer)
+                      On Error Resume Next: errdetector (DataErr)
+   Response = acDataErrContinue: DoCmd.RunMacro "stop"
+End Sub
+
+Private Sub Form_Load()
+                   On Error Resume Next
+  Call SETSECURITY(Me.NAME, "PKINCO", 3)
+End Sub
+
+Private Sub Form_Open(CANCEL As Integer)
+    Forms![BASEKNOW]![hhwin] = Me.hWnd
+End Sub

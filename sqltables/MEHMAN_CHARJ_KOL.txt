@@ -1,0 +1,59 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+MEHMAN_CHARJ_KOL	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+ID_MEH	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CHRJ_DATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+CODECHARJ	nvarchar	no	30	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+MEGH	float	no	8	53   		no	(n/a)	(n/a)	
+MABL	float	no	8	53   		no	(n/a)	(n/a)	
+MABL_K	float	no	8	53   		no	(n/a)	(n/a)	
+VAHED_K	int	no	4	10   	0    	no	(n/a)	(n/a)	
+N_KOL	float	no	8	53   		no	(n/a)	(n/a)	
+N_MOIN	float	no	8	53   		no	(n/a)	(n/a)	
+IMBAA	float	no	8	53   		no	(n/a)	(n/a)	
+NUMBER	float	no	8	53   		yes	(n/a)	(n/a)	
+IDN	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDN	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__MEHMAN_CHARJ_KOL__1EB1DD85	clustered, unique, primary key located on PRIMARY	IDN
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__MEHMAN_CHAR__CRT__03B16C81	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column IMBAA	DF_MEHMAN_CHARJ_KOL_IMBAA	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MABL	DF_MEHMAN_CHARJ_KOL_MABL	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MABL_K	DF_MEHMAN_CHARJ_KOL_MABL_K	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column N_KOL	DF_MEHMAN_CHARJ_KOL_N_KOL	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column N_MOIN	DF_MEHMAN_CHARJ_KOL_N_MOIN	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+PRIMARY KEY (clustered)	PK__MEHMAN_CHARJ_KOL__1EB1DD85	(n/a)	(n/a)	(n/a)	(n/a)	IDN

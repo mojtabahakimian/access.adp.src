@@ -1,0 +1,53 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PRICE_ELAMIE_DTL	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+PERID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+PEPID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+PRICE1	real	no	4	24   		no	(n/a)	(n/a)	
+TR_DATE	datetime	no	8	     	     	no	(n/a)	(n/a)	
+USERNAME	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+PGID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_PRICE_ELAMIE_DTL	clustered, unique, primary key located on PRIMARY	PERID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PRICE_ELAMI__CRT__11CA81AE	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column PRICE1	DF_Table_1_TF1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_PRICE_ELAMIE_DTL_PRICE_ELAMIE	No Action	Cascade	Enabled	Is_For_Replication	PEPID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PRICE_ELAMIE (PEPID)
+FOREIGN KEY	FK_PRICE_ELAMIE_DTL_PRICE_GRP	No Action	Cascade	Enabled	Is_For_Replication	PGID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PRICE_GRP (PGID)
+PRIMARY KEY (clustered)	PK_PRICE_ELAMIE_DTL	(n/a)	(n/a)	(n/a)	(n/a)	PERID

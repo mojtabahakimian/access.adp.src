@@ -1,0 +1,59 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+Visit_route	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+ROUTE_NAME	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+HES	nvarchar	no	80	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+IYALAT	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+CITY	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+District	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+CDATE	datetime	no	8	     	     	no	(n/a)	(n/a)	
+USERNAME	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+RACTIVE	bit	no	1	     	     	no	(n/a)	(n/a)	
+OKF	bit	no	1	     	     	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_Visit_route	clustered, unique, primary key located on PRIMARY	ROUTE_NAME
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__Visit_route__CRT__3FC65688	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column OKF	DF_Visit_route_OKF	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column RACTIVE	DF_Visit_route_RACTIVE	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+PRIMARY KEY (clustered)	PK_Visit_route	(n/a)	(n/a)	(n/a)	(n/a)	ROUTE_NAME
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.Visit_route_dtl: FK_Visit_route_dtl_Visit_route

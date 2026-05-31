@@ -1,0 +1,6 @@
+﻿CREATE VIEW [dbo].[mog_fr]
+AS
+
+SELECT     CODE, SUM(MEG) AS MEG, SUM(SumOfMABL_K) AS SumOfMABL_K
+FROM         dbo.MOG_FR_SUB
+GROUP BY CODE

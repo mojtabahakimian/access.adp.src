@@ -1,0 +1,57 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PAY2_LEAVE_BAL	dbo	user table	04/05/2026 09:00:50 ب.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+EMP_ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+YEAR	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+ENTITLEMENT_MIN	int	no	4	10   	0    	no	(n/a)	(n/a)	
+USED_MIN	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CARRIED_IN_MIN	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CARRIED_OUT_MIN	int	no	4	10   	0    	no	(n/a)	(n/a)	
+BALANCE_MIN	int	yes	4	10   	0    	yes	(n/a)	(n/a)	
+BALANCE_DAYS	int	yes	4	10   	0    	yes	(n/a)	(n/a)	
+UPDATED_AT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_PAY2_LEAVE_BAL	clustered, unique, primary key located on PRIMARY	EMP_ID, YEAR
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PAY2_LEAVE___CRT__7A2B2745	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column CARRIED_IN_MIN	DF_LB_CIN	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CARRIED_OUT_MIN	DF_LB_COU	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column ENTITLEMENT_MIN	DF_LB_ENT	(n/a)	(n/a)	(n/a)	(n/a)	((11440))
+DEFAULT on column USED_MIN	DF_LB_USD	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_LB_EMP	No Action	No Action	Enabled	Is_For_Replication	EMP_ID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PAY2_EMPLOYEE (EMP_ID)
+PRIMARY KEY (clustered)	PK_PAY2_LEAVE_BAL	(n/a)	(n/a)	(n/a)	(n/a)	EMP_ID, YEAR

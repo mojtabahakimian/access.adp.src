@@ -1,0 +1,24 @@
+﻿CREATE VIEW [dbo].[QSL_INVOICE_FROOSH_BACK]
+AS
+SELECT     dbo.HEAD_BACK.NUMBER, dbo.HEAD_BACK.HTAG, dbo.HEAD_BACK.DATE_N, dbo.HEAD_BACK.ANBAR, dbo.HEAD_BACK.CUST_NO, 
+                      dbo.HEAD_BACK.NUMBER1, dbo.HEAD_BACK.TAH, dbo.HEAD_BACK.MAS, dbo.HEAD_BACK.VAS, dbo.HEAD_BACK.N_S, dbo.HEAD_BACK.MOLAH, 
+                      dbo.HEAD_BACK.M_NAGHD, dbo.HEAD_BACK.MABL_VAR, dbo.HEAD_BACK.MOIN_VAR, dbo.HEAD_BACK.MABL_HAV, dbo.HEAD_BACK.MOIN_HAV, 
+                      dbo.HEAD_BACK.MABL_HAZ, dbo.HEAD_BACK.MOIN_HAZ, dbo.HEAD_BACK.TAKHFIF, dbo.HEAD_BACK.MOIN_KHF, dbo.HEAD_BACK.ANBARF, 
+                      dbo.HEAD_BACK.FNUMCO, dbo.INVO_LST.NUMBER AS INUMBER, dbo.INVO_LST.TAG, dbo.INVO_LST.ANBAR AS IANBAR, dbo.INVO_LST.RADIF, 
+                      dbo.INVO_LST.CODE, dbo.INVO_LST.MEGH, dbo.INVO_LST.MEGHk, dbo.INVO_LST.MEGH_MAR, dbo.INVO_LST.MANDAH, dbo.INVO_LST.MABL, 
+                      dbo.INVO_LST.MABL_K, dbo.INVO_LST.FROM_A, dbo.INVO_LST.N_RASID, dbo.INVO_LST.MEGH_R, dbo.INVO_LST.RADAH, dbo.INVO_LST.SANAD_NO, 
+                      dbo.INVO_LST.CUST_NO AS ICUST_NO, dbo.INVO_LST.ANBARF AS IANBARF, dbo.INVO_LST.VAHED_K, dbo.CUST_HESAB.NAME, 
+                      dbo.CUST_HESAB.ADDRESS, dbo.CUST_HESAB.TEL, dbo.TCOD_ANBAR.NAMES, dbo.STUF_DEF.NAME AS SNAME, dbo.CUST_HESAB.hes, 
+                      dbo.TCOD_VAHEDS.NAMES AS VNAMES, dbo.STUF_DEF.N_FANI, dbo.CUST_HESAB.CODE_E, dbo.CUST_HESAB.ECODE, dbo.CUST_HESAB.PCODE, 
+                      dbo.CUST_HESAB.IYALAT, dbo.CUST_HESAB.CITY, dbo.CUST_HESAB.MCODEM, dbo.CUST_HESAB.TOZIH, dbo.CUST_HESAB.CUST_COD, 
+                      dbo.CUST_HESAB.MOBILE, dbo.CUST_HESAB.Longitude, dbo.CUST_HESAB.Latitude, dbo.CUST_HESAB.ROUTE_NAME, dbo.HEAD_BACK.DEPATMAN, 
+                      dbo.HEAD_BACK.MBAA
+FROM         dbo.CUST_HESAB INNER JOIN
+                      dbo.STUF_DEF INNER JOIN
+                      dbo.HEAD_BACK INNER JOIN
+                      dbo.INVO_LST INNER JOIN
+                      dbo.TCOD_VAHEDS ON dbo.INVO_LST.VAHED_K = dbo.TCOD_VAHEDS.CODE INNER JOIN
+                      dbo.TCOD_ANBAR ON dbo.INVO_LST.ANBAR = dbo.TCOD_ANBAR.CODE ON dbo.HEAD_BACK.NUMBER1 = dbo.INVO_LST.NUMBER AND 
+                      dbo.HEAD_BACK.HTAG = dbo.INVO_LST.TAG ON dbo.STUF_DEF.CODE = dbo.INVO_LST.CODE ON 
+                      dbo.CUST_HESAB.hes = dbo.HEAD_BACK.CUST_NO
+WHERE     (dbo.INVO_LST.MEGH_MAR <> 0)

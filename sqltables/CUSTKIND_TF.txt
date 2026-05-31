@@ -1,0 +1,52 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+CUSTKIND_TF	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+CUST_COD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+TID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CREA	datetime	no	8	     	     	no	(n/a)	(n/a)	
+ACTIV	bit	no	1	     	     	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ID	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__CUSTKIND_TF__704FED0A	clustered, unique, primary key located on PRIMARY	CUST_COD, TID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__CUSTKIND_TF__CRT__5986288B	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column ACTIV	DF_CUSTKIND_TF_ACTIV	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_CUSTKIND_TF_CUSTKIND	Cascade	Cascade	Enabled	Is_For_Replication	CUST_COD
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.CUSTKIND (CUST_COD)
+FOREIGN KEY	FK_CUSTKIND_TF_TAKHFIF_DEF	Cascade	Cascade	Enabled	Is_For_Replication	TID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TAKHFIF_DEF (TID)
+PRIMARY KEY (clustered)	PK__CUSTKIND_TF__704FED0A	(n/a)	(n/a)	(n/a)	(n/a)	CUST_COD, TID

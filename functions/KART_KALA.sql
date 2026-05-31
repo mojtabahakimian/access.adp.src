@@ -1,0 +1,16 @@
+﻿CREATE FUNCTION [dbo].[KART_KALA]
+(@Forms___F_MENU_KART___FT BIGINT,
+@Forms___F_MENU_KART___ANBAR FLOAT,
+@Forms___F_MENU_KART___DT2 bigint)
+RETURNS TABLE
+AS
+RETURN ( SELECT     TOP 100 PERCENT KA_KH.ANBAR, KA_KH.CODE, KA_KH.DATE_N, KA_KH.MEG, KA_KH.mabl_a, KA_KH.MABLK, KA_KH.TAG, KA_KH.MEGK, dbo.TAGCOD.BARGAH, 
+                      dbo.STUF_DEF.NAME, dbo.TCOD_ANBAR.NAMES, KA_KH.NUMBER, ISNULL(KA_KH.BEDNAME, N' ') + N' ' + ISNULL(KA_KH.mol, N' ') AS BEDNAME, 
+                      dbo.UIIF(KA_KH.TAG, '<=', 1, KA_KH.MABLK, 0) AS MABM, dbo.UIIF(KA_KH.TAG, '<=', 1, KA_KH.MEGK, 0) AS MEGKM, KA_KH.avrage, KA_KH.FNUMCO, 
+                      dbo.STUF_DEF.N_FANI, dbo.STUF_DEF.MAX_M
+FROM         dbo.KA_KH(@Forms___F_MENU_KART___FT) KA_KH INNER JOIN
+                      dbo.TAGCOD ON KA_KH.TAG = dbo.TAGCOD.CODE INNER JOIN
+                      dbo.STUF_DEF ON KA_KH.CODE = dbo.STUF_DEF.CODE INNER JOIN
+                      dbo.TCOD_ANBAR ON KA_KH.ANBAR = dbo.TCOD_ANBAR.CODE
+WHERE     (KA_KH.ANBAR = @Forms___F_MENU_KART___ANBAR) AND (KA_KH.DATE_N <= @Forms___F_MENU_KART___DT2)
+ORDER BY KA_KH.ANBAR, KA_KH.CODE, KA_KH.DATE_N )

@@ -1,0 +1,12 @@
+﻿CREATE VIEW [dbo].[CHEK_BARGASHTI]
+AS
+SELECT     dbo.PAY_GETD.N_SERI, dbo.PAY_GETD.BANK, dbo.PAY_GETD.DATE_S, dbo.PAY_GETD.DATE, dbo.PAY_GETD.SHOBEH, dbo.PAY_GETD.MABL, 
+                      dbo.PAY_GETD.NAME_TAH, dbo.PAY_GETD.N_HESAB, dbo.PAY_GETD.N_S, dbo.PAY_GETD.N_KOL, dbo.PAY_GETD.N_MOIN, 
+                      dbo.PAY_GETD.N_KOL2, dbo.PAY_GETD.N_MOIN2, dbo.PAY_GETD.N_KOL3, dbo.PAY_GETD.N_MOIN3, dbo.PAY_GETD.NUMBER, 
+                      dbo.PAY_GETD.TAG, dbo.PAY_GETD.ANBAR, dbo.PAY_GETD.RADIF, dbo.PAY_GETD.CUST_NO, dbo.PAY_GETD.VAZ, dbo.TCOD_BANKS.NAMES, 
+                      ISNULL(dbo.PGET_LST.DATE, dbo.PAY_GETD.DATE_S) AS DT
+FROM         dbo.TCOD_BANKS INNER JOIN
+                      dbo.PAY_GETD LEFT OUTER JOIN
+                      dbo.PGET_LST ON dbo.PAY_GETD.BANK = dbo.PGET_LST.BANK AND dbo.PAY_GETD.N_SERI = dbo.PGET_LST.N_SERI ON 
+                      dbo.TCOD_BANKS.CODE = dbo.PAY_GETD.BANK
+WHERE     (dbo.PGET_LST.NAHVA = 5) AND (NOT (dbo.PAY_GETD.N_KOL2 IS NULL)) AND (NOT (dbo.PAY_GETD.N_MOIN2 IS NULL))

@@ -1,0 +1,152 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+HEAD_LST	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+NUMBER	float	no	8	53   		no	(n/a)	(n/a)	
+TAG	float	no	8	53   		no	(n/a)	(n/a)	
+ANBAR	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+NUMBER1	float	no	8	53   		yes	(n/a)	(n/a)	
+DATE_N	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+TAH	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MAS	float	no	8	53   		no	(n/a)	(n/a)	
+VAS	float	no	8	53   		no	(n/a)	(n/a)	
+N_S	float	no	8	53   		yes	(n/a)	(n/a)	
+CUST_NO	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MOLAH	nvarchar	no	400	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+M_NAGHD	float	no	8	53   		no	(n/a)	(n/a)	
+MABL_VAR	float	no	8	53   		no	(n/a)	(n/a)	
+MOIN_VAR	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MABL_HAV	float	no	8	53   		no	(n/a)	(n/a)	
+MOIN_HAV	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MABL_HAZ	float	no	8	53   		no	(n/a)	(n/a)	
+MOIN_HAZ	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TAKHFIF	float	no	8	53   		no	(n/a)	(n/a)	
+MOIN_KHF	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ANBARF	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+FNUMCO	float	no	8	53   		yes	(n/a)	(n/a)	
+DEPATMAN	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SHIFT	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CUST_KIND	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+USER_NAME	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SHARAYET	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN1	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SGN2	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SGN3	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SGN4	bit	no	1	     	     	yes	(n/a)	(n/a)	
+MBAA	float	no	8	53   		yes	(n/a)	(n/a)	
+HMBAA	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TAMIR	float	no	8	53   		yes	(n/a)	(n/a)	
+TICMBAA	bit	no	1	     	     	yes	(n/a)	(n/a)	
+TKHF	bit	no	1	     	     	yes	(n/a)	(n/a)	
+OKF	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SADER	tinyint	no	1	3    	0    	yes	(n/a)	(n/a)	
+ARZD	float	no	8	53   		yes	(n/a)	(n/a)	
+ARZKIND	tinyint	no	1	3    	0    	yes	(n/a)	(n/a)	
+CDDATE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+CDTIME	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+OKDATE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+OKTIME	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+JAY	bit	no	1	     	     	yes	(n/a)	(n/a)	
+MODAT_PPID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+PEPID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+PEID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+sgn1usid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+sgn2usid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+sgn3usid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ARZKIND2	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+ARZCODING	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{9A1BD9E4-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	N_S
+{9A1BD9FC-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	ANBAR
+aaaaaHEAD_LST_PK	nonclustered, unique, primary key located on PRIMARY	NUMBER, TAG
+CUSTKINDHEAD_LST	nonclustered located on PRIMARY	CUST_KIND
+DEPARTHEAD_LST	nonclustered located on PRIMARY	DEPATMAN
+INDEXTAGDATE_N	nonclustered located on PRIMARY	TAG, DATE_N
+SHIFTHEAD_LST	nonclustered located on PRIMARY	SHIFT
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaHEAD_LST_PK	(n/a)	(n/a)	(n/a)	(n/a)	NUMBER, TAG
+DEFAULT on column ARZD	DF__HEAD_LST__ARZD__2EE5E349	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column ARZKIND	DF__HEAD_LST__ARZKIN__2FDA0782	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column CRT	DF__HEAD_LST__CRT__5F3F01E1	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column JAY	DF__HEAD_LST__JAY__30CE2BBB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column M_NAGHD	DF__HEAD_LST__M_NAGH__014935CB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MABL_HAV	DF__HEAD_LST__MABL_H__03317E3D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MABL_HAZ	DF__HEAD_LST__MABL_H__0425A276	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MABL_VAR	DF__HEAD_LST__MABL_V__023D5A04	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MBAA	DF__HEAD_LST__MBAA__2B155265	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SADER	DF__HEAD_LST__SADER__2DF1BF10	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column TAKHFIF	DF__HEAD_LST__TAKHFI__0519C6AF	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column TICMBAA	DF__HEAD_LST__TICMBA__2C09769E	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column TKHF	DF__HEAD_LST__TKHF__2CFD9AD7	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column MAS	DF_HEAD_LST_MAS	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN1	DF_HEAD_LST_SGN1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN2	DF_HEAD_LST_SGN2	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN3	DF_HEAD_LST_SGN3	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN4	DF_HEAD_LST_SGN4	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column VAS	DF_HEAD_LST_VAS	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_HEAD_LST_CUSTKIND	No Action	Cascade	Enabled	Is_For_Replication	CUST_KIND
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.CUSTKIND (CUST_COD)
+FOREIGN KEY	FK_HEAD_LST_DEED_HED	No Action	Cascade	Enabled	Is_For_Replication	N_S
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.DEED_HED (N_S)
+FOREIGN KEY	FK_HEAD_LST_DEPART	No Action	Cascade	Enabled	Is_For_Replication	DEPATMAN
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.DEPART (DEPATMAN)
+FOREIGN KEY	FK_HEAD_LST_PRICE_ELAMIE	No Action	Cascade	Enabled	Is_For_Replication	PEPID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PRICE_ELAMIE (PEPID)
+FOREIGN KEY	FK_HEAD_LST_PRICE_ELAMIETF	No Action	Cascade	Enabled	Is_For_Replication	PEID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PRICE_ELAMIETF (PEID)
+FOREIGN KEY	FK_HEAD_LST_PRICE_PAYNO	No Action	Cascade	Enabled	Is_For_Replication	MODAT_PPID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PRICE_PAYNO (PPID)
+FOREIGN KEY	FK_HEAD_LST_SHIFT	No Action	Cascade	Enabled	Is_For_Replication	SHIFT
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.SHIFT (SHIFT_ID)
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.DEED_DTL: FK_DEED_DTL_HEAD_LST
+YAZDSEPAR1405.dbo.INVO_LST: FK_INVO_LST_HEAD_LST
+YAZDSEPAR1405.dbo.INVO_LST_TMP_WPF: FK_INVO_LST_TMP_WPF_HEAD_LST
+YAZDSEPAR1405.dbo.InvoiceRewards: FK_InvoiceRewards_HEAD_LST
+YAZDSEPAR1405.dbo.OTHER_DTL: FK_OTHER_DTL_HEAD_LST
+YAZDSEPAR1405.dbo.TAKHFIF_APLAY: FK_TAKHFIF_APLAY_HEAD_LST
+YAZDSEPAR1405.dbo.VISITOR_DTL: FK_VISITOR_DTL_HEAD_LST
+
+
+-- sp_help Recordset 9
+
+Table is referenced by views	
+v_bg_daily
+v_reserved_daily

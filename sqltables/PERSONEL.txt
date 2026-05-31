@@ -1,0 +1,81 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PERSONEL	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+CODE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+BIMEH_NUM	float	no	8	53   		no	(n/a)	(n/a)	
+PNAME	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+PFAMILY	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+KHNOWNUM	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+FATHER	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+SEX	bit	no	1	     	     	no	(n/a)	(n/a)	
+WSDATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+WEDATE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+JOB	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+TAB56	bit	no	1	     	     	no	(n/a)	(n/a)	
+DSW_IDPLC	nvarchar	no	60	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSW_NAT	nvarchar	no	20	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSW_BDATE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+COT	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+PUNIT	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+HESAB	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DIHARD	bit	no	1	     	     	yes	(n/a)	(n/a)	
+MELLICOD	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+aaaaaPERSONEL_PK	nonclustered, unique, primary key located on PRIMARY	CODE
+BIMEH_NUM	nonclustered located on PRIMARY	BIMEH_NUM
+code	nonclustered, unique located on PRIMARY	CODE
+KHNOWNUM	nonclustered located on PRIMARY	KHNOWNUM
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaPERSONEL_PK	(n/a)	(n/a)	(n/a)	(n/a)	CODE
+DEFAULT on column BIMEH_NUM	DF__PERSONEL__BIMEH___29AC2CE0	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CRT	DF__PERSONEL__CRT__0D05CC91	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column DIHARD	DF__PERSONEL__DIHARD__086B34A6	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DSW_NAT	DF__PERSONEL__DSW_NA__2C88998B	(n/a)	(n/a)	(n/a)	(n/a)	('ايراني')
+DEFAULT on column SEX	DF__PERSONEL__SEX__2AA05119	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column TAB56	DF__PERSONEL__TAB56__2B947552	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column PUNIT	DF_PERSONEL_PUNIT	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.PGHARAR: PGHARAR_FK00
+YAZDSEPAR1405.dbo.PHOKM: PHOKM_FK00
+YAZDSEPAR1405.dbo.PMORAKH: PMORAKH_FK00
+YAZDSEPAR1405.dbo.PSANDUGH_KARKONAN: FK_PSANDUGH_KARKONAN_PERSONEL
+YAZDSEPAR1405.dbo.PVAM: FK_PVAM_PERSONEL
+YAZDSEPAR1405.dbo.WORKING: WORKING_FK00

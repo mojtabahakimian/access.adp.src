@@ -1,0 +1,64 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PRICE_ELAMIETF	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+PEID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+PENAME	nvarchar	no	500	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+PEDATE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+TR_DATE	datetime	no	8	     	     	no	(n/a)	(n/a)	
+USERNAME	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+SGN1	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN2	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN3	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN4	bit	no	1	     	     	no	(n/a)	(n/a)	
+PEPDEPART	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_PRICE_ELAMIETF	clustered, unique, primary key located on PRIMARY	PEID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PRICE_ELAMI__CRT__45B43A08	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column SGN1	DF_PRICE_ELAMIETF_SGN1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN2	DF_PRICE_ELAMIETF_SGN2	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN3	DF_PRICE_ELAMIETF_SGN3	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN4	DF_PRICE_ELAMIETF_SGN4	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+PRIMARY KEY (clustered)	PK_PRICE_ELAMIETF	(n/a)	(n/a)	(n/a)	(n/a)	PEID
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.HEAD_LST: FK_HEAD_LST_PRICE_ELAMIETF
+YAZDSEPAR1405.dbo.HEAD_LST_TMP_WPF: FK_HEAD_LST_TMP_WPF_PRICE_ELAMIETF
+YAZDSEPAR1405.dbo.PRICE_ELAMIETF_DTL: FK_PRICE_ELAMIETF_DTL_PRICE_ELAMIETF

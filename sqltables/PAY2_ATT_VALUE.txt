@@ -1,0 +1,51 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PAY2_ATT_VALUE	dbo	user table	04/05/2026 09:00:51 ب.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+PER_ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+EMP_ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+ITEM_ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+VALUE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_PAY2_ATT_VAL	clustered, unique, primary key located on PRIMARY	PER_ID, EMP_ID, ITEM_ID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PAY2_ATT_VA__CRT__615F797B	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column VALUE	DF_AV_VAL	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_AV_ATT	Cascade	No Action	Enabled	Is_For_Replication	PER_ID, EMP_ID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PAY2_ATTENDANCE (PER_ID, EMP_ID)
+FOREIGN KEY	FK_AV_ITEM	No Action	No Action	Enabled	Is_For_Replication	ITEM_ID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PAY2_ITEM_DEF (ITEM_ID)
+PRIMARY KEY (clustered)	PK_PAY2_ATT_VAL	(n/a)	(n/a)	(n/a)	(n/a)	PER_ID, EMP_ID, ITEM_ID

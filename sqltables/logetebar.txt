@@ -1,0 +1,57 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+logetebar	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+hes	nvarchar	no	80	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+grade	int	no	4	10   	0    	no	(n/a)	(n/a)	
+VALUE	real	no	4	24   		yes	(n/a)	(n/a)	
+GSNAME	nvarchar	no	500	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SAGHFMAND	real	no	4	24   		yes	(n/a)	(n/a)	
+SAGHFASNAD	real	no	4	24   		yes	(n/a)	(n/a)	
+HAVBAR	real	no	4	24   		yes	(n/a)	(n/a)	
+PISHFOK	real	no	4	24   		yes	(n/a)	(n/a)	
+NUMBER	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+TG	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+DTTIM	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+FDT	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+LID	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+PAYAM	nvarchar	no	1000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+USERCO	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+LID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_logetebar	clustered, unique, primary key located on PRIMARY	LID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__logetebar__CRT__746F28F1	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_logetebar	(n/a)	(n/a)	(n/a)	(n/a)	LID

@@ -1,0 +1,55 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+GRADE_SHART_FUNC	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+GSHARTID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+GSHNAME	nvarchar	no	500	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+GSHFUNC	nvarchar	no	500	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TOZIH	nvarchar	no	500	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_GRADE_SHART_FUNC	clustered, unique, primary key located on PRIMARY	GSHARTID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__GRADE_SHART__CRT__2512604C	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+FOREIGN KEY	FK_GRADE_SHART_FUNC_GRADE_SHART_FUNC	No Action	No Action	Enabled	Is_For_Replication	GSHARTID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.GRADE_SHART_FUNC (GSHARTID)
+PRIMARY KEY (clustered)	PK_GRADE_SHART_FUNC	(n/a)	(n/a)	(n/a)	(n/a)	GSHARTID
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.GRADE_SHART: FK_GRADE_SHART_GRADE_SHART_FUNC
+YAZDSEPAR1405.dbo.GRADE_SHART_FUNC: FK_GRADE_SHART_FUNC_GRADE_SHART_FUNC

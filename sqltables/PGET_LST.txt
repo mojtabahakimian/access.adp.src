@@ -1,0 +1,86 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PGET_LST	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+DATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+RADIF	float	no	8	53   		yes	(n/a)	(n/a)	
+NO_AM	int	no	4	10   	0    	no	(n/a)	(n/a)	
+NAHVA	float	no	8	53   		no	(n/a)	(n/a)	
+FHES_K	int	no	4	10   	0    	no	(n/a)	(n/a)	
+FHES_M	int	no	4	10   	0    	no	(n/a)	(n/a)	
+FHES_T	int	no	4	10   	0    	no	(n/a)	(n/a)	
+THES_K	int	no	4	10   	0    	no	(n/a)	(n/a)	
+THES_M	int	no	4	10   	0    	no	(n/a)	(n/a)	
+THES_T	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SHARH	nvarchar	no	510	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MABL	float	no	8	53   		no	(n/a)	(n/a)	
+N_SERI	float	no	8	53   		yes	(n/a)	(n/a)	
+BANK	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+IDH	int	no	4	10   	0    	no	(n/a)	(n/a)	
+FHES	nvarchar	no	80	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+THES	nvarchar	no	80	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+ARZD	float	no	8	53   		yes	(n/a)	(n/a)	
+FHES_T2	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+THES_T2	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+FHES_T3	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+THES_T3	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+FHES_T4	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+THES_T4	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+MHAZ_NO	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDH	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{9A1BDA09-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	BANK
+{9A1BDA0A-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	NAHVA
+{9A1BDA0B-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	NO_AM
+DATE_I	nonclustered located on PRIMARY	DATE
+ID	nonclustered located on PRIMARY	ID
+PGET_HEDPGET_LST	nonclustered located on PRIMARY	ID, DATE
+PK_PGET_LST	clustered, unique, primary key located on PRIMARY	IDH
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column ARZD	DF__PGET_LST__ARZD__2B9F624A	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column CRT	DF__PGET_LST__CRT__6F7569AA	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column MABL	DF__PGET_LST__MABL__351DDF8C	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_PGET_LST_PGET_HED	No Action	Cascade	Enabled	Is_For_Replication	ID, DATE
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PGET_HED (ID, DATE)
+FOREIGN KEY	FK_PGET_LST_TCOD_BANKS	No Action	Cascade	Enabled	Is_For_Replication	BANK
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_BANKS (CODE)
+FOREIGN KEY	FK_PGET_LST_TCOD_DPS	No Action	Cascade	Enabled	Is_For_Replication	NO_AM
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_DPS (CODE)
+FOREIGN KEY	FK_PGET_LST_TCOD_DPSKIND	No Action	Cascade	Enabled	Is_For_Replication	NAHVA
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_DPSKIND (CODE)
+FOREIGN KEY	FK_PGET_LST_TDETA_HES	No Action	Cascade	Enabled	Is_For_Replication	FHES_K, FHES_M, FHES_T
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TDETA_HES (N_KOL, NUMBER, TNUMBER)
+PRIMARY KEY (clustered)	PK_PGET_LST	(n/a)	(n/a)	(n/a)	(n/a)	IDH

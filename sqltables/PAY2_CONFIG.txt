@@ -1,0 +1,57 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PAY2_CONFIG	dbo	user table	04/05/2026 09:00:50 ب.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+CFG_KEY	nvarchar	no	160	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+CFG_VALUE	nvarchar	no	1000	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+CFG_OPTIONS	nvarchar	no	1000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CFG_DEFAULT	nvarchar	no	1000	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+CFG_SECTION	nvarchar	no	120	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+LABEL_FA	nvarchar	no	400	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+DESC_FA	nvarchar	no	2000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+OPT_LABELS	nvarchar	no	1000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DATA_TYPE	nvarchar	no	40	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+ACCESS_LEVEL	tinyint	no	1	3    	0    	no	(n/a)	(n/a)	
+CHANGED_AT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+CHANGED_BY	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CHANGE_NOTE	nvarchar	no	600	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_PAY2_CONFIG	clustered, unique, primary key located on PRIMARY	CFG_KEY
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PAY2_CONFIG__CRT__62539DB4	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column ACCESS_LEVEL	DF_CFG_AL	(n/a)	(n/a)	(n/a)	(n/a)	((2))
+DEFAULT on column DATA_TYPE	DF_CFG_DT	(n/a)	(n/a)	(n/a)	(n/a)	('TEXT')
+PRIMARY KEY (clustered)	PK_PAY2_CONFIG	(n/a)	(n/a)	(n/a)	(n/a)	CFG_KEY

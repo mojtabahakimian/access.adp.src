@@ -1,0 +1,72 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+CROSSINVO	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+NUMBER	float	no	8	53   		no	(n/a)	(n/a)	
+TAG	float	no	8	53   		no	(n/a)	(n/a)	
+ANBAR	int	no	4	10   	0    	no	(n/a)	(n/a)	
+RADIF	float	no	8	53   		yes	(n/a)	(n/a)	
+CODE	nvarchar	no	30	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+MEGH	float	no	8	53   		no	(n/a)	(n/a)	
+MEGHk	float	no	8	53   		no	(n/a)	(n/a)	
+MEGH_MAR	float	no	8	53   		no	(n/a)	(n/a)	
+MANDAH	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MABL	float	no	8	53   		no	(n/a)	(n/a)	
+MABL_K	float	no	8	53   		no	(n/a)	(n/a)	
+FROM_A	bit	no	1	     	     	no	(n/a)	(n/a)	
+N_RASID	float	no	8	53   		yes	(n/a)	(n/a)	
+MEGH_R	float	no	8	53   		no	(n/a)	(n/a)	
+RADAH	float	no	8	53   		yes	(n/a)	(n/a)	
+SANAD_NO	float	no	8	53   		yes	(n/a)	(n/a)	
+CUST_NO	float	no	8	53   		yes	(n/a)	(n/a)	
+ANBARF	float	no	8	53   		yes	(n/a)	(n/a)	
+VAHED_K	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+N_KOL	float	no	8	53   		yes	(n/a)	(n/a)	
+N_MOIN	float	no	8	53   		yes	(n/a)	(n/a)	
+N_TAF	float	no	8	53   		yes	(n/a)	(n/a)	
+AVRAGE	float	no	8	53   		yes	(n/a)	(n/a)	
+ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+USER_NAME	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CUST_KIND	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SHIFT	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+DEPATMAN	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+DATE_N	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+IDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDD	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_CROSSINVO	clustered, unique, primary key located on PRIMARY	IDD
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__CROSSINVO__CRT__196BA376	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_CROSSINVO	(n/a)	(n/a)	(n/a)	(n/a)	IDD

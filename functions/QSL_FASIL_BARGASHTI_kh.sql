@@ -1,0 +1,17 @@
+﻿create FUNCTION [dbo].[QSL_FASIL_BARGASHTI_kh]
+   (@DT1 bigint,
+   @DT2 bigint)
+   RETURNS TABLE
+   AS
+   RETURN ( SELECT     dbo.HEAD_LST.CUST_NO, SUM(dbo.INVO_LST.MABL * dbo.INVO_LST.MEGH_MAR) AS KHAREEDbr
+  FROM         dbo.HEAD_LST INNER JOIN
+                        dbo.INVO_LST ON dbo.HEAD_LST.NUMBER1 = dbo.INVO_LST.NUMBER AND dbo.HEAD_LST.TAG - 2 = dbo.INVO_LST.TAG
+  WHERE    (dbo.HEAD_LST.DATE_N BETWEEN @DT1 AND @DT2) AND (dbo.HEAD_LST.TAG = 3)
+  GROUP BY dbo.HEAD_LST.CUST_NO
+   UNION
+   SELECT     dbo.HEAD_LST.CUST_NO, SUM(dbo.INVO_LST.MABL_K) AS KHAREEDbr
+   FROM         dbo.HEAD_LST INNER JOIN
+                         dbo.INVO_LST ON dbo.HEAD_LST.NUMBER = dbo.INVO_LST.NUMBER AND dbo.HEAD_LST.TAG = dbo.INVO_LST.TAG
+   WHERE     (dbo.HEAD_LST.DATE_N BETWEEN @DT1 AND @DT2) AND (dbo.HEAD_LST.TAG = 26)
+   GROUP BY dbo.HEAD_LST.CUST_NO 
+   )

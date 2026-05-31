@@ -1,0 +1,55 @@
+﻿Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+
+Private Sub Form_Current()
+                   On Error Resume Next
+  If IsNull(Me.OpenArgs) Then
+       DoCmd.RunCommand (acCmdSelectRecord)
+  End If
+End Sub
+Private Sub Form_Error(DataErr As Integer, Response As Integer)
+                      On Error Resume Next: errdetector (DataErr)
+   Response = acDataErrContinue: DoCmd.RunMacro "stop"
+End Sub
+Private Sub Form_KeyPress(KeyAscii As Integer)
+                     On Error Resume Next
+  If KeyAscii = 13 Then
+     If Me.OpenArgs = 1 Or Me.OpenArgs = 2 Then
+       If Me.SADER = 0 Then
+        Forms![HEAD_LST_FROOSH1]![NUMBER] = Me.NUMBER
+        Forms![HEAD_LST_FROOSH2]![NUMBER] = Me.NUMBER
+        Forms![HEAD_LST_FROOSH1]![CUST_NO] = Me.CUST_NO
+        Forms![HEAD_LST_FROOSH2]![CUST_NO] = Me.CUST_NO
+      End If
+    Else
+        Forms![HEAD_LST_FROOSH2_SADER]![NUMBER] = Me.NUMBER
+        Forms![HEAD_LST_FROOSH2_SADER]![NUMBER] = Me.NUMBER
+        Forms![HEAD_LST_FROOSH2_SADER]![CUST_NO] = Me.CUST_NO
+        Forms![HEAD_LST_FROOSH2_SADER]![CUST_NO] = Me.CUST_NO
+        Forms![HEAD_LST_FROOSH2_SADER]![MOLAH] = Me.SHARAYET
+    End If
+  End If
+  DoCmd.Close acForm, Me.NAME
+End Sub
+
+Private Sub Form_Open(CANCEL As Integer)
+  If Me.OpenArgs = 1 Then
+    Me.RecordSource = "SELECT     HEAD_LST.NUMBER, HEAD_LST.TAG, HEAD_LST.DATE_N, HEAD_LST.TAH, HEAD_LST.CUST_NO, CUST_HESAB.NAME, HEAD_LST.FNUMCO,  HEAD_LST.TAMIR, HEAD_LST.SHARAYET, HEAD_LST.SADER, HEAD_LST.DEPATMAN, HEAD_LST.USER_NAME   FROM         HEAD_LST INNER JOIN   CUST_HESAB ON HEAD_LST.CUST_NO = CUST_HESAB.hes WHERE     (HEAD_LST.TAG = 2) AND (NOT (HEAD_LST.NUMBER IN   (SELECT     HEAD_LST.NUMBER FROM HEAD_LST  WHERE     (((HEAD_LST.TAG) = 13))))) AND (HEAD_LST.TAMIR = - 1) AND (HEAD_LST.SADER =  0) ORDER BY HEAD_LST.NUMBER"
+  End If
+  If Me.OpenArgs = 2 Then
+    Me.RecordSource = "SELECT     HEAD_LST.NUMBER, HEAD_LST.TAG, HEAD_LST.DATE_N, HEAD_LST.TAH, HEAD_LST.CUST_NO, CUST_HESAB.NAME, HEAD_LST.FNUMCO,  HEAD_LST.TAMIR, HEAD_LST.SHARAYET, HEAD_LST.SADER , HEAD_LST.DEPATMAN, HEAD_LST.USER_NAME  FROM         HEAD_LST INNER JOIN   CUST_HESAB ON HEAD_LST.CUST_NO = CUST_HESAB.hes WHERE     (HEAD_LST.TAG = 2) AND (NOT (HEAD_LST.NUMBER IN   (SELECT     HEAD_LST.NUMBER FROM HEAD_LST  WHERE     (((HEAD_LST.TAG) = 13)))))  ORDER BY HEAD_LST.NUMBER"
+  End If
+  If Me.OpenArgs = 3 Then
+    Me.RecordSource = "SELECT     HEAD_LST.NUMBER, HEAD_LST.TAG, HEAD_LST.DATE_N, HEAD_LST.TAH, HEAD_LST.CUST_NO, CUST_HESAB.NAME, HEAD_LST.FNUMCO,  HEAD_LST.TAMIR, HEAD_LST.SHARAYET, HEAD_LST.SADER , HEAD_LST.DEPATMAN, HEAD_LST.USER_NAME  FROM         HEAD_LST INNER JOIN   CUST_HESAB ON HEAD_LST.CUST_NO = CUST_HESAB.hes WHERE     (HEAD_LST.TAG = 2) AND (NOT (HEAD_LST.NUMBER IN   (SELECT     HEAD_LST.NUMBER FROM HEAD_LST  WHERE     (((HEAD_LST.TAG) = 13))))) AND (HEAD_LST.TAMIR = - 1) AND (HEAD_LST.SADER =  1) ORDER BY HEAD_LST.NUMBER"
+  End If
+  If Me.OpenArgs = 4 Then
+    Me.RecordSource = "SELECT     HEAD_LST.NUMBER, HEAD_LST.TAG, HEAD_LST.DATE_N, HEAD_LST.TAH, HEAD_LST.CUST_NO, CUST_HESAB.NAME, HEAD_LST.FNUMCO,  HEAD_LST.TAMIR, HEAD_LST.SHARAYET, HEAD_LST.SADER , HEAD_LST.DEPATMAN, HEAD_LST.USER_NAME  FROM         HEAD_LST INNER JOIN   CUST_HESAB ON HEAD_LST.CUST_NO = CUST_HESAB.hes WHERE     (HEAD_LST.TAG = 2) AND (NOT (HEAD_LST.NUMBER IN   (SELECT     HEAD_LST.NUMBER FROM HEAD_LST  WHERE     (((HEAD_LST.TAG) = 13))))) AND (HEAD_LST.SADER =  1) ORDER BY HEAD_LST.NUMBER"
+  End If
+End Sub
+
+Private Sub NUMBER_DblClick(CANCEL As Integer)
+   DoCmd.OpenForm "HEAD_LST_HAVL", , , "NUMBER = " & Me.NUMBER, , , 1
+End Sub

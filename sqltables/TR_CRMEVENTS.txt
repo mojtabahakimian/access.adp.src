@@ -1,0 +1,63 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+TR_CRMEVENTS	dbo	user table	03/05/2026 01:57:02 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+idde	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+COMPANY_NAME	nvarchar	no	400	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+INFO_DATE	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+INFO_TIME	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SALER	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+BUYER	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+COMMENT	nvarchar	no	8000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+NEXT_DATE	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+NEXT_TIME	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+STATUS	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+pic	image	no	16	     	     	yes	(n/a)	(n/a)	
+idc	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+PAYAM	nvarchar	no	2000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+miting	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+USERID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CDATETI	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+UP_DATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+UP_TIME	float	no	8	53   		no	(n/a)	(n/a)	
+UP_USER_NAME	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PC_NAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IPADD	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TRIDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+TRIDD	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__TR_CRMEV__9FFE4EA4B009AF9C	clustered, unique, primary key located on PRIMARY	TRIDD
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (clustered)	PK__TR_CRMEV__9FFE4EA4B009AF9C	(n/a)	(n/a)	(n/a)	(n/a)	TRIDD

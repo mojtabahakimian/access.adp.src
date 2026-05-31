@@ -1,0 +1,334 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+SAZMAN	dbo	user table	28/02/2026 08:21:20 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+UNIVERSITY_CO	float	no	8	53   		no	(n/a)	(n/a)	
+NAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CITY	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MANAGER	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MOAVEN	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ZIHESAB	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+AMINAMVAL	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+YEA	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+SANAD	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+GHAYM	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+KALA	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+PERSON	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+DIG	float	no	8	53   		yes	(n/a)	(n/a)	
+WAR	float	no	8	53   		yes	(n/a)	(n/a)	
+LST	float	no	8	53   		yes	(n/a)	(n/a)	
+TFTPAGE	float	no	8	53   		yes	(n/a)	(n/a)	
+TFSAZMAN	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TFADDRESS	nvarchar	no	300	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TFTEL	nvarchar	no	120	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TFCODE_E	nvarchar	no	26	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+WIDTH_D	nvarchar	no	400	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+HIGH_D	nvarchar	no	800	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CPI	float	no	8	53   		yes	(n/a)	(n/a)	
+SANDOGH	float	no	8	53   		yes	(n/a)	(n/a)	
+BANKHA	float	no	8	53   		yes	(n/a)	(n/a)	
+BESTANKAR	float	no	8	53   		yes	(n/a)	(n/a)	
+BEDEHKAR	float	no	8	53   		yes	(n/a)	(n/a)	
+KHARID	float	no	8	53   		yes	(n/a)	(n/a)	
+MKHARID	float	no	8	53   		yes	(n/a)	(n/a)	
+TKHARID	float	no	8	53   		yes	(n/a)	(n/a)	
+HKHARID	float	no	8	53   		yes	(n/a)	(n/a)	
+FROSH	float	no	8	53   		yes	(n/a)	(n/a)	
+MFROSH	float	no	8	53   		yes	(n/a)	(n/a)	
+TFROSH	float	no	8	53   		yes	(n/a)	(n/a)	
+HFROSH	float	no	8	53   		yes	(n/a)	(n/a)	
+MOGODIA	float	no	8	53   		yes	(n/a)	(n/a)	
+MOGODIP	float	no	8	53   		yes	(n/a)	(n/a)	
+DARAM	float	no	8	53   		yes	(n/a)	(n/a)	
+HDARAM	float	no	8	53   		yes	(n/a)	(n/a)	
+HKOL	float	no	8	53   		yes	(n/a)	(n/a)	
+ADA	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+APA	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ADV	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+HAVALAH	float	no	8	53   		yes	(n/a)	(n/a)	
+CTRL_TS	float	no	8	53   		yes	(n/a)	(n/a)	
+F_ANBARF	float	no	8	53   		yes	(n/a)	(n/a)	
+GH_PK	float	no	8	53   		yes	(n/a)	(n/a)	
+L_NUMBER	float	no	8	53   		yes	(n/a)	(n/a)	
+SF_G	float	no	8	53   		yes	(n/a)	(n/a)	
+TAR_KM	float	no	8	53   		yes	(n/a)	(n/a)	
+BACKPATH	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TKHF	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+HAZ_TOL	float	no	8	53   		yes	(n/a)	(n/a)	
+PJHAZ_TOL1	float	no	8	53   		yes	(n/a)	(n/a)	
+PHAZ_TOL	float	no	8	53   		yes	(n/a)	(n/a)	
+GHEYMAT	float	no	8	53   		yes	(n/a)	(n/a)	
+PPDAST	float	no	8	53   		yes	(n/a)	(n/a)	
+PPSAR	float	no	8	53   		yes	(n/a)	(n/a)	
+AMALKARD	float	no	8	53   		yes	(n/a)	(n/a)	
+PERSONEL	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PERVAM	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CONKAL	float	no	8	53   		yes	(n/a)	(n/a)	
+EMZA	image	no	16	     	     	yes	(n/a)	(n/a)	
+HNAH	bit	no	1	     	     	no	(n/a)	(n/a)	
+HEZA	bit	no	1	     	     	no	(n/a)	(n/a)	
+HPAD	bit	no	1	     	     	no	(n/a)	(n/a)	
+HOLA	bit	no	1	     	     	no	(n/a)	(n/a)	
+HKHA	bit	no	1	     	     	no	(n/a)	(n/a)	
+HJAZ	bit	no	1	     	     	no	(n/a)	(n/a)	
+HRAN	bit	no	1	     	     	no	(n/a)	(n/a)	
+HSAY	bit	no	1	     	     	no	(n/a)	(n/a)	
+HCON	bit	no	1	     	     	no	(n/a)	(n/a)	
+HSHI	bit	no	1	     	     	no	(n/a)	(n/a)	
+HAZEDAR	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+EDABIM	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+HAZBIM	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+BESHO	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+BEDMOS	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PARDAKH	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+HAZMALI	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SAGHFH	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+MAND	bit	no	1	     	     	no	(n/a)	(n/a)	
+MOJU	bit	no	1	     	     	no	(n/a)	(n/a)	
+SA_HOGH	bit	no	1	     	     	no	(n/a)	(n/a)	
+SA_40EZ	bit	no	1	     	     	no	(n/a)	(n/a)	
+SA_EZAF	bit	no	1	     	     	no	(n/a)	(n/a)	
+SA_PADA	bit	no	1	     	     	no	(n/a)	(n/a)	
+SA_HOLA	bit	no	1	     	     	no	(n/a)	(n/a)	
+SA_KHAR	bit	no	1	     	     	no	(n/a)	(n/a)	
+SA_NAHA	bit	no	1	     	     	no	(n/a)	(n/a)	
+SA_JAZB	bit	no	1	     	     	no	(n/a)	(n/a)	
+SA_RAND	bit	no	1	     	     	no	(n/a)	(n/a)	
+SA_COND	bit	no	1	     	     	no	(n/a)	(n/a)	
+SA_SAYE	bit	no	1	     	     	no	(n/a)	(n/a)	
+SA_23BI	bit	no	1	     	     	no	(n/a)	(n/a)	
+HAZTOLID	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+HAZFROOSH	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+HAZKHADAMAT	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PISHDAR	float	no	8	53   		yes	(n/a)	(n/a)	
+DEFANB	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+DEFTKH	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+ECONM	bit	no	1	     	     	yes	(n/a)	(n/a)	
+FRUP	bit	no	1	     	     	yes	(n/a)	(n/a)	
+UPDDATE	bit	no	1	     	     	yes	(n/a)	(n/a)	
+FINALS	bit	no	1	     	     	yes	(n/a)	(n/a)	
+PSANDHES	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SANAVP	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+BON	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ISO_FROOSH	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ISO_KHAREED	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ISO_MAVAD	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ISO_TOLID	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ISO_MAVADSAYER	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SANAT	bit	no	1	     	     	yes	(n/a)	(n/a)	
+CODEVIEW	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+PKHARID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SIGN	bit	no	1	     	     	yes	(n/a)	(n/a)	
+BARCOD	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SAGHF	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SERVERNAM	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TENDAR	bit	no	1	     	     	yes	(n/a)	(n/a)	
+LECOL1	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+LECOL2	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+LECOL3	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+LECOL4	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+LKCOL1	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+HESMBAA	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ECODE	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PCODE	nvarchar	no	20	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IYALAT	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MCODEM	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+HPOR	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SAGHF2	bit	no	1	     	     	yes	(n/a)	(n/a)	
+OPTIONSS	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CTL_DT	bit	no	1	     	     	yes	(n/a)	(n/a)	
+LOCKFAP	bit	no	1	     	     	yes	(n/a)	(n/a)	
+LOCKFSI	bit	no	1	     	     	yes	(n/a)	(n/a)	
+TRANSF	bit	no	1	     	     	yes	(n/a)	(n/a)	
+OKF	bit	no	1	     	     	yes	(n/a)	(n/a)	
+ARSESH	tinyint	no	1	3    	0    	yes	(n/a)	(n/a)	
+RMOG	bit	no	1	     	     	yes	(n/a)	(n/a)	
+APV	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+HOTCOD	nvarchar	no	16	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+STFR	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+STKH	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+STHFR	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+STHKH	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+STENT	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+STKHS	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+STKHH	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+STTOL	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+STFRB	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+STBKH	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+STMO	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+STKHA	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SNDKH	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SMS_USERNAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SMS_PASSWORD	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SMS_LIBKEY	nvarchar	no	300	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SMS_TSMSHOST	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SMS_ProxyUserName	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SMS_ProxyPassword	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SMS_ProxyServer	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SMS_ProxyPort	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SMS_FirewallUserName	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SMS_FirewallPassword	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SMS_FirewallHost	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SMS_FirewallPort	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SMS_FirewallType	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DSMS	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SMS_OWNER	nvarchar	no	400	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PRMFR	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SMSACT	bit	no	1	     	     	yes	(n/a)	(n/a)	
+HESDESK	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ISO_DTOLID	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SERFACB	bit	no	1	     	     	yes	(n/a)	(n/a)	
+HBON	bit	no	1	     	     	yes	(n/a)	(n/a)	
+pishpross	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+version	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+hesnaghd	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IT1	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IT2	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IT3	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IT4	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IT5	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IT6	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IT7	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IT8	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IT9	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IS1	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IS2	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IS3	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IS4	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IS5	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IS6	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IS7	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IS8	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IS9	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IS10	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IS11	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IS12	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IS13	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IS14	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IS15	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IS16	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SSMTRTAKM	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SSMTRTAGM	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SSMSNDAUTO	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SSMTBMON	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SSMDARSAD	real	no	4	24   		yes	(n/a)	(n/a)	
+HDARKASRTAKHF	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+PUBLICKEY	nvarchar	no	8000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PRIVIATEKEY	nvarchar	no	8000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MEMORYID	nvarchar	no	12	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Whether	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+MEMORYIDsand	nvarchar	no	12	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+Dcertificate	nvarchar	no	8000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+HTAHOL	bit	no	1	     	     	yes	(n/a)	(n/a)	
+SMSTYPE	nvarchar	no	510	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MOADINA_SCNUM	decimal	no	9	18   	0    	no	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+aaaaaSAZMAN_PK	nonclustered, unique, primary key located on PRIMARY	UNIVERSITY_CO
+HKHARID	nonclustered located on PRIMARY	HKHARID
+KHARID	nonclustered located on PRIMARY	KHARID
+MKHARID	nonclustered located on PRIMARY	MKHARID
+TKHARID	nonclustered located on PRIMARY	TKHARID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaSAZMAN_PK	(n/a)	(n/a)	(n/a)	(n/a)	UNIVERSITY_CO
+DEFAULT on column BARCOD	DF__SAZMAN__BARCOD__59D10CA5	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BEDEHKAR	DF__SAZMAN__BEDEHKAR__75035A77	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BESTANKAR	DF__SAZMAN__BESTANKA__740F363E	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CODEVIEW	DF__SAZMAN__CODEVIEW__605E0EA3	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column CRT	DF__SAZMAN__CRT__1C481021	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column DARAM	DF__SAZMAN__DARAM__7F80E8EA	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FROSH	DF__SAZMAN__FROSH__79C80F94	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column GHEYMAT	DF__SAZMAN__GHEYMAT__090A5324	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column HAVALAH	DF__SAZMAN__HAVALAH__0539C240	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column HAZ_TOL	DF__SAZMAN__HAZ_TOL__07220AB2	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column HBON	DF__SAZMAN__HBON__1FD8A9E3	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column HCON	DF__SAZMAN__HCON__1387E197	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column HDARAM	DF__SAZMAN__HDARAM__00750D23	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column HEZA	DF__SAZMAN__HEZA__0CDAE408	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column HFROSH	DF__SAZMAN__HFROSH__7CA47C3F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column HJAZ	DF__SAZMAN__HJAZ__10AB74EC	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column HKHA	DF__SAZMAN__HKHA__0FB750B3	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column HKHARID	DF__SAZMAN__HKHARID__78D3EB5B	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column HKOL	DF__SAZMAN__HKOL__0169315C	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column HNAH	DF__SAZMAN__HNAH__0BE6BFCF	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column HOLA	DF__SAZMAN__HOLA__0EC32C7A	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column HPAD	DF__SAZMAN__HPAD__0DCF0841	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column HRAN	DF__SAZMAN__HRAN__119F9925	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column HSAY	DF__SAZMAN__HSAY__1293BD5E	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column HTAHOL	DF__SAZMAN__HTAHOL__0BFC99BF	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column KHARID	DF__SAZMAN__KHARID__75F77EB0	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MAND	DF__SAZMAN__MAND__15702A09	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column MFROSH	DF__SAZMAN__MFROSH__7ABC33CD	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MKHARID	DF__SAZMAN__MKHARID__76EBA2E9	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MOGODIA	DF__SAZMAN__MOGODIA__7D98A078	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MOGODIP	DF__SAZMAN__MOGODIP__7E8CC4B1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MOJU	DF__SAZMAN__MOJU__16644E42	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column PHAZ_TOL	DF__SAZMAN__PHAZ_TOL__08162EEB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column PPDAST	DF__SAZMAN__PPDAST__09FE775D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column PPSAR	DF__SAZMAN__PPSAR__0AF29B96	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SAGHF	DF__SAZMAN__SAGHF__6A07746E	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SAGHFH	DF__SAZMAN__SAGHFH__147C05D0	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SANDOGH	DF__SAZMAN__SANDOGH__7226EDCC	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SERVERNAM	DF__sazman__SERVERNA__615D1FD4	(n/a)	(n/a)	(n/a)	(n/a)	('SERVER')
+DEFAULT on column SIGN	DF__SAZMAN__SIGN__4D163005	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SMSACT	DF__SAZMAN__SMSACT__1EE485AA	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SMSTYPE	DF__SAZMAN__SMSTYPE__6557CDEA	(n/a)	(n/a)	(n/a)	(n/a)	('TSMS')
+DEFAULT on column TENDAR	DF__SAZMAN__TENDAR__1DF06171	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column TFROSH	DF__SAZMAN__TFROSH__7BB05806	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column TKHARID	DF__SAZMAN__TKHARID__77DFC722	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column TKHF	DF__SAZMAN__TKHF__062DE679	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column UNIVERSITY_CO	DF__SAZMAN__UNIVERSI__703EA55A	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column YEA	DF__SAZMAN__YEA__7132C993	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DEFANB	DF_SAZMAN_DEFANB	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column DEFTKH	DF_SAZMAN_DEFTKH	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column ECONM	DF_SAZMAN_ECON	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column FRUP	DF_SAZMAN_FRUP	(n/a)	(n/a)	(n/a)	(n/a)	((-1))
+DEFAULT on column HSHI	DF_SAZMAN_HSHI	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column MOADINA_SCNUM	DF_SAZMAN_MOADINA_SCNUM	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column PISHDAR	DF_SAZMAN_MOGODIP1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column PJHAZ_TOL1	DF_SAZMAN_PHAZ_TOL1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SA_23BI	DF_SAZMAN_SA_23BI	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SA_COND	DF_SAZMAN_SA_COND	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SA_40EZ	DF_SAZMAN_SA_EAZF	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SA_EZAF	DF_SAZMAN_SA_EZAF	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SA_HOGH	DF_SAZMAN_SA_HOGH	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SA_HOLA	DF_SAZMAN_SA_HOLA	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SA_JAZB	DF_SAZMAN_SA_JAZB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SA_KHAR	DF_SAZMAN_SA_KHAR	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SA_NAHA	DF_SAZMAN_SA_NAHA	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SA_PADA	DF_SAZMAN_SA_PADA	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SA_RAND	DF_SAZMAN_SA_RAND	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SA_SAYE	DF_SAZMAN_SA_SAYE	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column UPDDATE	DF_SAZMAN_UPDDATE	(n/a)	(n/a)	(n/a)	(n/a)	((-1))

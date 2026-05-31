@@ -1,0 +1,59 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+TR_EVENTS	dbo	user table	03/05/2026 01:57:02 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+IDNUM	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+IDD	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+EVENTS	nvarchar	no	-1	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+STDATE	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+STTIME	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+USERNAME	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+COMPANY	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SUMTIME	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+pic	image	no	16	     	     	yes	(n/a)	(n/a)	
+skid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+num	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+tg	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+UP_DATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+UP_TIME	float	no	8	53   		no	(n/a)	(n/a)	
+UP_USER_NAME	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PC_NAME	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IPADD	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TRIDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+TRIDD	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK__TR_EVENT__9FFE4EA463D4BBDC	clustered, unique, primary key located on PRIMARY	TRIDD
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (clustered)	PK__TR_EVENT__9FFE4EA463D4BBDC	(n/a)	(n/a)	(n/a)	(n/a)	TRIDD

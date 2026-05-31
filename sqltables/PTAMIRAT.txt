@@ -1,0 +1,84 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PTAMIRAT	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+PIDT	int	no	4	10   	0    	no	(n/a)	(n/a)	
+PSERIAL	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PINDATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+PINTIME	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+PKIND	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+MODEL	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+GRENDDATE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+POWNER	nvarchar	no	80	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+POWNERNAM	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+GRCOMPA	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IYALAT	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CITY	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PINPKIND	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+USER_NAME	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PTAHVKIND	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+EYBEZHAR	nvarchar	no	1000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+LAVAZEM	nvarchar	no	400	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IDIATEK	nvarchar	no	400	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ADRESS	nvarchar	no	400	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TAMIRKAR1	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TAMIRKAR2	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TAHV_DATE	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+TAHV_TIME	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+PAYAM	nvarchar	no	3000	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SGN1	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN2	bit	no	1	     	     	no	(n/a)	(n/a)	
+SGN3	bit	no	1	     	     	no	(n/a)	(n/a)	
+sgn1usid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+sgn2usid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+sgn3usid	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+IX_PTAMIRAT	nonclustered located on PRIMARY	PSERIAL
+PK__PTAMIRAT__04F074D4	clustered, unique, primary key located on PRIMARY	PIDT
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PTAMIRAT__CRT__159B1292	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column SGN1	DF__PTAMIRAT__SGN1__4AADF94F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN2	DF__PTAMIRAT__SGN2__4BA21D88	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SGN3	DF__PTAMIRAT__SGN3__4C9641C1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_PTAMIRAT_PKINDCODING	Cascade	Cascade	Enabled	Is_For_Replication	PKIND
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PKINDCODING (PKINDCO)
+PRIMARY KEY (clustered)	PK__PTAMIRAT__04F074D4	(n/a)	(n/a)	(n/a)	(n/a)	PIDT
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.PTVAZ: FK_PTVAZ_PTAMIRAT

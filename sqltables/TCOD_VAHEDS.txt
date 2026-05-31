@@ -1,0 +1,56 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+TCOD_VAHEDS	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+CODE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+NAMES	nvarchar	no	64	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+aaaaaTCOD_VAHEDS_PK	nonclustered, unique, primary key located on PRIMARY	CODE
+BAR_COD	nonclustered located on PRIMARY	CODE
+NAMES	nonclustered, unique located on PRIMARY	NAMES
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaTCOD_VAHEDS_PK	(n/a)	(n/a)	(n/a)	(n/a)	CODE
+DEFAULT on column CRT	DF__TCOD_VAHEDS__CRT__630F92C5	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.DTL_MANF: DTL_MANF_FK00
+YAZDSEPAR1405.dbo.INVO_LST: FK_INVO_LST_TCOD_VAHEDS
+YAZDSEPAR1405.dbo.INVO_LST_TMP_WPF: FK_INVO_LST_TMP_WPF_TCOD_VAHEDS
+YAZDSEPAR1405.dbo.MODULE_D: FK_MODULE_D_TCOD_VAHEDS
+YAZDSEPAR1405.dbo.STUF_DEF: FK_STUF_DEF_TCOD_VAHEDS

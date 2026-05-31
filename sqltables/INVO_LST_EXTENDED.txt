@@ -1,0 +1,56 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+INVO_LST_EXTENDED	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+mu	nvarchar	no	16	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+nw	decimal	no	9	16   	3    	yes	(n/a)	(n/a)	
+cfee	decimal	no	9	15   	4    	yes	(n/a)	(n/a)	
+cut	nvarchar	no	6	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+exr	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+ssrv	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+sscv	decimal	no	9	15   	4    	yes	(n/a)	(n/a)	
+vra	decimal	no	5	3    	2    	no	(n/a)	(n/a)	
+odt	nvarchar	no	510	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+odr	decimal	no	5	3    	2    	yes	(n/a)	(n/a)	
+odam	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+olt	nvarchar	no	510	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+olr	decimal	no	5	3    	2    	yes	(n/a)	(n/a)	
+olam	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+consfee	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+spro	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+bros	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+tcpbs	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+cop	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+vop	decimal	no	9	18   	0    	yes	(n/a)	(n/a)	
+bsrn	nvarchar	no	24	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__INVO_LST_EX__CRT__49FE9042	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())

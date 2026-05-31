@@ -1,0 +1,47 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+tbl_BarCodes	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+Barcode	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+NAM	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CODE	nvarchar	no	30	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+mab	float	no	8	53   		yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_tbl_BarCodes	clustered, unique, primary key located on PRIMARY	ID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__tbl_BarCode__CRT__6265DA27	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_tbl_BarCodes	(n/a)	(n/a)	(n/a)	(n/a)	ID

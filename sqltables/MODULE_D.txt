@@ -1,0 +1,57 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+MODULE_D	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+CODE	nvarchar	no	30	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+VAHED	int	no	4	10   	0    	no	(n/a)	(n/a)	
+RADIF	float	no	8	53   		yes	(n/a)	(n/a)	
+NESBAT	float	no	8	53   		no	(n/a)	(n/a)	
+MABL_F	float	no	8	53   		yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ID	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{9A1BD9F5-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	CODE
+aaaaaMODULE_D_PK	nonclustered, unique, primary key located on PRIMARY	CODE, VAHED
+CODE_I	nonclustered located on PRIMARY	CODE
+CODE_v	nonclustered located on PRIMARY	CODE, VAHED
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaMODULE_D_PK	(n/a)	(n/a)	(n/a)	(n/a)	CODE, VAHED
+DEFAULT on column CRT	DF__MODULE_D__CRT__4C613797	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column MABL_F	DF__MODULE_D__MABL_F__33D4B598	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column NESBAT	DF__MODULE_D__NESBAT__32E0915F	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+FOREIGN KEY	FK_MODULE_D_TCOD_VAHEDS	No Action	Cascade	Enabled	Is_For_Replication	VAHED
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_VAHEDS (CODE)
+FOREIGN KEY	MODULE_D_FK00	Cascade	Cascade	Enabled	Is_For_Replication	CODE
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.STUF_DEF (CODE)

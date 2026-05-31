@@ -1,0 +1,6 @@
+﻿CREATE VIEW [dbo].[CHECK_BOK]
+AS
+SELECT     dbo.CHECK_BOOK.COD_HES, dbo.CHECK_BOOK.DATEDB, dbo.CHECK_BOOK.SER_FRM, dbo.CHECK_BOOK.SER_TO, dbo.CHECK_BOOK.KIND, 
+                      dbo.COD_HESAB.MOIN
+FROM         dbo.CHECK_BOOK INNER JOIN
+                      dbo.COD_HESAB ON dbo.CHECK_BOOK.COD_HES = dbo.COD_HESAB.CODE

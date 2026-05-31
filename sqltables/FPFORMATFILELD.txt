@@ -1,0 +1,66 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+FPFORMATFILELD	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+FPID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+FPFIELD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+FPTYPE	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+FPCAPTION	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FPVISIBLE	bit	no	1	     	     	yes	(n/a)	(n/a)	
+FPTOP	float	no	8	53   		yes	(n/a)	(n/a)	
+FPLEFT	float	no	8	53   		yes	(n/a)	(n/a)	
+FPWITH	float	no	8	53   		yes	(n/a)	(n/a)	
+FPHIGHT	float	no	8	53   		yes	(n/a)	(n/a)	
+FPFONT	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FPFONTSIZE	tinyint	no	1	3    	0    	yes	(n/a)	(n/a)	
+FPBOLD	bit	no	1	     	     	yes	(n/a)	(n/a)	
+FPITALIC	bit	no	1	     	     	yes	(n/a)	(n/a)	
+FPUNDELINE	bit	no	1	     	     	yes	(n/a)	(n/a)	
+FPFONTCOLOR	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+FPBKCOLOR	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+FPFORMAT	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FPTEXTALIGHN	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+KADR	bit	no	1	     	     	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_FPFORMATFILELD	clustered, unique, primary key located on PRIMARY	FPID, FPFIELD
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__FPFORMATFIL__CRT__6403B6FE	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column KADR	DF_FPFORMATFILELD_KADR	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	FK_FPFORMATFILELD_FPFILEDS	Cascade	Cascade	Enabled	Is_For_Replication	FPFIELD
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.FPFILEDS (FPFLDID)
+FOREIGN KEY	FK_FPFORMATFILELD_FPFORMAT	Cascade	Cascade	Enabled	Is_For_Replication	FPID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.FPFORMAT (FPID)
+PRIMARY KEY (clustered)	PK_FPFORMATFILELD	(n/a)	(n/a)	(n/a)	(n/a)	FPID, FPFIELD

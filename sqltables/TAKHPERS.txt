@@ -1,0 +1,62 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+TAKHPERS	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+TAKH_COD	nvarchar	no	30	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+CUST_CO	int	no	4	10   	0    	no	(n/a)	(n/a)	
+TAFPER	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+PRICE_M	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+PERS	float	no	8	53   		yes	(n/a)	(n/a)	
+BLNS	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+PUT	bit	no	1	     	     	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ID	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+aaaaaTAKHPERS_PK	nonclustered, unique, primary key located on PRIMARY	TAKH_COD, CUST_CO
+CUSTKINDTAKHPERS	nonclustered located on PRIMARY	CUST_CO
+STUF_DEFTAKHPERS	nonclustered located on PRIMARY	TAKH_COD
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaTAKHPERS_PK	(n/a)	(n/a)	(n/a)	(n/a)	TAKH_COD, CUST_CO
+CHECK on column TAFPER	CK TAKHPERS TAFPER	(n/a)	(n/a)	Enabled	Is_For_Replication	([TAFPER]<(101))
+DEFAULT on column BLNS	DF__TAKHPERS__BLNS__0C26B6F1	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CRT	DF__TAKHPERS__CRT__19A0ADA0	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column PERS	DF__TAKHPERS__PERS__0B3292B8	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column PRICE_M	DF__TAKHPERS__PRICE___0A3E6E7F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column PUT	DF__TAKHPERS__PUT__0D1ADB2A	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column TAFPER	DF__TAKHPERS__TAFPER__41B8C09B	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	TAKHPERS_FK00	No Action	Cascade	Enabled	Is_For_Replication	CUST_CO
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.CUSTKIND (CUST_COD)
+FOREIGN KEY	TAKHPERS_FK01	No Action	Cascade	Enabled	Is_For_Replication	TAKH_COD
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.STUF_DEF (CODE)

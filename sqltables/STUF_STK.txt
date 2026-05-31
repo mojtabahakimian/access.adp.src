@@ -1,0 +1,56 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+STUF_STK	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+CODE	nvarchar	no	30	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+ANBAR	int	no	4	10   	0    	no	(n/a)	(n/a)	
+MOGODI_A	float	no	8	53   		no	(n/a)	(n/a)	
+MOGODI	float	no	8	53   		no	(n/a)	(n/a)	
+MABL_M	float	no	8	53   		no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+aaaaaSTUF_STK_PK	nonclustered, unique, primary key located on PRIMARY	CODE, ANBAR
+ACODE_I	nonclustered located on PRIMARY	CODE, ANBAR
+CODE_I	nonclustered located on PRIMARY	CODE
+CODEA_I	nonclustered located on PRIMARY	CODE, ANBAR
+STUF_FSKSTUF_STK	nonclustered, unique located on PRIMARY	CODE, ANBAR
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaSTUF_STK_PK	(n/a)	(n/a)	(n/a)	(n/a)	CODE, ANBAR
+DEFAULT on column CRT	DF__STUF_STK__CRT__448B0BA5	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column MABL_M	DF__STUF_STK__MABL_M__4CF5691D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MOGODI_A	DF__STUF_STK__MOGODI__4B0D20AB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MOGODI	DF__STUF_STK__MOGODI__4C0144E4	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	STUF_STK_FK00	Cascade	Cascade	Enabled	Is_For_Replication	CODE, ANBAR
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.STUF_FSK (CODE, ANBAR)

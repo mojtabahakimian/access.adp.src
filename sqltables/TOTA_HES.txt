@@ -1,0 +1,68 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+TOTA_HES	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+NUMBER	int	no	4	10   	0    	no	(n/a)	(n/a)	
+NAME	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+NO_HES	float	no	8	53   		yes	(n/a)	(n/a)	
+M_D	float	no	8	53   		yes	(n/a)	(n/a)	
+GROUP	float	no	8	53   		yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+ID	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+{9A1BDA0C-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	NO_HES
+{9A1BDA0D-AA11-11D7-842A-CCEC3B3F45A3}	nonclustered located on PRIMARY	M_D
+aaaaaTOTA_HES_PK	nonclustered, unique, primary key located on PRIMARY	NUMBER
+NAME	nonclustered, unique located on PRIMARY	NAME
+TCOD_HESGROUPTOTA_HES	nonclustered located on PRIMARY	GROUP
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+PRIMARY KEY (non-clustered)	aaaaaTOTA_HES_PK	(n/a)	(n/a)	(n/a)	(n/a)	NUMBER
+DEFAULT on column CRT	DF__TOTA_HES__CRT__40BA7AC1	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column GROUP	DF__TOTA_HES__GROUP__0A338187	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column M_D	DF__TOTA_HES__M_D__093F5D4E	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column NO_HES	DF__TOTA_HES__NO_HES__084B3915	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column NUMBER	DF__TOTA_HES__NUMBER__075714DC	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+FOREIGN KEY	TOTA_HES_FK00	No Action	Cascade	Enabled	Is_For_Replication	NO_HES
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_HESKIND (CODE)
+FOREIGN KEY	TOTA_HES_FK01	No Action	Cascade	Enabled	Is_For_Replication	M_D
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_HESVAZ (CODE)
+FOREIGN KEY	TOTA_HES_FK02	No Action	Cascade	Enabled	Is_For_Replication	GROUP
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.TCOD_HESGROUP (CODE)
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.DETA_HES: DETA_HES_FK00

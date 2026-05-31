@@ -1,0 +1,72 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PLIST_MALIAT	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+WDATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+CODE	int	no	4	10   	0    	no	(n/a)	(n/a)	
+DAYS	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SALARY_DAYLY	int	no	4	10   	0    	no	(n/a)	(n/a)	
+HOME	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CHILDREN	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CONDITIONS	int	no	4	10   	0    	no	(n/a)	(n/a)	
+BON	int	no	4	10   	0    	no	(n/a)	(n/a)	
+JAZB	int	no	4	10   	0    	no	(n/a)	(n/a)	
+SAYER	int	no	4	10   	0    	no	(n/a)	(n/a)	
+EZAFAH	int	no	4	10   	0    	no	(n/a)	(n/a)	
+PADASH	int	no	4	10   	0    	no	(n/a)	(n/a)	
+MAZAYA	int	no	4	10   	0    	no	(n/a)	(n/a)	
+MAZAYAKOL	int	no	4	10   	0    	no	(n/a)	(n/a)	
+MALIAT	int	no	4	10   	0    	no	(n/a)	(n/a)	
+BIMAH	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_PLIST_MALIAT	clustered, unique, primary key located on PRIMARY	WDATE, CODE
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column BIMAH	DF__PLIST_MAL__BIMAH__3CDEFCE5	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CHILDREN	DF__PLIST_MAL__CHILD__335592AB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CONDITIONS	DF__PLIST_MAL__CONDI__3449B6E4	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column EZAFAH	DF__PLIST_MAL__EZAFA__381A47C8	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MALIAT	DF__PLIST_MAL__MALIA__3BEAD8AC	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MAZAYA	DF__PLIST_MAL__MAZAY__3A02903A	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column MAZAYAKOL	DF__PLIST_MAL__MAZAY__3AF6B473	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column PADASH	DF__PLIST_MAL__PADAS__390E6C01	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SALARY_DAYLY	DF__PLIST_MAL__SALAR__316D4A39	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SAYER	DF__PLIST_MAL__SAYER__3726238F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column DAYS	DF__PLIST_MALI__DAYS__30792600	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column HOME	DF__PLIST_MALI__HOME__32616E72	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column JAZB	DF__PLIST_MALI__JAZB__3631FF56	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BON	DF__PLIST_MALIA__BON__353DDB1D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CRT	DF__PLIST_MALIA__CRT__3E131840	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_PLIST_MALIAT	(n/a)	(n/a)	(n/a)	(n/a)	WDATE, CODE

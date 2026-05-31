@@ -1,0 +1,50 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+head_lst_log	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+UP_DATE	datetime	no	8	     	     	no	(n/a)	(n/a)	
+NUMBER	float	no	8	53   		no	(n/a)	(n/a)	
+TAGG	float	no	8	53   		no	(n/a)	(n/a)	
+RESERVED	float	no	8	53   		yes	(n/a)	(n/a)	
+UP_USER_NAME	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IDD	int	no	4	10   	0    	no	(n/a)	(n/a)	
+fieldname	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+UDATEF	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+IDD	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_head_lst_log	clustered, unique, primary key located on PRIMARY	IDD
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__head_lst_lo__CRT__14DBF883	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_head_lst_log	(n/a)	(n/a)	(n/a)	(n/a)	IDD

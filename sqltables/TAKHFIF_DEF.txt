@@ -1,0 +1,55 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+TAKHFIF_DEF	dbo	user table	28/02/2026 08:21:21 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+TID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+TSHARH	nvarchar	no	510	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TKIND	int	no	4	10   	0    	no	(n/a)	(n/a)	
+TCREA	datetime	no	8	     	     	no	(n/a)	(n/a)	
+USER_NAME	nvarchar	no	80	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_TAKHFIF_DEF	clustered, unique, primary key located on PRIMARY	TID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__TAKHFIF_DEF__CRT__6438C128	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_TAKHFIF_DEF	(n/a)	(n/a)	(n/a)	(n/a)	TID
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.CUSTKIND_TF: FK_CUSTKIND_TF_TAKHFIF_DEF
+YAZDSEPAR1405.dbo.TAKHFIF_APLAY: FK_TAKHFIF_APLAY_TAKHFIF_DEF
+YAZDSEPAR1405.dbo.TAKHFIF_DEF_DTL: FK_TAKHFIF_DEF_DTL_TAKHFIF_DEF

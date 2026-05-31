@@ -1,0 +1,70 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PAY2_RUN	dbo	user table	04/05/2026 09:00:51 ب.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+RUN_ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+PER_ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+RUN_NO	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+IS_LATEST	bit	no	1	     	     	no	(n/a)	(n/a)	
+CALC_AT	datetime	no	8	     	     	no	(n/a)	(n/a)	
+CALC_BY	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+STATUS	tinyint	no	1	3    	0    	no	(n/a)	(n/a)	
+PREV_RUN_ID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+DEED_ID_SAL	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+DEED_ID_INS	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+NOTES	nvarchar	no	600	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+RUN_ID	1	1	0
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_PAY2_RUN	clustered, unique, primary key located on PRIMARY	RUN_ID
+UQ_RUN_PERIOD_NO	nonclustered, unique, unique key located on PRIMARY	PER_ID, RUN_NO
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PAY2_RUN__CRT__737E29B6	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column CALC_AT	DF_RUN_CA	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column IS_LATEST	DF_RUN_IL	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column RUN_NO	DF_RUN_NO	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column STATUS	DF_RUN_ST	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+FOREIGN KEY	FK_RUN_PER	No Action	No Action	Enabled	Is_For_Replication	PER_ID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PAY2_PERIOD (PER_ID)
+FOREIGN KEY	FK_RUN_PREV	No Action	No Action	Enabled	Is_For_Replication	PREV_RUN_ID
+ 	 	 	 	 	 	REFERENCES YAZDSEPAR1405.dbo.PAY2_RUN (RUN_ID)
+PRIMARY KEY (clustered)	PK_PAY2_RUN	(n/a)	(n/a)	(n/a)	(n/a)	RUN_ID
+UNIQUE (non-clustered)	UQ_RUN_PERIOD_NO	(n/a)	(n/a)	(n/a)	(n/a)	PER_ID, RUN_NO
+
+
+-- sp_help Recordset 8
+
+Table is referenced by foreign key	
+YAZDSEPAR1405.dbo.PAY2_RUN: FK_RUN_PREV
+YAZDSEPAR1405.dbo.PAY2_RUN_LINE: FK_RL_RUN

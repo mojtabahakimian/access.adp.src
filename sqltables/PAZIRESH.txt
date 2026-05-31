@@ -1,0 +1,80 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+PAZIRESH	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+ID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+PNAME	nvarchar	no	100	     	     	no	(n/a)	(n/a)	Arabic_CI_AS
+PFAMILY	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+FATHER	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+KNOW	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+UNICODE	nvarchar	no	40	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MSODUR	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+JOB	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+AADDRESS	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+DADDRESS	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+PADDRESS	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+BNKNUM	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MARASEMDATE	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+TALARID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+REGISTERDAET	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+REGISTERTIME	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+MABLPISH	int	no	4	10   	0    	no	(n/a)	(n/a)	
+MOLAH	nvarchar	no	200	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+TAFZ	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+SAZMANM	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+SANC	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+VAZEYAT	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+KIND	smallint	no	2	5    	0    	no	(n/a)	(n/a)	
+ENDIT	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	
+LAGHDAET	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+LAGHTIME	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+ENDDAET	bigint	no	8	19   	0    	yes	(n/a)	(n/a)	
+ENDTIME	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+USER_NAME	nvarchar	no	80	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+IDH	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+N_S	float	no	8	53   		yes	(n/a)	(n/a)	
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+IX_PAZIRESH	nonclustered, unique, unique key located on PRIMARY	MARASEMDATE, TALARID, SANC, ENDIT, ENDDAET, ENDTIME
+PK__PAZIRESH__77C096E8	clustered, unique, primary key located on PRIMARY	ID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__PAZIRESH__CRT__14A6EE59	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+DEFAULT on column ENDIT	DF_PAZIRESH_ENDIT	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column KIND	DF_PAZIRESH_KINK	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column MABLPISH	DF_PAZIRESH_MABLPISH	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column SANC	DF_PAZIRESH_SHIFT	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+DEFAULT on column VAZEYAT	DF_PAZIRESH_VAZEYAT	(n/a)	(n/a)	(n/a)	(n/a)	((1))
+UNIQUE (non-clustered)	IX_PAZIRESH	(n/a)	(n/a)	(n/a)	(n/a)	MARASEMDATE, TALARID, SANC, ENDIT, ENDDAET, ENDTIME
+PRIMARY KEY (clustered)	PK__PAZIRESH__77C096E8	(n/a)	(n/a)	(n/a)	(n/a)	ID

@@ -1,0 +1,40 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+STUFFSK	dbo	user table	19/04/2026 04:52:28 ب.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+CODE	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+MAND	float	no	8	53   		yes	(n/a)	(n/a)	
+FII	float	no	8	53   		yes	(n/a)	(n/a)	
+MABLK	float	no	8	53   		yes	(n/a)	(n/a)	
+ANBAR	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column CRT	DF__STUFFSK__CRT__6BDD07EE	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())

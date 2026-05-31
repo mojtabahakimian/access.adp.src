@@ -1,0 +1,1 @@
+﻿CREATE view pish_view as SELECT HEAD_LST.* FROM HEAD_LST WHERE (TAG = 20)

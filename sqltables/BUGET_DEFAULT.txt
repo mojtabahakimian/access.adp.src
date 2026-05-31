@@ -1,0 +1,78 @@
+﻿-- sp_help Recordset 1
+
+Name	Owner	Type	Created_datetime	
+BUGET_DEFAULT	dbo	user table	28/02/2026 08:21:22 ق.ظ
+
+
+-- sp_help Recordset 2
+
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation	
+BGDEFID	bigint	no	8	19   	0    	no	(n/a)	(n/a)	
+BGPCASH	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH0	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH1	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH2	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH3	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH4	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH5	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH6	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH7	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH8	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH9	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH10	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH11	float	no	8	53   		no	(n/a)	(n/a)	
+BGPCH12	float	no	8	53   		no	(n/a)	(n/a)	
+NTDZBMCHDABD	nvarchar	no	500	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+USERID	int	no	4	10   	0    	no	(n/a)	(n/a)	
+CRDATE	datetime	no	8	     	     	no	(n/a)	(n/a)	
+HESNAGHD	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Arabic_CI_AS
+CRT	datetime	no	8	     	     	yes	(n/a)	(n/a)	
+UID	int	no	4	10   	0    	yes	(n/a)	(n/a)	
+
+
+-- sp_help Recordset 3
+
+Identity	Seed	Increment	Not For Replication	
+No identity column defined.			
+
+
+-- sp_help Recordset 4
+
+RowGuidCol	
+No rowguidcol column defined.
+
+
+-- sp_help Recordset 5
+
+Data_located_on_filegroup	
+PRIMARY
+
+
+-- sp_help Recordset 6
+
+index_name	index_description	index_keys	
+PK_BUGET_DEFAULT	clustered, unique, primary key located on PRIMARY	BGDEFID
+
+
+-- sp_help Recordset 7
+
+constraint_type	constraint_name	delete_action	update_action	status_enabled	status_for_replication	constraint_keys	
+DEFAULT on column BGDEFID	DF__BUGET_DEF__BGDEF__3138400F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCASH	DF__BUGET_DEF__BGPCA__322C6448	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH0	DF__BUGET_DEF__BGPCH__33208881	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH1	DF__BUGET_DEF__BGPCH__3414ACBA	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH2	DF__BUGET_DEF__BGPCH__3508D0F3	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH3	DF__BUGET_DEF__BGPCH__35FCF52C	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH4	DF__BUGET_DEF__BGPCH__36F11965	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH5	DF__BUGET_DEF__BGPCH__37E53D9E	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH6	DF__BUGET_DEF__BGPCH__38D961D7	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH7	DF__BUGET_DEF__BGPCH__39CD8610	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH8	DF__BUGET_DEF__BGPCH__3AC1AA49	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH9	DF__BUGET_DEF__BGPCH__3BB5CE82	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH10	DF__BUGET_DEF__BGPCH__3CA9F2BB	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH11	DF__BUGET_DEF__BGPCH__3D9E16F4	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column BGPCH12	DF__BUGET_DEF__BGPCH__3E923B2D	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CRDATE	DF__BUGET_DEF__CRDAT__407A839F	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column USERID	DF__BUGET_DEF__USERI__3F865F66	(n/a)	(n/a)	(n/a)	(n/a)	((0))
+DEFAULT on column CRT	DF__BUGET_DEFAU__CRT__77168B72	(n/a)	(n/a)	(n/a)	(n/a)	(getdate())
+PRIMARY KEY (clustered)	PK_BUGET_DEFAULT	(n/a)	(n/a)	(n/a)	(n/a)	BGDEFID
