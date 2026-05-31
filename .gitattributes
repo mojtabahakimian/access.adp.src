@@ -1,2 +1,8 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# ۱. شناسایی تمام فرم‌ها، کلاس‌ها و ماژول‌ها به عنوان زبان برنامه نویسی VBA
+*.txt linguist-language=VBA
+*.bas linguist-language=VBA
+*.cls linguist-language=VBA
+
+# ۲. حذف کامل فایل‌های تنظیمات جیسون و فایل‌های لاگ از نمودار آماری زبان‌ها
+*.json linguist-vendored
+*.log linguist-vendored
