@@ -10,8 +10,8 @@
 									(
 									    SELECT TOP (100) PERCENT
 									           il.CODE,
-									           SUM(il.MEGHk)                 AS MEGHk,
-									           SUM(il.MABL_K)               AS MABL_K,
+									           SUM(il.MEGHk / ISNULL((SELECT COUNT(*) FROM dbo.VISITOR_DTL WHERE NUMBER = il.NUMBER AND TAG = il.TAG), 1))                 AS MEGHk,
+									           SUM(il.MABL_K / ISNULL((SELECT COUNT(*) FROM dbo.VISITOR_DTL WHERE NUMBER = il.NUMBER AND TAG = il.TAG), 1))               AS MABL_K,
 									           SUM(il.IMBAA)                AS IMBAA,
 									           SUM(il.N_MOIN)               AS N_MOIN,
 									           sd.NAME                      AS kala,
