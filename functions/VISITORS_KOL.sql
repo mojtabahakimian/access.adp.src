@@ -8,7 +8,19 @@ RETURNS TABLE
 AS
 RETURN
 (
-    WITH VisitorInvoice AS
+    WITH DistinctVisitorInvoice AS
+    (
+        -- بعضی دیتابیس‌ها ممکن است برای یک ویزیتور/فاکتور ردیف کاملاً تکراری پورسانت داشته باشند.
+        -- ابتدا ردیف‌های یکسان حذف می‌شوند تا مبلغ پورسانت هم مثل مبلغ فروش چندباره جمع نشود.
+        SELECT DISTINCT
+            V.CUST_NO,
+            V.NUMBER,
+            V.TAG,
+            V.mabpur
+        FROM dbo.VISITOR_DTLO AS V
+        WHERE V.CUST_NO LIKE @visitor
+    ),
+    VisitorInvoice AS
     (
         -- هر فاکتور برای هر ویزیتور فقط یک بار در گزارش شمرده شود.
         -- اگر یک فاکتور چند ردیف پورسانت داشته باشد، مبلغ پورسانت تجمیع می‌شود
@@ -18,8 +30,7 @@ RETURN
             V.NUMBER,
             V.TAG,
             SUM(V.mabpur) AS mabpur
-        FROM dbo.VISITOR_DTLO AS V
-        WHERE V.CUST_NO LIKE @visitor
+        FROM DistinctVisitorInvoice AS V
         GROUP BY
             V.CUST_NO,
             V.NUMBER,
