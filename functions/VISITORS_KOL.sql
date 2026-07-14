@@ -1,1 +1,68 @@
-﻿CREATE FUNCTION [dbo].[VISITORS_KOL] (@DT1 bigint, @DT2 bigint, @visitor nvarchar(40)) RETURNS Table AS RETURN ( SELECT     dbo.VISITOR_DTLO.CUST_NO, SUM(dbo.VISITOR_DTLO.mabpur) AS mabpur, SUM(JAMFACTVISIT.MABL_K) AS MABL_K, SUM(JAMFACTVISIT.MEGHk) AS MEGHk,  SUM(JAMFACTVISIT.MEGH_MAR) AS MEGH_MAR, SUM(JAMFACTVISIT.N_MOIN) AS TAKHF, SUM(JAMFACTVISIT.IMBAA) AS MBAA, SUM(JAMFACTVISIT.MABMAR)  AS MABMAR, SUM(JAMFACTVISIT.GHABEL) AS GHABEL, dbo.CUST_HESAB.NAME, dbo.CUST_HESAB.ADDRESS, dbo.CUST_HESAB.TEL, dbo.CUST_HESAB.TOZIH,  dbo.CUST_HESAB.MOBILE, COUNT(JAMFACTVISIT.NUMBER) AS tedad FROM         dbo.CUST_HESAB INNER JOIN  dbo.VISITOR_DTLO ON dbo.CUST_HESAB.hes = dbo.VISITOR_DTLO.CUST_NO INNER JOIN  dbo.JAMFACTVISIT(@DT1, @DT2) JAMFACTVISIT ON dbo.VISITOR_DTLO.NUMBER = JAMFACTVISIT.NUMBER AND dbo.VISITOR_DTLO.TAG = JAMFACTVISIT.TAG  GROUP BY dbo.VISITOR_DTLO.CUST_NO, dbo.CUST_HESAB.NAME, dbo.CUST_HESAB.ADDRESS, dbo.CUST_HESAB.TEL, dbo.CUST_HESAB.TOZIH,  dbo.CUST_HESAB.MOBILE HAVING      (dbo.VISITOR_DTLO.CUST_NO LIKE @visitor) ) 
+﻿CREATE FUNCTION [dbo].[VISITORS_KOL]
+(
+    @DT1     BIGINT,
+    @DT2     BIGINT,
+    @visitor NVARCHAR(40)
+)
+RETURNS TABLE
+AS
+RETURN
+(
+    WITH DistinctVisitorInvoice AS
+    (
+        -- بعضی دیتابیس‌ها ممکن است برای یک ویزیتور/فاکتور ردیف کاملاً تکراری پورسانت داشته باشند.
+        -- ابتدا ردیف‌های یکسان حذف می‌شوند تا مبلغ پورسانت هم مثل مبلغ فروش چندباره جمع نشود.
+        SELECT DISTINCT
+            V.CUST_NO,
+            V.NUMBER,
+            V.TAG,
+            V.mabpur
+        FROM dbo.VISITOR_DTLO AS V
+        WHERE V.CUST_NO LIKE @visitor
+    ),
+    VisitorInvoice AS
+    (
+        -- هر فاکتور برای هر ویزیتور فقط یک بار در گزارش شمرده شود.
+        -- اگر یک فاکتور چند ردیف پورسانت داشته باشد، مبلغ پورسانت تجمیع می‌شود
+        -- ولی مبلغ و تعداد فاکتور در Join بعدی تکراری محاسبه نمی‌شود.
+        SELECT
+            V.CUST_NO,
+            V.NUMBER,
+            V.TAG,
+            SUM(V.mabpur) AS mabpur
+        FROM DistinctVisitorInvoice AS V
+        GROUP BY
+            V.CUST_NO,
+            V.NUMBER,
+            V.TAG
+    )
+    SELECT
+        VI.CUST_NO,
+        SUM(VI.mabpur) AS mabpur,
+        SUM(JF.MABL_K) AS MABL_K,
+        SUM(JF.MEGHk) AS MEGHk,
+        SUM(JF.MEGH_MAR) AS MEGH_MAR,
+        SUM(JF.N_MOIN) AS TAKHF,
+        SUM(JF.IMBAA) AS MBAA,
+        SUM(JF.MABMAR) AS MABMAR,
+        SUM(JF.GHABEL) AS GHABEL,
+        CH.NAME,
+        CH.ADDRESS,
+        CH.TEL,
+        CH.TOZIH,
+        CH.MOBILE,
+        COUNT(*) AS tedad
+    FROM VisitorInvoice AS VI
+    INNER JOIN dbo.CUST_HESAB AS CH
+        ON CH.hes = VI.CUST_NO
+    INNER JOIN dbo.JAMFACTVISIT(@DT1, @DT2) AS JF
+        ON JF.NUMBER = VI.NUMBER
+       AND JF.TAG = VI.TAG
+    GROUP BY
+        VI.CUST_NO,
+        CH.NAME,
+        CH.ADDRESS,
+        CH.TEL,
+        CH.TOZIH,
+        CH.MOBILE
+)
